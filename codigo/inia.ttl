@@ -1,0 +1,205 @@
+@prefix : <http://inia.linkeddata.es/def/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://inia.linkeddata.es/def/core#> a owl:Ontology ;
+	dcterms:creator <http://purl.org/net/mpoveda> ;
+	vann:preferredNamespacePrefix "inica" ;
+	rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
+	dc:title "Ontología datasets INIA"@en ;
+	owl:versionInfo "0.0.1" ;
+	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+	vann:preferredNamespaceUri "http://inia.linkeddata.es/def/core#" ;
+	dc:publisher <http://www.oeg-upm.net/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+
+dcterms:contributor a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+
+vs:term_status a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://inia.linkeddata.es/def/core#cites
+
+:cites a owl:ObjectProperty ;
+	owl:inverseOf :isCitedBy ;
+	rdfs:label "cites"@en .
+# 
+# http://inia.linkeddata.es/def/core#compiles
+
+:compiles a owl:ObjectProperty ;
+	owl:inverseOf :isCompiledBy ;
+	rdfs:label "compiles"@en .
+# 
+# http://inia.linkeddata.es/def/core#continues
+
+:continues a owl:ObjectProperty ;
+	owl:inverseOf :isContinuedby ;
+	rdfs:label "continues"@en .
+# 
+# http://inia.linkeddata.es/def/core#documents
+
+:documents a owl:ObjectProperty ;
+	owl:inverseOf :isDocumentedBy ;
+	rdfs:label "documents"@en .
+# 
+# http://inia.linkeddata.es/def/core#hasMetadata
+
+:hasMetadata a owl:ObjectProperty ;
+	owl:inverseOf :isMetadataFor ;
+	rdfs:label "hasMetadata"@en .
+# 
+# http://inia.linkeddata.es/def/core#hasPart
+
+:hasPart a owl:ObjectProperty ;
+	owl:inverseOf :isPartOf ;
+	rdfs:label "hasPart"@en .
+# 
+# http://inia.linkeddata.es/def/core#isCitedBy
+
+:isCitedBy a owl:ObjectProperty ;
+	rdfs:comment "indicates that B includes A in a citation"@en ;
+	rdfs:label "isCitedBy"@en .
+# 
+# http://inia.linkeddata.es/def/core#isCompiledBy
+
+:isCompiledBy a owl:ObjectProperty ;
+	rdfs:label "isCompiledBy"@en .
+# 
+# http://inia.linkeddata.es/def/core#isContinuedby
+
+:isContinuedby a owl:ObjectProperty ;
+	rdfs:label "isContinuedby"@en .
+# 
+# http://inia.linkeddata.es/def/core#isDerivedFrom
+
+:isDerivedFrom a owl:ObjectProperty ;
+	owl:inverseOf :isSourceOf ;
+	rdfs:label "isDerivedFrom"@en .
+# 
+# http://inia.linkeddata.es/def/core#isDocumentedBy
+
+:isDocumentedBy a owl:ObjectProperty ;
+	rdfs:label "isDocumentedBy"@en .
+# 
+# http://inia.linkeddata.es/def/core#isIdenticalTo
+
+:isIdenticalTo a owl:ObjectProperty ;
+	rdfs:comment "Podría ser sustituido por owl:sameAs"@es ;
+	rdfs:label "isIdenticalTo"@en ;
+	vs:term_status "unestable"@es .
+# 
+# http://inia.linkeddata.es/def/core#isMetadataFor
+
+:isMetadataFor a owl:ObjectProperty ;
+	rdfs:label "isMetadataFor"@en .
+# 
+# http://inia.linkeddata.es/def/core#isNewVersionOf
+
+:isNewVersionOf a owl:ObjectProperty ;
+	owl:inverseOf :isPreviousVersionOf ;
+	rdfs:label "isNewVersionOf"@en .
+# 
+# http://inia.linkeddata.es/def/core#isOriginalFormOf
+
+:isOriginalFormOf a owl:ObjectProperty ;
+	owl:inverseOf :isVariantFormOf ;
+	rdfs:label "isOriginalFormOf"@en .
+# 
+# http://inia.linkeddata.es/def/core#isPartOf
+
+:isPartOf a owl:ObjectProperty ;
+	rdfs:label "isPartOf"@en .
+# 
+# http://inia.linkeddata.es/def/core#isPreviousVersionOf
+
+:isPreviousVersionOf a owl:ObjectProperty ;
+	rdfs:label "isPreviousVersionOf"@en .
+# 
+# http://inia.linkeddata.es/def/core#isReferencedBy
+
+:isReferencedBy a owl:ObjectProperty ;
+	owl:inverseOf :references ;
+	rdfs:label "isReferencedBy"@en .
+# 
+# http://inia.linkeddata.es/def/core#isReviewedBy
+
+:isReviewedBy a owl:ObjectProperty ;
+	owl:inverseOf :reviews ;
+	rdfs:label "isReviewedBy"@en .
+# 
+# http://inia.linkeddata.es/def/core#isSourceOf
+
+:isSourceOf a owl:ObjectProperty ;
+	rdfs:label "isSourceOf"@en .
+# 
+# http://inia.linkeddata.es/def/core#isSupplementTo
+
+:isSupplementTo a owl:ObjectProperty ;
+	owl:inverseOf :isSupplementedby ;
+	rdfs:label "isSupplementTo"@en .
+# 
+# http://inia.linkeddata.es/def/core#isSupplementedby
+
+:isSupplementedby a owl:ObjectProperty ;
+	rdfs:label "isSupplementedby"@en .
+# 
+# http://inia.linkeddata.es/def/core#isVariantFormOf
+
+:isVariantFormOf a owl:ObjectProperty ;
+	rdfs:label "is variant form of"@en .
+# 
+# http://inia.linkeddata.es/def/core#references
+
+:references a owl:ObjectProperty ;
+	rdfs:label "references"@en .
+# 
+# http://inia.linkeddata.es/def/core#reviews
+
+:reviews a owl:ObjectProperty ;
+	rdfs:label "reviews"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://inia.linkeddata.es/def/core#Resource
+
+:Resource a owl:Class ;
+	rdfs:label "Resource"@en .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
