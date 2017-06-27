@@ -85,7 +85,7 @@
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1063, 851}}</string>
+				<string>{{0, 0}, {977.63873626373629, 797}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -104,7 +104,7 @@
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>CanvasSize</key>
-			<string>{1063, 851}</string>
+			<string>{977.63873626373629, 797}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -11480,7 +11480,7 @@ Clase}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>BottomSlabHeight</key>
-		<real>261</real>
+		<real>138</real>
 		<key>CurrentSheet</key>
 		<integer>0</integer>
 		<key>Expanded_Canvases</key>
@@ -11488,7 +11488,7 @@ Clase}</string>
 		<key>FitInWindow</key>
 		<true/>
 		<key>Frame</key>
-		<string>{{53, 31}, {1610, 996}}</string>
+		<string>{{0, 4}, {1440, 873}}</string>
 		<key>ShowInfo</key>
 		<true/>
 		<key>ShowRuler</key>
@@ -11498,9 +11498,9 @@ Clase}</string>
 		<key>SidebarWidth</key>
 		<integer>230</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {1063, 851}}</string>
+		<string>{{0, 0}, {977.63873626373618, 797}}</string>
 		<key>Zoom</key>
-		<real>1</real>
+		<real>0.9134253450439147</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>

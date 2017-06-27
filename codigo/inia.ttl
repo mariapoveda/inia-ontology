@@ -14,6 +14,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
 <http://inia.linkeddata.es/def/core#> a owl:Ontology ;
+	owl:imports <http://dataid.dbpedia.org/ns/core#> ;
 	dcterms:creator <http://purl.org/net/mpoveda> ;
 	vann:preferredNamespacePrefix "inica" ;
 	rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
@@ -51,141 +52,194 @@ vs:term_status a owl:AnnotationProperty .
 # http://inia.linkeddata.es/def/core#cites
 
 :cites a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isCitedBy ;
+	rdfs:comment "indicates that A includes B in a citation"@en ;
 	rdfs:label "cites"@en .
 # 
 # http://inia.linkeddata.es/def/core#compiles
 
 :compiles a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isCompiledBy ;
+	rdfs:comment "indicates B is the result of a compile or creation event using A"@en ;
 	rdfs:label "compiles"@en .
 # 
 # http://inia.linkeddata.es/def/core#continues
 
 :continues a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isContinuedby ;
+	rdfs:comment "indicates A is a continuation of the work B"@en ;
 	rdfs:label "continues"@en .
 # 
 # http://inia.linkeddata.es/def/core#documents
 
 :documents a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isDocumentedBy ;
+	rdfs:comment "indicates A is documentation about B"@en ;
 	rdfs:label "documents"@en .
 # 
 # http://inia.linkeddata.es/def/core#hasMetadata
 
 :hasMetadata a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isMetadataFor ;
+	rdfs:comment "indicates resource A has additional metadata B"@en ;
 	rdfs:label "hasMetadata"@en .
 # 
 # http://inia.linkeddata.es/def/core#hasPart
 
 :hasPart a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isPartOf ;
+	rdfs:comment "indicates A includes the part B"@en ;
 	rdfs:label "hasPart"@en .
+# 
+# http://inia.linkeddata.es/def/core#hasRelatedResource
+
+:hasRelatedResource a owl:ObjectProperty ;
+	rdfs:label "relatedResource"@en .
 # 
 # http://inia.linkeddata.es/def/core#isCitedBy
 
 :isCitedBy a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	rdfs:comment "indicates that B includes A in a citation"@en ;
 	rdfs:label "isCitedBy"@en .
 # 
 # http://inia.linkeddata.es/def/core#isCompiledBy
 
 :isCompiledBy a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates B is used to compile or create A"@en ;
 	rdfs:label "isCompiledBy"@en .
 # 
 # http://inia.linkeddata.es/def/core#isContinuedby
 
 :isContinuedby a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates A is continued by the work B"@en ;
 	rdfs:label "isContinuedby"@en .
 # 
 # http://inia.linkeddata.es/def/core#isDerivedFrom
 
 :isDerivedFrom a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isSourceOf ;
+	rdfs:comment "indicates B is a source upon which A is based"@en ;
 	rdfs:label "isDerivedFrom"@en .
 # 
 # http://inia.linkeddata.es/def/core#isDocumentedBy
 
 :isDocumentedBy a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates B is documentation about explaining A"@en ;
 	rdfs:label "isDocumentedBy"@en .
 # 
 # http://inia.linkeddata.es/def/core#isIdenticalTo
 
 :isIdenticalTo a owl:ObjectProperty ;
-	rdfs:comment "Podría ser sustituido por owl:sameAs"@es ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "Podría ser sustituido por owl:sameAs"@es , "indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource"@en ;
 	rdfs:label "isIdenticalTo"@en ;
 	vs:term_status "unestable"@es .
 # 
 # http://inia.linkeddata.es/def/core#isMetadataFor
 
 :isMetadataFor a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates additional metadata A for a resource B"@en ;
 	rdfs:label "isMetadataFor"@en .
 # 
 # http://inia.linkeddata.es/def/core#isNewVersionOf
 
 :isNewVersionOf a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isPreviousVersionOf ;
+	rdfs:comment "indicates A is a new edition of B, where the new edition has been modified or updated"@en ;
 	rdfs:label "isNewVersionOf"@en .
 # 
 # http://inia.linkeddata.es/def/core#isOriginalFormOf
 
 :isOriginalFormOf a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isVariantFormOf ;
+	rdfs:comment "indicates A is the original form of B"@en ;
 	rdfs:label "isOriginalFormOf"@en .
 # 
 # http://inia.linkeddata.es/def/core#isPartOf
 
 :isPartOf a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates A is a portion of B; may be used for elements of a series"@en ;
 	rdfs:label "isPartOf"@en .
 # 
 # http://inia.linkeddata.es/def/core#isPreviousVersionOf
 
 :isPreviousVersionOf a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates A is a previous edition of B"@en ;
 	rdfs:label "isPreviousVersionOf"@en .
 # 
 # http://inia.linkeddata.es/def/core#isReferencedBy
 
 :isReferencedBy a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :references ;
+	rdfs:comment "indicates A is used as a source of information by B"@en ;
 	rdfs:label "isReferencedBy"@en .
 # 
 # http://inia.linkeddata.es/def/core#isReviewedBy
 
 :isReviewedBy a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :reviews ;
+	rdfs:comment "indicates that A is reviewed by B"@en ;
 	rdfs:label "isReviewedBy"@en .
 # 
 # http://inia.linkeddata.es/def/core#isSourceOf
 
 :isSourceOf a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates A is a source upon which B is based"@en ;
 	rdfs:label "isSourceOf"@en .
 # 
 # http://inia.linkeddata.es/def/core#isSupplementTo
 
 :isSupplementTo a owl:ObjectProperty ;
-	owl:inverseOf :isSupplementedby ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	owl:inverseOf :isSupplementedBy ;
+	rdfs:comment "indicates that A is a supplement to B"@en ;
 	rdfs:label "isSupplementTo"@en .
 # 
-# http://inia.linkeddata.es/def/core#isSupplementedby
+# http://inia.linkeddata.es/def/core#isSupplementedBy
 
-:isSupplementedby a owl:ObjectProperty ;
-	rdfs:label "isSupplementedby"@en .
+:isSupplementedBy a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates that B is a supplement to A"@en ;
+	rdfs:label "is supplemented by"@en .
 # 
 # http://inia.linkeddata.es/def/core#isVariantFormOf
 
 :isVariantFormOf a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates A is a variant or different form of B, e.g. calculated or calibrated form or different packaging"@en ;
 	rdfs:label "is variant form of"@en .
 # 
 # http://inia.linkeddata.es/def/core#references
 
 :references a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates B is used as a source of information for A"@en ;
 	rdfs:label "references"@en .
 # 
 # http://inia.linkeddata.es/def/core#reviews
 
 :reviews a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:comment "indicates that A is a review of B"@en ;
 	rdfs:label "reviews"@en .
 # 
 # 
@@ -196,6 +250,12 @@ vs:term_status a owl:AnnotationProperty .
 # #
 # #################################################################
 # 
+# 
+# http://inia.linkeddata.es/def/core#Dataset
+
+:Dataset a owl:Class ;
+	rdfs:subClassOf :Resource ;
+	rdfs:label "Conjunto de datos"@es , "Dataset"@en .
 # 
 # http://inia.linkeddata.es/def/core#Resource
 
