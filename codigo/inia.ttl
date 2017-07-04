@@ -13,12 +13,12 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-<http://inia.linkeddata.es/def/core#> a owl:Ontology ;
-	owl:imports <http://dataid.dbpedia.org/ns/core#> ;
+<http://inia.linkeddata.es/def/coreINIA#> a owl:Ontology ;
+	owl:imports <http://www.w3.org/ns/org#> , <http://xmlns.com/foaf/0.1/> ;
 	dcterms:creator <http://purl.org/net/mpoveda> ;
-	vann:preferredNamespacePrefix "inica" ;
 	rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
 	dc:title "Ontología datasets INIA"@en ;
+	vann:preferredNamespacePrefix "inia" ;
 	owl:versionInfo "0.0.1" ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	vann:preferredNamespaceUri "http://inia.linkeddata.es/def/core#" ;
@@ -36,6 +36,10 @@
 
 dcterms:contributor a owl:AnnotationProperty .
 # 
+# http://purl.org/vocab/vann/usageNote
+
+vann:usageNote a owl:AnnotationProperty .
+# 
 # http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
 
 vs:term_status a owl:AnnotationProperty .
@@ -48,6 +52,46 @@ vs:term_status a owl:AnnotationProperty .
 # #
 # #################################################################
 # 
+# 
+# http://dataid.dbpedia.org/ns/core#identifier
+
+<http://dataid.dbpedia.org/ns/core#identifier> a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.org/spar/datacite/hasIdentifier> , foaf:isPrimaryTopicOf ;
+	a owl:InverseFunctionalProperty ;
+	rdfs:range <http://purl.org/spar/datacite/Identifier> ;
+	rdfs:comment "A unique identifier for an Agent or Entity (for other, non DataID related identifiers)."@en ;
+	rdfs:isDefinedBy <http://dataid.dbpedia.org/ns/core#> ;
+	rdfs:label "identifier"@en .
+# 
+# http://dataid.dbpedia.org/ns/core#latestVersion
+
+<http://dataid.dbpedia.org/ns/core#latestVersion> a owl:ObjectProperty ;
+	rdfs:domain prov:Entity ;
+	rdfs:range prov:Entity ;
+	rdfs:comment "Latest version of a DataId/Dataset/Distribution."@en ;
+	rdfs:isDefinedBy <http://dataid.dbpedia.org/ns/core#> ;
+	rdfs:label "latest version"@en .
+# 
+# http://dataid.dbpedia.org/ns/core#nextVersion
+
+<http://dataid.dbpedia.org/ns/core#nextVersion> a owl:ObjectProperty ;
+	owl:inverseOf <http://dataid.dbpedia.org/ns/core#previousVersion> ;
+	rdfs:comment "Next version of a DataId/Dataset/Distribution."@en ;
+	rdfs:isDefinedBy <http://dataid.dbpedia.org/ns/core#> ;
+	rdfs:label "next version"@en .
+# 
+# http://dataid.dbpedia.org/ns/core#openness
+
+<http://dataid.dbpedia.org/ns/core#openness> a owl:ObjectProperty ;
+	rdfs:domain <http://dataid.dbpedia.org/ns/core#Dataset> ;
+	rdfs:range <http://dataid.dbpedia.org/ns/core#SimpleStatement> ;
+	rdfs:comment "General description of how data will be shared. For example embargo periods (if any), outlines of technical mechanisms for dissemination or a definition of whether access will be widely open or restricted to specific groups. In case the Dataset cannot be shared, the reasons for this should be mentioned (e.g. ethical, rules of personal data, intellectual property, commercial, privacy-related, security-related)."@en ;
+	rdfs:isDefinedBy <http://dataid.dbpedia.org/ns/dmp#> ;
+	rdfs:label "openness"@en .
+# 
+# http://dataid.dbpedia.org/ns/core#previousVersion
+
+<http://dataid.dbpedia.org/ns/core#previousVersion> a owl:ObjectProperty .
 # 
 # http://inia.linkeddata.es/def/core#cites
 
@@ -100,6 +144,7 @@ vs:term_status a owl:AnnotationProperty .
 # http://inia.linkeddata.es/def/core#hasRelatedResource
 
 :hasRelatedResource a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://dataid.dbpedia.org/ns/core#nextVersion> ;
 	rdfs:label "relatedResource"@en .
 # 
 # http://inia.linkeddata.es/def/core#isCitedBy
@@ -156,7 +201,7 @@ vs:term_status a owl:AnnotationProperty .
 # http://inia.linkeddata.es/def/core#isNewVersionOf
 
 :isNewVersionOf a owl:ObjectProperty ;
-	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:subPropertyOf <http://dataid.dbpedia.org/ns/core#previousVersion> , :hasRelatedResource ;
 	owl:inverseOf :isPreviousVersionOf ;
 	rdfs:comment "indicates A is a new edition of B, where the new edition has been modified or updated"@en ;
 	rdfs:label "isNewVersionOf"@en .
@@ -172,7 +217,7 @@ vs:term_status a owl:AnnotationProperty .
 # http://inia.linkeddata.es/def/core#isPartOf
 
 :isPartOf a owl:ObjectProperty ;
-	rdfs:subPropertyOf :hasRelatedResource ;
+	rdfs:subPropertyOf :hasRelatedResource , dcterms:isPartOf ;
 	rdfs:comment "indicates A is a portion of B; may be used for elements of a series"@en ;
 	rdfs:label "isPartOf"@en .
 # 
@@ -242,6 +287,46 @@ vs:term_status a owl:AnnotationProperty .
 	rdfs:comment "indicates that A is a review of B"@en ;
 	rdfs:label "reviews"@en .
 # 
+# http://purl.org/dc/terms/isPartOf
+
+dcterms:isPartOf a owl:ObjectProperty .
+# 
+# http://purl.org/dc/terms/language
+
+dcterms:language a owl:ObjectProperty .
+# 
+# http://purl.org/dc/terms/license
+
+dcterms:license a owl:ObjectProperty .
+# 
+# http://purl.org/dc/terms/rights
+
+dcterms:rights a owl:ObjectProperty .
+# 
+# http://purl.org/dc/terms/spatial
+
+dcterms:spatial a owl:ObjectProperty .
+# 
+# http://purl.org/dc/terms/temporal
+
+dcterms:temporal a owl:ObjectProperty .
+# 
+# http://purl.org/spar/datacite/hasIdentifier
+
+<http://purl.org/spar/datacite/hasIdentifier> a owl:ObjectProperty .
+# 
+# http://rdfs.org/ns/void#subset
+
+<http://rdfs.org/ns/void#subset> a owl:ObjectProperty .
+# 
+# http://www.w3.org/ns/dcat#distribution
+
+<http://www.w3.org/ns/dcat#distribution> a owl:ObjectProperty .
+# 
+# http://xmlns.com/foaf/0.1/isPrimaryTopicOf
+
+foaf:isPrimaryTopicOf a owl:ObjectProperty .
+# 
 # 
 # 
 # #################################################################
@@ -250,6 +335,114 @@ vs:term_status a owl:AnnotationProperty .
 # #
 # #################################################################
 # 
+# 
+# http://dataid.dbpedia.org/ns/core#DataId
+
+<http://dataid.dbpedia.org/ns/core#DataId> a owl:Class .
+# 
+# http://dataid.dbpedia.org/ns/core#Dataset
+
+<http://dataid.dbpedia.org/ns/core#Dataset> a owl:Class ;
+	rdfs:subClassOf <http://rdfs.org/ns/void#Dataset> , <http://www.w3.org/ns/dcat#Dataset> , prov:Entity , _:genid1 .
+
+_:genid1 a owl:Restriction ;
+	owl:onProperty <http://dataid.dbpedia.org/ns/core#latestVersion> ;
+	owl:allValuesFrom <http://dataid.dbpedia.org/ns/core#Dataset> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid2 .
+
+_:genid2 a owl:Restriction ;
+	owl:onProperty <http://dataid.dbpedia.org/ns/core#nextVersion> ;
+	owl:allValuesFrom <http://dataid.dbpedia.org/ns/core#Dataset> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid3 .
+
+_:genid3 a owl:Restriction ;
+	owl:onProperty <http://dataid.dbpedia.org/ns/core#previousVersion> ;
+	owl:allValuesFrom <http://dataid.dbpedia.org/ns/core#Dataset> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid4 .
+
+_:genid4 a owl:Restriction ;
+	owl:onProperty dcterms:isPartOf ;
+	owl:allValuesFrom <http://dataid.dbpedia.org/ns/core#Dataset> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid5 .
+
+_:genid5 a owl:Restriction ;
+	owl:onProperty dcterms:language ;
+	owl:allValuesFrom <http://lexvo.org/ontology#Language> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid6 .
+
+_:genid6 a owl:Restriction ;
+	owl:onProperty dcterms:license ;
+	owl:allValuesFrom <http://www.w3.org/ns/odrl/2/Policy> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid7 .
+
+_:genid7 a owl:Restriction ;
+	owl:onProperty dcterms:rights ;
+	owl:allValuesFrom <http://dataid.dbpedia.org/ns/core#SimpleStatement> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid8 .
+
+_:genid8 a owl:Restriction ;
+	owl:onProperty dcterms:spatial ;
+	owl:allValuesFrom <http://www.geonames.org/ontology#Feature> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid9 .
+
+_:genid9 a owl:Restriction ;
+	owl:onProperty dcterms:temporal ;
+	owl:allValuesFrom <http://www.w3.org/2006/time#Interval> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid10 .
+
+_:genid10 a owl:Restriction ;
+	owl:onProperty <http://rdfs.org/ns/void#subset> ;
+	owl:allValuesFrom <http://dataid.dbpedia.org/ns/core#Dataset> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid11 .
+
+_:genid11 a owl:Restriction ;
+	owl:onProperty <http://www.w3.org/ns/dcat#distribution> ;
+	owl:allValuesFrom <http://dataid.dbpedia.org/ns/core#Distribution> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:subClassOf _:genid12 .
+
+_:genid12 a owl:Restriction ;
+	owl:onProperty foaf:isPrimaryTopicOf ;
+	owl:allValuesFrom <http://dataid.dbpedia.org/ns/core#DataId> .
+
+<http://dataid.dbpedia.org/ns/core#Dataset> rdfs:comment """A collection of data, available for access in one or more formats. 
+    Dataset resources describe the concept of the dataset, not its manifestation (the data itself), which can be acquired 
+    as a Distribution. Datasets are prov:Entities and can be generated by prov:Activities."""@en ;
+	rdfs:isDefinedBy <http://dataid.dbpedia.org/ns/core#> ;
+	rdfs:label "Dataset"@en .
+# 
+# http://dataid.dbpedia.org/ns/core#Distribution
+
+<http://dataid.dbpedia.org/ns/core#Distribution> a owl:Class .
+# 
+# http://dataid.dbpedia.org/ns/core#SimpleStatement
+
+<http://dataid.dbpedia.org/ns/core#SimpleStatement> a owl:Class .
+# 
+# http://dataid.dbpedia.org/ns/core#Superset
+
+<http://dataid.dbpedia.org/ns/core#Superset> a owl:Class ;
+	rdfs:subClassOf <http://dataid.dbpedia.org/ns/core#Dataset> , _:genid13 .
+
+_:genid13 a owl:Restriction ;
+	owl:onProperty <http://www.w3.org/ns/dcat#distribution> ;
+	owl:maxCardinality "0"^^xsd:nonNegativeInteger .
+
+<http://dataid.dbpedia.org/ns/core#Superset> rdfs:comment """This dedicated version of a dataid:Dataset has exacly one purpose: to point out all its Sub-Datsets with void:subset. 
+    A dataid:Superset has no data itself and is therefore prohibited to point out Distributions with dcat:distribution. 
+    It can be used in a dataset hierarchy (e.g. as a root dataset), or as a container for other datasets."""@en ;
+	rdfs:isDefinedBy <http://dataid.dbpedia.org/ns/core#> ;
+	rdfs:label "Superset"@en .
 # 
 # http://inia.linkeddata.es/def/core#Dataset
 
@@ -261,5 +454,65 @@ vs:term_status a owl:AnnotationProperty .
 
 :Resource a owl:Class ;
 	rdfs:label "Resource"@en .
+# 
+# http://lexvo.org/ontology#Language
+
+<http://lexvo.org/ontology#Language> a owl:Class .
+# 
+# http://purl.org/dc/dcmitype/Dataset
+
+<http://purl.org/dc/dcmitype/Dataset> a owl:Class .
+# 
+# http://purl.org/spar/datacite/Identifier
+
+<http://purl.org/spar/datacite/Identifier> a owl:Class .
+# 
+# http://rdfs.org/ns/void#Dataset
+
+<http://rdfs.org/ns/void#Dataset> a owl:Class .
+# 
+# http://www.geonames.org/ontology#Feature
+
+<http://www.geonames.org/ontology#Feature> a owl:Class .
+# 
+# http://www.w3.org/2006/time#Interval
+
+<http://www.w3.org/2006/time#Interval> a owl:Class .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+
+<http://www.w3.org/ns/dcat#Dataset> a owl:Class ;
+	rdfs:subClassOf <http://purl.org/dc/dcmitype/Dataset> ;
+	vann:usageNote """Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son 
+					  entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier. """@fr , """Esta clase representa el conjunto de datos publicado por el editor del conjunto de datos. En los casos donde es necesaria una distinción entre el
+					conjunto de datos y su entrada en el catálogo de datos"""@es , """This class represents the actual dataset as published by the dataset publisher. In 
+          cases where a distinction between the actual dataset and its entry in the catalog is 
+          necessary (because metadata such as modification date and maintainer might differ), the 
+          catalog record class can be used for the latter."""@en , """Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ'εαυτό, όπως έχει δημοσιευθεί από τον εκδότη.
+          Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) 
+          η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο."""@el , "このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。"@ja ;
+	rdfs:comment "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja , "A collection of data, published or curated by a single source, and available for access or download in one or more formats"@en , "Una colección de datos, publicados o conservados por una única fuente, y disponibles para acceder o descagar en uno o más formatos"@es , "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats"@fr , "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές"@el , "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar ;
+	rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
+	rdfs:label "Conjunto de datos"@es , "Dataset"@en , "Jeu de données"@fr , "Σύνολο Δεδομένων"@el , "قائمة بيانات"@ar , "データセット"@ja .
+# 
+# http://www.w3.org/ns/odrl/2/Policy
+
+<http://www.w3.org/ns/odrl/2/Policy> a owl:Class .
+# 
+# http://www.w3.org/ns/prov#Entity
+
+prov:Entity a owl:Class .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+
+<http://www.w3.org/2004/02/skos/core#Concept> rdfs:label "Concept" .
 # 
 # Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
