@@ -44,6 +44,23 @@ vann:usageNote a owl:AnnotationProperty .
 
 vs:term_status a owl:AnnotationProperty .
 # 
+# http://www.w3.org/2004/02/skos/core#notation
+
+<http://www.w3.org/2004/02/skos/core#notation> a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName
+
+<http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName> a rdfs:Datatype .
+# 
 # 
 # 
 # #################################################################
@@ -351,6 +368,38 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 # #################################################################
 # 
 # 
+# http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> a owl:DatatypeProperty ;
+	rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
+	rdfs:range xsd:decimal ;
+	rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
+	rdfs:label "east bound longitude"^^xsd:string .
+# 
+# http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude> a owl:DatatypeProperty ;
+	rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
+	rdfs:range xsd:decimal ;
+	rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
+	rdfs:label "north bound latitude"^^xsd:string .
+# 
+# http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude> a owl:DatatypeProperty ;
+	rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
+	rdfs:range xsd:decimal ;
+	rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
+	rdfs:label "south bound latitude"^^xsd:string .
+# 
+# http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude> a owl:DatatypeProperty ;
+	rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
+	rdfs:range xsd:decimal ;
+	rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
+	rdfs:label "west bound longitude"^^xsd:string .
+# 
 # http://inia.linkeddata.es/def/coreINIA#equipment
 
 <http://inia.linkeddata.es/def/coreINIA#equipment> a owl:DatatypeProperty ;
@@ -514,6 +563,43 @@ _:genid13 a owl:Restriction ;
     It can be used in a dataset hierarchy (e.g. as a root dataset), or as a container for other datasets."""@en ;
 	rdfs:isDefinedBy <http://dataid.dbpedia.org/ns/core#> ;
 	rdfs:label "Superset"@en .
+# 
+# http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> a owl:Class ;
+	rdfs:subClassOf <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicExtent> .
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicExtent> a owl:Class .
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> rdfs:subClassOf _:genid14 .
+
+_:genid14 a owl:Restriction ;
+	owl:onProperty <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> rdfs:subClassOf _:genid15 .
+
+_:genid15 a owl:Restriction ;
+	owl:onProperty <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude> ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> rdfs:subClassOf _:genid16 .
+
+_:genid16 a owl:Restriction ;
+	owl:onProperty <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude> ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> rdfs:subClassOf _:genid17 .
+
+_:genid17 a owl:Restriction ;
+	owl:onProperty <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude> ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
+	rdfs:label "Geographic bounding box"^^xsd:string ;
+	<http://www.w3.org/2004/02/skos/core#notation> "EX_GeographicBoundingBox"^^<http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName> .
+# 
+# http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicExtent
 # 
 # http://inia.linkeddata.es/def/core#Dataset
 
