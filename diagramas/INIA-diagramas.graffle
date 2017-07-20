@@ -26,7 +26,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2017-07-10 13:04:16 +0000</string>
+	<string>2017-07-11 10:02:53 +0000</string>
 	<key>Modifier</key>
 	<string>María Poveda</string>
 	<key>NotesVisible</key>
@@ -85,7 +85,7 @@
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1190, 1073}}</string>
+				<string>{{0, 0}, {1280, 1073}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -104,7 +104,7 @@
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>CanvasSize</key>
-			<string>{1190, 1073}</string>
+			<string>{1280, 1073}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -466,7 +466,7 @@ dcterms:spatial}</string>
 \pard\tx60\tx300\tx940\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li20\fi-20\pardirnatural\qc
 
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-ext:\cf2 GeographicBoundingBox}</string>
+ext:GeographicBoundingBox}</string>
 					</dict>
 					<key>VFlip</key>
 					<string>YES</string>
@@ -3191,7 +3191,7 @@ inia:software:: xsd:string\
 inia:equipment:: xsd:string\
 inia:temporalScope:: xsd:string\
 inia:spatialScope:: xsd:string\
-iinia:startingDate:: xsd:dateTime\
+inia:startingDate:: xsd:dateTime\
 Inia:finalDate:: xsd:dateTime\
 iInia:embargoDate:: xsd:dateTime\
 dcterms:bibliographicCitation:: rdf:Literal}</string>
@@ -7818,8 +7818,7 @@ dcat:keyword:: rdfs:Literal\
 dcterms:issued:: xsd:date\
 dcterms:modified:: xsd:date\
 dcterms:rights:: dataid:SimpleStatement\
-inia:software:: xsd:string\
-inia:equipment:: xsd:string}</string>
+}</string>
 					</dict>
 					<key>VFlip</key>
 					<string>YES</string>
@@ -13814,31 +13813,31 @@ Clase}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>BottomSlabHeight</key>
-		<real>261</real>
+		<real>32</real>
 		<key>CurrentSheet</key>
 		<integer>0</integer>
 		<key>Expanded_Canvases</key>
 		<array/>
 		<key>Frame</key>
-		<string>{{120, 31}, {1512, 996}}</string>
+		<string>{{69, 56}, {1611, 971}}</string>
 		<key>ShowInfo</key>
 		<true/>
 		<key>ShowRuler</key>
 		<true/>
 		<key>Sidebar</key>
-		<true/>
+		<false/>
 		<key>SidebarWidth</key>
-		<integer>230</integer>
+		<integer>0</integer>
 		<key>VisibleRegion</key>
-		<string>{{18, 111}, {965, 851}}</string>
+		<string>{{-655, -293}, {2590, 1652}}</string>
 		<key>Zoom</key>
-		<real>1</real>
+		<real>0.5</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
 				<string>Ontologia</string>
-				<real>1</real>
-				<real>0.0</real>
+				<real>0.5</real>
+				<real>1.3999999761581421</real>
 			</array>
 			<array>
 				<string>Ontologia 2</string>
