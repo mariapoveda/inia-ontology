@@ -15,7 +15,9 @@
 
 <http://inia.linkeddata.es/def/coreINIA#> a owl:Ontology ;
 	owl:imports <http://purl.org/spar/datacite/> , <http://www.w3.org/ns/org#> , <http://xmlns.com/foaf/0.1/> ;
+	dcterms:creator <http://purl.org/net/mpoveda> ;
 	rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
+	dcterms:publisher <http://purl.org/dc/aboutdcmi#DCMI> ;
 	dc:title "Ontología datasets INIA"@en ;
 	vann:preferredNamespacePrefix "inia" ;
 	owl:versionInfo "0.0.1" ;
@@ -780,6 +782,10 @@ xsd:date a rdfs:Datatype .
 	rdfs:subPropertyOf dcterms:contributor ;
 	rdfs:label "workPackageLeader"@en .
 # 
+# http://purl.org/dc/elements/1.1/type
+
+dc:type a owl:ObjectProperty .
+# 
 # http://purl.org/dc/terms/accessRights
 
 dcterms:accessRights a owl:ObjectProperty ;
@@ -967,8 +973,6 @@ dcterms:temporal a owl:ObjectProperty ;
 # http://purl.org/dc/terms/type
 
 dcterms:type rdfs:subPropertyOf dc:type .
-
-dc:type a owl:ObjectProperty .
 # 
 # http://purl.org/spar/datacite/hasIdentifier
 
@@ -1069,6 +1073,13 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 	rdfs:domain <http://inia.linkeddata.es/def/coreINIA#Dataset> ;
 	rdfs:label "elementsNumber"@en .
 # 
+# http://inia.linkeddata.es/def/coreINIA#embargoDate
+
+<http://inia.linkeddata.es/def/coreINIA#embargoDate> a owl:DatatypeProperty ;
+	rdfs:domain <http://inia.linkeddata.es/def/coreINIA#Dataset> ;
+	rdfs:range xsd:date ;
+	rdfs:label "embargoDate"@en .
+# 
 # http://inia.linkeddata.es/def/coreINIA#equipment
 
 <http://inia.linkeddata.es/def/coreINIA#equipment> a owl:DatatypeProperty ;
@@ -1080,7 +1091,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 
 <http://inia.linkeddata.es/def/coreINIA#finalDate> a owl:DatatypeProperty ;
 	rdfs:subPropertyOf owl:topDataProperty ;
-	rdfs:range xsd:dateTime ;
+	rdfs:range xsd:date ;
 	rdfs:label "finalDate"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#projectCode
@@ -1107,7 +1118,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 # http://inia.linkeddata.es/def/coreINIA#startingDate
 
 <http://inia.linkeddata.es/def/coreINIA#startingDate> a owl:DatatypeProperty ;
-	rdfs:range xsd:dateTime ;
+	rdfs:range xsd:date ;
 	rdfs:label "startingDate"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#temporalScope
@@ -1909,9 +1920,7 @@ prov:Entity a owl:Class .
 # 
 # http://inia.linkeddata.es/def/coreINIA#
 
-<http://inia.linkeddata.es/def/coreINIA#> a owl:NamedIndividual ;
-	dcterms:creator <http://purl.org/net/mpoveda> ;
-	dcterms:publisher <http://purl.org/dc/aboutdcmi#DCMI> .
+<http://inia.linkeddata.es/def/coreINIA#> a owl:NamedIndividual .
 # 
 # http://purl.org/dc/aboutdcmi#DCMI
 
@@ -2458,8 +2467,8 @@ dcterms:ISO639-2 rdfs:seeAlso <http://lcweb.loc.gov/standards/iso639-2/langhome.
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#ISO639-2-003> .
 # 
 
-dcterms:ISO639-3 rdfs:comment "The set of three-letter codes listed in ISO 639-3 for the representation of names of languages."@en ;
-	rdfs:label "ISO 639-3"@en ;
+dcterms:ISO639-3 rdfs:label "ISO 639-3"@en ;
+	rdfs:comment "The set of three-letter codes listed in ISO 639-3 for the representation of names of languages."@en ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#ISO639-3-001> ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2468,8 +2477,8 @@ dcterms:ISO639-3 rdfs:comment "The set of three-letter codes listed in ISO 639-3
 
 dcterms:Jurisdiction dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Jurisdiction-001> ;
 	rdfs:label "Jurisdiction"@en ;
-	rdfs:comment "The extent or range of judicial, law enforcement, or other authority."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	rdfs:comment "The extent or range of judicial, law enforcement, or other authority."@en ;
 	dcterms:issued "2008-01-14"^^xsd:date .
 # 
 
@@ -2588,8 +2597,8 @@ dcterms:RFC1766 rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:comment "The set of tags, constructed according to RFC 1766, for the identification of languages."@en ;
-	rdfs:seeAlso <http://www.ietf.org/rfc/rfc1766.txt> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#RFC1766-003> ;
+	rdfs:seeAlso <http://www.ietf.org/rfc/rfc1766.txt> ;
 	rdfs:label "RFC 1766"@en .
 # 
 
@@ -2884,8 +2893,8 @@ dcterms:identifier dcterms:hasVersion <http://dublincore.org/usage/terms/history
 	dcterms:issued "2008-01-14"^^xsd:date .
 # 
 
-dcterms:instructionalMethod dcterms:description "Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."@en ;
-	dcterms:issued "2005-06-13"^^xsd:date ;
+dcterms:instructionalMethod dcterms:issued "2005-06-13"^^xsd:date ;
+	dcterms:description "Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."@en ;
 	rdfs:label "Instructional Method"@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:comment "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support."@en ;
@@ -3053,8 +3062,8 @@ dcterms:requires dcterms:hasVersion <http://dublincore.org/usage/terms/history/#
 	dcterms:issued "2000-07-11"^^xsd:date .
 # 
 
-dcterms:rights dcterms:issued "2008-01-14"^^xsd:date ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+dcterms:rights rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	dcterms:issued "2008-01-14"^^xsd:date ;
 	rdfs:label "Rights"@en ;
 	rdfs:comment "Information about rights held in and over the resource."@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
@@ -3109,8 +3118,8 @@ dcterms:tableOfContents rdfs:comment "A list of subunits of the resource."@en ;
 dcterms:temporal dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:label "Temporal Coverage"@en ;
-	rdfs:comment "Temporal characteristics of the resource."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#temporal-003> ;
+	rdfs:comment "Temporal characteristics of the resource."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 # 
 
