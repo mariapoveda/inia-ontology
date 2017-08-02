@@ -26,7 +26,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2017-08-02 09:04:01 +0000</string>
+	<string>2017-08-02 13:41:52 +0000</string>
 	<key>Modifier</key>
 	<string>María Poveda</string>
 	<key>NotesVisible</key>
@@ -3854,7 +3854,7 @@ datacite:IdentifierSchema}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{556.72670221983174, 423.99978991253505}, {120, 16.854378350365323}}</string>
+					<string>{{538.57823304513477, 442.14824870392596}, {120, 16.854378350365323}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -3990,7 +3990,6 @@ datacite:hasIdentifier}</string>
 					<key>Points</key>
 					<array>
 						<string>{499.21169716371361, 240.92150577662886}</string>
-						<string>{681.17231275338804, 432.42697908771771}</string>
 						<string>{978.94701431324108, 450.57543787910862}</string>
 					</array>
 					<key>Style</key>
@@ -8948,7 +8947,7 @@ Clase}</string>
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1064.9450549450548, 881}}</string>
+				<string>{{0, 0}, {1005, 881}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -8967,7 +8966,7 @@ Clase}</string>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>CanvasSize</key>
-			<string>{1064.9450549450548, 881}</string>
+			<string>{1005, 881}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -31495,7 +31494,7 @@ Clase}</string>
 		<key>FitInWindow</key>
 		<true/>
 		<key>Frame</key>
-		<string>{{237, -957}, {1427, 873}}</string>
+		<string>{{237, -900}, {1427, 873}}</string>
 		<key>ShowInfo</key>
 		<true/>
 		<key>ShowRuler</key>
@@ -31505,7 +31504,7 @@ Clase}</string>
 		<key>SidebarWidth</key>
 		<integer>230</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {1251, 1034.9181818181819}}</string>
+		<string>{{0, 0}, {1250.9999999999998, 1034.9181818181817}}</string>
 		<key>Zoom</key>
 		<real>0.70343725019984016</real>
 		<key>ZoomValues</key>
