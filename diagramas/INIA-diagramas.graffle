@@ -26,7 +26,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2017-08-01 10:13:18 +0000</string>
+	<string>2017-08-02 09:04:01 +0000</string>
 	<key>Modifier</key>
 	<string>María Poveda</string>
 	<key>NotesVisible</key>
@@ -162,7 +162,7 @@
 								<string>0.10311</string>
 							</dict>
 							<key>HeadArrow</key>
-							<string>UMLInheritance</string>
+							<string>0</string>
 							<key>Join</key>
 							<integer>0</integer>
 							<key>Legacy</key>
@@ -7554,7 +7554,7 @@ dwc: http://rs.tdwg.org/dwc/terms/\cf2 \kerning1\expnd0\expndtw0 \
       lvont: http://lexvo.org/ontology#\
       odrl: http://www.w3.org/ns/odrl/2/\
       owl: http://www.w3.org/2002/07/owl#\
-      rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;\
+      rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\
       skos: http://www.w3.org/2004/02/skos/core#\
       time: http://www.w3.org/2006/time#\
       xsd: http://www.w3.org/2001/XMLSchema#}</string>
@@ -9272,7 +9272,7 @@ Clase}</string>
 						<key>ID</key>
 						<integer>42768</integer>
 						<key>Position</key>
-						<real>0.91319695276734203</real>
+						<real>0.91319698095321655</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -9443,7 +9443,7 @@ elementsNumber}</string>
 						<key>ID</key>
 						<integer>42766</integer>
 						<key>Position</key>
-						<real>0.89840811278141053</real>
+						<real>0.89840811491012573</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -9614,7 +9614,7 @@ inia:startingDate}</string>
 						<key>ID</key>
 						<integer>42764</integer>
 						<key>Position</key>
-						<real>0.9049991173774049</real>
+						<real>0.90499913692474365</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -9873,7 +9873,7 @@ inia:finalDate}</string>
 						<key>ID</key>
 						<integer>42761</integer>
 						<key>Position</key>
-						<real>0.47372634886095566</real>
+						<real>0.47372636198997498</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -10042,7 +10042,7 @@ foaf:homepage}</string>
 						<key>ID</key>
 						<integer>42757</integer>
 						<key>Position</key>
-						<real>0.47346643762902324</real>
+						<real>0.4734664261341095</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -10302,7 +10302,7 @@ inia:fundedBy}</string>
 						<key>ID</key>
 						<integer>42754</integer>
 						<key>Position</key>
-						<real>0.46927932083425994</real>
+						<real>0.46927931904792786</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -10471,7 +10471,7 @@ foaf:name}</string>
 						<key>ID</key>
 						<integer>42752</integer>
 						<key>Position</key>
-						<real>0.83166551381863163</real>
+						<real>0.8316655158996582</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -10906,7 +10906,7 @@ foaf:Project}</string>
 						<key>ID</key>
 						<integer>42747</integer>
 						<key>Position</key>
-						<real>0.89131670586308198</real>
+						<real>0.89131671190261841</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -11165,7 +11165,7 @@ lvont:Language}</string>
 						<key>ID</key>
 						<integer>42744</integer>
 						<key>Position</key>
-						<real>0.45699366439840466</real>
+						<real>0.45699366927146912</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -11592,7 +11592,7 @@ skos:Concept}</string>
 						<key>ID</key>
 						<integer>42739</integer>
 						<key>Position</key>
-						<real>0.88246527842525435</real>
+						<real>0.88246530294418335</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -11845,7 +11845,7 @@ dcterms:theme}</string>
 						<key>ID</key>
 						<integer>42736</integer>
 						<key>Position</key>
-						<real>0.61087812051589774</real>
+						<real>0.6108781099319458</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -12098,7 +12098,7 @@ dcterms:issued}</string>
 						<key>ID</key>
 						<integer>42733</integer>
 						<key>Position</key>
-						<real>0.39479121969942205</real>
+						<real>0.39479121565818787</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -12267,7 +12267,7 @@ datacite:hasLiteralValue}</string>
 						<key>ID</key>
 						<integer>42731</integer>
 						<key>Position</key>
-						<real>0.51146615815491825</real>
+						<real>0.51146614551544189</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -12779,7 +12779,7 @@ datacite:PersonalIdentifier}</string>
 						<key>ID</key>
 						<integer>42725</integer>
 						<key>Position</key>
-						<real>0.43550374027722588</real>
+						<real>0.435503751039505</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -13553,7 +13553,7 @@ datacite:PersonalIdentifierSchema}</string>
 						<key>ID</key>
 						<integer>42716</integer>
 						<key>Position</key>
-						<real>0.57672722275578281</real>
+						<real>0.57672721147537231</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -13653,7 +13653,7 @@ datacite:usesIdentifierSchema}</string>
 					<key>OrthogonalBarPoint</key>
 					<string>{1023.4780462563043, 843.97839852750576}</string>
 					<key>OrthogonalBarPosition</key>
-					<real>55.17937677556813</real>
+					<real>55.179378509521484</real>
 					<key>Points</key>
 					<array>
 						<string>{638.81304524223458, 198.74335422088066}</string>
@@ -14408,7 +14408,7 @@ foaf:Person}</string>
 						<key>ID</key>
 						<integer>42705</integer>
 						<key>Position</key>
-						<real>0.77383701724820386</real>
+						<real>0.77383702993392944</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -14573,7 +14573,7 @@ dcterms:contributor}</string>
 						<key>ID</key>
 						<integer>42703</integer>
 						<key>Position</key>
-						<real>0.84146640709024834</real>
+						<real>0.84146642684936523</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -16108,7 +16108,7 @@ foaf:Person}</string>
 						<key>ID</key>
 						<integer>42684</integer>
 						<key>Position</key>
-						<real>0.49180158026114268</real>
+						<real>0.49180158972740173</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -16449,7 +16449,7 @@ inia:contactPerson}</string>
 						<key>ID</key>
 						<integer>42677</integer>
 						<key>Position</key>
-						<real>0.73757116121626154</real>
+						<real>0.73757117986679077</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -16615,7 +16615,7 @@ dcterms:creator}</string>
 						<key>ID</key>
 						<integer>42675</integer>
 						<key>Position</key>
-						<real>0.55316977811579304</real>
+						<real>0.55316978693008423</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -16868,7 +16868,7 @@ dcterms:creator}</string>
 						<key>ID</key>
 						<integer>42672</integer>
 						<key>Position</key>
-						<real>0.64846232843186347</real>
+						<real>0.64846235513687134</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -17121,7 +17121,7 @@ dcterms:description}</string>
 						<key>ID</key>
 						<integer>42669</integer>
 						<key>Position</key>
-						<real>0.74970564966853004</real>
+						<real>0.74970567226409912</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -17472,7 +17472,7 @@ inia:Dataset}</string>
 						<key>ID</key>
 						<integer>35296</integer>
 						<key>Position</key>
-						<real>0.76818476640137723</real>
+						<real>0.76818478107452393</real>
 						<key>RotationType</key>
 						<integer>0</integer>
 					</dict>
@@ -31489,13 +31489,13 @@ Clase}</string>
 		<key>BottomSlabHeight</key>
 		<real>32</real>
 		<key>CurrentSheet</key>
-		<integer>1</integer>
+		<integer>0</integer>
 		<key>Expanded_Canvases</key>
 		<array/>
 		<key>FitInWindow</key>
 		<true/>
 		<key>Frame</key>
-		<string>{{-54, -896}, {1427, 873}}</string>
+		<string>{{237, -957}, {1427, 873}}</string>
 		<key>ShowInfo</key>
 		<true/>
 		<key>ShowRuler</key>
@@ -31505,9 +31505,9 @@ Clase}</string>
 		<key>SidebarWidth</key>
 		<integer>230</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {1064.9450549450551, 881.00000000000011}}</string>
+		<string>{{0, 0}, {1251, 1034.9181818181819}}</string>
 		<key>Zoom</key>
-		<real>0.82633371169125991</real>
+		<real>0.70343725019984016</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
