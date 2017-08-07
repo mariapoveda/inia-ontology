@@ -15,17 +15,14 @@
 
 <http://inia.linkeddata.es/def/coreINIA#> a owl:Ontology ;
 	owl:imports <http://purl.org/spar/datacite/> , <http://www.w3.org/ns/org#> , <http://xmlns.com/foaf/0.1/> ;
-	dcterms:creator <http://purl.org/net/mpoveda> ;
 	rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
-	dcterms:publisher <http://purl.org/dc/aboutdcmi#DCMI> ;
 	dc:title "Ontología datasets INIA"@en ;
 	vann:preferredNamespacePrefix "inia" ;
 	owl:versionInfo "0.0.1" ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	vann:preferredNamespaceUri "http://inia.linkeddata.es/def/core#" ;
 	dcterms:modified "2012-06-14"^^xsd:date ;
-	dc:publisher <http://www.oeg-upm.net/> ;
-	dcterms:title "DCMI Metadata Terms - other"@en .
+	dc:publisher <http://www.oeg-upm.net/> .
 # 
 # 
 # #################################################################
@@ -1030,6 +1027,14 @@ dcterms:type rdfs:subPropertyOf dc:type .
 
 <http://www.w3.org/ns/dcat#distribution> a owl:ObjectProperty .
 # 
+# http://www.w3.org/ns/dcat#theme
+
+<http://www.w3.org/ns/dcat#theme> a owl:ObjectProperty ;
+	rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+	rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:comment "Temática principal del Dataset (en inglés). Se recomienda buscar entre los vocabularios controlados los términos que mas se ajustan a la temática específica del Dataset, en caso de no encontrar la una adecuada, utilizar un termino mas genérico."@es , "The main category of the dataset. A dataset can have multiple themes."@en ;
+	rdfs:label "temática"@es , "theme"@en .
+# 
 # http://xmlns.com/foaf/0.1/isPrimaryTopicOf
 
 foaf:isPrimaryTopicOf a owl:ObjectProperty .
@@ -1513,6 +1518,10 @@ dcterms:Standard a owl:Class .
 
 <http://www.geonames.org/ontology#Feature> a owl:Class .
 # 
+# http://www.w3.org/2004/02/skos/core#Concept
+
+<http://www.w3.org/2004/02/skos/core#Concept> rdfs:label "Concept" .
+# 
 # http://www.w3.org/2006/time#Interval
 
 <http://www.w3.org/2006/time#Interval> a owl:Class .
@@ -1944,7 +1953,9 @@ prov:Entity a owl:Class .
 # 
 # http://inia.linkeddata.es/def/coreINIA#
 
-<http://inia.linkeddata.es/def/coreINIA#> a owl:NamedIndividual .
+<http://inia.linkeddata.es/def/coreINIA#> a owl:NamedIndividual ;
+	dcterms:creator <http://purl.org/net/mpoveda> ;
+	dcterms:publisher <http://purl.org/dc/aboutdcmi#DCMI> .
 # 
 # http://purl.org/dc/aboutdcmi#DCMI
 
@@ -2563,8 +2574,8 @@ dcterms:MethodOfInstruction rdfs:label "Method of Instruction"@en ;
 	dcterms:issued "2008-01-14"^^xsd:date .
 # 
 
-dcterms:Period rdfs:comment "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme."@en ;
-	rdfs:seeAlso <http://dublincore.org/documents/dcmi-period/> ;
+dcterms:Period rdfs:seeAlso <http://dublincore.org/documents/dcmi-period/> ;
+	rdfs:comment "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme."@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:label "DCMI Period"@en ;
@@ -2767,8 +2778,8 @@ dcterms:bibliographicCitation dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:comment "A bibliographic reference for the resource."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:label "cita bibliográfica"@es ;
-	dcterms:issued "2003-02-15"^^xsd:date ;
-	rdfs:comment "Nota, Cómo debe ser citado el dataset, por ejemplo: Marta-Costa, A., Torres-Manso, F., Pinto, R., Tibério, L.; Carneiro, I. (2016). Stakeholders’ perception of forest management: a Portuguese mountain case study. Forest Systems, Volume 25, Issue 1, e052, 13 pages. http://dx.doi.org/10.5424/fs/2016251-08122”"@es .
+	rdfs:comment "Nota, Cómo debe ser citado el dataset, por ejemplo: Marta-Costa, A., Torres-Manso, F., Pinto, R., Tibério, L.; Carneiro, I. (2016). Stakeholders’ perception of forest management: a Portuguese mountain case study. Forest Systems, Volume 25, Issue 1, e052, 13 pages. http://dx.doi.org/10.5424/fs/2016251-08122”"@es ;
+	dcterms:issued "2003-02-15"^^xsd:date .
 # 
 
 dcterms:conformsTo rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2852,8 +2863,8 @@ dcterms:dateSubmitted dcterms:modified "2008-01-14"^^xsd:date ;
 dcterms:description dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:label "Description"@en ;
 	rdfs:comment "Resumen, descripción, información de interés sobre el dataset."@es ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:label "descripción"@es ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#descriptionT-001> ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
 	rdfs:comment "An account of the resource."@en ;
@@ -2986,7 +2997,8 @@ dcterms:isVersionOf rdfs:label "Is Version Of"@en ;
 # 
 
 dcterms:issued dcterms:modified "2008-01-14"^^xsd:date ;
-	rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en ;
+	rdfs:label "fecha de publicación"@es ;
+	rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en , "Fecha en la que se introduce por primera vez el dataset a REDIA."@es ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#issued-003> ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
@@ -2997,14 +3009,16 @@ dcterms:language rdfs:label "Language"@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#languageT-001> ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
+	rdfs:label "idioma"@es ;
 	dcterms:description "Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "A language of the resource."@en .
+	rdfs:comment "Relación que indica el idioma del dataset. En el objeto se esperan instancias de la clase lvon:language"@es , "A language of the resource."@en .
 # 
 
-dcterms:license dcterms:issued "2004-06-14"^^xsd:date ;
+dcterms:license rdfs:comment "licencia"@es ;
+	dcterms:issued "2004-06-14"^^xsd:date ;
 	rdfs:label "License"@en ;
-	rdfs:comment "A legal document giving official permission to do something with the resource."@en ;
+	rdfs:comment "A legal document giving official permission to do something with the resource."@en , "Licencia que especifica los permisos para hacer algo con el recurso."@es ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#license-002> ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
@@ -3090,11 +3104,13 @@ dcterms:requires dcterms:hasVersion <http://dublincore.org/usage/terms/history/#
 	dcterms:issued "2000-07-11"^^xsd:date .
 # 
 
-dcterms:rights dcterms:issued "2008-01-14"^^xsd:date ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+dcterms:rights rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	dcterms:issued "2008-01-14"^^xsd:date ;
 	rdfs:label "Rights"@en ;
 	rdfs:comment "Information about rights held in and over the resource."@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
+	rdfs:label "derechos de utilización"@es ;
+	rdfs:comment "Derechos de utilización del recurso."@es ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#rightsT-001> ;
 	dcterms:description "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en .
 # 
@@ -3145,7 +3161,9 @@ dcterms:tableOfContents rdfs:comment "A list of subunits of the resource."@en ;
 # 
 
 dcterms:temporal dcterms:modified "2008-01-14"^^xsd:date ;
+	rdfs:label "ambito temporal"@es ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
+	rdfs:comment "Se podría utilizar esta propiedad como alternataiva a inia:startingDate e inia:finalDate cuando el objeto de la relación se represente con una instancia de time:Interval."@es ;
 	rdfs:label "Temporal Coverage"@en ;
 	rdfs:comment "Temporal characteristics of the resource."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#temporal-003> ;
@@ -3177,8 +3195,5 @@ dcterms:valid rdfs:comment "Date (often a range) of validity of a resource."@en 
 	rdfs:label "Date Valid"@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#valid-003> ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
-# 
-
-<http://www.w3.org/2004/02/skos/core#Concept> rdfs:label "Concept" .
 # 
 # Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
