@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mpoveda/ontologies/2017/6/untitled-ontology-410#"
+     xml:base="http://www.semanticweb.org/mpoveda/ontologies/2017/6/untitled-ontology-410"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mpoveda/ontologies/2017/6/untitled-ontology-410"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dataid.dbpedia.org/ns/core#identifier -->
+
+
+    <owl:ObjectProperty rdf:about="http://dataid.dbpedia.org/ns/core#identifier">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/datacite/hasIdentifier"/>
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+        <rdfs:comment xml:lang="en">A unique identifier for an Agent or Entity (for other, non DataID related identifiers).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dataid.dbpedia.org/ns/core#latestVersion -->
+
+
+    <owl:ObjectProperty rdf:about="http://dataid.dbpedia.org/ns/core#latestVersion">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">Latest version of a DataId/Dataset/Distribution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+        <rdfs:label xml:lang="en">latest version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dataid.dbpedia.org/ns/core#nextVersion -->
+
+
+    <owl:ObjectProperty rdf:about="http://dataid.dbpedia.org/ns/core#nextVersion">
+        <owl:inverseOf rdf:resource="http://dataid.dbpedia.org/ns/core#previousVersion"/>
+        <rdfs:comment xml:lang="en">Next version of a DataId/Dataset/Distribution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+        <rdfs:label xml:lang="en">next version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dataid.dbpedia.org/ns/core#openness -->
+
+
+    <owl:ObjectProperty rdf:about="http://dataid.dbpedia.org/ns/core#openness">
+        <rdfs:domain rdf:resource="http://dataid.dbpedia.org/ns/core#Dataset"/>
+        <rdfs:range rdf:resource="http://dataid.dbpedia.org/ns/core#SimpleStatement"/>
+        <rdfs:comment xml:lang="en">General description of how data will be shared. For example embargo periods (if any), outlines of technical mechanisms for dissemination or a definition of whether access will be widely open or restricted to specific groups. In case the Dataset cannot be shared, the reasons for this should be mentioned (e.g. ethical, rules of personal data, intellectual property, commercial, privacy-related, security-related).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/dmp#"/>
+        <rdfs:label xml:lang="en">openness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dataid.dbpedia.org/ns/core#previousVersion -->
+
+
+    <owl:ObjectProperty rdf:about="http://dataid.dbpedia.org/ns/core#previousVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/spatial"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/temporal"/>
+    
+
+
+    <!-- http://purl.org/spar/datacite/hasIdentifier -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/datacite/hasIdentifier"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#subset -->
+
+
+    <owl:ObjectProperty rdf:about="http://rdfs.org/ns/void#subset"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#distribution"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/isPrimaryTopicOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dataid.dbpedia.org/ns/core#DataId -->
+
+
+    <owl:Class rdf:about="http://dataid.dbpedia.org/ns/core#DataId"/>
+    
+
+
+    <!-- http://dataid.dbpedia.org/ns/core#Dataset -->
+
+
+    <owl:Class rdf:about="http://dataid.dbpedia.org/ns/core#Dataset">
+        <rdfs:subClassOf rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dataid.dbpedia.org/ns/core#latestVersion"/>
+                <owl:allValuesFrom rdf:resource="http://dataid.dbpedia.org/ns/core#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dataid.dbpedia.org/ns/core#nextVersion"/>
+                <owl:allValuesFrom rdf:resource="http://dataid.dbpedia.org/ns/core#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dataid.dbpedia.org/ns/core#previousVersion"/>
+                <owl:allValuesFrom rdf:resource="http://dataid.dbpedia.org/ns/core#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+                <owl:allValuesFrom rdf:resource="http://dataid.dbpedia.org/ns/core#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/language"/>
+                <owl:allValuesFrom rdf:resource="http://lexvo.org/ontology#Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/license"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/rights"/>
+                <owl:allValuesFrom rdf:resource="http://dataid.dbpedia.org/ns/core#SimpleStatement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/spatial"/>
+                <owl:allValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/temporal"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rdfs.org/ns/void#subset"/>
+                <owl:allValuesFrom rdf:resource="http://dataid.dbpedia.org/ns/core#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dcat#distribution"/>
+                <owl:allValuesFrom rdf:resource="http://dataid.dbpedia.org/ns/core#Distribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+                <owl:allValuesFrom rdf:resource="http://dataid.dbpedia.org/ns/core#DataId"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A collection of data, available for access in one or more formats. 
+    Dataset resources describe the concept of the dataset, not its manifestation (the data itself), which can be acquired 
+    as a Distribution. Datasets are prov:Entities and can be generated by prov:Activities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dataid.dbpedia.org/ns/core#Distribution -->
+
+
+    <owl:Class rdf:about="http://dataid.dbpedia.org/ns/core#Distribution"/>
+    
+
+
+    <!-- http://dataid.dbpedia.org/ns/core#SimpleStatement -->
+
+
+    <owl:Class rdf:about="http://dataid.dbpedia.org/ns/core#SimpleStatement"/>
+    
+
+
+    <!-- http://dataid.dbpedia.org/ns/core#Superset -->
+
+
+    <owl:Class rdf:about="http://dataid.dbpedia.org/ns/core#Superset">
+        <rdfs:subClassOf rdf:resource="http://dataid.dbpedia.org/ns/core#Dataset"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dcat#distribution"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This dedicated version of a dataid:Dataset has exacly one purpose: to point out all its Sub-Datsets with void:subset. 
+    A dataid:Superset has no data itself and is therefore prohibited to point out Distributions with dcat:distribution. 
+    It can be used in a dataset hierarchy (e.g. as a root dataset), or as a container for other datasets.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dataid.dbpedia.org/ns/core#"/>
+        <rdfs:label xml:lang="en">Superset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://lexvo.org/ontology#Language -->
+
+
+    <owl:Class rdf:about="http://lexvo.org/ontology#Language"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Dataset -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Dataset"/>
+    
+
+
+    <!-- http://purl.org/spar/datacite/Identifier -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/Identifier"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#Dataset -->
+
+
+    <owl:Class rdf:about="http://rdfs.org/ns/void#Dataset"/>
+    
+
+
+    <!-- http://www.geonames.org/ontology#Feature -->
+
+
+    <owl:Class rdf:about="http://www.geonames.org/ontology#Feature"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+        <vann:usageNote xml:lang="fr">Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son 
+					  entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier. </vann:usageNote>
+        <vann:usageNote xml:lang="es">Esta clase representa el conjunto de datos publicado por el editor del conjunto de datos. En los casos donde es necesaria una distinción entre el
+					conjunto de datos y su entrada en el catálogo de datos</vann:usageNote>
+        <vann:usageNote xml:lang="en">This class represents the actual dataset as published by the dataset publisher. In 
+          cases where a distinction between the actual dataset and its entry in the catalog is 
+          necessary (because metadata such as modification date and maintainer might differ), the 
+          catalog record class can be used for the latter.</vann:usageNote>
+        <vann:usageNote xml:lang="el">Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ&apos;εαυτό, όπως έχει δημοσιευθεί από τον εκδότη.
+          Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) 
+          η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο.</vann:usageNote>
+        <vann:usageNote xml:lang="ja">このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。</vann:usageNote>
+        <rdfs:comment xml:lang="ja">1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。</rdfs:comment>
+        <rdfs:comment xml:lang="en">A collection of data, published or curated by a single source, and available for access or download in one or more formats</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una colección de datos, publicados o conservados por una única fuente, y disponibles para acceder o descagar en uno o más formatos</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats</rdfs:comment>
+        <rdfs:comment xml:lang="el">Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές</rdfs:comment>
+        <rdfs:comment xml:lang="ar">قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="es">Conjunto de datos</rdfs:label>
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+        <rdfs:label xml:lang="fr">Jeu de données</rdfs:label>
+        <rdfs:label xml:lang="el">Σύνολο Δεδομένων</rdfs:label>
+        <rdfs:label xml:lang="ar">قائمة بيانات</rdfs:label>
+        <rdfs:label xml:lang="ja">データセット</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Policy -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concept</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
