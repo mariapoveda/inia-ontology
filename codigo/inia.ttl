@@ -664,8 +664,8 @@ xsd:date a rdfs:Datatype .
 
 :reviews a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "indicates that A is a review of B"@en ;
-	rdfs:label "indica que A  es una revisión de B"@es , "reviews"@en , "revisa"@es ;
+	rdfs:comment "indica que A  es una revisión de B"@es , "indicates that A is a review of B"@en ;
+	rdfs:label "reviews"@en , "revisa"@es ;
 	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#contactPerson
@@ -784,7 +784,8 @@ xsd:date a rdfs:Datatype .
 
 <http://inia.linkeddata.es/def/coreINIA#specie> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inia.linkeddata.es/def/coreINIA#taxonomicalScope> ;
-	rdfs:label "specie"@en .
+	rdfs:comment "indica la categoría taxonómica especie"@es ;
+	rdfs:label "especie"@es , "specie"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#sponsor
 
@@ -801,7 +802,8 @@ xsd:date a rdfs:Datatype .
 # http://inia.linkeddata.es/def/coreINIA#taxonomicalScope
 
 <http://inia.linkeddata.es/def/coreINIA#taxonomicalScope> a owl:ObjectProperty ;
-	rdfs:label "taxonomicalScope"@en .
+	rdfs:comment "Relación genera para indicar el ámbito taxonómico que puede ser especializada por una o mas de sus subpropiedades."@es ;
+	rdfs:label "taxonomical scope"@en , "ámbito taxonómico"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#workPackageLeader
 
@@ -1014,37 +1016,43 @@ dcterms:type rdfs:subPropertyOf dc:type .
 
 <http://rs.tdwg.org/dwc/terms/class> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inia.linkeddata.es/def/coreINIA#taxonomicalScope> ;
-	rdfs:label "class"@en .
+	rdfs:comment "indica la categoría taxonómica clase"@es ;
+	rdfs:label "clase"@es , "class"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/family
 
 <http://rs.tdwg.org/dwc/terms/family> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inia.linkeddata.es/def/coreINIA#taxonomicalScope> ;
-	rdfs:label "family"@en .
+	rdfs:comment "indica la categoría taxonómica familia"@es ;
+	rdfs:label "familia"@es , "family"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/genus
 
 <http://rs.tdwg.org/dwc/terms/genus> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inia.linkeddata.es/def/coreINIA#taxonomicalScope> ;
-	rdfs:label "genus"@en .
+	rdfs:comment "indica la categoría taxonómica género"@es ;
+	rdfs:label "genus"@en , "género"@es .
 # 
 # http://rs.tdwg.org/dwc/terms/kingdom
 
 <http://rs.tdwg.org/dwc/terms/kingdom> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inia.linkeddata.es/def/coreINIA#taxonomicalScope> ;
-	rdfs:label "kingdom"@en .
+	rdfs:comment "indica la categoría taxonómica reino"@es ;
+	rdfs:label "kingdom"@en , "reino"@es .
 # 
 # http://rs.tdwg.org/dwc/terms/order
 
 <http://rs.tdwg.org/dwc/terms/order> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inia.linkeddata.es/def/coreINIA#taxonomicalScope> ;
-	rdfs:label "order"@en .
+	rdfs:comment "indica la categoría taxonómica orden"@es ;
+	rdfs:label "orden"@es , "order"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/phylum
 
 <http://rs.tdwg.org/dwc/terms/phylum> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inia.linkeddata.es/def/coreINIA#taxonomicalScope> ;
-	rdfs:label "phylum"@en .
+	rdfs:comment "indica la categoría taxonómica filo o división"@es ;
+	rdfs:label "filo"@es , "phylum"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/vernacularName
 
