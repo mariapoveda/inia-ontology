@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://www.w3.org/ns/dcat#Dataset" "http://dataid.dbpedia.org/ns/core#Dataset" "http://rdfs.org/ns/void#Dataset" "http://dataid.dbpedia.org/ns/core#Superset" "http://www.w3.org/ns/prov#Entity" "http://purl.org/dc/dcmitype/Dataset" ; /*classes style*/
+	"http://dataid.dbpedia.org/ns/core#Superset" -> "http://dataid.dbpedia.org/ns/core#Dataset" [ label = "rdfs:subClassOf" ];
+	"http://dataid.dbpedia.org/ns/core#Dataset" -> "http://rdfs.org/ns/void#Dataset" [ label = "rdfs:subClassOf" ];
+	"http://dataid.dbpedia.org/ns/core#Dataset" -> "http://www.w3.org/ns/dcat#Dataset" [ label = "rdfs:subClassOf" ];
+	"http://dataid.dbpedia.org/ns/core#Dataset" -> "http://www.w3.org/ns/prov#Entity" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/ns/dcat#Dataset" -> "http://purl.org/dc/dcmitype/Dataset" [ label = "rdfs:subClassOf" ];
+
+}

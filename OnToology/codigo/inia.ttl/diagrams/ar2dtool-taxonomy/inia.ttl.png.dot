@@ -1,0 +1,41 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "dcterms:LicenseDocument" "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicExtent" "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox" "base:Resource" "dcterms:SizeOrDuration" "dcterms:AgentClass" "dcterms:Location" "dcterms:MediaTypeOrExtent" "inia:Dataset" "dcterms:PhysicalMedium" "http://dataid.dbpedia.org/ns/core#Dataset" "http://dataid.dbpedia.org/ns/core#Superset" "http://purl.org/dc/dcmitype/Dataset" "dcterms:RightsStatement" "dcterms:Jurisdiction" "dcterms:LocationPeriodOrJurisdiction" "dcterms:FileFormat" "http://rdfs.org/ns/void#Dataset" "dcterms:MediaType" "http://www.w3.org/ns/dcat#Dataset" "dcterms:PeriodOfTime" "prov:Entity" "base:Dataset" "org:FormalOrganization" "org:OrganizationalCollaboration" "org:Organization" "org:Role" "org:ChangeEvent" "org:OrganizationalUnit" "foaf:Image" "foaf:Agent" "foaf:Document" "rdfs:Class" "geo:SpatialThing" "foaf:OnlineAccount" "foaf:Person" "foaf:OnlineChatAccount" "foaf:PersonalProfileDocument" "foaf:OnlineGamingAccount" "foaf:Organization" "foaf:Group" "foaf:OnlineEcommerceAccount" ; /*classes style*/
+	"org:OrganizationalUnit" -> "org:Organization" [ label = "rdfs:subClassOf" ];
+	"dcterms:SizeOrDuration" -> "dcterms:MediaTypeOrExtent" [ label = "rdfs:subClassOf" ];
+	"dcterms:Jurisdiction" -> "dcterms:LocationPeriodOrJurisdiction" [ label = "rdfs:subClassOf" ];
+	"org:Role" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"dcterms:PeriodOfTime" -> "dcterms:LocationPeriodOrJurisdiction" [ label = "rdfs:subClassOf" ];
+	"foaf:OnlineGamingAccount" -> "foaf:OnlineAccount" [ label = "rdfs:subClassOf" ];
+	"inia:Dataset" -> "http://dataid.dbpedia.org/ns/core#Dataset" [ label = "rdfs:subClassOf" ];
+	"http://dataid.dbpedia.org/ns/core#Dataset" -> "http://rdfs.org/ns/void#Dataset" [ label = "rdfs:subClassOf" ];
+	"http://dataid.dbpedia.org/ns/core#Dataset" -> "http://www.w3.org/ns/dcat#Dataset" [ label = "rdfs:subClassOf" ];
+	"http://dataid.dbpedia.org/ns/core#Dataset" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"foaf:PersonalProfileDocument" -> "foaf:Document" [ label = "rdfs:subClassOf" ];
+	"dcterms:FileFormat" -> "dcterms:MediaType" [ label = "rdfs:subClassOf" ];
+	"foaf:Group" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"http://dataid.dbpedia.org/ns/core#Superset" -> "http://dataid.dbpedia.org/ns/core#Dataset" [ label = "rdfs:subClassOf" ];
+	"dcterms:MediaType" -> "dcterms:MediaTypeOrExtent" [ label = "rdfs:subClassOf" ];
+	"org:Organization" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"foaf:OnlineChatAccount" -> "foaf:OnlineAccount" [ label = "rdfs:subClassOf" ];
+	"foaf:Image" -> "foaf:Document" [ label = "rdfs:subClassOf" ];
+	"base:Dataset" -> "base:Resource" [ label = "rdfs:subClassOf" ];
+	"dcterms:LicenseDocument" -> "dcterms:RightsStatement" [ label = "rdfs:subClassOf" ];
+	"foaf:Person" -> "geo:SpatialThing" [ label = "rdfs:subClassOf" ];
+	"foaf:Person" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"org:ChangeEvent" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/ns/dcat#Dataset" -> "http://purl.org/dc/dcmitype/Dataset" [ label = "rdfs:subClassOf" ];
+	"dcterms:Location" -> "dcterms:LocationPeriodOrJurisdiction" [ label = "rdfs:subClassOf" ];
+	"org:FormalOrganization" -> "org:Organization" [ label = "rdfs:subClassOf" ];
+	"org:FormalOrganization" -> "foaf:Organization" [ label = "rdfs:subClassOf" ];
+	"foaf:Organization" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox" -> "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicExtent" [ label = "rdfs:subClassOf" ];
+	"foaf:OnlineAccount" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"gr:BusinessEntity" -> "org:FormalOrganization" [ label = "rdfs:subClassOf" ];
+	"dcterms:PhysicalMedium" -> "dcterms:MediaType" [ label = "rdfs:subClassOf" ];
+	"dcterms:AgentClass" -> "rdfs:Class" [ label = "rdfs:subClassOf" ];
+	"org:OrganizationalCollaboration" -> "org:Organization" [ label = "rdfs:subClassOf" ];
+	"foaf:OnlineEcommerceAccount" -> "foaf:OnlineAccount" [ label = "rdfs:subClassOf" ];
+
+}

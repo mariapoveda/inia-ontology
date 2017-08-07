@@ -1,0 +1,680 @@
+{
+  "@context" : {
+    "isDerivedFrom" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isDerivedFrom",
+      "@type" : "@id"
+    },
+    "spatial" : {
+      "@id" : "http://purl.org/dc/terms/spatial",
+      "@type" : "@id"
+    },
+    "dateAccepted" : {
+      "@id" : "http://purl.org/dc/terms/dateAccepted",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "MediaTypeOrExtent" : {
+      "@id" : "http://purl.org/dc/terms/MediaTypeOrExtent"
+    },
+    "coverage" : {
+      "@id" : "http://purl.org/dc/terms/coverage",
+      "@type" : "@id"
+    },
+    "isVersionOf" : {
+      "@id" : "http://purl.org/dc/terms/isVersionOf",
+      "@type" : "@id"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "northBoundLatitude" : {
+      "@id" : "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "genus" : {
+      "@id" : "http://rs.tdwg.org/dwc/terms/genus",
+      "@type" : "@id"
+    },
+    "dataCurator" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#dataCurator",
+      "@type" : "@id"
+    },
+    "temporalScope" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#temporalScope",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "subset" : {
+      "@id" : "http://rdfs.org/ns/void#subset",
+      "@type" : "@id"
+    },
+    "Dataset" : {
+      "@id" : "http://purl.org/dc/dcmitype/Dataset"
+    },
+    "isContinuedBy" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isContinuedBy",
+      "@type" : "@id"
+    },
+    "RightsStatement" : {
+      "@id" : "http://purl.org/dc/terms/RightsStatement"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "ProvenanceStatement" : {
+      "@id" : "http://purl.org/dc/terms/ProvenanceStatement"
+    },
+    "accrualPeriodicity" : {
+      "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
+      "@type" : "@id"
+    },
+    "isPreviousVersionOf" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isPreviousVersionOf",
+      "@type" : "@id"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "MediaType" : {
+      "@id" : "http://purl.org/dc/terms/MediaType"
+    },
+    "Organization" : {
+      "@id" : "http://www.w3.org/ns/org#Organization"
+    },
+    "Distribution" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#Distribution"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "contactPerson" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#contactPerson",
+      "@type" : "@id"
+    },
+    "references" : {
+      "@id" : "http://purl.org/dc/terms/references",
+      "@type" : "@id"
+    },
+    "usageNote" : {
+      "@id" : "http://purl.org/vocab/vann/usageNote"
+    },
+    "isReplacedBy" : {
+      "@id" : "http://purl.org/dc/terms/isReplacedBy",
+      "@type" : "@id"
+    },
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution",
+      "@type" : "@id"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion",
+      "@type" : "@id"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "FileFormat" : {
+      "@id" : "http://purl.org/dc/terms/FileFormat"
+    },
+    "VocabularyEncodingScheme" : {
+      "@id" : "http://purl.org/dc/dcam/VocabularyEncodingScheme"
+    },
+    "class" : {
+      "@id" : "http://rs.tdwg.org/dwc/terms/class",
+      "@type" : "@id"
+    },
+    "latestVersion" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#latestVersion",
+      "@type" : "@id"
+    },
+    "isPrimaryTopicOf" : {
+      "@id" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+      "@type" : "@id"
+    },
+    "elementsNumber" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#elementsNumber"
+    },
+    "Feature" : {
+      "@id" : "http://www.geonames.org/ontology#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasIdentifier" : {
+      "@id" : "http://purl.org/spar/datacite/hasIdentifier",
+      "@type" : "@id"
+    },
+    "hasMetadata" : {
+      "@id" : "http://inia.linkeddata.es/def/core#hasMetadata",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isPartOf",
+      "@type" : "@id"
+    },
+    "hasPart" : {
+      "@id" : "http://purl.org/dc/terms/hasPart",
+      "@type" : "@id"
+    },
+    "isCompiledBy" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isCompiledBy",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "isFormatOf" : {
+      "@id" : "http://purl.org/dc/terms/isFormatOf",
+      "@type" : "@id"
+    },
+    "Location" : {
+      "@id" : "http://purl.org/dc/terms/Location"
+    },
+    "continues" : {
+      "@id" : "http://inia.linkeddata.es/def/core#continues",
+      "@type" : "@id"
+    },
+    "isDocumentedBy" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isDocumentedBy",
+      "@type" : "@id"
+    },
+    "compiles" : {
+      "@id" : "http://inia.linkeddata.es/def/core#compiles",
+      "@type" : "@id"
+    },
+    "spatialScope" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#spatialScope",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "software" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#software",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "reviews" : {
+      "@id" : "http://inia.linkeddata.es/def/core#reviews",
+      "@type" : "@id"
+    },
+    "southBoundLatitude" : {
+      "@id" : "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hostingInstitution" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#hostingInstitution",
+      "@type" : "@id"
+    },
+    "LinguisticSystem" : {
+      "@id" : "http://purl.org/dc/terms/LinguisticSystem"
+    },
+    "vernacularName" : {
+      "@id" : "http://rs.tdwg.org/dwc/terms/vernacularName",
+      "@type" : "@id"
+    },
+    "previousVersion" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#previousVersion",
+      "@type" : "@id"
+    },
+    "supervisor" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#supervisor",
+      "@type" : "@id"
+    },
+    "dataCollector" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#dataCollector",
+      "@type" : "@id"
+    },
+    "Superset" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#Superset"
+    },
+    "nextVersion" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#nextVersion",
+      "@type" : "@id"
+    },
+    "medium" : {
+      "@id" : "http://purl.org/dc/terms/medium",
+      "@type" : "@id"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "rightsHolder" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#rightsHolder",
+      "@type" : "@id"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "GeographicBoundingBox" : {
+      "@id" : "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
+    },
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "startingDate" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#startingDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "Agent" : {
+      "@id" : "http://purl.org/dc/terms/Agent"
+    },
+    "registrationAgency" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#registrationAgency",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "researcher" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#researcher",
+      "@type" : "@id"
+    },
+    "eastBoundLongitude" : {
+      "@id" : "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "westBoundLongitude" : {
+      "@id" : "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "fundedBy" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#fundedBy",
+      "@type" : "@id"
+    },
+    "valid" : {
+      "@id" : "http://purl.org/dc/terms/valid",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "taxonomicalScope" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#taxonomicalScope",
+      "@type" : "@id"
+    },
+    "relatedPerson" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#relatedPerson",
+      "@type" : "@id"
+    },
+    "isSourceOf" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isSourceOf",
+      "@type" : "@id"
+    },
+    "isSupplementTo" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isSupplementTo",
+      "@type" : "@id"
+    },
+    "dateCopyrighted" : {
+      "@id" : "http://purl.org/dc/terms/dateCopyrighted",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "isOriginalFormOf" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isOriginalFormOf",
+      "@type" : "@id"
+    },
+    "dataManager" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#dataManager",
+      "@type" : "@id"
+    },
+    "hasRelatedResource" : {
+      "@id" : "http://inia.linkeddata.es/def/core#hasRelatedResource",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights",
+      "@type" : "@id"
+    },
+    "MethodOfAccrual" : {
+      "@id" : "http://purl.org/dc/terms/MethodOfAccrual"
+    },
+    "PhysicalResource" : {
+      "@id" : "http://purl.org/dc/terms/PhysicalResource"
+    },
+    "GeographicExtent" : {
+      "@id" : "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicExtent"
+    },
+    "producer" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#producer",
+      "@type" : "@id"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "projectManager" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#projectManager",
+      "@type" : "@id"
+    },
+    "researchGroup" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#researchGroup",
+      "@type" : "@id"
+    },
+    "keyword" : {
+      "@id" : "http://www.w3.org/ns/dcat#keyword",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "isSupplementedBy" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isSupplementedBy",
+      "@type" : "@id"
+    },
+    "PhysicalMedium" : {
+      "@id" : "http://purl.org/dc/terms/PhysicalMedium"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "subject" : {
+      "@id" : "http://purl.org/dc/terms/subject"
+    },
+    "sponsor" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#sponsor",
+      "@type" : "@id"
+    },
+    "Standard" : {
+      "@id" : "http://purl.org/dc/terms/Standard"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "workPackageLeader" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#workPackageLeader",
+      "@type" : "@id"
+    },
+    "phylum" : {
+      "@id" : "http://rs.tdwg.org/dwc/terms/phylum",
+      "@type" : "@id"
+    },
+    "accrualMethod" : {
+      "@id" : "http://purl.org/dc/terms/accrualMethod",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Project" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Project"
+    },
+    "DataId" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#DataId"
+    },
+    "order" : {
+      "@id" : "http://rs.tdwg.org/dwc/terms/order",
+      "@type" : "@id"
+    },
+    "Jurisdiction" : {
+      "@id" : "http://purl.org/dc/terms/Jurisdiction"
+    },
+    "isReviewedBy" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isReviewedBy",
+      "@type" : "@id"
+    },
+    "tableOfContents" : {
+      "@id" : "http://purl.org/dc/terms/tableOfContents"
+    },
+    "AgentClass" : {
+      "@id" : "http://purl.org/dc/terms/AgentClass"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "isMetadataFor" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isMetadataFor",
+      "@type" : "@id"
+    },
+    "family" : {
+      "@id" : "http://rs.tdwg.org/dwc/terms/family",
+      "@type" : "@id"
+    },
+    "dateSubmitted" : {
+      "@id" : "http://purl.org/dc/terms/dateSubmitted",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "documents" : {
+      "@id" : "http://inia.linkeddata.es/def/core#documents",
+      "@type" : "@id"
+    },
+    "isRequiredBy" : {
+      "@id" : "http://purl.org/dc/terms/isRequiredBy",
+      "@type" : "@id"
+    },
+    "embargoDate" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#embargoDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "type" : {
+      "@id" : "http://purl.org/dc/elements/1.1/type",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "LicenseDocument" : {
+      "@id" : "http://purl.org/dc/terms/LicenseDocument"
+    },
+    "finalDate" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#finalDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "BibliographicResource" : {
+      "@id" : "http://purl.org/dc/terms/BibliographicResource"
+    },
+    "projectCode" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#projectCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Frequency" : {
+      "@id" : "http://purl.org/dc/terms/Frequency"
+    },
+    "provenance" : {
+      "@id" : "http://purl.org/dc/terms/provenance",
+      "@type" : "@id"
+    },
+    "isReferencedBy" : {
+      "@id" : "http://purl.org/dc/terms/isReferencedBy",
+      "@type" : "@id"
+    },
+    "equipment" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#equipment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "distributor" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#distributor",
+      "@type" : "@id"
+    },
+    "accessRights" : {
+      "@id" : "http://purl.org/dc/terms/accessRights",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "Entity" : {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    },
+    "replaces" : {
+      "@id" : "http://purl.org/dc/terms/replaces",
+      "@type" : "@id"
+    },
+    "kingdom" : {
+      "@id" : "http://rs.tdwg.org/dwc/terms/kingdom",
+      "@type" : "@id"
+    },
+    "isNewVersionOf" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isNewVersionOf",
+      "@type" : "@id"
+    },
+    "Policy" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Policy"
+    },
+    "Language" : {
+      "@id" : "http://lexvo.org/ontology#Language"
+    },
+    "projectLeader" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#projectLeader",
+      "@type" : "@id"
+    },
+    "cites" : {
+      "@id" : "http://inia.linkeddata.es/def/core#cites",
+      "@type" : "@id"
+    },
+    "Resource" : {
+      "@id" : "http://inia.linkeddata.es/def/core#Resource"
+    },
+    "openness" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#openness",
+      "@type" : "@id"
+    },
+    "audience" : {
+      "@id" : "http://purl.org/dc/terms/audience",
+      "@type" : "@id"
+    },
+    "isIdenticalTo" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isIdenticalTo",
+      "@type" : "@id"
+    },
+    "theme" : {
+      "@id" : "http://www.w3.org/ns/dcat#theme",
+      "@type" : "@id"
+    },
+    "isCitedBy" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isCitedBy",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/terms/language",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "@id"
+    },
+    "mediator" : {
+      "@id" : "http://purl.org/dc/terms/mediator",
+      "@type" : "@id"
+    },
+    "requires" : {
+      "@id" : "http://purl.org/dc/terms/requires",
+      "@type" : "@id"
+    },
+    "available" : {
+      "@id" : "http://purl.org/dc/terms/available",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "registrationAuthority" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#registrationAuthority",
+      "@type" : "@id"
+    },
+    "extent" : {
+      "@id" : "http://purl.org/dc/terms/extent",
+      "@type" : "@id"
+    },
+    "developedWithinProject" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#developedWithinProject",
+      "@type" : "@id"
+    },
+    "conformsTo" : {
+      "@id" : "http://purl.org/dc/terms/conformsTo",
+      "@type" : "@id"
+    },
+    "alternative" : {
+      "@id" : "http://purl.org/dc/terms/alternative",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat",
+      "@type" : "@id"
+    },
+    "specie" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#specie",
+      "@type" : "@id"
+    },
+    "Identifier" : {
+      "@id" : "http://purl.org/spar/datacite/Identifier"
+    },
+    "isVariantFormOf" : {
+      "@id" : "http://inia.linkeddata.es/def/core#isVariantFormOf",
+      "@type" : "@id"
+    },
+    "PeriodOfTime" : {
+      "@id" : "http://purl.org/dc/terms/PeriodOfTime"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "SimpleStatement" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#SimpleStatement"
+    },
+    "SizeOrDuration" : {
+      "@id" : "http://purl.org/dc/terms/SizeOrDuration"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "format" : {
+      "@id" : "http://purl.org/dc/terms/format",
+      "@type" : "@id"
+    },
+    "MethodOfInstruction" : {
+      "@id" : "http://purl.org/dc/terms/MethodOfInstruction"
+    },
+    "relation" : {
+      "@id" : "http://purl.org/dc/terms/relation",
+      "@type" : "@id"
+    },
+    "temporal" : {
+      "@id" : "http://purl.org/dc/terms/temporal",
+      "@type" : "@id"
+    },
+    "accrualPolicy" : {
+      "@id" : "http://purl.org/dc/terms/accrualPolicy",
+      "@type" : "@id"
+    },
+    "LocationPeriodOrJurisdiction" : {
+      "@id" : "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
+    },
+    "Collection" : {
+      "@id" : "http://purl.org/dc/dcmitype/Collection"
+    },
+    "instructionalMethod" : {
+      "@id" : "http://purl.org/dc/terms/instructionalMethod",
+      "@type" : "@id"
+    },
+    "educationLevel" : {
+      "@id" : "http://purl.org/dc/terms/educationLevel",
+      "@type" : "@id"
+    },
+    "editor" : {
+      "@id" : "http://inia.linkeddata.es/def/coreINIA#editor",
+      "@type" : "@id"
+    }
+  }
+}
