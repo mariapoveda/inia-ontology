@@ -15,7 +15,9 @@
 
 <http://inia.linkeddata.es/def/coreINIA#> a owl:Ontology ;
 	owl:imports <http://purl.org/spar/datacite/> , <http://www.w3.org/ns/org#> , <http://xmlns.com/foaf/0.1/> ;
+	dcterms:creator <http://purl.org/net/mpoveda> ;
 	rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
+	dcterms:publisher <http://purl.org/dc/aboutdcmi#DCMI> ;
 	dc:title "Ontología datasets INIA"@en ;
 	vann:preferredNamespacePrefix "inia" ;
 	owl:versionInfo "0.0.1" ;
@@ -449,98 +451,111 @@ xsd:date a rdfs:Datatype .
 :cites a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isCitedBy ;
-	rdfs:comment "indicates that A includes B in a citation"@en ;
-	rdfs:label "cites"@en .
+	rdfs:comment "indica que A incluye a B en una cita"@es , "indicates that A includes B in a citation"@en ;
+	rdfs:label "cita"@es , "cites"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#compiles
 
 :compiles a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isCompiledBy ;
-	rdfs:comment "indicates B is the result of a compile or creation event using A"@en ;
-	rdfs:label "compiles"@en .
+	rdfs:comment "Indica que B es el resultado de un evento de compilación o creación utilizando A"@es , "indicates B is the result of a compile or creation event using A"@en ;
+	rdfs:label "compila"@es , "compiles"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#continues
 
 :continues a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isContinuedBy ;
-	rdfs:comment "indicates A is a continuation of the work B"@en ;
-	rdfs:label "continues"@en .
+	rdfs:comment "Indica que A es una continuación del trabajo B"@es , "indicates A is a continuation of the work B"@en ;
+	rdfs:label "continues"@en , "continúa"@es ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#documents
 
 :documents a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isDocumentedBy ;
-	rdfs:comment "indicates A is documentation about B"@en ;
-	rdfs:label "documents"@en .
+	rdfs:comment "indica que A es documentación sobre B"@es , "indicates A is documentation about B"@en ;
+	rdfs:label "documenta"@es , "documents"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#hasMetadata
 
 :hasMetadata a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isMetadataFor ;
-	rdfs:comment "indicates resource A has additional metadata B"@en ;
-	rdfs:label "hasMetadata"@en .
+	rdfs:comment "indica que el recurso A tiene como metadatos adicionales el recurso B"@es , "indicates resource A has additional metadata B"@en ;
+	rdfs:label "has metadata"@en , "tiene metadatos"@es ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#hasPart
 
 :hasPart a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isPartOf ;
-	rdfs:comment "indicates A includes the part B"@en ;
-	rdfs:label "hasPart"@en .
+	rdfs:comment "indica que A incluye a B como una de sus partes"@es , "indicates A includes the part B"@en ;
+	rdfs:label "has part"@en , "tiene parte"@es ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#hasRelatedResource
 
 :hasRelatedResource a owl:ObjectProperty ;
 	rdfs:domain :Resource ;
 	rdfs:range :Resource ;
-	rdfs:label "has related resource"@en .
+	rdfs:comment "Relación entre dos recursos relacionados entre sí. Esta relación tiene una serie de sub relaciones específicas alineadas con el esquema de data cite."@es ;
+	rdfs:label "has related resource"@en , "tiene relación con recurso"@es .
 # 
 # http://inia.linkeddata.es/def/core#isCitedBy
 
 :isCitedBy a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "indicates that B includes A in a citation"@en ;
-	rdfs:label "isCitedBy"@en .
+	rdfs:comment "indica que B incluye a A en una cita"@es , "indicates that B includes A in a citation"@en ;
+	rdfs:label "es citado por"@es , "is cited by"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isCompiledBy
 
 :isCompiledBy a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "indicates B is used to compile or create A"@en ;
-	rdfs:label "isCompiledBy"@en .
+	rdfs:comment "indica que B es utilizado para compilar o crear A"@es , "indicates B is used to compile or create A"@en ;
+	rdfs:label "es compilado por"@es , "is compiled by"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isContinuedBy
 
 :isContinuedBy a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "indicates A is continued by the work B"@en ;
-	rdfs:label "isContinuedby"@en .
+	rdfs:comment "indica que A es continuado por el trabajo B"@es , "indicates A is continued by the work B"@en ;
+	rdfs:label "es continuado por"@es , "is continued by"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isDerivedFrom
 
 :isDerivedFrom a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isSourceOf ;
-	rdfs:comment "indicates B is a source upon which A is based"@en ;
-	rdfs:label "isDerivedFrom"@en .
+	rdfs:comment "indica que B es una fuente en la que está basado A"@es , "indicates B is a source upon which A is based"@en ;
+	rdfs:label "es derivado de"@es , "is derived from"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isDocumentedBy
 
 :isDocumentedBy a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "indicates B is documentation about explaining A"@en ;
-	rdfs:label "isDocumentedBy"@en .
+	rdfs:comment "indica que B es la documentación sobre A"@es , "indicates B is documentation about explaining A"@en ;
+	rdfs:label "está documentado por"@es , "is documented by"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isIdenticalTo
 
 :isIdenticalTo a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "This relation is not to be used, owl:sameAs should be used instead. It is created just to keek record of its existance in datacite schema."@es , "indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource"@en ;
-	rdfs:label "isIdenticalTo"@en ;
+	rdfs:comment "Esta relación no debe utilizarse, owl:sameAs debe ser utilizado en su lugar. Se crea sólo para mantener un registro de su existencia en el esquema de datacite."@es , "This relation is not to be used, owl:sameAs should be used instead. It is created just to keep record of its existance in datacite schema."@en , "indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource"@en ;
+	rdfs:label "es idéntico a"@es , "isIdenticalTo"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es ;
 	owl:deprecated "true"^^xsd:boolean ;
 	vs:term_status "unestable"@es .
 # 
@@ -548,97 +563,110 @@ xsd:date a rdfs:Datatype .
 
 :isMetadataFor a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "indicates additional metadata A for a resource B"@en ;
-	rdfs:label "isMetadataFor"@en .
+	rdfs:comment "indica que A contiene metadatos adicionales sobre el recurso B"@es , "indicates additional metadata A for a resource B"@en ;
+	rdfs:label "es metadatos de"@es , "is metadata for"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isNewVersionOf
 
 :isNewVersionOf a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://dataid.dbpedia.org/ns/core#previousVersion> , :hasRelatedResource ;
 	owl:inverseOf :isPreviousVersionOf ;
-	rdfs:comment "indicates A is a new edition of B, where the new edition has been modified or updated"@en ;
-	rdfs:label "isNewVersionOf"@en .
+	rdfs:comment "indica que A es una nueva edición de B, donde la nueva edición ha sido modifcada o actualizada"@es , "indicates A is a new edition of B, where the new edition has been modified or updated"@en ;
+	rdfs:label "es nueva versión de"@es , "is new version of"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isOriginalFormOf
 
 :isOriginalFormOf a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isVariantFormOf ;
-	rdfs:comment "indicates A is the original form of B"@en ;
-	rdfs:label "isOriginalFormOf"@en .
+	rdfs:comment "indica que A es la forma origen de B"@es , "indicates A is the original form of B"@en ;
+	rdfs:label "es forma original de"@es , "is original form of"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isPartOf
 
 :isPartOf a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource , dcterms:isPartOf ;
-	rdfs:comment "indicates A is a portion of B; may be used for elements of a series"@en ;
-	rdfs:label "isPartOf"@en .
+	rdfs:comment "indica que A es una porciónde B, esta relación puede ser utilizada para elementos de una serie"@es , "indicates A is a portion of B; may be used for elements of a series"@en ;
+	rdfs:label "es parte de"@es , "is part of"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isPreviousVersionOf
 
 :isPreviousVersionOf a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://dataid.dbpedia.org/ns/core#nextVersion> , :hasRelatedResource ;
-	rdfs:comment "indicates A is a previous edition of B"@en ;
-	rdfs:label "isPreviousVersionOf"@en .
+	rdfs:comment "indica que A es una edición previa de B"@es , "indicates A is a previous edition of B"@en ;
+	rdfs:label "es versión previa de"@es , "is previous version of"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isReferencedBy
 
 :isReferencedBy a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :references ;
-	rdfs:comment "indicates A is used as a source of information by B"@en ;
-	rdfs:label "isReferencedBy"@en .
+	rdfs:comment "indica que A es utilizado como fuente de información por B"@es , "indicates A is used as a source of information by B"@en ;
+	rdfs:label "es referenciado por"@es , "is referenced by"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isReviewedBy
 
 :isReviewedBy a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :reviews ;
-	rdfs:comment "indicates that A is reviewed by B"@en ;
-	rdfs:label "isReviewedBy"@en .
+	rdfs:comment "indica que A es revisado por B"@es , "indicates that A is reviewed by B"@en ;
+	rdfs:label "es revisado por"@es , "is reviewed by"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isSourceOf
 
 :isSourceOf a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "indicates A is a source upon which B is based"@en ;
-	rdfs:label "isSourceOf"@en .
+	rdfs:comment "indica que A es una fuente sobre la que B está basado"@es , "indicates A is a source upon which B is based"@en ;
+	rdfs:label "es fuente de"@es , "is source of"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isSupplementTo
 
 :isSupplementTo a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	owl:inverseOf :isSupplementedBy ;
-	rdfs:comment "indicates that A is a supplement to B"@en ;
-	rdfs:label "isSupplementTo"@en .
+	rdfs:comment "indica que A es un suplemento de B"@es , "indicates that A is a supplement to B"@en ;
+	rdfs:label "es suplemento de"@es , "is supplement to"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isSupplementedBy
 
 :isSupplementedBy a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "indicates that B is a supplement to A"@en ;
-	rdfs:label "is supplemented by"@en .
+	rdfs:comment "indica que B es un suplemento de A"@es , "indicates that B is a supplement to A"@en ;
+	rdfs:label "is supplemented by"@en , "se suplementa con"@es ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#isVariantFormOf
 
 :isVariantFormOf a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "indicates A is a variant or different form of B, e.g. calculated or calibrated form or different packaging"@en ;
-	rdfs:label "is variant form of"@en .
+	rdfs:comment "indica que A es un variante o forma diferente de B, or ejemplo una forma calculada o calibrada"@es , "indicates A is a variant or different form of B, e.g. calculated or calibrated form or different packaging"@en ;
+	rdfs:label "es una variante de"@es , "is variant form of"@en ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#references
 
 :references a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
-	rdfs:comment "indicates B is used as a source of information for A"@en ;
-	rdfs:label "references"@en .
+	rdfs:comment "indica que B es utilizado como fuente de información de A"@es , "indicates B is used as a source of information for A"@en ;
+	rdfs:label "references"@en , "referencia"@es ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/core#reviews
 
 :reviews a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasRelatedResource ;
 	rdfs:comment "indicates that A is a review of B"@en ;
-	rdfs:label "reviews"@en .
+	rdfs:label "indica que A  es una revisión de B"@es , "reviews"@en , "revisa"@es ;
+	rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#contactPerson
 
@@ -975,7 +1003,8 @@ dcterms:type rdfs:subPropertyOf dc:type .
 # 
 # http://purl.org/spar/datacite/hasIdentifier
 
-<http://purl.org/spar/datacite/hasIdentifier> a owl:ObjectProperty .
+<http://purl.org/spar/datacite/hasIdentifier> a owl:ObjectProperty ;
+	rdfs:label "Relación utilizada entre los recursos o las personas y sus identificadores. Los identificadores se representan mediante instancias de la clase datacite:Identifier pudiendo especializarse en alguna de sus subclases."@es , "tiene identificador"@es .
 # 
 # http://rdfs.org/ns/void#subset
 
@@ -1508,7 +1537,9 @@ dcterms:Standard a owl:Class .
 # 
 # http://purl.org/spar/datacite/Identifier
 
-<http://purl.org/spar/datacite/Identifier> a owl:Class .
+<http://purl.org/spar/datacite/Identifier> a owl:Class ;
+	rdfs:comment "Un identificador que identifica de forma única a una entidad - tal como una agencia de financiación, una persona y un recurso - que pertenece a un esquema particular, como los especificados por individuos de la clase datacite:IdentifierScheme."@es ;
+	rdfs:label "identificador"@es .
 # 
 # http://rdfs.org/ns/void#Dataset
 
@@ -1953,9 +1984,7 @@ prov:Entity a owl:Class .
 # 
 # http://inia.linkeddata.es/def/coreINIA#
 
-<http://inia.linkeddata.es/def/coreINIA#> a owl:NamedIndividual ;
-	dcterms:creator <http://purl.org/net/mpoveda> ;
-	dcterms:publisher <http://purl.org/dc/aboutdcmi#DCMI> .
+<http://inia.linkeddata.es/def/coreINIA#> a owl:NamedIndividual .
 # 
 # http://purl.org/dc/aboutdcmi#DCMI
 
@@ -2996,8 +3025,8 @@ dcterms:isVersionOf rdfs:label "Is Version Of"@en ;
 	dcterms:description "Changes in version imply substantive changes in content rather than differences in format."@en .
 # 
 
-dcterms:issued dcterms:modified "2008-01-14"^^xsd:date ;
-	rdfs:label "fecha de publicación"@es ;
+dcterms:issued rdfs:label "fecha de publicación"@es ;
+	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en , "Fecha en la que se introduce por primera vez el dataset a REDIA."@es ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#issued-003> ;
@@ -3006,21 +3035,23 @@ dcterms:issued dcterms:modified "2008-01-14"^^xsd:date ;
 # 
 
 dcterms:language rdfs:label "Language"@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#languageT-001> ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
+	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#languageT-001> ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:label "idioma"@es ;
 	dcterms:description "Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."@en ;
+	rdfs:comment "Relación que indica el idioma del dataset. En el objeto se esperan instancias de la clase lvon:language"@es ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "Relación que indica el idioma del dataset. En el objeto se esperan instancias de la clase lvon:language"@es , "A language of the resource."@en .
+	rdfs:comment "A language of the resource."@en .
 # 
 
 dcterms:license rdfs:comment "licencia"@es ;
 	dcterms:issued "2004-06-14"^^xsd:date ;
 	rdfs:label "License"@en ;
-	rdfs:comment "A legal document giving official permission to do something with the resource."@en , "Licencia que especifica los permisos para hacer algo con el recurso."@es ;
-	dcterms:modified "2008-01-14"^^xsd:date ;
+	rdfs:comment "A legal document giving official permission to do something with the resource."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#license-002> ;
+	rdfs:comment "Licencia que especifica los permisos para hacer algo con el recurso."@es ;
+	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 # 
 
@@ -3165,8 +3196,8 @@ dcterms:temporal dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:comment "Se podría utilizar esta propiedad como alternataiva a inia:startingDate e inia:finalDate cuando el objeto de la relación se represente con una instancia de time:Interval."@es ;
 	rdfs:label "Temporal Coverage"@en ;
-	rdfs:comment "Temporal characteristics of the resource."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#temporal-003> ;
+	rdfs:comment "Temporal characteristics of the resource."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 # 
 
@@ -3195,5 +3226,9 @@ dcterms:valid rdfs:comment "Date (often a range) of validity of a resource."@en 
 	rdfs:label "Date Valid"@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#valid-003> ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+# 
+
+<http://purl.org/spar/datacite/usesIdentifierScheme> rdfs:label "utiliza esquema de identificadores"@es ;
+	rdfs:comment "Una propiedad que permite la especificación del esquema de identificador utilizado para proporcionar el identificador de una entidad - ya sea un financiador, una persona o un recurso - definido como un individuo de la clase datacite:IdentifierScheme."@es .
 # 
 # Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
