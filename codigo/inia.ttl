@@ -672,25 +672,25 @@ xsd:date a rdfs:Datatype .
 
 <http://inia.linkeddata.es/def/coreINIA#contactPerson> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "contactPerson"@en .
+	rdfs:label "contact person"@en , "persona de contacto"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#dataCollector
 
 <http://inia.linkeddata.es/def/coreINIA#dataCollector> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "dataCollector"@en .
+	rdfs:label "data collector"@en , "recolector de datos"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#dataCurator
 
 <http://inia.linkeddata.es/def/coreINIA#dataCurator> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "dataCurator"@en .
+	rdfs:label "data curator"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#dataManager
 
 <http://inia.linkeddata.es/def/coreINIA#dataManager> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "dataManager"@en .
+	rdfs:label "data manager"@en , "gestor de datos"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#developedWithinProject
 
@@ -704,13 +704,13 @@ xsd:date a rdfs:Datatype .
 
 <http://inia.linkeddata.es/def/coreINIA#distributor> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "distributor"@en .
+	rdfs:label "distribuidor"@es , "distributor"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#editor
 
 <http://inia.linkeddata.es/def/coreINIA#editor> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "editor"@en .
+	rdfs:label "editor"@en , "editor"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#fundedBy
 
@@ -724,61 +724,61 @@ xsd:date a rdfs:Datatype .
 
 <http://inia.linkeddata.es/def/coreINIA#hostingInstitution> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "hostingInstitution"@en .
+	rdfs:label "hosting institution"@en , "institución anfitriona"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#producer
 
 <http://inia.linkeddata.es/def/coreINIA#producer> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "producer"@en .
+	rdfs:label "producer"@en , "productor"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#projectLeader
 
 <http://inia.linkeddata.es/def/coreINIA#projectLeader> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "projectLeader"@en .
+	rdfs:label "líder de proyecto"@es , "project leader"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#projectManager
 
 <http://inia.linkeddata.es/def/coreINIA#projectManager> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "projectManager"@en .
+	rdfs:label "jefe de proyecto"@es , "project manager"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#registrationAgency
 
 <http://inia.linkeddata.es/def/coreINIA#registrationAgency> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "registrationAgency"@en .
+	rdfs:label "agencia de registro"@es , "registration agency"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#registrationAuthority
 
 <http://inia.linkeddata.es/def/coreINIA#registrationAuthority> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "registrationAuthority"@en .
+	rdfs:label "autoridad de registro"@es , "registration authority"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#relatedPerson
 
 <http://inia.linkeddata.es/def/coreINIA#relatedPerson> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "relatedPerson"@en .
+	rdfs:label "persona relacionada"@es , "related person"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#researchGroup
 
 <http://inia.linkeddata.es/def/coreINIA#researchGroup> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "researchGroup"@en .
+	rdfs:label "grupo de investigación"@es , "research group"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#researcher
 
 <http://inia.linkeddata.es/def/coreINIA#researcher> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "researcher"@en .
+	rdfs:label "investigador"@es , "researcher"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#rightsHolder
 
 <http://inia.linkeddata.es/def/coreINIA#rightsHolder> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor , dcterms:rightsHolder ;
-	rdfs:label "rightsHolder"@en .
+	rdfs:label "rights holder"@en , "titular de derechos"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#specie
 
@@ -791,13 +791,13 @@ xsd:date a rdfs:Datatype .
 
 <http://inia.linkeddata.es/def/coreINIA#sponsor> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "sponsor"@en .
+	rdfs:label "financiador"@es , "sponsor"@en .
 # 
 # http://inia.linkeddata.es/def/coreINIA#supervisor
 
 <http://inia.linkeddata.es/def/coreINIA#supervisor> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "supervisor"@en .
+	rdfs:label "supervisor"@en , "supervisor"@es .
 # 
 # http://inia.linkeddata.es/def/coreINIA#taxonomicalScope
 
@@ -809,7 +809,7 @@ xsd:date a rdfs:Datatype .
 
 <http://inia.linkeddata.es/def/coreINIA#workPackageLeader> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
-	rdfs:label "workPackageLeader"@en .
+	rdfs:label "líder de paquete de trabajo"@es , "work package leader"@en .
 # 
 # http://purl.org/dc/elements/1.1/type
 
@@ -2831,9 +2831,10 @@ dcterms:contributor rdfs:comment "An entity responsible for making contributions
 	dcterms:modified "2010-10-11"^^xsd:date ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:description "Examples of a Contributor include a person, an organization, or a service."@en ;
+	rdfs:comment "Colaborador en la elaboración del recurso. Esta relación puede especializarse utilizando alguna de las subpropiedades definidas de acuerdo a las necesidades de los dataset de INIA."@es ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#contributorT-001> ;
-	rdfs:label "Contributor"@en .
+	rdfs:label "Contributor"@en , "colaborador"@es .
 # 
 
 dcterms:coverage rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2854,9 +2855,11 @@ dcterms:created rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 # 
 
 dcterms:creator rdfs:comment "An entity primarily responsible for making the resource."@en ;
+	rdfs:label "autor"@es ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#creatorT-002> ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:modified "2010-10-11"^^xsd:date ;
+	rdfs:comment "Indica el autor o los autores del recurso."@es ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
 	rdfs:label "Creator"@en ;
 	dcterms:description "Examples of a Creator include a person, an organization, or a service."@en .
