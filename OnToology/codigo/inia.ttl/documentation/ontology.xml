@@ -23,7 +23,7 @@
         <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
         <dc:title xml:lang="en">Ontología datasets INIA</dc:title>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-07</terms:modified>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inia</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://inia.linkeddata.es/def/core#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">Esta ontología representa los datasets publicados por el INIA</rdfs:comment>
@@ -2370,7 +2370,10 @@
     <!-- http://lexvo.org/ontology#Language -->
 
 
-    <owl:Class rdf:about="http://lexvo.org/ontology#Language"/>
+    <owl:Class rdf:about="http://lexvo.org/ontology#Language">
+        <rdfs:comment xml:lang="es">Idioma en el que se expresa el contenido de un recurso.</rdfs:comment>
+        <rdfs:label xml:lang="es">Idioma</rdfs:label>
+    </owl:Class>
     
 
 
@@ -2595,6 +2598,8 @@
 
 
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:comment xml:lang="es">Un concepto SKOS puede entenderse como una idea, una noción o una unidad de pensamiento.</rdfs:comment>
+        <rdfs:label xml:lang="es">Concepto</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concept</rdfs:label>
     </rdf:Description>
     
@@ -2603,7 +2608,10 @@
     <!-- http://www.w3.org/2006/time#Interval -->
 
 
-    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval"/>
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:comment xml:lang="es">Entidad temporal con extensión o duración.</rdfs:comment>
+        <rdfs:label xml:lang="es">Intervalo de tiempo</rdfs:label>
+    </owl:Class>
     
 
 
@@ -2644,7 +2652,10 @@
     <!-- http://www.w3.org/ns/odrl/2/Policy -->
 
 
-    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Policy">
+        <rdfs:comment xml:lang="es">Un grupo no vacio de permisos y/o prohibiciones.</rdfs:comment>
+        <rdfs:label xml:lang="es">Política de uso</rdfs:label>
+    </owl:Class>
     
 
 
@@ -2652,6 +2663,16 @@
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project">
+        <rdfs:comment xml:lang="es">Un proyecto (un esfuerzo colectivo de algún tipo).</rdfs:comment>
+        <rdfs:label xml:lang="es">Proyecto</rdfs:label>
+    </rdf:Description>
     
 
 
@@ -4936,6 +4957,10 @@
     <rdf:Description rdf:about="http://purl.org/spar/datacite/usesIdentifierScheme">
         <rdfs:comment xml:lang="es">Una propiedad que permite la especificación del esquema de identificador utilizado para proporcionar el identificador de una entidad - ya sea un financiador, una persona o un recurso - definido como un individuo de la clase datacite:IdentifierScheme.</rdfs:comment>
         <rdfs:label xml:lang="es">utiliza esquema de identificadores</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:comment xml:lang="es">Un agente (por ejemplo, persona, grupo, software o artefacto físico).</rdfs:comment>
+        <rdfs:label xml:lang="es">Agente</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
