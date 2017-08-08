@@ -15,6 +15,7 @@
 
 <http://inia.linkeddata.es/def/coreINIA#> a owl:Ontology ;
 	owl:imports <http://purl.org/spar/datacite/> , <http://www.w3.org/ns/org#> , <http://xmlns.com/foaf/0.1/> ;
+	dcterms:modified "2017-08-07"^^xsd:date ;
 	dcterms:creator <http://purl.org/net/mpoveda> ;
 	rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
 	dcterms:publisher <http://purl.org/dc/aboutdcmi#DCMI> ;
@@ -23,7 +24,6 @@
 	owl:versionInfo "0.0.1" ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	vann:preferredNamespaceUri "http://inia.linkeddata.es/def/core#" ;
-	dcterms:modified "2012-06-14"^^xsd:date ;
 	dc:publisher <http://www.oeg-upm.net/> .
 # 
 # 
@@ -1432,7 +1432,9 @@ _:genid18 a owl:Restriction ;
 # 
 # http://lexvo.org/ontology#Language
 
-<http://lexvo.org/ontology#Language> a owl:Class .
+<http://lexvo.org/ontology#Language> a owl:Class ;
+	rdfs:comment "Idioma en el que se expresa el contenido de un recurso."@es ;
+	rdfs:label "Idioma"@es .
 # 
 # http://purl.org/dc/dcam/VocabularyEncodingScheme
 
@@ -1559,11 +1561,14 @@ dcterms:Standard a owl:Class .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 
-<http://www.w3.org/2004/02/skos/core#Concept> rdfs:label "Concept" .
+<http://www.w3.org/2004/02/skos/core#Concept> rdfs:comment "Un concepto SKOS puede entenderse como una idea, una noción o una unidad de pensamiento."@es ;
+	rdfs:label "Concept" , "Concepto"@es .
 # 
 # http://www.w3.org/2006/time#Interval
 
-<http://www.w3.org/2006/time#Interval> a owl:Class .
+<http://www.w3.org/2006/time#Interval> a owl:Class ;
+	rdfs:comment "Entidad temporal con extensión o duración."@es ;
+	rdfs:label "Intervalo de tiempo"@es .
 # 
 # http://www.w3.org/ns/dcat#Dataset
 
@@ -1583,11 +1588,18 @@ dcterms:Standard a owl:Class .
 # 
 # http://www.w3.org/ns/odrl/2/Policy
 
-<http://www.w3.org/ns/odrl/2/Policy> a owl:Class .
+<http://www.w3.org/ns/odrl/2/Policy> a owl:Class ;
+	rdfs:comment "Un grupo no vacio de permisos y/o prohibiciones."@es ;
+	rdfs:label "Política de uso"@es .
 # 
 # http://www.w3.org/ns/prov#Entity
 
 prov:Entity a owl:Class .
+# 
+# http://xmlns.com/foaf/0.1/Project
+
+foaf:Project rdfs:comment "Un proyecto (un esfuerzo colectivo de algún tipo)."@es ;
+	rdfs:label "Proyecto"@es .
 # 
 # 
 # 
@@ -2474,9 +2486,9 @@ dcterms:valid a owl:NamedIndividual .
 # 
 
 dcterms:Agent rdfs:label "Agent"@en ;
-	rdfs:comment "A resource that acts or has the power to act."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	rdfs:comment "A resource that acts or has the power to act."@en ;
 	dcterms:description "Examples of Agent include person, organization, and software agent."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Agent-001> .
 # 
@@ -2500,9 +2512,9 @@ dcterms:BibliographicResource rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 dcterms:Box dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:comment "The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:seeAlso <http://dublincore.org/documents/dcmi-box/> ;
-	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:label "DCMI Box"@en ;
+	dcterms:modified "2008-01-14"^^xsd:date ;
+	rdfs:seeAlso <http://dublincore.org/documents/dcmi-box/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Box-003> .
 # 
 
@@ -2521,8 +2533,8 @@ dcterms:Frequency rdfs:label "Frequency"@en ;
 	dcterms:issued "2008-01-14"^^xsd:date .
 # 
 
-dcterms:ISO3166 dcterms:issued "2000-07-11"^^xsd:date ;
-	rdfs:comment "The set of codes listed in ISO 3166-1 for the representation of names of countries."@en ;
+dcterms:ISO3166 rdfs:comment "The set of codes listed in ISO 3166-1 for the representation of names of countries."@en ;
+	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#ISO3166-004> ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
@@ -2532,30 +2544,30 @@ dcterms:ISO3166 dcterms:issued "2000-07-11"^^xsd:date ;
 
 dcterms:ISO639-2 rdfs:seeAlso <http://lcweb.loc.gov/standards/iso639-2/langhome.html> ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
-	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:comment "The three-letter alphabetic codes listed in ISO639-2 for the representation of names of languages."@en ;
+	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:label "ISO 639-2"@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#ISO639-2-003> .
 # 
 
-dcterms:ISO639-3 rdfs:label "ISO 639-3"@en ;
-	rdfs:comment "The set of three-letter codes listed in ISO 639-3 for the representation of names of languages."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#ISO639-3-001> ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
+dcterms:ISO639-3 rdfs:comment "The set of three-letter codes listed in ISO 639-3 for the representation of names of languages."@en ;
+	rdfs:label "ISO 639-3"@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	dcterms:issued "2008-01-14"^^xsd:date ;
+	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#ISO639-3-001> ;
 	rdfs:seeAlso <http://www.sil.org/iso639-3/> .
 # 
 
 dcterms:Jurisdiction dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Jurisdiction-001> ;
 	rdfs:label "Jurisdiction"@en ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "The extent or range of judicial, law enforcement, or other authority."@en .
+	rdfs:comment "The extent or range of judicial, law enforcement, or other authority."@en ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 # 
 
-dcterms:LicenseDocument rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:label "License Document"@en ;
+dcterms:LicenseDocument rdfs:label "License Document"@en ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
 	rdfs:comment "A legal document giving official permission to do something with a Resource."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#LicenseDocument-001> .
@@ -2584,10 +2596,10 @@ dcterms:LocationPeriodOrJurisdiction rdfs:label "Location, Period, or Jurisdicti
 # 
 
 dcterms:MediaType rdfs:comment "A file format or physical medium."@en ;
-	rdfs:label "Media Type"@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#MediaType-001> ;
-	dcterms:issued "2008-01-14"^^xsd:date .
+	rdfs:label "Media Type"@en ;
+	dcterms:issued "2008-01-14"^^xsd:date ;
+	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#MediaType-001> .
 # 
 
 dcterms:MediaTypeOrExtent rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2597,8 +2609,8 @@ dcterms:MediaTypeOrExtent rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#MediaTypeOrExtent-001> .
 # 
 
-dcterms:MethodOfAccrual rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "A method by which resources are added to a collection."@en ;
+dcterms:MethodOfAccrual rdfs:comment "A method by which resources are added to a collection."@en ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#MethodOfAccrual-001> ;
 	rdfs:label "Method of Accrual"@en ;
 	dcterms:issued "2008-01-14"^^xsd:date .
@@ -2606,13 +2618,13 @@ dcterms:MethodOfAccrual rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 
 dcterms:MethodOfInstruction rdfs:label "Method of Instruction"@en ;
 	rdfs:comment "A process that is used to engender knowledge, attitudes, and skills."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#MethodOfInstruction-001> ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:issued "2008-01-14"^^xsd:date .
 # 
 
-dcterms:Period rdfs:seeAlso <http://dublincore.org/documents/dcmi-period/> ;
-	rdfs:comment "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme."@en ;
+dcterms:Period rdfs:comment "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme."@en ;
+	rdfs:seeAlso <http://dublincore.org/documents/dcmi-period/> ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:label "DCMI Period"@en ;
@@ -2630,13 +2642,13 @@ dcterms:PeriodOfTime rdfs:comment "An interval of time that is named or defined 
 dcterms:PhysicalMedium dcterms:hasVersion <http://dublincore.org/usage/terms/history/#PhysicalMedium-001> ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
 	dcterms:description "Examples include paper, canvas, or DVD."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:label "Physical Medium"@en ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:comment "A physical material or carrier."@en .
 # 
 
-dcterms:PhysicalResource rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
+dcterms:PhysicalResource dcterms:issued "2008-01-14"^^xsd:date ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:comment "A material thing."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#PhysicalResource-001> ;
 	rdfs:label "Physical Resource"@en .
@@ -2668,8 +2680,8 @@ dcterms:ProvenanceStatement rdfs:label "Provenance Statement"@en ;
 dcterms:RFC1766 rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#RFC1766-003> ;
 	rdfs:comment "The set of tags, constructed according to RFC 1766, for the identification of languages."@en ;
+	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#RFC1766-003> ;
 	rdfs:seeAlso <http://www.ietf.org/rfc/rfc1766.txt> ;
 	rdfs:label "RFC 1766"@en .
 # 
@@ -2679,8 +2691,8 @@ dcterms:RFC3066 dcterms:issued "2002-07-13"^^xsd:date ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:description "RFC 3066 has been obsoleted by RFC 4646."@en ;
 	rdfs:comment "The set of tags constructed according to RFC 3066 for the identification of languages."@en ;
-	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:seeAlso <http://www.ietf.org/rfc/rfc3066.txt> ;
+	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#RFC3066-002> .
 # 
 
@@ -2689,8 +2701,8 @@ dcterms:RFC4646 dcterms:description "RFC 4646 obsoletes RFC 3066."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#RFC4646-001> ;
 	rdfs:seeAlso <http://www.ietf.org/rfc/rfc4646.txt> ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "The set of tags constructed according to RFC 4646 for the identification of languages."@en ;
-	rdfs:label "RFC 4646"@en .
+	rdfs:label "RFC 4646"@en ;
+	rdfs:comment "The set of tags constructed according to RFC 4646 for the identification of languages."@en .
 # 
 
 dcterms:RFC5646 dcterms:issued "2010-10-11"^^xsd:date ;
@@ -2746,8 +2758,8 @@ dcterms:abstract rdfs:label "Abstract"@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#abstract-003> ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
-	rdfs:comment "A summary of the resource."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	rdfs:comment "A summary of the resource."@en .
 # 
 
 dcterms:accessRights dcterms:description "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."@en ;
@@ -2759,8 +2771,8 @@ dcterms:accessRights dcterms:description "Access Rights may include information 
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 # 
 
-dcterms:accrualMethod dcterms:hasVersion <http://dublincore.org/usage/terms/history/#accrualMethod-003> ;
-	rdfs:label "Accrual Method"@en ;
+dcterms:accrualMethod rdfs:label "Accrual Method"@en ;
+	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#accrualMethod-003> ;
 	dcterms:modified "2010-10-11"^^xsd:date ;
 	rdfs:comment "The method by which items are added to a collection."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2792,8 +2804,8 @@ dcterms:alternative rdfs:comment "An alternative name for the resource."@en ;
 	rdfs:label "Alternative Title"@en .
 # 
 
-dcterms:audience dcterms:issued "2001-05-21"^^xsd:date ;
-	rdfs:comment "A class of entity for whom the resource is intended or useful."@en ;
+dcterms:audience rdfs:comment "A class of entity for whom the resource is intended or useful."@en ;
+	dcterms:issued "2001-05-21"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#audience-003> ;
 	rdfs:label "Audience"@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2815,8 +2827,8 @@ dcterms:bibliographicCitation dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:comment "A bibliographic reference for the resource."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:label "cita bibliográfica"@es ;
-	rdfs:comment "Nota, Cómo debe ser citado el dataset, por ejemplo: Marta-Costa, A., Torres-Manso, F., Pinto, R., Tibério, L.; Carneiro, I. (2016). Stakeholders’ perception of forest management: a Portuguese mountain case study. Forest Systems, Volume 25, Issue 1, e052, 13 pages. http://dx.doi.org/10.5424/fs/2016251-08122”"@es ;
-	dcterms:issued "2003-02-15"^^xsd:date .
+	dcterms:issued "2003-02-15"^^xsd:date ;
+	rdfs:comment "Nota, Cómo debe ser citado el dataset, por ejemplo: Marta-Costa, A., Torres-Manso, F., Pinto, R., Tibério, L.; Carneiro, I. (2016). Stakeholders’ perception of forest management: a Portuguese mountain case study. Forest Systems, Volume 25, Issue 1, e052, 13 pages. http://dx.doi.org/10.5424/fs/2016251-08122”"@es .
 # 
 
 dcterms:conformsTo rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2827,20 +2839,20 @@ dcterms:conformsTo rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:issued "2001-05-21"^^xsd:date .
 # 
 
-dcterms:contributor rdfs:comment "An entity responsible for making contributions to the resource."@en ;
-	dcterms:modified "2010-10-11"^^xsd:date ;
+dcterms:contributor dcterms:modified "2010-10-11"^^xsd:date ;
+	rdfs:comment "An entity responsible for making contributions to the resource."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:description "Examples of a Contributor include a person, an organization, or a service."@en ;
-	rdfs:comment "Colaborador en la elaboración del recurso. Esta relación puede especializarse utilizando alguna de las subpropiedades definidas de acuerdo a las necesidades de los dataset de INIA."@es ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
+	rdfs:comment "Colaborador en la elaboración del recurso. Esta relación puede especializarse utilizando alguna de las subpropiedades definidas de acuerdo a las necesidades de los dataset de INIA."@es ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#contributorT-001> ;
 	rdfs:label "Contributor"@en , "colaborador"@es .
 # 
 
 dcterms:coverage rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	rdfs:label "Coverage"@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#coverageT-001> ;
 	dcterms:description "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."@en ;
-	rdfs:label "Coverage"@en ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
 	rdfs:comment "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant."@en ;
 	dcterms:modified "2008-01-14"^^xsd:date .
@@ -2849,8 +2861,8 @@ dcterms:coverage rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 dcterms:created rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:comment "Date of creation of the resource."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#created-003> ;
-	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:label "Date Created"@en ;
+	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:issued "2000-07-11"^^xsd:date .
 # 
 
@@ -2866,8 +2878,8 @@ dcterms:creator rdfs:comment "An entity primarily responsible for making the res
 # 
 
 dcterms:date rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#dateT-001> ;
+	rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@en ;
 	dcterms:description "Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."@en ;
 	rdfs:label "Date"@en ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
@@ -2878,8 +2890,8 @@ dcterms:dateAccepted dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#dateAccepted-002> ;
 	dcterms:issued "2002-07-13"^^xsd:date ;
 	dcterms:description "Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."@en ;
-	rdfs:label "Date Accepted"@en ;
 	rdfs:comment "Date of acceptance of the resource."@en ;
+	rdfs:label "Date Accepted"@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 # 
 
@@ -2895,8 +2907,8 @@ dcterms:dateSubmitted dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:comment "Date of submission of the resource."@en ;
 	dcterms:description "Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal)."@en ;
 	dcterms:issued "2002-07-13"^^xsd:date ;
-	rdfs:label "Date Submitted"@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#dateSubmitted-002> ;
+	rdfs:label "Date Submitted"@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 # 
 
@@ -2906,15 +2918,15 @@ dcterms:description dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:label "descripción"@es ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#descriptionT-001> ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
 	rdfs:comment "An account of the resource."@en ;
+	dcterms:issued "2008-01-14"^^xsd:date ;
 	dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en .
 # 
 
 dcterms:educationLevel dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2002-07-13"^^xsd:date ;
 	rdfs:label "Audience Education Level"@en ;
+	dcterms:issued "2002-07-13"^^xsd:date ;
 	rdfs:comment "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#educationLevel-002> .
 # 
@@ -2936,13 +2948,13 @@ dcterms:format dcterms:issued "2008-01-14"^^xsd:date ;
 	rdfs:label "Format"@en .
 # 
 
-dcterms:hasFormat rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	<http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
+dcterms:hasFormat <http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#hasFormat-003> ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:label "Has Format"@en ;
-	rdfs:comment "A related resource that is substantially the same as the pre-existing described resource, but in another format."@en ;
-	dcterms:issued "2000-07-11"^^xsd:date .
+	dcterms:issued "2000-07-11"^^xsd:date ;
+	rdfs:comment "A related resource that is substantially the same as the pre-existing described resource, but in another format."@en .
 # 
 
 dcterms:hasPart rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2993,8 +3005,8 @@ dcterms:isFormatOf dcterms:hasVersion <http://dublincore.org/usage/terms/history
 dcterms:isPartOf dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:label "Is Part Of"@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#isPartOf-003> ;
-	dcterms:issued "2000-07-11"^^xsd:date ;
 	<http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
+	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:comment "A related resource in which the described resource is physically or logically included."@en .
 # 
@@ -3002,8 +3014,8 @@ dcterms:isPartOf dcterms:modified "2008-01-14"^^xsd:date ;
 dcterms:isReferencedBy rdfs:label "Is Referenced By"@en ;
 	rdfs:comment "A related resource that references, cites, or otherwise points to the described resource."@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
-	<http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#isReferencedBy-003> .
 # 
@@ -3027,8 +3039,8 @@ dcterms:isRequiredBy rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 # 
 
 dcterms:isVersionOf rdfs:label "Is Version Of"@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:comment "A related resource of which the described resource is a version, edition, or adaptation."@en ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	<http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#isVersionOf-003> ;
@@ -3038,31 +3050,31 @@ dcterms:isVersionOf rdfs:label "Is Version Of"@en ;
 
 dcterms:issued rdfs:label "fecha de publicación"@es ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
-	rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en , "Fecha en la que se introduce por primera vez el dataset a REDIA."@es ;
+	rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	rdfs:comment "Fecha en la que se introduce por primera vez el dataset a REDIA."@es ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#issued-003> ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:label "Date Issued"@en .
 # 
 
 dcterms:language rdfs:label "Language"@en ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#languageT-001> ;
+	dcterms:issued "2008-01-14"^^xsd:date ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:label "idioma"@es ;
-	dcterms:description "Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."@en ;
-	rdfs:comment "Relación que indica el idioma del dataset. En el objeto se esperan instancias de la clase lvon:language"@es ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	rdfs:comment "Relación que indica el idioma del dataset. En el objeto se esperan instancias de la clase lvon:language"@es ;
+	dcterms:description "Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."@en ;
 	rdfs:comment "A language of the resource."@en .
 # 
 
 dcterms:license rdfs:comment "licencia"@es ;
 	dcterms:issued "2004-06-14"^^xsd:date ;
 	rdfs:label "License"@en ;
-	rdfs:comment "A legal document giving official permission to do something with the resource."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#license-002> ;
-	rdfs:comment "Licencia que especifica los permisos para hacer algo con el recurso."@es ;
+	rdfs:comment "A legal document giving official permission to do something with the resource."@en , "Licencia que especifica los permisos para hacer algo con el recurso."@es ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
+	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#license-002> ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 # 
 
@@ -3109,8 +3121,8 @@ dcterms:publisher dcterms:modified "2010-10-11"^^xsd:date ;
 	rdfs:comment "An entity responsible for making the resource available."@en .
 # 
 
-dcterms:references rdfs:comment "A related resource that is referenced, cited, or otherwise pointed to by the described resource."@en ;
-	rdfs:label "References"@en ;
+dcterms:references rdfs:label "References"@en ;
+	rdfs:comment "A related resource that is referenced, cited, or otherwise pointed to by the described resource."@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#references-003> ;
@@ -3175,8 +3187,8 @@ dcterms:source rdfs:label "Source"@en ;
 	dcterms:description "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en .
 # 
 
-dcterms:spatial rdfs:label "Spatial Coverage"@en ;
-	dcterms:issued "2000-07-11"^^xsd:date ;
+dcterms:spatial dcterms:issued "2000-07-11"^^xsd:date ;
+	rdfs:label "Spatial Coverage"@en ;
 	rdfs:comment "Alternativa a inia:spatialScope para indicar el ámbito geográfivo. Se puede expresar mediante la localización de un punto (latitud_N y longitud_W ), o por un rectángulo (latitud N, longitud E, latitud S y longitud W ) mediante la clase ext:GeographicBoundingBox"@es ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:comment "Spatial characteristics of the resource."@en ;
@@ -3202,13 +3214,13 @@ dcterms:tableOfContents rdfs:comment "A list of subunits of the resource."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#tableOfContents-003> .
 # 
 
-dcterms:temporal dcterms:modified "2008-01-14"^^xsd:date ;
-	rdfs:label "ambito temporal"@es ;
+dcterms:temporal rdfs:label "ambito temporal"@es ;
+	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:comment "Se podría utilizar esta propiedad como alternataiva a inia:startingDate e inia:finalDate cuando el objeto de la relación se represente con una instancia de time:Interval."@es ;
 	rdfs:label "Temporal Coverage"@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#temporal-003> ;
 	rdfs:comment "Temporal characteristics of the resource."@en ;
+	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#temporal-003> ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 # 
 
@@ -3235,11 +3247,15 @@ dcterms:valid rdfs:comment "Date (often a range) of validity of a resource."@en 
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:label "Date Valid"@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#valid-003> ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#valid-003> .
 # 
 
 <http://purl.org/spar/datacite/usesIdentifierScheme> rdfs:label "utiliza esquema de identificadores"@es ;
 	rdfs:comment "Una propiedad que permite la especificación del esquema de identificador utilizado para proporcionar el identificador de una entidad - ya sea un financiador, una persona o un recurso - definido como un individuo de la clase datacite:IdentifierScheme."@es .
+# 
+
+foaf:Agent rdfs:comment "Un agente (por ejemplo, persona, grupo, software o artefacto físico)."@es ;
+	rdfs:label "Agente"@es .
 # 
 # Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
