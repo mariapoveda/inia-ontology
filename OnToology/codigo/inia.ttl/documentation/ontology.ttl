@@ -1,21 +1,19 @@
-@prefix : <http://inia.linkeddata.es/def/coreINIA##> .
+@prefix : <http://inia.linkeddata.es/def/datasets##> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://inia.linkeddata.es/def/coreINIA#> .
+@base <http://inia.linkeddata.es/def/datasets#> .
 
-<http://inia.linkeddata.es/def/coreINIA#> rdf:type owl:Ontology ;
+<http://inia.linkeddata.es/def/datasets#> rdf:type owl:Ontology ;
                                            owl:imports <http://purl.org/spar/datacite/> ,
                                                        <http://www.w3.org/ns/org#> ,
                                                        <http://xmlns.com/foaf/0.1/> ;
                                            <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> ;
                                            <http://purl.org/dc/elements/1.1/title> "Ontología datasets INIA"@en ;
-                                           <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> ;
                                            <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                           <http://purl.org/dc/terms/modified> "2017-08-07"^^xsd:date ;
-                                           <http://purl.org/dc/terms/publisher> <http://purl.org/dc/aboutdcmi#DCMI> ;
+                                           <http://purl.org/dc/terms/modified> "2017-23-07"^^xsd:date ;
                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "inia"^^xsd:string ;
                                            <http://purl.org/vocab/vann/preferredNamespaceUri> "http://inia.linkeddata.es/def/core#"^^xsd:string ;
                                            rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
@@ -2118,6 +2116,12 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://inia.linkeddata.es/def/coreINIA#
 <http://inia.linkeddata.es/def/coreINIA#> rdf:type owl:NamedIndividual .
+
+
+###  http://inia.linkeddata.es/def/datasets#
+<http://inia.linkeddata.es/def/datasets#> rdf:type owl:NamedIndividual ;
+                                          <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> ;
+                                          <http://purl.org/dc/terms/publisher> <http://purl.org/dc/aboutdcmi#DCMI> .
 
 
 ###  http://purl.org/dc/aboutdcmi#DCMI

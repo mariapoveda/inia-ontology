@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://inia.linkeddata.es/def/coreINIA#"
-     xml:base="http://inia.linkeddata.es/def/coreINIA"
+<rdf:RDF xmlns="http://inia.linkeddata.es/def/datasets#"
+     xml:base="http://inia.linkeddata.es/def/datasets"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:org="http://www.w3.org/ns/org#"
@@ -14,16 +14,14 @@
      xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://inia.linkeddata.es/def/coreINIA#">
+    <owl:Ontology rdf:about="http://inia.linkeddata.es/def/datasets#">
         <owl:imports rdf:resource="http://purl.org/spar/datacite/"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
         <dc:title xml:lang="en">Ontología datasets INIA</dc:title>
-        <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-07</terms:modified>
-        <terms:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-23-07</terms:modified>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inia</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://inia.linkeddata.es/def/core#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">Esta ontología representa los datasets publicados por el INIA</rdfs:comment>
@@ -3476,6 +3474,16 @@
 
 
     <owl:NamedIndividual rdf:about="http://inia.linkeddata.es/def/coreINIA#"/>
+    
+
+
+    <!-- http://inia.linkeddata.es/def/datasets# -->
+
+
+    <owl:NamedIndividual rdf:about="http://inia.linkeddata.es/def/datasets#">
+        <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
+        <terms:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
+    </owl:NamedIndividual>
     
 
 
