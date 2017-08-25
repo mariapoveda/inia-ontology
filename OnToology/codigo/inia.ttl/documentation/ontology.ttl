@@ -12,8 +12,10 @@
                                                        <http://xmlns.com/foaf/0.1/> ;
                                            <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> ;
                                            <http://purl.org/dc/elements/1.1/title> "Ontología datasets INIA"@en ;
+                                           <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> ;
                                            <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
                                            <http://purl.org/dc/terms/modified> "2017-23-07"^^xsd:date ;
+                                           <http://purl.org/dc/terms/publisher> <http://purl.org/dc/aboutdcmi#DCMI> ;
                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "inia"^^xsd:string ;
                                            <http://purl.org/vocab/vann/preferredNamespaceUri> "http://inia.linkeddata.es/def/core#"^^xsd:string ;
                                            rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
@@ -2119,9 +2121,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://inia.linkeddata.es/def/datasets#
-<http://inia.linkeddata.es/def/datasets#> rdf:type owl:NamedIndividual ;
-                                          <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> ;
-                                          <http://purl.org/dc/terms/publisher> <http://purl.org/dc/aboutdcmi#DCMI> .
+<http://inia.linkeddata.es/def/datasets#> rdf:type owl:NamedIndividual .
 
 
 ###  http://purl.org/dc/aboutdcmi#DCMI

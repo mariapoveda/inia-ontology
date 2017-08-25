@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://datos.inia.es/datasets/resource/"
+     xml:base="http://datos.inia.es/datasets/resource/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:datacite="http://purl.org/spar/datacite/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:literalreification="http://www.essepuntato.it/2010/06/literalreification/"
+     xmlns:coreINIA="http://inia.linkeddata.es/def/coreINIA#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="http://datos.inia.es/datasets/resource/">
+        <owl:imports rdf:resource="http://inia.linkeddata.es/def/datasets#"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ejemplo 1</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://inia.linkeddata.es/def/coreINIA#contactPerson -->
+
+
+    <owl:AnnotationProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#contactPerson"/>
+    
+
+
+    <!-- http://inia.linkeddata.es/def/coreINIA#developedWithinProject -->
+
+
+    <owl:AnnotationProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#developedWithinProject"/>
+    
+
+
+    <!-- http://inia.linkeddata.es/def/coreINIA#elementsNumber -->
+
+
+    <owl:AnnotationProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#elementsNumber"/>
+    
+
+
+    <!-- http://inia.linkeddata.es/def/coreINIA#finalDate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#finalDate"/>
+    
+
+
+    <!-- http://inia.linkeddata.es/def/coreINIA#fundedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#fundedBy"/>
+    
+
+
+    <!-- http://inia.linkeddata.es/def/coreINIA#startingDate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#startingDate"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/spar/datacite/hasIdentifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/spar/datacite/hasIdentifier"/>
+    
+
+
+    <!-- http://purl.org/spar/datacite/usesIdentifierScheme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://inia.linkeddata.es/def/coreINIA#Dataset -->
+
+
+    <owl:Class rdf:about="http://inia.linkeddata.es/def/coreINIA#Dataset"/>
+    
+
+
+    <!-- http://lexvo.org/ontology#Language -->
+
+
+    <owl:Class rdf:about="http://lexvo.org/ontology#Language"/>
+    
+
+
+    <!-- http://purl.org/spar/datacite/PersonalIdentifier -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/PersonalIdentifier"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.inia.es -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.inia.es">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://aims.fao.org/aos/agrovoc/c_3250 -->
+
+
+    <owl:NamedIndividual rdf:about="http://aims.fao.org/aos/agrovoc/c_3250">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="es">Conservación del germoplasma</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://datos.inia.es/datasets/resource/lens-colecciones-crf -->
+
+
+    <owl:NamedIndividual rdf:about="http://datos.inia.es/datasets/resource/lens-colecciones-crf">
+        <rdf:type rdf:resource="http://inia.linkeddata.es/def/coreINIA#Dataset"/>
+        <coreINIA:contactPerson rdf:resource="http://datos.inia.es/datasets/resource/person1"/>
+        <coreINIA:developedWithinProject rdf:resource="http://datos.inia.es/datasets/resource/project15"/>
+        <coreINIA:elementsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">602</coreINIA:elementsNumber>
+        <coreINIA:finalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-01-01</coreINIA:finalDate>
+        <coreINIA:startingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-01-01</coreINIA:startingDate>
+        <terms:contributor rdf:resource="http://datos.inia.es/datasets/resource/person3"/>
+        <terms:creator rdf:resource="http://datos.inia.es/datasets/resource/person1"/>
+        <terms:creator rdf:resource="http://datos.inia.es/datasets/resource/person2"/>
+        <terms:description xml:lang="es">Datos de pasaporte de las colecciones de lens del CRF (Centro de Recursos Fitogenéticos), dentro de esta colección se COMPLETAR</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-26</terms:issued>
+        <terms:language rdf:resource="http://lexvo.org/id/iso639-3/spa"/>
+        <terms:publisher rdf:resource="http://datos.inia.es/datasets/resource/organizationINIA"/>
+        <terms:title xml:lang="es">Lens Colecciones CRF</terms:title>
+        <terms:title xml:lang="en">Lens Collections CRF</terms:title>
+        <dcat:theme rdf:resource="http://aims.fao.org/aos/agrovoc/c_3250"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://datos.inia.es/datasets/resource/organizationINIA -->
+
+
+    <owl:NamedIndividual rdf:about="http://datos.inia.es/datasets/resource/organizationINIA">
+        <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <foaf:homepage rdf:resource="http://www.inia.es"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://datos.inia.es/datasets/resource/person1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://datos.inia.es/datasets/resource/person1">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <datacite:hasIdentifier rdf:resource="http://datos.inia.es/datasets/resource/person1Identifier1"/>
+        <foaf:mbox rdf:resource="mailto:lucia.rosa@inia.es"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lucía de la Rosa</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://datos.inia.es/datasets/resource/person1Identifier1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://datos.inia.es/datasets/resource/person1Identifier1">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PersonalIdentifier"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://purl.org/spar/datacite/orcid"/>
+        <literalreification:hasLiteralValue rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">http://orcid.org/0000-0002-6787-0866</literalreification:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://datos.inia.es/datasets/resource/person2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://datos.inia.es/datasets/resource/person2">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox rdf:resource="mailto:rosamaria.garcia@inia.es"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Rosa María García Sánchez</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://datos.inia.es/datasets/resource/person3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://datos.inia.es/datasets/resource/person3">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <datacite:hasIdentifier rdf:resource="http://datos.inia.es/datasets/resource/person3Identifier1"/>
+        <foaf:mbox rdf:resource="mailto:jorge.garcia@inia.es"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jorge García Pérez</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://datos.inia.es/datasets/resource/person3Identifier1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://datos.inia.es/datasets/resource/person3Identifier1">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PersonalIdentifier"/>
+        <datacite:usesIdentifierScheme rdf:resource="http://purl.org/spar/datacite/orcid"/>
+        <literalreification:hasLiteralValue rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">http://orcid.org/0000-0002-6787-0867</literalreification:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://datos.inia.es/datasets/resource/project15 -->
+
+
+    <owl:NamedIndividual rdf:about="http://datos.inia.es/datasets/resource/project15">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <coreINIA:fundedBy rdf:resource="http://datos.inia.es/datasets/resource/organizationINIA"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Programa de Conservación y Utilización de los Recursos Fitogenético</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lexvo.org/id/iso639-3/spa -->
+
+
+    <owl:NamedIndividual rdf:about="http://lexvo.org/id/iso639-3/spa">
+        <rdf:type rdf:resource="http://lexvo.org/ontology#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- mailto:jorge.garcia@inia.es -->
+
+
+    <owl:NamedIndividual rdf:about="mailto:jorge.garcia@inia.es">
+        <rdfs:label xml:lang="en">jorge.garcia@inia.es</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- mailto:lucia.rosa@inia.es -->
+
+
+    <owl:NamedIndividual rdf:about="mailto:lucia.rosa@inia.es"/>
+    
+
+
+    <!-- mailto:rosamaria.garcia@inia.es -->
+
+
+    <owl:NamedIndividual rdf:about="mailto:rosamaria.garcia@inia.es">
+        <rdfs:label xml:lang="en">mailto:rosamaria.garcia@inia.es</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
