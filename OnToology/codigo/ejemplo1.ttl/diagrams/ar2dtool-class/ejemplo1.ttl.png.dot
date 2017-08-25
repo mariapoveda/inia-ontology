@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"base:person3Identifier1" -> ":orcid" [ label = ":usesIdentifierScheme" ];
+	"base:project15" -> "base:organizationINIA" [ label = ":fundedBy" ];
+	"base:person2" -> "mailto:rosamaria.garcia@inia.es" [ label = ":mbox" ];
+	"base:" -> "http://inia.linkeddata.es/def/datasets#" [ label = "owl:imports" ];
+	"base:organizationINIA" -> "http://www.inia.es" [ label = ":homepage" ];
+	"base:person3" -> "mailto:jorge.garcia@inia.es" [ label = ":mbox" ];
+	"base:person3" -> "base:person3Identifier1" [ label = ":hasIdentifier" ];
+	"base:person1Identifier1" -> ":orcid" [ label = ":usesIdentifierScheme" ];
+	"base:person1" -> "mailto:lucia.rosa@inia.es" [ label = ":mbox" ];
+	"base:person1" -> "base:person1Identifier1" [ label = ":hasIdentifier" ];
+	"base:lens-colecciones-crf" -> "base:person3" [ label = ":contributor" ];
+	"base:lens-colecciones-crf" -> "base:project15" [ label = ":developedWithinProject" ];
+	"base:lens-colecciones-crf" -> "base:organizationINIA" [ label = ":publisher" ];
+	"base:lens-colecciones-crf" -> "base:person2" [ label = ":creator" ];
+	"base:lens-colecciones-crf" -> "http://lexvo.org/id/iso639-3/spa" [ label = ":language" ];
+	"base:lens-colecciones-crf" -> "base:person1" [ label = ":contactPerson" ];
+	"base:lens-colecciones-crf" -> "base:person1" [ label = ":creator" ];
+	"base:lens-colecciones-crf" -> "http://aims.fao.org/aos/agrovoc/c_3250" [ label = ":theme" ];
+
+}

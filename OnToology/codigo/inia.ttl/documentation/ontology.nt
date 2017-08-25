@@ -4,8 +4,10 @@
 <http://inia.linkeddata.es/def/datasets#> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
 <http://inia.linkeddata.es/def/datasets#> <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> .
 <http://inia.linkeddata.es/def/datasets#> <http://purl.org/dc/elements/1.1/title> "Ontolog\u00EDa datasets INIA"@en .
+<http://inia.linkeddata.es/def/datasets#> <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> .
 <http://inia.linkeddata.es/def/datasets#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
 <http://inia.linkeddata.es/def/datasets#> <http://purl.org/dc/terms/modified> "2017-23-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://inia.linkeddata.es/def/datasets#> <http://purl.org/dc/terms/publisher> <http://purl.org/dc/aboutdcmi#DCMI> .
 <http://inia.linkeddata.es/def/datasets#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inia" .
 <http://inia.linkeddata.es/def/datasets#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://inia.linkeddata.es/def/core#" .
 <http://inia.linkeddata.es/def/datasets#> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta ontolog\u00EDa representa los datasets publicados por el INIA"@en .
@@ -1775,8 +1777,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org
 # 
 # http://inia.linkeddata.es/def/datasets#
 <http://inia.linkeddata.es/def/datasets#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://inia.linkeddata.es/def/datasets#> <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> .
-<http://inia.linkeddata.es/def/datasets#> <http://purl.org/dc/terms/publisher> <http://purl.org/dc/aboutdcmi#DCMI> .
 # 
 # http://purl.org/dc/aboutdcmi#DCMI
 <http://purl.org/dc/aboutdcmi#DCMI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
