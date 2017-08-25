@@ -26,7 +26,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2017-08-23 12:33:50 +0000</string>
+	<string>2017-08-25 08:34:38 +0000</string>
 	<key>Modifier</key>
 	<string>María Poveda</string>
 	<key>NotesVisible</key>
@@ -85,7 +85,7 @@
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1269, 999}}</string>
+				<string>{{0, 0}, {1269, 1079.2429906542056}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -104,7 +104,7 @@
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>CanvasSize</key>
-			<string>{1269, 999}</string>
+			<string>{1269, 1079.2429906542056}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -1364,7 +1364,7 @@ inia:projectCode:: xsd:string}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{571.57126723633507, 502.20275494607108}, {124.55999721586704, 117.11671422380391}}</string>
+					<string>{{578.08919053434079, 502.20275494607108}, {124.55999721586704, 117.11671422380391}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -1503,11 +1503,11 @@ inia:specie}</string>
 					<key>OrthogonalBarPoint</key>
 					<string>{487.98009404187127, 416.11893402281328}</string>
 					<key>OrthogonalBarPosition</key>
-					<real>83.424741735656482</real>
+					<real>89.816981742230382</real>
 					<key>Points</key>
 					<array>
-						<string>{545.82601989120769, 560.76111205797304}</string>
-						<string>{730.47550336252061, 563.11251526053616}</string>
+						<string>{546.32601989120781, 560.76111205797304}</string>
+						<string>{743.75998337566853, 563.11251526053616}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1546,7 +1546,7 @@ inia:specie}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{730.47550336252061, 551.60619874963345}, {108.40235486423732, 23.012603759765625}}</string>
+					<string>{{743.75998337566853, 551.60619874963345}, {95.117874851089368, 23.012603759765625}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -2077,7 +2077,7 @@ ext:GeographicBoundingBox}</string>
 \pard\tx60\tx300\tx940\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-foaf:name:: rdf:Literal}</string>
+foaf:name:: rdfs:Literal}</string>
 					</dict>
 					<key>VFlip</key>
 					<string>YES</string>
@@ -17809,7 +17809,7 @@ Clase}</string>
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {949, 1108.2455661664394}}</string>
+				<string>{{0, 0}, {1035.901098901099, 881}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -17828,7 +17828,7 @@ Clase}</string>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>CanvasSize</key>
-			<string>{949, 1108.2455661664394}</string>
+			<string>{1035.901098901099, 881}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -18618,7 +18618,7 @@ inia:finalDate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{610.15740253522551, 518.27311518911586}, {80.597061011591904, 19.440000772476196}}</string>
+					<string>{{610.1574025352254, 518.27311518911586}, {125.16702492450486, 19.440000772476196}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -18699,14 +18699,14 @@ inia:finalDate}</string>
 \pard\tx60\tx300\tx940\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li20\fi-20\pardirnatural\qc
 \ls1\ilvl0
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\'93www.inia.es\'94}</string>
+&lt;http://www.inia.es&gt;}</string>
 					</dict>
 					<key>VFlip</key>
 					<string>YES</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{502.60212168028818, 519.66186468300475}, {87.596368462462124, 16.854378350365323}}</string>
+					<string>{{502.60212327084469, 519.6618646802234}, {87.596368462462124, 16.854378350365323}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -18840,7 +18840,7 @@ foaf:homepage}</string>
 					<key>Points</key>
 					<array>
 						<string>{489.00921536047429, 528.17384785777949}</string>
-						<string>{610.15740253522551, 527.99312793497393}</string>
+						<string>{610.1574025352254, 527.99312793497393}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -20425,7 +20425,7 @@ skos:Concept}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{198.70628698004722, 682.46180254413025}, {87.596368462462124, 16.854378350365323}}</string>
+					<string>{{198.70628698004725, 682.46180254413025}, {71.469952710912025, 16.854378350365323}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -20517,7 +20517,7 @@ skos:Concept}</string>
 \pard\tx60\tx300\tx940\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li20\fi-20\pardirnatural\qc
 
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-dcterms:theme}</string>
+dcat:theme}</string>
 					</dict>
 					<key>VFlip</key>
 					<string>YES</string>
@@ -21100,7 +21100,7 @@ litre:hasLiteralValue}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{666.06622076689814, 346.06536606567983}, {169.17554919512759, 16.854378350365323}}</string>
+					<string>{{679.06228853216203, 346.06536606567988}, {169.17554919512759, 16.854378350365323}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -21230,10 +21230,10 @@ datacite:usesIdentifierSchema}</string>
 					<key>OrthogonalBarPoint</key>
 					<string>{487.98009404187127, 416.11893402281328}</string>
 					<key>OrthogonalBarPosition</key>
-					<real>17.720048662603062</real>
+					<real>17.720048662603091</real>
 					<key>Points</key>
 					<array>
-						<string>{638.81304696760844, 381.39255524086246}</string>
+						<string>{664.5436637940079, 381.39255524086252}</string>
 						<string>{865.90413381441635, 328.15245791565638}</string>
 					</array>
 					<key>Style</key>
@@ -21264,7 +21264,7 @@ datacite:usesIdentifierSchema}</string>
 						<key>ID</key>
 						<integer>42728</integer>
 						<key>Info</key>
-						<integer>15</integer>
+						<integer>14</integer>
 					</dict>
 				</dict>
 				<dict>
@@ -22386,7 +22386,7 @@ datacite:PersonalIdentifierSchema}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{668.57364827313313, 248.21616504569801}, {169.17554919512759, 16.854378350365323}}</string>
+					<string>{{680.02918747798662, 248.21616504569806}, {169.17554919512759, 16.854378350365323}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -22519,7 +22519,7 @@ datacite:usesIdentifierSchema}</string>
 					<real>49.26171875</real>
 					<key>Points</key>
 					<array>
-						<string>{638.81304524223458, 198.74335422088066}</string>
+						<string>{664.54368794924324, 198.74335422088069}</string>
 						<string>{865.90412504101482, 282.12721320282679}</string>
 					</array>
 					<key>Style</key>
@@ -22550,7 +22550,7 @@ datacite:usesIdentifierSchema}</string>
 						<key>ID</key>
 						<integer>42722</integer>
 						<key>Info</key>
-						<integer>1</integer>
+						<integer>2</integer>
 					</dict>
 				</dict>
 				<dict>
@@ -22893,7 +22893,7 @@ foaf:name}</string>
 \pard\tx60\tx300\tx940\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li20\fi-20\pardirnatural\qc
 \ls1\ilvl0
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\'93mailto:jorge.garcia@inia.es\'94}</string>
+&lt;mailto:jorge.garcia@inia.es&gt;}</string>
 					</dict>
 					<key>VFlip</key>
 					<string>YES</string>
@@ -24257,7 +24257,7 @@ foaf:name}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{440.65317630392406, 233.60766886747678}, {129.90422711643009, 19.440000772476196}}</string>
+					<string>{{440.65317630392406, 233.60766886747678}, {154.38399991218427, 19.440000772476196}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -24338,7 +24338,7 @@ foaf:name}</string>
 \pard\tx60\tx300\tx940\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li20\fi-20\pardirnatural\qc
 \ls1\ilvl0
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\'93mailto:rosa@inia.es\'94}</string>
+&lt;mailto:lucia.rosa@inia.es&gt;}</string>
 					</dict>
 					<key>VFlip</key>
 					<string>YES</string>
@@ -24514,7 +24514,7 @@ foaf:mbox}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{440.65317630392406, 345.92027102814035}, {185.88778497005569, 19.440000772476196}}</string>
+					<string>{{440.65317630392406, 345.92027102814035}, {196.25767038321828, 19.440000772476196}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -24595,7 +24595,7 @@ foaf:mbox}</string>
 \pard\tx60\tx300\tx940\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li20\fi-20\pardirnatural\qc
 \ls1\ilvl0
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\'93mailto:rosamaria.garcia@inia.es\'94}</string>
+&lt;mailto:rosamaria.garcia@inia.es&gt;}</string>
 					</dict>
 					<key>VFlip</key>
 					<string>YES</string>
@@ -25949,7 +25949,7 @@ dcterms:description}</string>
 \pard\tx60\tx300\tx940\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li20\fi-20\pardirnatural\qc
 \ls1\ilvl0
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\'93Lens Colections CRF\'94@en}</string>
+\'93Lens Collections CRF\'94@en}</string>
 					</dict>
 					<key>VFlip</key>
 					<string>YES</string>
@@ -40352,11 +40352,13 @@ Clase}</string>
 		<key>BottomSlabHeight</key>
 		<real>32</real>
 		<key>CurrentSheet</key>
-		<integer>1</integer>
+		<integer>0</integer>
 		<key>Expanded_Canvases</key>
 		<array/>
+		<key>FitInWindow</key>
+		<true/>
 		<key>Frame</key>
-		<string>{{0, 0}, {1280, 1001}}</string>
+		<string>{{-26, -896}, {1403, 873}}</string>
 		<key>ShowInfo</key>
 		<true/>
 		<key>ShowRuler</key>
@@ -40366,15 +40368,15 @@ Clase}</string>
 		<key>SidebarWidth</key>
 		<integer>230</integer>
 		<key>VisibleRegion</key>
-		<string>{{76.428572730142264, 167.1428599892831}, {523.57143748779697, 611.42858184113811}}</string>
+		<string>{{0, 0}, {1269.0000000000002, 1079.2429906542056}}</string>
 		<key>Zoom</key>
-		<real>1.3999999761581421</real>
+		<real>0.67454688731284473</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
 				<string>Ontologia</string>
-				<real>1.3999999761581421</real>
 				<real>0.0</real>
+				<real>1.3999999761581421</real>
 			</array>
 			<array>
 				<string>Ontologia 2</string>
