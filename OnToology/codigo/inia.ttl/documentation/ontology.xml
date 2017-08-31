@@ -24,10 +24,10 @@
         <dc:title xml:lang="en">Ontología datasets INIA</dc:title>
         <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-23-07</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-23-08</terms:modified>
         <terms:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inia</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://inia.linkeddata.es/def/core#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://inia.linkeddata.es/def/datasets#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">Esta ontología representa los datasets publicados por el INIA</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0.1</owl:versionInfo>
     </owl:Ontology>
@@ -781,12 +781,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#cites -->
+    <!-- http://inia.linkeddata.es/def/datasets#cites -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#cites">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#isCitedBy"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#cites">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#isCitedBy"/>
         <rdfs:comment xml:lang="es">indica que A incluye a B en una cita</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates that A includes B in a citation</rdfs:comment>
         <rdfs:label xml:lang="es">cita</rdfs:label>
@@ -796,12 +796,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#compiles -->
+    <!-- http://inia.linkeddata.es/def/datasets#compiles -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#compiles">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#isCompiledBy"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#compiles">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#isCompiledBy"/>
         <rdfs:comment xml:lang="es">Indica que B es el resultado de un evento de compilación o creación utilizando A</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates B is the result of a compile or creation event using A</rdfs:comment>
         <rdfs:label xml:lang="es">compila</rdfs:label>
@@ -811,12 +811,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#continues -->
+    <!-- http://inia.linkeddata.es/def/datasets#continues -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#continues">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#isContinuedBy"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#continues">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#isContinuedBy"/>
         <rdfs:comment xml:lang="es">Indica que A es una continuación del trabajo B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A is a continuation of the work B</rdfs:comment>
         <rdfs:label xml:lang="en">continues</rdfs:label>
@@ -826,12 +826,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#documents -->
+    <!-- http://inia.linkeddata.es/def/datasets#documents -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#documents">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#isDocumentedBy"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#documents">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#isDocumentedBy"/>
         <rdfs:comment xml:lang="es">indica que A es documentación sobre B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A is documentation about B</rdfs:comment>
         <rdfs:label xml:lang="es">documenta</rdfs:label>
@@ -841,12 +841,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#hasMetadata -->
+    <!-- http://inia.linkeddata.es/def/datasets#hasMetadata -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#hasMetadata">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#isMetadataFor"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#hasMetadata">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#isMetadataFor"/>
         <rdfs:comment xml:lang="es">indica que el recurso A tiene como metadatos adicionales el recurso B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates resource A has additional metadata B</rdfs:comment>
         <rdfs:label xml:lang="en">has metadata</rdfs:label>
@@ -856,12 +856,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#hasPart -->
+    <!-- http://inia.linkeddata.es/def/datasets#hasPart -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#hasPart">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#isPartOf"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#isPartOf"/>
         <rdfs:comment xml:lang="es">indica que A incluye a B como una de sus partes</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A includes the part B</rdfs:comment>
         <rdfs:label xml:lang="en">has part</rdfs:label>
@@ -871,12 +871,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#hasRelatedResource -->
+    <!-- http://inia.linkeddata.es/def/datasets#hasRelatedResource -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#hasRelatedResource">
-        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/core#Resource"/>
-        <rdfs:range rdf:resource="http://inia.linkeddata.es/def/core#Resource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#hasRelatedResource">
+        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/datasets#Resource"/>
+        <rdfs:range rdf:resource="http://inia.linkeddata.es/def/datasets#Resource"/>
         <rdfs:comment xml:lang="es">Relación entre dos recursos relacionados entre sí. Esta relación tiene una serie de sub relaciones específicas alineadas con el esquema de data cite.</rdfs:comment>
         <rdfs:label xml:lang="en">has related resource</rdfs:label>
         <rdfs:label xml:lang="es">tiene relación con recurso</rdfs:label>
@@ -884,11 +884,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isCitedBy -->
+    <!-- http://inia.linkeddata.es/def/datasets#isCitedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isCitedBy">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isCitedBy">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que B incluye a A en una cita</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates that B includes A in a citation</rdfs:comment>
         <rdfs:label xml:lang="es">es citado por</rdfs:label>
@@ -898,11 +898,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isCompiledBy -->
+    <!-- http://inia.linkeddata.es/def/datasets#isCompiledBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isCompiledBy">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isCompiledBy">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que B es utilizado para compilar o crear A</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates B is used to compile or create A</rdfs:comment>
         <rdfs:label xml:lang="es">es compilado por</rdfs:label>
@@ -912,11 +912,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isContinuedBy -->
+    <!-- http://inia.linkeddata.es/def/datasets#isContinuedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isContinuedBy">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isContinuedBy">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que A es continuado por el trabajo B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A is continued by the work B</rdfs:comment>
         <rdfs:label xml:lang="es">es continuado por</rdfs:label>
@@ -926,12 +926,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isDerivedFrom -->
+    <!-- http://inia.linkeddata.es/def/datasets#isDerivedFrom -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isDerivedFrom">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#isSourceOf"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isDerivedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#isSourceOf"/>
         <rdfs:comment xml:lang="es">indica que B es una fuente en la que está basado A</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates B is a source upon which A is based</rdfs:comment>
         <rdfs:label xml:lang="es">es derivado de</rdfs:label>
@@ -941,11 +941,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isDocumentedBy -->
+    <!-- http://inia.linkeddata.es/def/datasets#isDocumentedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isDocumentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isDocumentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que B es la documentación sobre A</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates B is documentation about explaining A</rdfs:comment>
         <rdfs:label xml:lang="es">está documentado por</rdfs:label>
@@ -955,11 +955,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isIdenticalTo -->
+    <!-- http://inia.linkeddata.es/def/datasets#isIdenticalTo -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isIdenticalTo">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isIdenticalTo">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">Esta relación no debe utilizarse, owl:sameAs debe ser utilizado en su lugar. Se crea sólo para mantener un registro de su existencia en el esquema de datacite.</rdfs:comment>
         <rdfs:comment xml:lang="en">This relation is not to be used, owl:sameAs should be used instead. It is created just to keep record of its existance in datacite schema.</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource</rdfs:comment>
@@ -972,11 +972,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isMetadataFor -->
+    <!-- http://inia.linkeddata.es/def/datasets#isMetadataFor -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isMetadataFor">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isMetadataFor">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que A contiene metadatos adicionales sobre el recurso B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates additional metadata A for a resource B</rdfs:comment>
         <rdfs:label xml:lang="es">es metadatos de</rdfs:label>
@@ -986,13 +986,13 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isNewVersionOf -->
+    <!-- http://inia.linkeddata.es/def/datasets#isNewVersionOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isNewVersionOf">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isNewVersionOf">
         <rdfs:subPropertyOf rdf:resource="http://dataid.dbpedia.org/ns/core#previousVersion"/>
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#isPreviousVersionOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#isPreviousVersionOf"/>
         <rdfs:comment xml:lang="es">indica que A es una nueva edición de B, donde la nueva edición ha sido modifcada o actualizada</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A is a new edition of B, where the new edition has been modified or updated</rdfs:comment>
         <rdfs:label xml:lang="es">es nueva versión de</rdfs:label>
@@ -1002,12 +1002,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isOriginalFormOf -->
+    <!-- http://inia.linkeddata.es/def/datasets#isOriginalFormOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isOriginalFormOf">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#isVariantFormOf"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isOriginalFormOf">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#isVariantFormOf"/>
         <rdfs:comment xml:lang="es">indica que A es la forma origen de B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A is the original form of B</rdfs:comment>
         <rdfs:label xml:lang="es">es forma original de</rdfs:label>
@@ -1017,11 +1017,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isPartOf -->
+    <!-- http://inia.linkeddata.es/def/datasets#isPartOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isPartOf">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
         <rdfs:comment xml:lang="es">indica que A es una porciónde B, esta relación puede ser utilizada para elementos de una serie</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A is a portion of B; may be used for elements of a series</rdfs:comment>
@@ -1032,12 +1032,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isPreviousVersionOf -->
+    <!-- http://inia.linkeddata.es/def/datasets#isPreviousVersionOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isPreviousVersionOf">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isPreviousVersionOf">
         <rdfs:subPropertyOf rdf:resource="http://dataid.dbpedia.org/ns/core#nextVersion"/>
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que A es una edición previa de B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A is a previous edition of B</rdfs:comment>
         <rdfs:label xml:lang="es">es versión previa de</rdfs:label>
@@ -1047,12 +1047,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isReferencedBy -->
+    <!-- http://inia.linkeddata.es/def/datasets#isReferencedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isReferencedBy">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#references"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isReferencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#references"/>
         <rdfs:comment xml:lang="es">indica que A es utilizado como fuente de información por B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A is used as a source of information by B</rdfs:comment>
         <rdfs:label xml:lang="es">es referenciado por</rdfs:label>
@@ -1062,12 +1062,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isReviewedBy -->
+    <!-- http://inia.linkeddata.es/def/datasets#isReviewedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isReviewedBy">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#reviews"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isReviewedBy">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#reviews"/>
         <rdfs:comment xml:lang="es">indica que A es revisado por B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates that A is reviewed by B</rdfs:comment>
         <rdfs:label xml:lang="es">es revisado por</rdfs:label>
@@ -1077,11 +1077,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isSourceOf -->
+    <!-- http://inia.linkeddata.es/def/datasets#isSourceOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isSourceOf">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isSourceOf">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que A es una fuente sobre la que B está basado</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A is a source upon which B is based</rdfs:comment>
         <rdfs:label xml:lang="es">es fuente de</rdfs:label>
@@ -1091,12 +1091,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isSupplementTo -->
+    <!-- http://inia.linkeddata.es/def/datasets#isSupplementTo -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isSupplementTo">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
-        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/core#isSupplementedBy"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isSupplementTo">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
+        <owl:inverseOf rdf:resource="http://inia.linkeddata.es/def/datasets#isSupplementedBy"/>
         <rdfs:comment xml:lang="es">indica que A es un suplemento de B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates that A is a supplement to B</rdfs:comment>
         <rdfs:label xml:lang="es">es suplemento de</rdfs:label>
@@ -1106,11 +1106,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isSupplementedBy -->
+    <!-- http://inia.linkeddata.es/def/datasets#isSupplementedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isSupplementedBy">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isSupplementedBy">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que B es un suplemento de A</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates that B is a supplement to A</rdfs:comment>
         <rdfs:label xml:lang="en">is supplemented by</rdfs:label>
@@ -1120,11 +1120,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#isVariantFormOf -->
+    <!-- http://inia.linkeddata.es/def/datasets#isVariantFormOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#isVariantFormOf">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#isVariantFormOf">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que A es un variante o forma diferente de B, or ejemplo una forma calculada o calibrada</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates A is a variant or different form of B, e.g. calculated or calibrated form or different packaging</rdfs:comment>
         <rdfs:label xml:lang="es">es una variante de</rdfs:label>
@@ -1134,11 +1134,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#references -->
+    <!-- http://inia.linkeddata.es/def/datasets#references -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#references">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#references">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que B es utilizado como fuente de información de A</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates B is used as a source of information for A</rdfs:comment>
         <rdfs:label xml:lang="en">references</rdfs:label>
@@ -1148,11 +1148,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#reviews -->
+    <!-- http://inia.linkeddata.es/def/datasets#reviews -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/core#reviews">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/core#hasRelatedResource"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasets#reviews">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasets#hasRelatedResource"/>
         <rdfs:comment xml:lang="es">indica que A  es una revisión de B</rdfs:comment>
         <rdfs:comment xml:lang="en">indicates that A is a review of B</rdfs:comment>
         <rdfs:label xml:lang="en">reviews</rdfs:label>
@@ -1162,10 +1162,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#contactPerson -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#contactPerson -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#contactPerson">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#contactPerson">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="en">contact person</rdfs:label>
         <rdfs:label xml:lang="es">persona de contacto</rdfs:label>
@@ -1173,10 +1173,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#dataCollector -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#dataCollector -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#dataCollector">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#dataCollector">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="en">data collector</rdfs:label>
         <rdfs:label xml:lang="es">recolector de datos</rdfs:label>
@@ -1184,20 +1184,20 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#dataCurator -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#dataCurator -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#dataCurator">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#dataCurator">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="en">data curator</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#dataManager -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#dataManager -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#dataManager">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#dataManager">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="en">data manager</rdfs:label>
         <rdfs:label xml:lang="es">gestor de datos</rdfs:label>
@@ -1205,11 +1205,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#developedWithinProject -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#developedWithinProject -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#developedWithinProject">
-        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/coreINIA#Dataset"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#developedWithinProject">
+        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#Dataset"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
         <rdfs:comment xml:lang="es">proyecto en el cual se ha creado el dataset</rdfs:comment>
         <rdfs:label xml:lang="es">desarrollado en proyecto</rdfs:label>
@@ -1218,10 +1218,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#distributor -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#distributor -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#distributor">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#distributor">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="es">distribuidor</rdfs:label>
         <rdfs:label xml:lang="en">distributor</rdfs:label>
@@ -1229,10 +1229,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#editor -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#editor -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#editor">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#editor">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="en">editor</rdfs:label>
         <rdfs:label xml:lang="es">editor</rdfs:label>
@@ -1240,10 +1240,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#fundedBy -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#fundedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#fundedBy">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#fundedBy">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
         <rdfs:comment xml:lang="es">relación entre un proyecto y la organización que lo financia</rdfs:comment>
@@ -1253,10 +1253,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#hostingInstitution -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#hostingInstitution -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#hostingInstitution">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#hostingInstitution">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="en">hosting institution</rdfs:label>
         <rdfs:label xml:lang="es">institución anfitriona</rdfs:label>
@@ -1264,10 +1264,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#producer -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#producer -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#producer">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#producer">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="en">producer</rdfs:label>
         <rdfs:label xml:lang="es">productor</rdfs:label>
@@ -1275,10 +1275,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#projectLeader -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#projectLeader -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#projectLeader">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#projectLeader">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="es">líder de proyecto</rdfs:label>
         <rdfs:label xml:lang="en">project leader</rdfs:label>
@@ -1286,10 +1286,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#projectManager -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#projectManager -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#projectManager">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#projectManager">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="es">jefe de proyecto</rdfs:label>
         <rdfs:label xml:lang="en">project manager</rdfs:label>
@@ -1297,10 +1297,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#registrationAgency -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#registrationAgency -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#registrationAgency">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#registrationAgency">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="es">agencia de registro</rdfs:label>
         <rdfs:label xml:lang="en">registration agency</rdfs:label>
@@ -1308,10 +1308,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#registrationAuthority -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#registrationAuthority -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#registrationAuthority">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#registrationAuthority">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="es">autoridad de registro</rdfs:label>
         <rdfs:label xml:lang="en">registration authority</rdfs:label>
@@ -1319,10 +1319,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#relatedPerson -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#relatedPerson -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#relatedPerson">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#relatedPerson">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="es">persona relacionada</rdfs:label>
         <rdfs:label xml:lang="en">related person</rdfs:label>
@@ -1330,10 +1330,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#researchGroup -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#researchGroup -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#researchGroup">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#researchGroup">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="es">grupo de investigación</rdfs:label>
         <rdfs:label xml:lang="en">research group</rdfs:label>
@@ -1341,10 +1341,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#researcher -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#researcher -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#researcher">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#researcher">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="es">investigador</rdfs:label>
         <rdfs:label xml:lang="en">researcher</rdfs:label>
@@ -1352,10 +1352,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#rightsHolder -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#rightsHolder -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#rightsHolder">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#rightsHolder">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/rightsHolder"/>
         <rdfs:label xml:lang="en">rights holder</rdfs:label>
@@ -1364,11 +1364,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#specie -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#specie -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#specie">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/coreINIA#taxonomicalScope"/>
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#specie">
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#taxonomicalScope"/>
         <rdfs:comment xml:lang="es">indica la categoría taxonómica especie</rdfs:comment>
         <rdfs:label xml:lang="es">especie</rdfs:label>
         <rdfs:label xml:lang="en">specie</rdfs:label>
@@ -1376,10 +1376,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#sponsor -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#sponsor -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#sponsor">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#sponsor">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="es">financiador</rdfs:label>
         <rdfs:label xml:lang="en">sponsor</rdfs:label>
@@ -1387,10 +1387,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#supervisor -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#supervisor -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#supervisor">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#supervisor">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="en">supervisor</rdfs:label>
         <rdfs:label xml:lang="es">supervisor</rdfs:label>
@@ -1398,10 +1398,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#taxonomicalScope -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#taxonomicalScope -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#taxonomicalScope">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#taxonomicalScope">
         <rdfs:comment xml:lang="es">Relación genera para indicar el ámbito taxonómico que puede ser especializada por una o mas de sus subpropiedades.</rdfs:comment>
         <rdfs:label xml:lang="en">taxonomical scope</rdfs:label>
         <rdfs:label xml:lang="es">ámbito taxonómico</rdfs:label>
@@ -1409,10 +1409,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#workPackageLeader -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#workPackageLeader -->
 
 
-    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#workPackageLeader">
+    <owl:ObjectProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#workPackageLeader">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
         <rdfs:label xml:lang="es">líder de paquete de trabajo</rdfs:label>
         <rdfs:label xml:lang="en">work package leader</rdfs:label>
@@ -1782,7 +1782,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://rs.tdwg.org/dwc/terms/class">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/coreINIA#taxonomicalScope"/>
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#taxonomicalScope"/>
         <rdfs:comment xml:lang="es">indica la categoría taxonómica clase</rdfs:comment>
         <rdfs:label xml:lang="es">clase</rdfs:label>
         <rdfs:label xml:lang="en">class</rdfs:label>
@@ -1794,7 +1794,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://rs.tdwg.org/dwc/terms/family">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/coreINIA#taxonomicalScope"/>
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#taxonomicalScope"/>
         <rdfs:comment xml:lang="es">indica la categoría taxonómica familia</rdfs:comment>
         <rdfs:label xml:lang="es">familia</rdfs:label>
         <rdfs:label xml:lang="en">family</rdfs:label>
@@ -1806,7 +1806,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://rs.tdwg.org/dwc/terms/genus">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/coreINIA#taxonomicalScope"/>
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#taxonomicalScope"/>
         <rdfs:comment xml:lang="es">indica la categoría taxonómica género</rdfs:comment>
         <rdfs:label xml:lang="en">genus</rdfs:label>
         <rdfs:label xml:lang="es">género</rdfs:label>
@@ -1818,7 +1818,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://rs.tdwg.org/dwc/terms/kingdom">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/coreINIA#taxonomicalScope"/>
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#taxonomicalScope"/>
         <rdfs:comment xml:lang="es">indica la categoría taxonómica reino</rdfs:comment>
         <rdfs:label xml:lang="en">kingdom</rdfs:label>
         <rdfs:label xml:lang="es">reino</rdfs:label>
@@ -1830,7 +1830,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://rs.tdwg.org/dwc/terms/order">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/coreINIA#taxonomicalScope"/>
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#taxonomicalScope"/>
         <rdfs:comment xml:lang="es">indica la categoría taxonómica orden</rdfs:comment>
         <rdfs:label xml:lang="es">orden</rdfs:label>
         <rdfs:label xml:lang="en">order</rdfs:label>
@@ -1842,7 +1842,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://rs.tdwg.org/dwc/terms/phylum">
-        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/coreINIA#taxonomicalScope"/>
+        <rdfs:subPropertyOf rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#taxonomicalScope"/>
         <rdfs:comment xml:lang="es">indica la categoría taxonómica filo o división</rdfs:comment>
         <rdfs:label xml:lang="es">filo</rdfs:label>
         <rdfs:label xml:lang="en">phylum</rdfs:label>
@@ -1948,11 +1948,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#elementsNumber -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#elementsNumber -->
 
 
-    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#elementsNumber">
-        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/coreINIA#Dataset"/>
+    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#elementsNumber">
+        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#Dataset"/>
         <rdfs:comment xml:lang="es">Número de instancias de la colección.</rdfs:comment>
         <rdfs:label xml:lang="en">elements number</rdfs:label>
         <rdfs:label xml:lang="es">número de elementos</rdfs:label>
@@ -1960,11 +1960,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#embargoDate -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#embargoDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#embargoDate">
-        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/coreINIA#Dataset"/>
+    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#embargoDate">
+        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#Dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="es">Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre.</rdfs:comment>
         <rdfs:label xml:lang="en">embargo date</rdfs:label>
@@ -1973,11 +1973,11 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#equipment -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#equipment -->
 
 
-    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#equipment">
-        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/coreINIA#Dataset"/>
+    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#equipment">
+        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#Dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">En caso de ser relevante el instrumento de medida utilizado, marca modelo precisión etc.</rdfs:comment>
         <rdfs:comment xml:lang="es">Instrumentación de medida</rdfs:comment>
@@ -1986,10 +1986,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#finalDate -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#finalDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#finalDate">
+    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#finalDate">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label xml:lang="es">Fecha final, relacionada con el ámbito del Dataset. Este atributo suele utilizarse en combinación con inia:startingDate como alternativa a dcterms:temporal.</rdfs:label>
@@ -1999,10 +1999,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#projectCode -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#projectCode -->
 
 
-    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#projectCode">
+    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#projectCode">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">código del proyecto en el que se ha desarrollado un dataset</rdfs:comment>
@@ -2012,12 +2012,12 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#software -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#software -->
 
 
-    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#software">
+    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#software">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/coreINIA#Dataset"/>
+        <rdfs:domain rdf:resource="http://inia.linkeddata.es/def/datasetsINIA#Dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">Hace referencia al software utilizado para la eleboración del dataset o para su visualización o explotación, nombre, versión, marca.</rdfs:comment>
         <rdfs:label xml:lang="en">software</rdfs:label>
@@ -2026,10 +2026,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#spatialScope -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#spatialScope -->
 
 
-    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#spatialScope">
+    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#spatialScope">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">Descripción textual del ámbito geográfico relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar determinadas zonas de manera textual, península ibérica, cuenca alta del Júcar, sierra de Cazorla, Madrid.</rdfs:comment>
         <rdfs:label xml:lang="es">ambito geográfico</rdfs:label>
@@ -2038,10 +2038,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#startingDate -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#startingDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#startingDate">
+    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#startingDate">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="es">Fecha inicial, relacionada con el ámbito del Dataset ejemplo: fecha inicial de las toma de muestras del material incluido en el Dataset 25/06/1938. Este atributo suele utilizarse en combinación con inia:finalDate como alternativa a dcterms:temporal.</rdfs:comment>
         <rdfs:comment xml:lang="es">fecha inicial</rdfs:comment>
@@ -2050,10 +2050,10 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#temporalScope -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#temporalScope -->
 
 
-    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/coreINIA#temporalScope">
+    <owl:DatatypeProperty rdf:about="http://inia.linkeddata.es/def/datasetsINIA#temporalScope">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">Descripción textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cretácico, Edad media.</rdfs:comment>
         <rdfs:label xml:lang="en">temporal scope</rdfs:label>
@@ -2396,30 +2396,30 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#Dataset -->
+    <!-- http://inia.linkeddata.es/def/datasets#Dataset -->
 
 
-    <owl:Class rdf:about="http://inia.linkeddata.es/def/core#Dataset">
-        <rdfs:subClassOf rdf:resource="http://inia.linkeddata.es/def/core#Resource"/>
+    <owl:Class rdf:about="http://inia.linkeddata.es/def/datasets#Dataset">
+        <rdfs:subClassOf rdf:resource="http://inia.linkeddata.es/def/datasets#Resource"/>
         <rdfs:label xml:lang="es">Conjunto de datos</rdfs:label>
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://inia.linkeddata.es/def/core#Resource -->
+    <!-- http://inia.linkeddata.es/def/datasets#Resource -->
 
 
-    <owl:Class rdf:about="http://inia.linkeddata.es/def/core#Resource">
+    <owl:Class rdf:about="http://inia.linkeddata.es/def/datasets#Resource">
         <rdfs:label xml:lang="en">Resource</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA#Dataset -->
+    <!-- http://inia.linkeddata.es/def/datasetsINIA#Dataset -->
 
 
-    <owl:Class rdf:about="http://inia.linkeddata.es/def/coreINIA#Dataset">
+    <owl:Class rdf:about="http://inia.linkeddata.es/def/datasetsINIA#Dataset">
         <rdfs:subClassOf rdf:resource="http://dataid.dbpedia.org/ns/core#Dataset"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3474,17 +3474,17 @@
     
 
 
-    <!-- http://inia.linkeddata.es/def/coreINIA# -->
-
-
-    <owl:NamedIndividual rdf:about="http://inia.linkeddata.es/def/coreINIA#"/>
-    
-
-
     <!-- http://inia.linkeddata.es/def/datasets# -->
 
 
     <owl:NamedIndividual rdf:about="http://inia.linkeddata.es/def/datasets#"/>
+    
+
+
+    <!-- http://inia.linkeddata.es/def/datasetsINIA# -->
+
+
+    <owl:NamedIndividual rdf:about="http://inia.linkeddata.es/def/datasetsINIA#"/>
     
 
 
