@@ -26,7 +26,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2017-08-25 08:34:38 +0000</string>
+	<string>2017-08-30 12:24:34 +0000</string>
 	<key>Modifier</key>
 	<string>María Poveda</string>
 	<key>NotesVisible</key>
@@ -85,7 +85,7 @@
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1269, 1079.2429906542056}}</string>
+				<string>{{0, 0}, {1307.756868131868, 999}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -104,7 +104,7 @@
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>CanvasSize</key>
-			<string>{1269, 1079.2429906542056}</string>
+			<string>{1307.756868131868, 999}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -136,7 +136,7 @@
 						<integer>1</integer>
 					</dict>
 					<key>ID</key>
-					<integer>42671</integer>
+					<integer>42672</integer>
 					<key>OrthogonalBarAutomatic</key>
 					<true/>
 					<key>OrthogonalBarPoint</key>
@@ -17809,7 +17809,7 @@ Clase}</string>
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1035.901098901099, 881}}</string>
+				<string>{{0, 0}, {949, 881}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -17828,7 +17828,7 @@ Clase}</string>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>CanvasSize</key>
-			<string>{1035.901098901099, 881}</string>
+			<string>{949, 881}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -40358,7 +40358,7 @@ Clase}</string>
 		<key>FitInWindow</key>
 		<true/>
 		<key>Frame</key>
-		<string>{{-26, -896}, {1403, 873}}</string>
+		<string>{{231, 184}, {1568, 873}}</string>
 		<key>ShowInfo</key>
 		<true/>
 		<key>ShowRuler</key>
@@ -40366,11 +40366,11 @@ Clase}</string>
 		<key>Sidebar</key>
 		<true/>
 		<key>SidebarWidth</key>
-		<integer>230</integer>
+		<integer>298</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {1269.0000000000002, 1079.2429906542056}}</string>
+		<string>{{0, 0}, {1307.756868131868, 999}}</string>
 		<key>Zoom</key>
-		<real>0.67454688731284473</real>
+		<real>0.72872872872872874</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
