@@ -26,7 +26,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2017-08-30 12:24:34 +0000</string>
+	<string>2017-09-01 09:04:06 +0000</string>
 	<key>Modifier</key>
 	<string>María Poveda</string>
 	<key>NotesVisible</key>
@@ -162,7 +162,7 @@
 								<string>0.10311</string>
 							</dict>
 							<key>HeadArrow</key>
-							<string>UMLInheritance</string>
+							<string>0</string>
 							<key>Join</key>
 							<integer>0</integer>
 							<key>Legacy</key>
