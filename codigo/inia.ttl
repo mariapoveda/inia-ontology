@@ -15,6 +15,7 @@
 
 <http://data.inia.es/def/core#> a owl:Ontology ;
 	owl:imports <http://purl.org/spar/datacite/> , <http://www.w3.org/ns/org#> , <http://xmlns.com/foaf/0.1/> ;
+	dc:creator "http://w3id.org/people/mpoveda" ;
 	dcterms:modified "2017-27-11"^^xsd:date ;
 	dc:publisher <http://www.inia.es> ;
 	rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
@@ -842,29 +843,6 @@ dc:type a owl:ObjectProperty .
 dcterms:accessRights a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:rights .
 # 
-# http://purl.org/dc/terms/accrualMethod
-
-dcterms:accrualMethod a owl:ObjectProperty ;
-	rdfs:domain <http://purl.org/dc/dcmitype/Collection> ;
-	rdfs:range dcterms:MethodOfAccrual .
-# 
-# http://purl.org/dc/terms/accrualPeriodicity
-
-dcterms:accrualPeriodicity a owl:ObjectProperty ;
-	rdfs:domain <http://purl.org/dc/dcmitype/Collection> ;
-	rdfs:range dcterms:Frequency .
-# 
-# http://purl.org/dc/terms/accrualPolicy
-
-dcterms:accrualPolicy a owl:ObjectProperty ;
-	rdfs:domain <http://purl.org/dc/dcmitype/Collection> ;
-	rdfs:range dcterms:Policy .
-# 
-# http://purl.org/dc/terms/audience
-
-dcterms:audience a owl:ObjectProperty ;
-	rdfs:range dcterms:AgentClass .
-# 
 # http://purl.org/dc/terms/conformsTo
 
 dcterms:conformsTo a owl:ObjectProperty ;
@@ -883,21 +861,6 @@ dcterms:coverage a owl:ObjectProperty .
 dcterms:creator a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor .
 # 
-# http://purl.org/dc/terms/educationLevel
-
-dcterms:educationLevel a owl:ObjectProperty ;
-	rdfs:subPropertyOf dcterms:audience ;
-	rdfs:range dcterms:AgentClass .
-# 
-# http://purl.org/dc/terms/extent
-
-dcterms:extent a owl:ObjectProperty ;
-	rdfs:subPropertyOf dcterms:format .
-# 
-# http://purl.org/dc/terms/format
-
-dcterms:format a owl:ObjectProperty .
-# 
 # http://purl.org/dc/terms/hasFormat
 
 dcterms:hasFormat a owl:ObjectProperty ;
@@ -915,8 +878,7 @@ dcterms:hasVersion a owl:ObjectProperty ;
 # 
 # http://purl.org/dc/terms/instructionalMethod
 
-dcterms:instructionalMethod a owl:ObjectProperty ;
-	rdfs:range dcterms:MethodOfInstruction .
+dcterms:instructionalMethod a owl:ObjectProperty .
 # 
 # http://purl.org/dc/terms/isFormatOf
 
@@ -957,22 +919,9 @@ dcterms:language a owl:ObjectProperty .
 dcterms:license a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:rights .
 # 
-# http://purl.org/dc/terms/mediator
-
-dcterms:mediator a owl:ObjectProperty ;
-	rdfs:subPropertyOf dcterms:audience ;
-	rdfs:range dcterms:AgentClass .
-# 
-# http://purl.org/dc/terms/medium
-
-dcterms:medium a owl:ObjectProperty ;
-	rdfs:subPropertyOf dcterms:format ;
-	rdfs:domain dcterms:PhysicalResource .
-# 
 # http://purl.org/dc/terms/provenance
 
-dcterms:provenance a owl:ObjectProperty ;
-	rdfs:range dcterms:ProvenanceStatement .
+dcterms:provenance a owl:ObjectProperty .
 # 
 # http://purl.org/dc/terms/publisher
 
@@ -1521,94 +1470,6 @@ dcterms:Agent a owl:Class .
 
 dcterms:AgentClass a owl:Class ;
 	rdfs:subClassOf rdfs:Class .
-# 
-# http://purl.org/dc/terms/BibliographicResource
-
-dcterms:BibliographicResource a owl:Class .
-# 
-# http://purl.org/dc/terms/FileFormat
-
-dcterms:FileFormat a owl:Class ;
-	rdfs:subClassOf dcterms:MediaType .
-# 
-# http://purl.org/dc/terms/Frequency
-
-dcterms:Frequency a owl:Class .
-# 
-# http://purl.org/dc/terms/Jurisdiction
-
-dcterms:Jurisdiction a owl:Class ;
-	rdfs:subClassOf dcterms:LocationPeriodOrJurisdiction .
-# 
-# http://purl.org/dc/terms/LicenseDocument
-
-dcterms:LicenseDocument a owl:Class ;
-	rdfs:subClassOf dcterms:RightsStatement .
-# 
-# http://purl.org/dc/terms/LinguisticSystem
-
-dcterms:LinguisticSystem a owl:Class .
-# 
-# http://purl.org/dc/terms/Location
-
-dcterms:Location a owl:Class ;
-	rdfs:subClassOf dcterms:LocationPeriodOrJurisdiction .
-# 
-# http://purl.org/dc/terms/LocationPeriodOrJurisdiction
-
-dcterms:LocationPeriodOrJurisdiction a owl:Class .
-# 
-# http://purl.org/dc/terms/MediaType
-
-dcterms:MediaType a owl:Class ;
-	rdfs:subClassOf dcterms:MediaTypeOrExtent .
-# 
-# http://purl.org/dc/terms/MediaTypeOrExtent
-
-dcterms:MediaTypeOrExtent a owl:Class .
-# 
-# http://purl.org/dc/terms/MethodOfAccrual
-
-dcterms:MethodOfAccrual a owl:Class .
-# 
-# http://purl.org/dc/terms/MethodOfInstruction
-
-dcterms:MethodOfInstruction a owl:Class .
-# 
-# http://purl.org/dc/terms/PeriodOfTime
-
-dcterms:PeriodOfTime a owl:Class ;
-	rdfs:subClassOf dcterms:LocationPeriodOrJurisdiction .
-# 
-# http://purl.org/dc/terms/PhysicalMedium
-
-dcterms:PhysicalMedium a owl:Class ;
-	rdfs:subClassOf dcterms:MediaType .
-# 
-# http://purl.org/dc/terms/PhysicalResource
-
-dcterms:PhysicalResource a owl:Class .
-# 
-# http://purl.org/dc/terms/Policy
-
-dcterms:Policy a owl:Class .
-# 
-# http://purl.org/dc/terms/ProvenanceStatement
-
-dcterms:ProvenanceStatement a owl:Class .
-# 
-# http://purl.org/dc/terms/RightsStatement
-
-dcterms:RightsStatement a owl:Class .
-# 
-# http://purl.org/dc/terms/SizeOrDuration
-
-dcterms:SizeOrDuration a owl:Class ;
-	rdfs:subClassOf dcterms:MediaTypeOrExtent .
-# 
-# http://purl.org/dc/terms/Standard
-
-dcterms:Standard a owl:Class .
 # 
 # http://purl.org/spar/datacite/Identifier
 
@@ -2563,13 +2424,6 @@ dcterms:AgentClass dcterms:issued "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#AgentClass-003> .
 # 
 
-dcterms:BibliographicResource rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#BibliographicResource-001> ;
-	rdfs:comment "A book, article, or other documentary resource."@en ;
-	rdfs:label "Bibliographic Resource"@en ;
-	dcterms:issued "2008-01-14"^^xsd:date .
-# 
-
 dcterms:Box dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:comment "The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2577,21 +2431,6 @@ dcterms:Box dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:label "DCMI Box"@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Box-003> .
-# 
-
-dcterms:FileFormat dcterms:description "Examples include the formats defined by the list of Internet Media Types."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#FileFormat-001> ;
-	rdfs:label "File Format"@en ;
-	rdfs:comment "A digital resource format."@en ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
-# 
-
-dcterms:Frequency rdfs:label "Frequency"@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Frequency-001> ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "A rate at which something recurs."@en ;
-	dcterms:issued "2008-01-14"^^xsd:date .
 # 
 
 dcterms:ISO3166 dcterms:issued "2000-07-11"^^xsd:date ;
@@ -2620,99 +2459,13 @@ dcterms:ISO639-3 rdfs:label "ISO 639-3"@en ;
 	rdfs:seeAlso <http://www.sil.org/iso639-3/> .
 # 
 
-dcterms:Jurisdiction dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Jurisdiction-001> ;
-	rdfs:label "Jurisdiction"@en ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "The extent or range of judicial, law enforcement, or other authority."@en .
-# 
-
-dcterms:LicenseDocument rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:label "License Document"@en ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	rdfs:comment "A legal document giving official permission to do something with a Resource."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#LicenseDocument-001> .
-# 
-
-dcterms:LinguisticSystem dcterms:issued "2008-01-14"^^xsd:date ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#LinguisticSystem-001> ;
-	dcterms:description "Examples include written, spoken, sign, and computer languages."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "A system of signs, symbols, sounds, gestures, or rules used in communication."@en ;
-	rdfs:label "Linguistic System"@en .
-# 
-
-dcterms:Location dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Location-001> ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	rdfs:label "Location"@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "A spatial region or named place."@en .
-# 
-
-dcterms:LocationPeriodOrJurisdiction rdfs:label "Location, Period, or Jurisdiction"@en ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	rdfs:comment "A location, period of time, or jurisdiction."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#LocationPeriodOrJurisdiction-001> .
-# 
-
-dcterms:MediaType rdfs:comment "A file format or physical medium."@en ;
-	rdfs:label "Media Type"@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#MediaType-001> ;
-	dcterms:issued "2008-01-14"^^xsd:date .
-# 
-
-dcterms:MediaTypeOrExtent rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "A media type or extent."@en ;
-	rdfs:label "Media Type or Extent"@en ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#MediaTypeOrExtent-001> .
-# 
-
-dcterms:MethodOfAccrual rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "A method by which resources are added to a collection."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#MethodOfAccrual-001> ;
-	rdfs:label "Method of Accrual"@en ;
-	dcterms:issued "2008-01-14"^^xsd:date .
-# 
-
-dcterms:MethodOfInstruction rdfs:label "Method of Instruction"@en ;
-	rdfs:comment "A process that is used to engender knowledge, attitudes, and skills."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#MethodOfInstruction-001> ;
-	dcterms:issued "2008-01-14"^^xsd:date .
-# 
-
-dcterms:Period rdfs:seeAlso <http://dublincore.org/documents/dcmi-period/> ;
-	rdfs:comment "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme."@en ;
+dcterms:Period rdfs:comment "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme."@en ;
+	rdfs:seeAlso <http://dublincore.org/documents/dcmi-period/> ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:label "DCMI Period"@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Period-003> .
-# 
-
-dcterms:PeriodOfTime rdfs:comment "An interval of time that is named or defined by its start and end dates."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#PeriodOfTime-001> ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:label "Period of Time"@en ;
-	dcterms:issued "2008-01-14"^^xsd:date .
-# 
-
-dcterms:PhysicalMedium dcterms:hasVersion <http://dublincore.org/usage/terms/history/#PhysicalMedium-001> ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	dcterms:description "Examples include paper, canvas, or DVD."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:label "Physical Medium"@en ;
-	rdfs:comment "A physical material or carrier."@en .
-# 
-
-dcterms:PhysicalResource rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	rdfs:comment "A material thing."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#PhysicalResource-001> ;
-	rdfs:label "Physical Resource"@en .
 # 
 
 dcterms:Point rdfs:comment "The set of points in space defined by their geographic coordinates according to the DCMI Point Encoding Scheme."@en ;
@@ -2722,20 +2475,6 @@ dcterms:Point rdfs:comment "The set of points in space defined by their geograph
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Point-003> ;
 	rdfs:seeAlso <http://dublincore.org/documents/dcmi-point/> ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
-# 
-
-dcterms:Policy rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:label "Policy"@en ;
-	rdfs:comment "A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Policy-001> ;
-	dcterms:issued "2008-01-14"^^xsd:date .
-# 
-
-dcterms:ProvenanceStatement rdfs:label "Provenance Statement"@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#ProvenanceStatement-001> ;
-	rdfs:comment "A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."@en .
 # 
 
 dcterms:RFC1766 rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2762,8 +2501,8 @@ dcterms:RFC4646 dcterms:description "RFC 4646 obsoletes RFC 3066."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#RFC4646-001> ;
 	rdfs:seeAlso <http://www.ietf.org/rfc/rfc4646.txt> ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:label "RFC 4646"@en ;
-	rdfs:comment "The set of tags constructed according to RFC 4646 for the identification of languages."@en .
+	rdfs:comment "The set of tags constructed according to RFC 4646 for the identification of languages."@en ;
+	rdfs:label "RFC 4646"@en .
 # 
 
 dcterms:RFC5646 dcterms:issued "2010-10-11"^^xsd:date ;
@@ -2773,28 +2512,6 @@ dcterms:RFC5646 dcterms:issued "2010-10-11"^^xsd:date ;
 	rdfs:label "RFC 5646"@en ;
 	dcterms:description "RFC 5646 obsoletes RFC 4646."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
-# 
-
-dcterms:RightsStatement rdfs:label "Rights Statement"@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "A statement about the intellectual property rights (IPR) held in or over a Resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#RightsStatement-001> .
-# 
-
-dcterms:SizeOrDuration rdfs:label "Size or Duration"@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#SizeOrDuration-001> ;
-	dcterms:description "Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds."@en ;
-	rdfs:comment "A dimension or extent, or a time taken to play or execute."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2008-01-14"^^xsd:date .
-# 
-
-dcterms:Standard rdfs:comment "A basis for comparison; a reference point against which other things can be evaluated."@en ;
-	rdfs:label "Standard"@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Standard-001> .
 # 
 
 dcterms:URI rdfs:comment "The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force."@en ;
@@ -2832,30 +2549,6 @@ dcterms:accessRights dcterms:description "Access Rights may include information 
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 # 
 
-dcterms:accrualMethod rdfs:label "Accrual Method"@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#accrualMethod-003> ;
-	dcterms:modified "2010-10-11"^^xsd:date ;
-	rdfs:comment "The method by which items are added to a collection."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2005-06-13"^^xsd:date .
-# 
-
-dcterms:accrualPeriodicity dcterms:modified "2010-10-11"^^xsd:date ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#accrualPeriodicity-003> ;
-	rdfs:label "Accrual Periodicity"@en ;
-	rdfs:comment "The frequency with which items are added to a collection."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2005-06-13"^^xsd:date .
-# 
-
-dcterms:accrualPolicy rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2005-06-13"^^xsd:date ;
-	dcterms:modified "2010-10-11"^^xsd:date ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#accrualPolicy-003> ;
-	rdfs:comment "The policy governing the addition of items to a collection."@en ;
-	rdfs:label "Accrual Policy"@en .
-# 
-
 dcterms:alternative rdfs:comment "An alternative name for the resource."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#alternative-003> ;
@@ -2863,14 +2556,6 @@ dcterms:alternative rdfs:comment "An alternative name for the resource."@en ;
 	dcterms:description "The distinction between titles and alternative titles is application-specific."@en ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:label "Alternative Title"@en .
-# 
-
-dcterms:audience dcterms:issued "2001-05-21"^^xsd:date ;
-	rdfs:comment "A class of entity for whom the resource is intended or useful."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#audience-003> ;
-	rdfs:label "Audience"@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:modified "2008-01-14"^^xsd:date .
 # 
 
 dcterms:available rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2984,31 +2669,6 @@ dcterms:description dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en .
 # 
 
-dcterms:educationLevel dcterms:modified "2008-01-14"^^xsd:date ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2002-07-13"^^xsd:date ;
-	rdfs:label "Audience Education Level"@en ;
-	rdfs:comment "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#educationLevel-002> .
-# 
-
-dcterms:extent dcterms:modified "2008-01-14"^^xsd:date ;
-	dcterms:issued "2000-07-11"^^xsd:date ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "The size or duration of the resource."@en ;
-	rdfs:label "Extent"@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#extent-003> .
-# 
-
-dcterms:format dcterms:issued "2008-01-14"^^xsd:date ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#formatT-001> ;
-	dcterms:modified "2008-01-14"^^xsd:date ;
-	rdfs:comment "The file format, physical medium, or dimensions of the resource."@en ;
-	dcterms:description "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:label "Format"@en .
-# 
-
 dcterms:hasFormat rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	<http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#hasFormat-003> ;
@@ -3075,8 +2735,8 @@ dcterms:isPartOf dcterms:modified "2008-01-14"^^xsd:date ;
 dcterms:isReferencedBy rdfs:label "Is Referenced By"@en ;
 	rdfs:comment "A related resource that references, cites, or otherwise points to the described resource."@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	<http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#isReferencedBy-003> .
 # 
@@ -3137,23 +2797,6 @@ dcterms:license rdfs:comment "licencia"@es ;
 	rdfs:comment "Licencia que especifica los permisos para hacer algo con el recurso."@es ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> .
-# 
-
-dcterms:mediator dcterms:description "In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."@en ;
-	dcterms:modified "2008-01-14"^^xsd:date ;
-	rdfs:comment "An entity that mediates access to the resource and for whom the resource is intended or useful."@en ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#mediator-003> ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:label "Mediator"@en ;
-	dcterms:issued "2001-05-21"^^xsd:date .
-# 
-
-dcterms:medium rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:label "Medium"@en ;
-	rdfs:comment "The material or physical carrier of the resource."@en ;
-	dcterms:issued "2000-07-11"^^xsd:date ;
-	dcterms:modified "2008-01-14"^^xsd:date ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#medium-003> .
 # 
 
 dcterms:modified rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
