@@ -26,7 +26,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2017-09-05 08:16:58 +0000</string>
+	<string>2017-11-27 08:11:16 +0000</string>
 	<key>Modifier</key>
 	<string>María Poveda</string>
 	<key>NotesVisible</key>
@@ -7911,7 +7911,7 @@ Atributo cuyo dominio es la clase adjunta}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\b\fs24 \cf2 Ontolog\'eda:\
-     inia: https://w3id.org/def/inia#}</string>
+     inia: http://data.inia.es/def/core#}</string>
 					</dict>
 				</dict>
 				<dict>
@@ -40358,7 +40358,7 @@ Clase}</string>
 		<key>FitInWindow</key>
 		<true/>
 		<key>Frame</key>
-		<string>{{0, 128}, {1280, 873}}</string>
+		<string>{{281, -897}, {1280, 873}}</string>
 		<key>ShowInfo</key>
 		<false/>
 		<key>ShowRuler</key>
