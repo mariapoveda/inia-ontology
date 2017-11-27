@@ -1,15 +1,15 @@
-<https://w3id.org/def/inia#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/def/inia#> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/datacite/> .
-<https://w3id.org/def/inia#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/org#> .
-<https://w3id.org/def/inia#> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
-<https://w3id.org/def/inia#> <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> .
-<https://w3id.org/def/inia#> <http://purl.org/dc/elements/1.1/title> "Ontolog\u00EDa datasets INIA"@en .
-<https://w3id.org/def/inia#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<https://w3id.org/def/inia#> <http://purl.org/dc/terms/modified> "2017-23-08"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/def/inia#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inia" .
-<https://w3id.org/def/inia#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/def/inia#" .
-<https://w3id.org/def/inia#> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta ontolog\u00EDa representa los datasets publicados por el INIA"@en .
-<https://w3id.org/def/inia#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<http://data.inia.es/def/core#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://data.inia.es/def/core#> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/datacite/> .
+<http://data.inia.es/def/core#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/org#> .
+<http://data.inia.es/def/core#> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<http://data.inia.es/def/core#> <http://purl.org/dc/elements/1.1/publisher> <http://www.inia.es> .
+<http://data.inia.es/def/core#> <http://purl.org/dc/elements/1.1/title> "Ontolog\u00EDa datasets INIA"@en .
+<http://data.inia.es/def/core#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://data.inia.es/def/core#> <http://purl.org/dc/terms/modified> "2017-27-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.inia.es/def/core#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inia" .
+<http://data.inia.es/def/core#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://data.inia.es/def/core#" .
+<http://data.inia.es/def/core#> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta ontolog\u00EDa representa los datasets publicados por el INIA"@en .
+<http://data.inia.es/def/core#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.2"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
 # 
 # #################################################################
@@ -339,6 +339,400 @@
 # #################################################################
 # 
 # 
+# http://data.inia.es/def/core#cites
+<http://data.inia.es/def/core#cites> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#cites> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#cites> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#isCitedBy> .
+<http://data.inia.es/def/core#cites> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A incluye a B en una cita"@es .
+<http://data.inia.es/def/core#cites> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that A includes B in a citation"@en .
+<http://data.inia.es/def/core#cites> <http://www.w3.org/2000/01/rdf-schema#label> "cita"@es .
+<http://data.inia.es/def/core#cites> <http://www.w3.org/2000/01/rdf-schema#label> "cites"@en .
+<http://data.inia.es/def/core#cites> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#compiles
+<http://data.inia.es/def/core#compiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#compiles> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#compiles> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#isCompiledBy> .
+<http://data.inia.es/def/core#compiles> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que B es el resultado de un evento de compilaci\u00F3n o creaci\u00F3n utilizando A"@es .
+<http://data.inia.es/def/core#compiles> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates B is the result of a compile or creation event using A"@en .
+<http://data.inia.es/def/core#compiles> <http://www.w3.org/2000/01/rdf-schema#label> "compila"@es .
+<http://data.inia.es/def/core#compiles> <http://www.w3.org/2000/01/rdf-schema#label> "compiles"@en .
+<http://data.inia.es/def/core#compiles> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#contactPerson
+<http://data.inia.es/def/core#contactPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#contactPerson> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#contactPerson> <http://www.w3.org/2000/01/rdf-schema#label> "contact person"@en .
+<http://data.inia.es/def/core#contactPerson> <http://www.w3.org/2000/01/rdf-schema#label> "persona de contacto"@es .
+# 
+# http://data.inia.es/def/core#continues
+<http://data.inia.es/def/core#continues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#continues> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#continues> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#isContinuedBy> .
+<http://data.inia.es/def/core#continues> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que A es una continuaci\u00F3n del trabajo B"@es .
+<http://data.inia.es/def/core#continues> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a continuation of the work B"@en .
+<http://data.inia.es/def/core#continues> <http://www.w3.org/2000/01/rdf-schema#label> "continues"@en .
+<http://data.inia.es/def/core#continues> <http://www.w3.org/2000/01/rdf-schema#label> "contin\u00FAa"@es .
+<http://data.inia.es/def/core#continues> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#dataCollector
+<http://data.inia.es/def/core#dataCollector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#dataCollector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#dataCollector> <http://www.w3.org/2000/01/rdf-schema#label> "data collector"@en .
+<http://data.inia.es/def/core#dataCollector> <http://www.w3.org/2000/01/rdf-schema#label> "recolector de datos"@es .
+# 
+# http://data.inia.es/def/core#dataCurator
+<http://data.inia.es/def/core#dataCurator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#dataCurator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#dataCurator> <http://www.w3.org/2000/01/rdf-schema#label> "data curator"@en .
+# 
+# http://data.inia.es/def/core#dataManager
+<http://data.inia.es/def/core#dataManager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#dataManager> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#dataManager> <http://www.w3.org/2000/01/rdf-schema#label> "data manager"@en .
+<http://data.inia.es/def/core#dataManager> <http://www.w3.org/2000/01/rdf-schema#label> "gestor de datos"@es .
+# 
+# http://data.inia.es/def/core#developedWithinProject
+<http://data.inia.es/def/core#developedWithinProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#developedWithinProject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.inia.es/def/core#Dataset> .
+<http://data.inia.es/def/core#developedWithinProject> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Project> .
+<http://data.inia.es/def/core#developedWithinProject> <http://www.w3.org/2000/01/rdf-schema#comment> "proyecto en el cual se ha creado el dataset"@es .
+<http://data.inia.es/def/core#developedWithinProject> <http://www.w3.org/2000/01/rdf-schema#label> "desarrollado en proyecto"@es .
+<http://data.inia.es/def/core#developedWithinProject> <http://www.w3.org/2000/01/rdf-schema#label> "developed within project"@en .
+# 
+# http://data.inia.es/def/core#distributor
+<http://data.inia.es/def/core#distributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#distributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#distributor> <http://www.w3.org/2000/01/rdf-schema#label> "distribuidor"@es .
+<http://data.inia.es/def/core#distributor> <http://www.w3.org/2000/01/rdf-schema#label> "distributor"@en .
+# 
+# http://data.inia.es/def/core#documents
+<http://data.inia.es/def/core#documents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#documents> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#documents> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#isDocumentedBy> .
+<http://data.inia.es/def/core#documents> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es documentaci\u00F3n sobre B"@es .
+<http://data.inia.es/def/core#documents> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is documentation about B"@en .
+<http://data.inia.es/def/core#documents> <http://www.w3.org/2000/01/rdf-schema#label> "documenta"@es .
+<http://data.inia.es/def/core#documents> <http://www.w3.org/2000/01/rdf-schema#label> "documents"@en .
+<http://data.inia.es/def/core#documents> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#editor
+<http://data.inia.es/def/core#editor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#editor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#editor> <http://www.w3.org/2000/01/rdf-schema#label> "editor"@en .
+<http://data.inia.es/def/core#editor> <http://www.w3.org/2000/01/rdf-schema#label> "editor"@es .
+# 
+# http://data.inia.es/def/core#fundedBy
+<http://data.inia.es/def/core#fundedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#fundedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://data.inia.es/def/core#fundedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/org#Organization> .
+<http://data.inia.es/def/core#fundedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n entre un proyecto y la organizaci\u00F3n que lo financia"@es .
+<http://data.inia.es/def/core#fundedBy> <http://www.w3.org/2000/01/rdf-schema#label> "financiado por"@es .
+<http://data.inia.es/def/core#fundedBy> <http://www.w3.org/2000/01/rdf-schema#label> "funded by"@en .
+# 
+# http://data.inia.es/def/core#hasMetadata
+<http://data.inia.es/def/core#hasMetadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#hasMetadata> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#isMetadataFor> .
+<http://data.inia.es/def/core#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que el recurso A tiene como metadatos adicionales el recurso B"@es .
+<http://data.inia.es/def/core#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates resource A has additional metadata B"@en .
+<http://data.inia.es/def/core#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#label> "has metadata"@en .
+<http://data.inia.es/def/core#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#label> "tiene metadatos"@es .
+<http://data.inia.es/def/core#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#hasPart
+<http://data.inia.es/def/core#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#isPartOf> .
+<http://data.inia.es/def/core#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A incluye a B como una de sus partes"@es .
+<http://data.inia.es/def/core#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A includes the part B"@en .
+<http://data.inia.es/def/core#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en .
+<http://data.inia.es/def/core#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "tiene parte"@es .
+<http://data.inia.es/def/core#hasPart> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#hasRelatedResource
+<http://data.inia.es/def/core#hasRelatedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#hasRelatedResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.inia.es/def/core#Resource> .
+<http://data.inia.es/def/core#hasRelatedResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.inia.es/def/core#Resource> .
+<http://data.inia.es/def/core#hasRelatedResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n entre dos recursos relacionados entre s\u00ED. Esta relaci\u00F3n tiene una serie de sub relaciones espec\u00EDficas alineadas con el esquema de data cite."@es .
+<http://data.inia.es/def/core#hasRelatedResource> <http://www.w3.org/2000/01/rdf-schema#label> "has related resource"@en .
+<http://data.inia.es/def/core#hasRelatedResource> <http://www.w3.org/2000/01/rdf-schema#label> "tiene relaci\u00F3n con recurso"@es .
+# 
+# http://data.inia.es/def/core#hostingInstitution
+<http://data.inia.es/def/core#hostingInstitution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#hostingInstitution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#hostingInstitution> <http://www.w3.org/2000/01/rdf-schema#label> "hosting institution"@en .
+<http://data.inia.es/def/core#hostingInstitution> <http://www.w3.org/2000/01/rdf-schema#label> "instituci\u00F3n anfitriona"@es .
+# 
+# http://data.inia.es/def/core#isCitedBy
+<http://data.inia.es/def/core#isCitedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B incluye a A en una cita"@es .
+<http://data.inia.es/def/core#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that B includes A in a citation"@en .
+<http://data.inia.es/def/core#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#label> "es citado por"@es .
+<http://data.inia.es/def/core#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is cited by"@en .
+<http://data.inia.es/def/core#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isCompiledBy
+<http://data.inia.es/def/core#isCompiledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B es utilizado para compilar o crear A"@es .
+<http://data.inia.es/def/core#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates B is used to compile or create A"@en .
+<http://data.inia.es/def/core#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#label> "es compilado por"@es .
+<http://data.inia.es/def/core#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#label> "is compiled by"@en .
+<http://data.inia.es/def/core#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isContinuedBy
+<http://data.inia.es/def/core#isContinuedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es continuado por el trabajo B"@es .
+<http://data.inia.es/def/core#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is continued by the work B"@en .
+<http://data.inia.es/def/core#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#label> "es continuado por"@es .
+<http://data.inia.es/def/core#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is continued by"@en .
+<http://data.inia.es/def/core#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isDerivedFrom
+<http://data.inia.es/def/core#isDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isDerivedFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#isSourceOf> .
+<http://data.inia.es/def/core#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B es una fuente en la que est\u00E1 basado A"@es .
+<http://data.inia.es/def/core#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates B is a source upon which A is based"@en .
+<http://data.inia.es/def/core#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "es derivado de"@es .
+<http://data.inia.es/def/core#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "is derived from"@en .
+<http://data.inia.es/def/core#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isDocumentedBy
+<http://data.inia.es/def/core#isDocumentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B es la documentaci\u00F3n sobre A"@es .
+<http://data.inia.es/def/core#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates B is documentation about explaining A"@en .
+<http://data.inia.es/def/core#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "est\u00E1 documentado por"@es .
+<http://data.inia.es/def/core#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is documented by"@en .
+<http://data.inia.es/def/core#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isIdenticalTo
+<http://data.inia.es/def/core#isIdenticalTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta relaci\u00F3n no debe utilizarse, owl:sameAs debe ser utilizado en su lugar. Se crea s\u00F3lo para mantener un registro de su existencia en el esquema de datacite."@es .
+<http://data.inia.es/def/core#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation is not to be used, owl:sameAs should be used instead. It is created just to keep record of its existance in datacite schema."@en .
+<http://data.inia.es/def/core#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource"@en .
+<http://data.inia.es/def/core#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#label> "es id\u00E9ntico a"@es .
+<http://data.inia.es/def/core#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#label> "isIdenticalTo"@en .
+<http://data.inia.es/def/core#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+<http://data.inia.es/def/core#isIdenticalTo> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://data.inia.es/def/core#isIdenticalTo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unestable"@es .
+# 
+# http://data.inia.es/def/core#isMetadataFor
+<http://data.inia.es/def/core#isMetadataFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A contiene metadatos adicionales sobre el recurso B"@es .
+<http://data.inia.es/def/core#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates additional metadata A for a resource B"@en .
+<http://data.inia.es/def/core#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#label> "es metadatos de"@es .
+<http://data.inia.es/def/core#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#label> "is metadata for"@en .
+<http://data.inia.es/def/core#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isNewVersionOf
+<http://data.inia.es/def/core#isNewVersionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://dataid.dbpedia.org/ns/core#previousVersion> .
+<http://data.inia.es/def/core#isNewVersionOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#isPreviousVersionOf> .
+<http://data.inia.es/def/core#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es una nueva edici\u00F3n de B, donde la nueva edici\u00F3n ha sido modifcada o actualizada"@es .
+<http://data.inia.es/def/core#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a new edition of B, where the new edition has been modified or updated"@en .
+<http://data.inia.es/def/core#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#label> "es nueva versi\u00F3n de"@es .
+<http://data.inia.es/def/core#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is new version of"@en .
+<http://data.inia.es/def/core#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isOriginalFormOf
+<http://data.inia.es/def/core#isOriginalFormOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isOriginalFormOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#isVariantFormOf> .
+<http://data.inia.es/def/core#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es la forma origen de B"@es .
+<http://data.inia.es/def/core#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is the original form of B"@en .
+<http://data.inia.es/def/core#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#label> "es forma original de"@es .
+<http://data.inia.es/def/core#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#label> "is original form of"@en .
+<http://data.inia.es/def/core#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isPartOf
+<http://data.inia.es/def/core#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isPartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isPartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/isPartOf> .
+<http://data.inia.es/def/core#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es una porci\u00F3nde B, esta relaci\u00F3n puede ser utilizada para elementos de una serie"@es .
+<http://data.inia.es/def/core#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a portion of B; may be used for elements of a series"@en .
+<http://data.inia.es/def/core#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "es parte de"@es .
+<http://data.inia.es/def/core#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en .
+<http://data.inia.es/def/core#isPartOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isPreviousVersionOf
+<http://data.inia.es/def/core#isPreviousVersionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://dataid.dbpedia.org/ns/core#nextVersion> .
+<http://data.inia.es/def/core#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es una edici\u00F3n previa de B"@es .
+<http://data.inia.es/def/core#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a previous edition of B"@en .
+<http://data.inia.es/def/core#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#label> "es versi\u00F3n previa de"@es .
+<http://data.inia.es/def/core#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is previous version of"@en .
+<http://data.inia.es/def/core#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isReferencedBy
+<http://data.inia.es/def/core#isReferencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isReferencedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#references> .
+<http://data.inia.es/def/core#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es utilizado como fuente de informaci\u00F3n por B"@es .
+<http://data.inia.es/def/core#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is used as a source of information by B"@en .
+<http://data.inia.es/def/core#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "es referenciado por"@es .
+<http://data.inia.es/def/core#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is referenced by"@en .
+<http://data.inia.es/def/core#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isReviewedBy
+<http://data.inia.es/def/core#isReviewedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isReviewedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#reviews> .
+<http://data.inia.es/def/core#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es revisado por B"@es .
+<http://data.inia.es/def/core#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that A is reviewed by B"@en .
+<http://data.inia.es/def/core#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#label> "es revisado por"@es .
+<http://data.inia.es/def/core#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is reviewed by"@en .
+<http://data.inia.es/def/core#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isSourceOf
+<http://data.inia.es/def/core#isSourceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es una fuente sobre la que B est\u00E1 basado"@es .
+<http://data.inia.es/def/core#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a source upon which B is based"@en .
+<http://data.inia.es/def/core#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#label> "es fuente de"@es .
+<http://data.inia.es/def/core#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is source of"@en .
+<http://data.inia.es/def/core#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isSupplementTo
+<http://data.inia.es/def/core#isSupplementTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isSupplementTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.inia.es/def/core#isSupplementedBy> .
+<http://data.inia.es/def/core#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es un suplemento de B"@es .
+<http://data.inia.es/def/core#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that A is a supplement to B"@en .
+<http://data.inia.es/def/core#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#label> "es suplemento de"@es .
+<http://data.inia.es/def/core#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#label> "is supplement to"@en .
+<http://data.inia.es/def/core#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isSupplementedBy
+<http://data.inia.es/def/core#isSupplementedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B es un suplemento de A"@es .
+<http://data.inia.es/def/core#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that B is a supplement to A"@en .
+<http://data.inia.es/def/core#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is supplemented by"@en .
+<http://data.inia.es/def/core#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#label> "se suplementa con"@es .
+<http://data.inia.es/def/core#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#isVariantFormOf
+<http://data.inia.es/def/core#isVariantFormOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es un variante o forma diferente de B, or ejemplo una forma calculada o calibrada"@es .
+<http://data.inia.es/def/core#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a variant or different form of B, e.g. calculated or calibrated form or different packaging"@en .
+<http://data.inia.es/def/core#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#label> "es una variante de"@es .
+<http://data.inia.es/def/core#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#label> "is variant form of"@en .
+<http://data.inia.es/def/core#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#producer
+<http://data.inia.es/def/core#producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#producer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#producer> <http://www.w3.org/2000/01/rdf-schema#label> "producer"@en .
+<http://data.inia.es/def/core#producer> <http://www.w3.org/2000/01/rdf-schema#label> "productor"@es .
+# 
+# http://data.inia.es/def/core#projectLeader
+<http://data.inia.es/def/core#projectLeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#projectLeader> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#projectLeader> <http://www.w3.org/2000/01/rdf-schema#label> "l\u00EDder de proyecto"@es .
+<http://data.inia.es/def/core#projectLeader> <http://www.w3.org/2000/01/rdf-schema#label> "project leader"@en .
+# 
+# http://data.inia.es/def/core#projectManager
+<http://data.inia.es/def/core#projectManager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#projectManager> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#projectManager> <http://www.w3.org/2000/01/rdf-schema#label> "jefe de proyecto"@es .
+<http://data.inia.es/def/core#projectManager> <http://www.w3.org/2000/01/rdf-schema#label> "project manager"@en .
+# 
+# http://data.inia.es/def/core#references
+<http://data.inia.es/def/core#references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#references> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#references> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B es utilizado como fuente de informaci\u00F3n de A"@es .
+<http://data.inia.es/def/core#references> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates B is used as a source of information for A"@en .
+<http://data.inia.es/def/core#references> <http://www.w3.org/2000/01/rdf-schema#label> "references"@en .
+<http://data.inia.es/def/core#references> <http://www.w3.org/2000/01/rdf-schema#label> "referencia"@es .
+<http://data.inia.es/def/core#references> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#registrationAgency
+<http://data.inia.es/def/core#registrationAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#registrationAgency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#registrationAgency> <http://www.w3.org/2000/01/rdf-schema#label> "agencia de registro"@es .
+<http://data.inia.es/def/core#registrationAgency> <http://www.w3.org/2000/01/rdf-schema#label> "registration agency"@en .
+# 
+# http://data.inia.es/def/core#registrationAuthority
+<http://data.inia.es/def/core#registrationAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#registrationAuthority> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#registrationAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "autoridad de registro"@es .
+<http://data.inia.es/def/core#registrationAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "registration authority"@en .
+# 
+# http://data.inia.es/def/core#relatedPerson
+<http://data.inia.es/def/core#relatedPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#relatedPerson> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#relatedPerson> <http://www.w3.org/2000/01/rdf-schema#label> "persona relacionada"@es .
+<http://data.inia.es/def/core#relatedPerson> <http://www.w3.org/2000/01/rdf-schema#label> "related person"@en .
+# 
+# http://data.inia.es/def/core#researchGroup
+<http://data.inia.es/def/core#researchGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#researchGroup> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#researchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "grupo de investigaci\u00F3n"@es .
+<http://data.inia.es/def/core#researchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "research group"@en .
+# 
+# http://data.inia.es/def/core#researcher
+<http://data.inia.es/def/core#researcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#researcher> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#researcher> <http://www.w3.org/2000/01/rdf-schema#label> "investigador"@es .
+<http://data.inia.es/def/core#researcher> <http://www.w3.org/2000/01/rdf-schema#label> "researcher"@en .
+# 
+# http://data.inia.es/def/core#reviews
+<http://data.inia.es/def/core#reviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#reviews> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#hasRelatedResource> .
+<http://data.inia.es/def/core#reviews> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A  es una revisi\u00F3n de B"@es .
+<http://data.inia.es/def/core#reviews> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that A is a review of B"@en .
+<http://data.inia.es/def/core#reviews> <http://www.w3.org/2000/01/rdf-schema#label> "reviews"@en .
+<http://data.inia.es/def/core#reviews> <http://www.w3.org/2000/01/rdf-schema#label> "revisa"@es .
+<http://data.inia.es/def/core#reviews> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
+# 
+# http://data.inia.es/def/core#rightsHolder
+<http://data.inia.es/def/core#rightsHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#rightsHolder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#rightsHolder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/rightsHolder> .
+<http://data.inia.es/def/core#rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "rights holder"@en .
+<http://data.inia.es/def/core#rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "titular de derechos"@es .
+# 
+# http://data.inia.es/def/core#specie
+<http://data.inia.es/def/core#specie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#specie> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
+<http://data.inia.es/def/core#specie> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica especie"@es .
+<http://data.inia.es/def/core#specie> <http://www.w3.org/2000/01/rdf-schema#label> "especie"@es .
+<http://data.inia.es/def/core#specie> <http://www.w3.org/2000/01/rdf-schema#label> "specie"@en .
+# 
+# http://data.inia.es/def/core#sponsor
+<http://data.inia.es/def/core#sponsor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#sponsor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#sponsor> <http://www.w3.org/2000/01/rdf-schema#label> "financiador"@es .
+<http://data.inia.es/def/core#sponsor> <http://www.w3.org/2000/01/rdf-schema#label> "sponsor"@en .
+# 
+# http://data.inia.es/def/core#supervisor
+<http://data.inia.es/def/core#supervisor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#supervisor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#supervisor> <http://www.w3.org/2000/01/rdf-schema#label> "supervisor"@en .
+<http://data.inia.es/def/core#supervisor> <http://www.w3.org/2000/01/rdf-schema#label> "supervisor"@es .
+# 
+# http://data.inia.es/def/core#taxonomicalScope
+<http://data.inia.es/def/core#taxonomicalScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#taxonomicalScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n genera para indicar el \u00E1mbito taxon\u00F3mico que puede ser especializada por una o mas de sus subpropiedades."@es .
+<http://data.inia.es/def/core#taxonomicalScope> <http://www.w3.org/2000/01/rdf-schema#label> "taxonomical scope"@en .
+<http://data.inia.es/def/core#taxonomicalScope> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E1mbito taxon\u00F3mico"@es .
+# 
+# http://data.inia.es/def/core#workPackageLeader
+<http://data.inia.es/def/core#workPackageLeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.inia.es/def/core#workPackageLeader> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#workPackageLeader> <http://www.w3.org/2000/01/rdf-schema#label> "l\u00EDder de paquete de trabajo"@es .
+<http://data.inia.es/def/core#workPackageLeader> <http://www.w3.org/2000/01/rdf-schema#label> "work package leader"@en .
+# 
 # http://dataid.dbpedia.org/ns/core#identifier
 <http://dataid.dbpedia.org/ns/core#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://dataid.dbpedia.org/ns/core#identifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/datacite/hasIdentifier> .
@@ -538,42 +932,42 @@
 # 
 # http://rs.tdwg.org/dwc/terms/class
 <http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#taxonomicalScope> .
+<http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
 <http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica clase"@es .
 <http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#label> "clase"@es .
 <http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#label> "class"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/family
 <http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#taxonomicalScope> .
+<http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
 <http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica familia"@es .
 <http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#label> "familia"@es .
 <http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#label> "family"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/genus
 <http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#taxonomicalScope> .
+<http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
 <http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica g\u00E9nero"@es .
 <http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#label> "genus"@en .
 <http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#label> "g\u00E9nero"@es .
 # 
 # http://rs.tdwg.org/dwc/terms/kingdom
 <http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#taxonomicalScope> .
+<http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
 <http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica reino"@es .
 <http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#label> "kingdom"@en .
 <http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#label> "reino"@es .
 # 
 # http://rs.tdwg.org/dwc/terms/order
 <http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#taxonomicalScope> .
+<http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
 <http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica orden"@es .
 <http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#label> "orden"@es .
 <http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#label> "order"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/phylum
 <http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#taxonomicalScope> .
+<http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
 <http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica filo o divisi\u00F3n"@es .
 <http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#label> "filo"@es .
 <http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#label> "phylum"@en .
@@ -598,400 +992,6 @@
 # http://xmlns.com/foaf/0.1/isPrimaryTopicOf
 <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# https://w3id.org/def/inia#cites
-<https://w3id.org/def/inia#cites> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#cites> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#cites> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#isCitedBy> .
-<https://w3id.org/def/inia#cites> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A incluye a B en una cita"@es .
-<https://w3id.org/def/inia#cites> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that A includes B in a citation"@en .
-<https://w3id.org/def/inia#cites> <http://www.w3.org/2000/01/rdf-schema#label> "cita"@es .
-<https://w3id.org/def/inia#cites> <http://www.w3.org/2000/01/rdf-schema#label> "cites"@en .
-<https://w3id.org/def/inia#cites> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#compiles
-<https://w3id.org/def/inia#compiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#compiles> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#compiles> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#isCompiledBy> .
-<https://w3id.org/def/inia#compiles> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que B es el resultado de un evento de compilaci\u00F3n o creaci\u00F3n utilizando A"@es .
-<https://w3id.org/def/inia#compiles> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates B is the result of a compile or creation event using A"@en .
-<https://w3id.org/def/inia#compiles> <http://www.w3.org/2000/01/rdf-schema#label> "compila"@es .
-<https://w3id.org/def/inia#compiles> <http://www.w3.org/2000/01/rdf-schema#label> "compiles"@en .
-<https://w3id.org/def/inia#compiles> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#contactPerson
-<https://w3id.org/def/inia#contactPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#contactPerson> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#contactPerson> <http://www.w3.org/2000/01/rdf-schema#label> "contact person"@en .
-<https://w3id.org/def/inia#contactPerson> <http://www.w3.org/2000/01/rdf-schema#label> "persona de contacto"@es .
-# 
-# https://w3id.org/def/inia#continues
-<https://w3id.org/def/inia#continues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#continues> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#continues> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#isContinuedBy> .
-<https://w3id.org/def/inia#continues> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que A es una continuaci\u00F3n del trabajo B"@es .
-<https://w3id.org/def/inia#continues> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a continuation of the work B"@en .
-<https://w3id.org/def/inia#continues> <http://www.w3.org/2000/01/rdf-schema#label> "continues"@en .
-<https://w3id.org/def/inia#continues> <http://www.w3.org/2000/01/rdf-schema#label> "contin\u00FAa"@es .
-<https://w3id.org/def/inia#continues> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#dataCollector
-<https://w3id.org/def/inia#dataCollector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#dataCollector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#dataCollector> <http://www.w3.org/2000/01/rdf-schema#label> "data collector"@en .
-<https://w3id.org/def/inia#dataCollector> <http://www.w3.org/2000/01/rdf-schema#label> "recolector de datos"@es .
-# 
-# https://w3id.org/def/inia#dataCurator
-<https://w3id.org/def/inia#dataCurator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#dataCurator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#dataCurator> <http://www.w3.org/2000/01/rdf-schema#label> "data curator"@en .
-# 
-# https://w3id.org/def/inia#dataManager
-<https://w3id.org/def/inia#dataManager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#dataManager> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#dataManager> <http://www.w3.org/2000/01/rdf-schema#label> "data manager"@en .
-<https://w3id.org/def/inia#dataManager> <http://www.w3.org/2000/01/rdf-schema#label> "gestor de datos"@es .
-# 
-# https://w3id.org/def/inia#developedWithinProject
-<https://w3id.org/def/inia#developedWithinProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#developedWithinProject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/inia#Dataset> .
-<https://w3id.org/def/inia#developedWithinProject> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Project> .
-<https://w3id.org/def/inia#developedWithinProject> <http://www.w3.org/2000/01/rdf-schema#comment> "proyecto en el cual se ha creado el dataset"@es .
-<https://w3id.org/def/inia#developedWithinProject> <http://www.w3.org/2000/01/rdf-schema#label> "desarrollado en proyecto"@es .
-<https://w3id.org/def/inia#developedWithinProject> <http://www.w3.org/2000/01/rdf-schema#label> "developed within project"@en .
-# 
-# https://w3id.org/def/inia#distributor
-<https://w3id.org/def/inia#distributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#distributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#distributor> <http://www.w3.org/2000/01/rdf-schema#label> "distribuidor"@es .
-<https://w3id.org/def/inia#distributor> <http://www.w3.org/2000/01/rdf-schema#label> "distributor"@en .
-# 
-# https://w3id.org/def/inia#documents
-<https://w3id.org/def/inia#documents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#documents> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#documents> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#isDocumentedBy> .
-<https://w3id.org/def/inia#documents> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es documentaci\u00F3n sobre B"@es .
-<https://w3id.org/def/inia#documents> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is documentation about B"@en .
-<https://w3id.org/def/inia#documents> <http://www.w3.org/2000/01/rdf-schema#label> "documenta"@es .
-<https://w3id.org/def/inia#documents> <http://www.w3.org/2000/01/rdf-schema#label> "documents"@en .
-<https://w3id.org/def/inia#documents> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#editor
-<https://w3id.org/def/inia#editor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#editor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#editor> <http://www.w3.org/2000/01/rdf-schema#label> "editor"@en .
-<https://w3id.org/def/inia#editor> <http://www.w3.org/2000/01/rdf-schema#label> "editor"@es .
-# 
-# https://w3id.org/def/inia#fundedBy
-<https://w3id.org/def/inia#fundedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#fundedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
-<https://w3id.org/def/inia#fundedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/org#Organization> .
-<https://w3id.org/def/inia#fundedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "relaci\u00F3n entre un proyecto y la organizaci\u00F3n que lo financia"@es .
-<https://w3id.org/def/inia#fundedBy> <http://www.w3.org/2000/01/rdf-schema#label> "financiado por"@es .
-<https://w3id.org/def/inia#fundedBy> <http://www.w3.org/2000/01/rdf-schema#label> "funded by"@en .
-# 
-# https://w3id.org/def/inia#hasMetadata
-<https://w3id.org/def/inia#hasMetadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#hasMetadata> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#isMetadataFor> .
-<https://w3id.org/def/inia#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que el recurso A tiene como metadatos adicionales el recurso B"@es .
-<https://w3id.org/def/inia#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates resource A has additional metadata B"@en .
-<https://w3id.org/def/inia#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#label> "has metadata"@en .
-<https://w3id.org/def/inia#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#label> "tiene metadatos"@es .
-<https://w3id.org/def/inia#hasMetadata> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#hasPart
-<https://w3id.org/def/inia#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#isPartOf> .
-<https://w3id.org/def/inia#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A incluye a B como una de sus partes"@es .
-<https://w3id.org/def/inia#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A includes the part B"@en .
-<https://w3id.org/def/inia#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en .
-<https://w3id.org/def/inia#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "tiene parte"@es .
-<https://w3id.org/def/inia#hasPart> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#hasRelatedResource
-<https://w3id.org/def/inia#hasRelatedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#hasRelatedResource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/inia#Resource> .
-<https://w3id.org/def/inia#hasRelatedResource> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/inia#Resource> .
-<https://w3id.org/def/inia#hasRelatedResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n entre dos recursos relacionados entre s\u00ED. Esta relaci\u00F3n tiene una serie de sub relaciones espec\u00EDficas alineadas con el esquema de data cite."@es .
-<https://w3id.org/def/inia#hasRelatedResource> <http://www.w3.org/2000/01/rdf-schema#label> "has related resource"@en .
-<https://w3id.org/def/inia#hasRelatedResource> <http://www.w3.org/2000/01/rdf-schema#label> "tiene relaci\u00F3n con recurso"@es .
-# 
-# https://w3id.org/def/inia#hostingInstitution
-<https://w3id.org/def/inia#hostingInstitution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#hostingInstitution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#hostingInstitution> <http://www.w3.org/2000/01/rdf-schema#label> "hosting institution"@en .
-<https://w3id.org/def/inia#hostingInstitution> <http://www.w3.org/2000/01/rdf-schema#label> "instituci\u00F3n anfitriona"@es .
-# 
-# https://w3id.org/def/inia#isCitedBy
-<https://w3id.org/def/inia#isCitedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B incluye a A en una cita"@es .
-<https://w3id.org/def/inia#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that B includes A in a citation"@en .
-<https://w3id.org/def/inia#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#label> "es citado por"@es .
-<https://w3id.org/def/inia#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is cited by"@en .
-<https://w3id.org/def/inia#isCitedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isCompiledBy
-<https://w3id.org/def/inia#isCompiledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B es utilizado para compilar o crear A"@es .
-<https://w3id.org/def/inia#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates B is used to compile or create A"@en .
-<https://w3id.org/def/inia#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#label> "es compilado por"@es .
-<https://w3id.org/def/inia#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#label> "is compiled by"@en .
-<https://w3id.org/def/inia#isCompiledBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isContinuedBy
-<https://w3id.org/def/inia#isContinuedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es continuado por el trabajo B"@es .
-<https://w3id.org/def/inia#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is continued by the work B"@en .
-<https://w3id.org/def/inia#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#label> "es continuado por"@es .
-<https://w3id.org/def/inia#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is continued by"@en .
-<https://w3id.org/def/inia#isContinuedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isDerivedFrom
-<https://w3id.org/def/inia#isDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isDerivedFrom> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#isSourceOf> .
-<https://w3id.org/def/inia#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B es una fuente en la que est\u00E1 basado A"@es .
-<https://w3id.org/def/inia#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates B is a source upon which A is based"@en .
-<https://w3id.org/def/inia#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "es derivado de"@es .
-<https://w3id.org/def/inia#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "is derived from"@en .
-<https://w3id.org/def/inia#isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isDocumentedBy
-<https://w3id.org/def/inia#isDocumentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B es la documentaci\u00F3n sobre A"@es .
-<https://w3id.org/def/inia#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates B is documentation about explaining A"@en .
-<https://w3id.org/def/inia#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "est\u00E1 documentado por"@es .
-<https://w3id.org/def/inia#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is documented by"@en .
-<https://w3id.org/def/inia#isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isIdenticalTo
-<https://w3id.org/def/inia#isIdenticalTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta relaci\u00F3n no debe utilizarse, owl:sameAs debe ser utilizado en su lugar. Se crea s\u00F3lo para mantener un registro de su existencia en el esquema de datacite."@es .
-<https://w3id.org/def/inia#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation is not to be used, owl:sameAs should be used instead. It is created just to keep record of its existance in datacite schema."@en .
-<https://w3id.org/def/inia#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource"@en .
-<https://w3id.org/def/inia#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#label> "es id\u00E9ntico a"@es .
-<https://w3id.org/def/inia#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#label> "isIdenticalTo"@en .
-<https://w3id.org/def/inia#isIdenticalTo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-<https://w3id.org/def/inia#isIdenticalTo> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://w3id.org/def/inia#isIdenticalTo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unestable"@es .
-# 
-# https://w3id.org/def/inia#isMetadataFor
-<https://w3id.org/def/inia#isMetadataFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A contiene metadatos adicionales sobre el recurso B"@es .
-<https://w3id.org/def/inia#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates additional metadata A for a resource B"@en .
-<https://w3id.org/def/inia#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#label> "es metadatos de"@es .
-<https://w3id.org/def/inia#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#label> "is metadata for"@en .
-<https://w3id.org/def/inia#isMetadataFor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isNewVersionOf
-<https://w3id.org/def/inia#isNewVersionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://dataid.dbpedia.org/ns/core#previousVersion> .
-<https://w3id.org/def/inia#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isNewVersionOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#isPreviousVersionOf> .
-<https://w3id.org/def/inia#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es una nueva edici\u00F3n de B, donde la nueva edici\u00F3n ha sido modifcada o actualizada"@es .
-<https://w3id.org/def/inia#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a new edition of B, where the new edition has been modified or updated"@en .
-<https://w3id.org/def/inia#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#label> "es nueva versi\u00F3n de"@es .
-<https://w3id.org/def/inia#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is new version of"@en .
-<https://w3id.org/def/inia#isNewVersionOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isOriginalFormOf
-<https://w3id.org/def/inia#isOriginalFormOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isOriginalFormOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#isVariantFormOf> .
-<https://w3id.org/def/inia#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es la forma origen de B"@es .
-<https://w3id.org/def/inia#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is the original form of B"@en .
-<https://w3id.org/def/inia#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#label> "es forma original de"@es .
-<https://w3id.org/def/inia#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#label> "is original form of"@en .
-<https://w3id.org/def/inia#isOriginalFormOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isPartOf
-<https://w3id.org/def/inia#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isPartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/isPartOf> .
-<https://w3id.org/def/inia#isPartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es una porci\u00F3nde B, esta relaci\u00F3n puede ser utilizada para elementos de una serie"@es .
-<https://w3id.org/def/inia#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a portion of B; may be used for elements of a series"@en .
-<https://w3id.org/def/inia#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "es parte de"@es .
-<https://w3id.org/def/inia#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en .
-<https://w3id.org/def/inia#isPartOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isPreviousVersionOf
-<https://w3id.org/def/inia#isPreviousVersionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://dataid.dbpedia.org/ns/core#nextVersion> .
-<https://w3id.org/def/inia#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es una edici\u00F3n previa de B"@es .
-<https://w3id.org/def/inia#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a previous edition of B"@en .
-<https://w3id.org/def/inia#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#label> "es versi\u00F3n previa de"@es .
-<https://w3id.org/def/inia#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is previous version of"@en .
-<https://w3id.org/def/inia#isPreviousVersionOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isReferencedBy
-<https://w3id.org/def/inia#isReferencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isReferencedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#references> .
-<https://w3id.org/def/inia#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es utilizado como fuente de informaci\u00F3n por B"@es .
-<https://w3id.org/def/inia#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is used as a source of information by B"@en .
-<https://w3id.org/def/inia#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "es referenciado por"@es .
-<https://w3id.org/def/inia#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is referenced by"@en .
-<https://w3id.org/def/inia#isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isReviewedBy
-<https://w3id.org/def/inia#isReviewedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isReviewedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#reviews> .
-<https://w3id.org/def/inia#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es revisado por B"@es .
-<https://w3id.org/def/inia#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that A is reviewed by B"@en .
-<https://w3id.org/def/inia#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#label> "es revisado por"@es .
-<https://w3id.org/def/inia#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is reviewed by"@en .
-<https://w3id.org/def/inia#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isSourceOf
-<https://w3id.org/def/inia#isSourceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es una fuente sobre la que B est\u00E1 basado"@es .
-<https://w3id.org/def/inia#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a source upon which B is based"@en .
-<https://w3id.org/def/inia#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#label> "es fuente de"@es .
-<https://w3id.org/def/inia#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is source of"@en .
-<https://w3id.org/def/inia#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isSupplementTo
-<https://w3id.org/def/inia#isSupplementTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isSupplementTo> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/inia#isSupplementedBy> .
-<https://w3id.org/def/inia#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es un suplemento de B"@es .
-<https://w3id.org/def/inia#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that A is a supplement to B"@en .
-<https://w3id.org/def/inia#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#label> "es suplemento de"@es .
-<https://w3id.org/def/inia#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#label> "is supplement to"@en .
-<https://w3id.org/def/inia#isSupplementTo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isSupplementedBy
-<https://w3id.org/def/inia#isSupplementedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B es un suplemento de A"@es .
-<https://w3id.org/def/inia#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that B is a supplement to A"@en .
-<https://w3id.org/def/inia#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is supplemented by"@en .
-<https://w3id.org/def/inia#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#label> "se suplementa con"@es .
-<https://w3id.org/def/inia#isSupplementedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#isVariantFormOf
-<https://w3id.org/def/inia#isVariantFormOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A es un variante o forma diferente de B, or ejemplo una forma calculada o calibrada"@es .
-<https://w3id.org/def/inia#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates A is a variant or different form of B, e.g. calculated or calibrated form or different packaging"@en .
-<https://w3id.org/def/inia#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#label> "es una variante de"@es .
-<https://w3id.org/def/inia#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#label> "is variant form of"@en .
-<https://w3id.org/def/inia#isVariantFormOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#producer
-<https://w3id.org/def/inia#producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#producer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#producer> <http://www.w3.org/2000/01/rdf-schema#label> "producer"@en .
-<https://w3id.org/def/inia#producer> <http://www.w3.org/2000/01/rdf-schema#label> "productor"@es .
-# 
-# https://w3id.org/def/inia#projectLeader
-<https://w3id.org/def/inia#projectLeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#projectLeader> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#projectLeader> <http://www.w3.org/2000/01/rdf-schema#label> "l\u00EDder de proyecto"@es .
-<https://w3id.org/def/inia#projectLeader> <http://www.w3.org/2000/01/rdf-schema#label> "project leader"@en .
-# 
-# https://w3id.org/def/inia#projectManager
-<https://w3id.org/def/inia#projectManager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#projectManager> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#projectManager> <http://www.w3.org/2000/01/rdf-schema#label> "jefe de proyecto"@es .
-<https://w3id.org/def/inia#projectManager> <http://www.w3.org/2000/01/rdf-schema#label> "project manager"@en .
-# 
-# https://w3id.org/def/inia#references
-<https://w3id.org/def/inia#references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#references> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#references> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que B es utilizado como fuente de informaci\u00F3n de A"@es .
-<https://w3id.org/def/inia#references> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates B is used as a source of information for A"@en .
-<https://w3id.org/def/inia#references> <http://www.w3.org/2000/01/rdf-schema#label> "references"@en .
-<https://w3id.org/def/inia#references> <http://www.w3.org/2000/01/rdf-schema#label> "referencia"@es .
-<https://w3id.org/def/inia#references> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#registrationAgency
-<https://w3id.org/def/inia#registrationAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#registrationAgency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#registrationAgency> <http://www.w3.org/2000/01/rdf-schema#label> "agencia de registro"@es .
-<https://w3id.org/def/inia#registrationAgency> <http://www.w3.org/2000/01/rdf-schema#label> "registration agency"@en .
-# 
-# https://w3id.org/def/inia#registrationAuthority
-<https://w3id.org/def/inia#registrationAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#registrationAuthority> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#registrationAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "autoridad de registro"@es .
-<https://w3id.org/def/inia#registrationAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "registration authority"@en .
-# 
-# https://w3id.org/def/inia#relatedPerson
-<https://w3id.org/def/inia#relatedPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#relatedPerson> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#relatedPerson> <http://www.w3.org/2000/01/rdf-schema#label> "persona relacionada"@es .
-<https://w3id.org/def/inia#relatedPerson> <http://www.w3.org/2000/01/rdf-schema#label> "related person"@en .
-# 
-# https://w3id.org/def/inia#researchGroup
-<https://w3id.org/def/inia#researchGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#researchGroup> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#researchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "grupo de investigaci\u00F3n"@es .
-<https://w3id.org/def/inia#researchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "research group"@en .
-# 
-# https://w3id.org/def/inia#researcher
-<https://w3id.org/def/inia#researcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#researcher> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#researcher> <http://www.w3.org/2000/01/rdf-schema#label> "investigador"@es .
-<https://w3id.org/def/inia#researcher> <http://www.w3.org/2000/01/rdf-schema#label> "researcher"@en .
-# 
-# https://w3id.org/def/inia#reviews
-<https://w3id.org/def/inia#reviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#reviews> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#hasRelatedResource> .
-<https://w3id.org/def/inia#reviews> <http://www.w3.org/2000/01/rdf-schema#comment> "indica que A  es una revisi\u00F3n de B"@es .
-<https://w3id.org/def/inia#reviews> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates that A is a review of B"@en .
-<https://w3id.org/def/inia#reviews> <http://www.w3.org/2000/01/rdf-schema#label> "reviews"@en .
-<https://w3id.org/def/inia#reviews> <http://www.w3.org/2000/01/rdf-schema#label> "revisa"@es .
-<https://w3id.org/def/inia#reviews> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://schema.datacite.org/meta/kernel-4.0/"@es .
-# 
-# https://w3id.org/def/inia#rightsHolder
-<https://w3id.org/def/inia#rightsHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#rightsHolder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#rightsHolder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/rightsHolder> .
-<https://w3id.org/def/inia#rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "rights holder"@en .
-<https://w3id.org/def/inia#rightsHolder> <http://www.w3.org/2000/01/rdf-schema#label> "titular de derechos"@es .
-# 
-# https://w3id.org/def/inia#specie
-<https://w3id.org/def/inia#specie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#specie> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/inia#taxonomicalScope> .
-<https://w3id.org/def/inia#specie> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica especie"@es .
-<https://w3id.org/def/inia#specie> <http://www.w3.org/2000/01/rdf-schema#label> "especie"@es .
-<https://w3id.org/def/inia#specie> <http://www.w3.org/2000/01/rdf-schema#label> "specie"@en .
-# 
-# https://w3id.org/def/inia#sponsor
-<https://w3id.org/def/inia#sponsor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#sponsor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#sponsor> <http://www.w3.org/2000/01/rdf-schema#label> "financiador"@es .
-<https://w3id.org/def/inia#sponsor> <http://www.w3.org/2000/01/rdf-schema#label> "sponsor"@en .
-# 
-# https://w3id.org/def/inia#supervisor
-<https://w3id.org/def/inia#supervisor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#supervisor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#supervisor> <http://www.w3.org/2000/01/rdf-schema#label> "supervisor"@en .
-<https://w3id.org/def/inia#supervisor> <http://www.w3.org/2000/01/rdf-schema#label> "supervisor"@es .
-# 
-# https://w3id.org/def/inia#taxonomicalScope
-<https://w3id.org/def/inia#taxonomicalScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#taxonomicalScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaci\u00F3n genera para indicar el \u00E1mbito taxon\u00F3mico que puede ser especializada por una o mas de sus subpropiedades."@es .
-<https://w3id.org/def/inia#taxonomicalScope> <http://www.w3.org/2000/01/rdf-schema#label> "taxonomical scope"@en .
-<https://w3id.org/def/inia#taxonomicalScope> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E1mbito taxon\u00F3mico"@es .
-# 
-# https://w3id.org/def/inia#workPackageLeader
-<https://w3id.org/def/inia#workPackageLeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/inia#workPackageLeader> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/def/inia#workPackageLeader> <http://www.w3.org/2000/01/rdf-schema#label> "l\u00EDder de paquete de trabajo"@es .
-<https://w3id.org/def/inia#workPackageLeader> <http://www.w3.org/2000/01/rdf-schema#label> "work package leader"@en .
-# 
 # 
 # 
 # #################################################################
@@ -1000,6 +1000,75 @@
 # #
 # #################################################################
 # 
+# 
+# http://data.inia.es/def/core#elementsNumber
+<http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.inia.es/def/core#Dataset> .
+<http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "N\u00FAmero de instancias de la colecci\u00F3n."@es .
+<http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#label> "elements number"@en .
+<http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#label> "n\u00FAmero de elementos"@es .
+# 
+# http://data.inia.es/def/core#embargoDate
+<http://data.inia.es/def/core#embargoDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.inia.es/def/core#Dataset> .
+<http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre."@es .
+<http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#label> "embargo date"@en .
+<http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de embargo"@es .
+# 
+# http://data.inia.es/def/core#equipment
+<http://data.inia.es/def/core#equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.inia.es/def/core#Dataset> .
+<http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "En caso de ser relevante el instrumento de medida utilizado, marca modelo precisi\u00F3n etc."@es .
+<http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Instrumentaci\u00F3n de medida"@es .
+<http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#label> "equipment"@en .
+# 
+# http://data.inia.es/def/core#finalDate
+<http://data.inia.es/def/core#finalDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha final, relacionada con el \u00E1mbito del Dataset. Este atributo suele utilizarse en combinaci\u00F3n con inia:startingDate como alternativa a dcterms:temporal."@es .
+<http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha final"@es .
+<http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#label> "final date"@en .
+# 
+# http://data.inia.es/def/core#projectCode
+<http://data.inia.es/def/core#projectCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#comment> "c\u00F3digo del proyecto en el que se ha desarrollado un dataset"@es .
+<http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#label> "c\u00F3digo de proyecto"@es .
+<http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#label> "project code"@en .
+# 
+# http://data.inia.es/def/core#software
+<http://data.inia.es/def/core#software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.inia.es/def/core#Dataset> .
+<http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#comment> "Hace referencia al software utilizado para la eleboraci\u00F3n del dataset o para su visualizaci\u00F3n o explotaci\u00F3n, nombre, versi\u00F3n, marca."@es .
+<http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#label> "software"@en .
+<http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#label> "software"@es .
+# 
+# http://data.inia.es/def/core#spatialScope
+<http://data.inia.es/def/core#spatialScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.inia.es/def/core#spatialScope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.inia.es/def/core#spatialScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Descripci\u00F3n textual del \u00E1mbito geogr\u00E1fico relacionado con el contenido o la toma de muestras del Dataset, este metadato est\u00E1 especialmente indicado en los \u00E1mbitos de investigaci\u00F3n donde es habitual  expresar determinadas zonas de manera textual, pen\u00EDnsula ib\u00E9rica, cuenca alta del J\u00FAcar, sierra de Cazorla, Madrid."@es .
+<http://data.inia.es/def/core#spatialScope> <http://www.w3.org/2000/01/rdf-schema#label> "ambito geogr\u00E1fico"@es .
+<http://data.inia.es/def/core#spatialScope> <http://www.w3.org/2000/01/rdf-schema#label> "spatial scope"@en .
+# 
+# http://data.inia.es/def/core#startingDate
+<http://data.inia.es/def/core#startingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.inia.es/def/core#startingDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://data.inia.es/def/core#startingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha inicial, relacionada con el \u00E1mbito del Dataset ejemplo: fecha inicial de las toma de muestras del material incluido en el Dataset 25/06/1938. Este atributo suele utilizarse en combinaci\u00F3n con inia:finalDate como alternativa a dcterms:temporal."@es .
+<http://data.inia.es/def/core#startingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha inicial"@es .
+<http://data.inia.es/def/core#startingDate> <http://www.w3.org/2000/01/rdf-schema#label> "starting date"@en .
+# 
+# http://data.inia.es/def/core#temporalScope
+<http://data.inia.es/def/core#temporalScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.inia.es/def/core#temporalScope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.inia.es/def/core#temporalScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Descripci\u00F3n textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato est\u00E1 especialmente indicado en los \u00E1mbitos de investigaci\u00F3n donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cret\u00E1cico, Edad media."@es .
+<http://data.inia.es/def/core#temporalScope> <http://www.w3.org/2000/01/rdf-schema#label> "temporal scope"@en .
+<http://data.inia.es/def/core#temporalScope> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E1mbito temporal"@es .
 # 
 # http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1098,75 +1167,6 @@
 <http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/2000/01/rdf-schema#label> "keyword"@en .
 <http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/2000/01/rdf-schema#label> "palabra clave"@es .
 # 
-# https://w3id.org/def/inia#elementsNumber
-<https://w3id.org/def/inia#elementsNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/inia#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/inia#Dataset> .
-<https://w3id.org/def/inia#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "N\u00FAmero de instancias de la colecci\u00F3n."@es .
-<https://w3id.org/def/inia#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#label> "elements number"@en .
-<https://w3id.org/def/inia#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#label> "n\u00FAmero de elementos"@es .
-# 
-# https://w3id.org/def/inia#embargoDate
-<https://w3id.org/def/inia#embargoDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/inia#embargoDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/inia#Dataset> .
-<https://w3id.org/def/inia#embargoDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/def/inia#embargoDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre."@es .
-<https://w3id.org/def/inia#embargoDate> <http://www.w3.org/2000/01/rdf-schema#label> "embargo date"@en .
-<https://w3id.org/def/inia#embargoDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de embargo"@es .
-# 
-# https://w3id.org/def/inia#equipment
-<https://w3id.org/def/inia#equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/inia#equipment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/inia#Dataset> .
-<https://w3id.org/def/inia#equipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/inia#equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "En caso de ser relevante el instrumento de medida utilizado, marca modelo precisi\u00F3n etc."@es .
-<https://w3id.org/def/inia#equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Instrumentaci\u00F3n de medida"@es .
-<https://w3id.org/def/inia#equipment> <http://www.w3.org/2000/01/rdf-schema#label> "equipment"@en .
-# 
-# https://w3id.org/def/inia#finalDate
-<https://w3id.org/def/inia#finalDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/inia#finalDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://w3id.org/def/inia#finalDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/def/inia#finalDate> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha final, relacionada con el \u00E1mbito del Dataset. Este atributo suele utilizarse en combinaci\u00F3n con inia:startingDate como alternativa a dcterms:temporal."@es .
-<https://w3id.org/def/inia#finalDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha final"@es .
-<https://w3id.org/def/inia#finalDate> <http://www.w3.org/2000/01/rdf-schema#label> "final date"@en .
-# 
-# https://w3id.org/def/inia#projectCode
-<https://w3id.org/def/inia#projectCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/inia#projectCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
-<https://w3id.org/def/inia#projectCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/inia#projectCode> <http://www.w3.org/2000/01/rdf-schema#comment> "c\u00F3digo del proyecto en el que se ha desarrollado un dataset"@es .
-<https://w3id.org/def/inia#projectCode> <http://www.w3.org/2000/01/rdf-schema#label> "c\u00F3digo de proyecto"@es .
-<https://w3id.org/def/inia#projectCode> <http://www.w3.org/2000/01/rdf-schema#label> "project code"@en .
-# 
-# https://w3id.org/def/inia#software
-<https://w3id.org/def/inia#software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/inia#software> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://w3id.org/def/inia#software> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/inia#Dataset> .
-<https://w3id.org/def/inia#software> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/inia#software> <http://www.w3.org/2000/01/rdf-schema#comment> "Hace referencia al software utilizado para la eleboraci\u00F3n del dataset o para su visualizaci\u00F3n o explotaci\u00F3n, nombre, versi\u00F3n, marca."@es .
-<https://w3id.org/def/inia#software> <http://www.w3.org/2000/01/rdf-schema#label> "software"@en .
-<https://w3id.org/def/inia#software> <http://www.w3.org/2000/01/rdf-schema#label> "software"@es .
-# 
-# https://w3id.org/def/inia#spatialScope
-<https://w3id.org/def/inia#spatialScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/inia#spatialScope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/inia#spatialScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Descripci\u00F3n textual del \u00E1mbito geogr\u00E1fico relacionado con el contenido o la toma de muestras del Dataset, este metadato est\u00E1 especialmente indicado en los \u00E1mbitos de investigaci\u00F3n donde es habitual  expresar determinadas zonas de manera textual, pen\u00EDnsula ib\u00E9rica, cuenca alta del J\u00FAcar, sierra de Cazorla, Madrid."@es .
-<https://w3id.org/def/inia#spatialScope> <http://www.w3.org/2000/01/rdf-schema#label> "ambito geogr\u00E1fico"@es .
-<https://w3id.org/def/inia#spatialScope> <http://www.w3.org/2000/01/rdf-schema#label> "spatial scope"@en .
-# 
-# https://w3id.org/def/inia#startingDate
-<https://w3id.org/def/inia#startingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/inia#startingDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/def/inia#startingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha inicial, relacionada con el \u00E1mbito del Dataset ejemplo: fecha inicial de las toma de muestras del material incluido en el Dataset 25/06/1938. Este atributo suele utilizarse en combinaci\u00F3n con inia:finalDate como alternativa a dcterms:temporal."@es .
-<https://w3id.org/def/inia#startingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha inicial"@es .
-<https://w3id.org/def/inia#startingDate> <http://www.w3.org/2000/01/rdf-schema#label> "starting date"@en .
-# 
-# https://w3id.org/def/inia#temporalScope
-<https://w3id.org/def/inia#temporalScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/inia#temporalScope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/inia#temporalScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Descripci\u00F3n textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato est\u00E1 especialmente indicado en los \u00E1mbitos de investigaci\u00F3n donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cret\u00E1cico, Edad media."@es .
-<https://w3id.org/def/inia#temporalScope> <http://www.w3.org/2000/01/rdf-schema#label> "temporal scope"@en .
-<https://w3id.org/def/inia#temporalScope> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E1mbito temporal"@es .
-# 
 # 
 # 
 # #################################################################
@@ -1176,6 +1176,45 @@
 # #################################################################
 # 
 # 
+# http://data.inia.es/def/core#Dataset
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.inia.es/def/core#Resource> .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dataid.dbpedia.org/ns/core#Dataset> .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/creator> .
+_:genid1 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/publisher> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/org#Organization> .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#theme> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/description> .
+_:genid4 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/issued> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#date> .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
+_:genid6 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataset definido en la ontolog\u00EDa INIA. Este dataset tendr\u00E1 propiedades particulares de los metadatos manejados en los conjuntos de datos INIA."@es .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Conjunto de datos"@es .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
+# 
+# http://data.inia.es/def/core#Resource
+<http://data.inia.es/def/core#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.inia.es/def/core#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@en .
+# 
 # http://dataid.dbpedia.org/ns/core#DataId
 <http://dataid.dbpedia.org/ns/core#DataId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -1184,54 +1223,54 @@
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/ns/void#Dataset> .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
-<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://dataid.dbpedia.org/ns/core#latestVersion> .
-_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
-<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://dataid.dbpedia.org/ns/core#nextVersion> .
-_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
-<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://dataid.dbpedia.org/ns/core#previousVersion> .
-_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
-<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .
-_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
-<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/language> .
-_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lexvo.org/ontology#Language> .
-<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/license> .
-_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/odrl/2/Policy> .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/rights> .
-_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#SimpleStatement> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://dataid.dbpedia.org/ns/core#latestVersion> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/spatial> .
-_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.geonames.org/ontology#Feature> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://dataid.dbpedia.org/ns/core#nextVersion> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/temporal> .
-_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2006/time#Interval> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://dataid.dbpedia.org/ns/core#previousVersion> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://rdfs.org/ns/void#subset> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .
 _:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#distribution> .
-_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Distribution> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/language> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lexvo.org/ontology#Language> .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> .
-_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#DataId> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/license> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/odrl/2/Policy> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/rights> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#SimpleStatement> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/spatial> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.geonames.org/ontology#Feature> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/temporal> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2006/time#Interval> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://rdfs.org/ns/void#subset> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#distribution> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Distribution> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#DataId> .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data, available for access in one or more formats. \r\n    Dataset resources describe the concept of the dataset, not its manifestation (the data itself), which can be acquired \r\n    as a Distribution. Datasets are prov:Entities and can be generated by prov:Activities."@en .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dataid.dbpedia.org/ns/core#> .
 <http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
@@ -1245,10 +1284,10 @@ _:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.o
 # http://dataid.dbpedia.org/ns/core#Superset
 <http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dataid.dbpedia.org/ns/core#Dataset> .
-<http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#distribution> .
-_:genid13 <http://www.w3.org/2002/07/owl#maxCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#distribution> .
+_:genid19 <http://www.w3.org/2002/07/owl#maxCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#comment> "This dedicated version of a dataid:Dataset has exacly one purpose: to point out all its Sub-Datsets with void:subset. \r\n    A dataid:Superset has no data itself and is therefore prohibited to point out Distributions with dcat:distribution. \r\n    It can be used in a dataset hierarchy (e.g. as a root dataset), or as a container for other datasets."@en .
 <http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dataid.dbpedia.org/ns/core#> .
 <http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#label> "Superset"@en .
@@ -1256,22 +1295,22 @@ _:genid13 <http://www.w3.org/2002/07/owl#maxCardinality> "0"^^<http://www.w3.org
 # http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicExtent> .
-<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> .
-_:genid14 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude> .
-_:genid15 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude> .
-_:genid16 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude> .
-_:genid17 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> .
+_:genid20 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude> .
+_:genid21 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude> .
+_:genid22 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude> .
+_:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#label> "Geographic bounding box" .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> <http://www.w3.org/2004/02/skos/core#notation> "EX_GeographicBoundingBox"^^<http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName> .
@@ -1422,45 +1461,6 @@ _:genid17 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 # http://xmlns.com/foaf/0.1/Project
 <http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2000/01/rdf-schema#comment> "Un proyecto (un esfuerzo colectivo de alg\u00FAn tipo)."@es .
 <http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2000/01/rdf-schema#label> "Proyecto"@es .
-# 
-# https://w3id.org/def/inia#Dataset
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dataid.dbpedia.org/ns/core#Dataset> .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/inia#Resource> .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/creator> .
-_:genid18 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/publisher> .
-_:genid19 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/org#Organization> .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#theme> .
-_:genid20 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid20 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/description> .
-_:genid21 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/issued> .
-_:genid22 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
-_:genid23 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataset definido en la ontolog\u00EDa INIA. Este dataset tendr\u00E1 propiedades particulares de los metadatos manejados en los conjuntos de datos INIA."@es .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Conjunto de datos"@es .
-<https://w3id.org/def/inia#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
-# 
-# https://w3id.org/def/inia#Resource
-<https://w3id.org/def/inia#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/inia#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@en .
 # 
 # 
 # 

@@ -1,23 +1,23 @@
-@prefix : <https://w3id.org/def/inia##> .
+@prefix : <http://data.inia.es/def/core##> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/def/inia#> .
+@base <http://data.inia.es/def/core#> .
 
-<https://w3id.org/def/inia#> rdf:type owl:Ontology ;
-                              owl:imports <http://purl.org/spar/datacite/> ,
-                                          <http://www.w3.org/ns/org#> ,
-                                          <http://xmlns.com/foaf/0.1/> ;
-                              <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> ;
-                              <http://purl.org/dc/elements/1.1/title> "Ontología datasets INIA"@en ;
-                              <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                              <http://purl.org/dc/terms/modified> "2017-23-08"^^xsd:date ;
-                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "inia"^^xsd:string ;
-                              <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/def/inia#"^^xsd:string ;
-                              rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
-                              owl:versionInfo "0.0.1"^^xsd:string .
+<http://data.inia.es/def/core#> rdf:type owl:Ontology ;
+                                 owl:imports <http://purl.org/spar/datacite/> ,
+                                             <http://www.w3.org/ns/org#> ,
+                                             <http://xmlns.com/foaf/0.1/> ;
+                                 <http://purl.org/dc/elements/1.1/publisher> <http://www.inia.es> ;
+                                 <http://purl.org/dc/elements/1.1/title> "Ontología datasets INIA"@en ;
+                                 <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
+                                 <http://purl.org/dc/terms/modified> "2017-27-11"^^xsd:date ;
+                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "inia"^^xsd:string ;
+                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "http://data.inia.es/def/core#"^^xsd:string ;
+                                 rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
+                                 owl:versionInfo "0.0.2"^^xsd:date .
 
 #################################################################
 #    Annotation properties
@@ -409,6 +409,449 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  http://data.inia.es/def/core#cites
+<http://data.inia.es/def/core#cites> rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                     owl:inverseOf <http://data.inia.es/def/core#isCitedBy> ;
+                                     rdfs:comment "indica que A incluye a B en una cita"@es ,
+                                                  "indicates that A includes B in a citation"@en ;
+                                     rdfs:label "cita"@es ,
+                                                "cites"@en ;
+                                     rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#compiles
+<http://data.inia.es/def/core#compiles> rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                        owl:inverseOf <http://data.inia.es/def/core#isCompiledBy> ;
+                                        rdfs:comment "Indica que B es el resultado de un evento de compilación o creación utilizando A"@es ,
+                                                     "indicates B is the result of a compile or creation event using A"@en ;
+                                        rdfs:label "compila"@es ,
+                                                   "compiles"@en ;
+                                        rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#contactPerson
+<http://data.inia.es/def/core#contactPerson> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                             rdfs:label "contact person"@en ,
+                                                        "persona de contacto"@es .
+
+
+###  http://data.inia.es/def/core#continues
+<http://data.inia.es/def/core#continues> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                         owl:inverseOf <http://data.inia.es/def/core#isContinuedBy> ;
+                                         rdfs:comment "Indica que A es una continuación del trabajo B"@es ,
+                                                      "indicates A is a continuation of the work B"@en ;
+                                         rdfs:label "continues"@en ,
+                                                    "continúa"@es ;
+                                         rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#dataCollector
+<http://data.inia.es/def/core#dataCollector> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                             rdfs:label "data collector"@en ,
+                                                        "recolector de datos"@es .
+
+
+###  http://data.inia.es/def/core#dataCurator
+<http://data.inia.es/def/core#dataCurator> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                           rdfs:label "data curator"@en .
+
+
+###  http://data.inia.es/def/core#dataManager
+<http://data.inia.es/def/core#dataManager> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                           rdfs:label "data manager"@en ,
+                                                      "gestor de datos"@es .
+
+
+###  http://data.inia.es/def/core#developedWithinProject
+<http://data.inia.es/def/core#developedWithinProject> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://data.inia.es/def/core#Dataset> ;
+                                                      rdfs:range <http://xmlns.com/foaf/0.1/Project> ;
+                                                      rdfs:comment "proyecto en el cual se ha creado el dataset"@es ;
+                                                      rdfs:label "desarrollado en proyecto"@es ,
+                                                                 "developed within project"@en .
+
+
+###  http://data.inia.es/def/core#distributor
+<http://data.inia.es/def/core#distributor> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                           rdfs:label "distribuidor"@es ,
+                                                      "distributor"@en .
+
+
+###  http://data.inia.es/def/core#documents
+<http://data.inia.es/def/core#documents> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                         owl:inverseOf <http://data.inia.es/def/core#isDocumentedBy> ;
+                                         rdfs:comment "indica que A es documentación sobre B"@es ,
+                                                      "indicates A is documentation about B"@en ;
+                                         rdfs:label "documenta"@es ,
+                                                    "documents"@en ;
+                                         rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#editor
+<http://data.inia.es/def/core#editor> rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                      rdfs:label "editor"@en ,
+                                                 "editor"@es .
+
+
+###  http://data.inia.es/def/core#fundedBy
+<http://data.inia.es/def/core#fundedBy> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://xmlns.com/foaf/0.1/Project> ;
+                                        rdfs:range <http://www.w3.org/ns/org#Organization> ;
+                                        rdfs:comment "relación entre un proyecto y la organización que lo financia"@es ;
+                                        rdfs:label "financiado por"@es ,
+                                                   "funded by"@en .
+
+
+###  http://data.inia.es/def/core#hasMetadata
+<http://data.inia.es/def/core#hasMetadata> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                           owl:inverseOf <http://data.inia.es/def/core#isMetadataFor> ;
+                                           rdfs:comment "indica que el recurso A tiene como metadatos adicionales el recurso B"@es ,
+                                                        "indicates resource A has additional metadata B"@en ;
+                                           rdfs:label "has metadata"@en ,
+                                                      "tiene metadatos"@es ;
+                                           rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#hasPart
+<http://data.inia.es/def/core#hasPart> rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                       owl:inverseOf <http://data.inia.es/def/core#isPartOf> ;
+                                       rdfs:comment "indica que A incluye a B como una de sus partes"@es ,
+                                                    "indicates A includes the part B"@en ;
+                                       rdfs:label "has part"@en ,
+                                                  "tiene parte"@es ;
+                                       rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#hasRelatedResource
+<http://data.inia.es/def/core#hasRelatedResource> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://data.inia.es/def/core#Resource> ;
+                                                  rdfs:range <http://data.inia.es/def/core#Resource> ;
+                                                  rdfs:comment "Relación entre dos recursos relacionados entre sí. Esta relación tiene una serie de sub relaciones específicas alineadas con el esquema de data cite."@es ;
+                                                  rdfs:label "has related resource"@en ,
+                                                             "tiene relación con recurso"@es .
+
+
+###  http://data.inia.es/def/core#hostingInstitution
+<http://data.inia.es/def/core#hostingInstitution> rdf:type owl:ObjectProperty ;
+                                                  rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                                  rdfs:label "hosting institution"@en ,
+                                                             "institución anfitriona"@es .
+
+
+###  http://data.inia.es/def/core#isCitedBy
+<http://data.inia.es/def/core#isCitedBy> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                         rdfs:comment "indica que B incluye a A en una cita"@es ,
+                                                      "indicates that B includes A in a citation"@en ;
+                                         rdfs:label "es citado por"@es ,
+                                                    "is cited by"@en ;
+                                         rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isCompiledBy
+<http://data.inia.es/def/core#isCompiledBy> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                            rdfs:comment "indica que B es utilizado para compilar o crear A"@es ,
+                                                         "indicates B is used to compile or create A"@en ;
+                                            rdfs:label "es compilado por"@es ,
+                                                       "is compiled by"@en ;
+                                            rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isContinuedBy
+<http://data.inia.es/def/core#isContinuedBy> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                             rdfs:comment "indica que A es continuado por el trabajo B"@es ,
+                                                          "indicates A is continued by the work B"@en ;
+                                             rdfs:label "es continuado por"@es ,
+                                                        "is continued by"@en ;
+                                             rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isDerivedFrom
+<http://data.inia.es/def/core#isDerivedFrom> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                             owl:inverseOf <http://data.inia.es/def/core#isSourceOf> ;
+                                             rdfs:comment "indica que B es una fuente en la que está basado A"@es ,
+                                                          "indicates B is a source upon which A is based"@en ;
+                                             rdfs:label "es derivado de"@es ,
+                                                        "is derived from"@en ;
+                                             rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isDocumentedBy
+<http://data.inia.es/def/core#isDocumentedBy> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                              rdfs:comment "indica que B es la documentación sobre A"@es ,
+                                                           "indicates B is documentation about explaining A"@en ;
+                                              rdfs:label "está documentado por"@es ,
+                                                         "is documented by"@en ;
+                                              rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isIdenticalTo
+<http://data.inia.es/def/core#isIdenticalTo> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                             rdfs:comment "Esta relación no debe utilizarse, owl:sameAs debe ser utilizado en su lugar. Se crea sólo para mantener un registro de su existencia en el esquema de datacite."@es ,
+                                                          "This relation is not to be used, owl:sameAs should be used instead. It is created just to keep record of its existance in datacite schema."@en ,
+                                                          "indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource"@en ;
+                                             rdfs:label "es idéntico a"@es ,
+                                                        "isIdenticalTo"@en ;
+                                             rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es ;
+                                             owl:deprecated "true"^^xsd:boolean ;
+                                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unestable"@es .
+
+
+###  http://data.inia.es/def/core#isMetadataFor
+<http://data.inia.es/def/core#isMetadataFor> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                             rdfs:comment "indica que A contiene metadatos adicionales sobre el recurso B"@es ,
+                                                          "indicates additional metadata A for a resource B"@en ;
+                                             rdfs:label "es metadatos de"@es ,
+                                                        "is metadata for"@en ;
+                                             rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isNewVersionOf
+<http://data.inia.es/def/core#isNewVersionOf> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ,
+                                                                 <http://dataid.dbpedia.org/ns/core#previousVersion> ;
+                                              owl:inverseOf <http://data.inia.es/def/core#isPreviousVersionOf> ;
+                                              rdfs:comment "indica que A es una nueva edición de B, donde la nueva edición ha sido modifcada o actualizada"@es ,
+                                                           "indicates A is a new edition of B, where the new edition has been modified or updated"@en ;
+                                              rdfs:label "es nueva versión de"@es ,
+                                                         "is new version of"@en ;
+                                              rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isOriginalFormOf
+<http://data.inia.es/def/core#isOriginalFormOf> rdf:type owl:ObjectProperty ;
+                                                rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                                owl:inverseOf <http://data.inia.es/def/core#isVariantFormOf> ;
+                                                rdfs:comment "indica que A es la forma origen de B"@es ,
+                                                             "indicates A is the original form of B"@en ;
+                                                rdfs:label "es forma original de"@es ,
+                                                           "is original form of"@en ;
+                                                rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isPartOf
+<http://data.inia.es/def/core#isPartOf> rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ,
+                                                           <http://purl.org/dc/terms/isPartOf> ;
+                                        rdfs:comment "indica que A es una porciónde B, esta relación puede ser utilizada para elementos de una serie"@es ,
+                                                     "indicates A is a portion of B; may be used for elements of a series"@en ;
+                                        rdfs:label "es parte de"@es ,
+                                                   "is part of"@en ;
+                                        rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isPreviousVersionOf
+<http://data.inia.es/def/core#isPreviousVersionOf> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ,
+                                                                      <http://dataid.dbpedia.org/ns/core#nextVersion> ;
+                                                   rdfs:comment "indica que A es una edición previa de B"@es ,
+                                                                "indicates A is a previous edition of B"@en ;
+                                                   rdfs:label "es versión previa de"@es ,
+                                                              "is previous version of"@en ;
+                                                   rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isReferencedBy
+<http://data.inia.es/def/core#isReferencedBy> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                              owl:inverseOf <http://data.inia.es/def/core#references> ;
+                                              rdfs:comment "indica que A es utilizado como fuente de información por B"@es ,
+                                                           "indicates A is used as a source of information by B"@en ;
+                                              rdfs:label "es referenciado por"@es ,
+                                                         "is referenced by"@en ;
+                                              rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isReviewedBy
+<http://data.inia.es/def/core#isReviewedBy> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                            owl:inverseOf <http://data.inia.es/def/core#reviews> ;
+                                            rdfs:comment "indica que A es revisado por B"@es ,
+                                                         "indicates that A is reviewed by B"@en ;
+                                            rdfs:label "es revisado por"@es ,
+                                                       "is reviewed by"@en ;
+                                            rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isSourceOf
+<http://data.inia.es/def/core#isSourceOf> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                          rdfs:comment "indica que A es una fuente sobre la que B está basado"@es ,
+                                                       "indicates A is a source upon which B is based"@en ;
+                                          rdfs:label "es fuente de"@es ,
+                                                     "is source of"@en ;
+                                          rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isSupplementTo
+<http://data.inia.es/def/core#isSupplementTo> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                              owl:inverseOf <http://data.inia.es/def/core#isSupplementedBy> ;
+                                              rdfs:comment "indica que A es un suplemento de B"@es ,
+                                                           "indicates that A is a supplement to B"@en ;
+                                              rdfs:label "es suplemento de"@es ,
+                                                         "is supplement to"@en ;
+                                              rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isSupplementedBy
+<http://data.inia.es/def/core#isSupplementedBy> rdf:type owl:ObjectProperty ;
+                                                rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                                rdfs:comment "indica que B es un suplemento de A"@es ,
+                                                             "indicates that B is a supplement to A"@en ;
+                                                rdfs:label "is supplemented by"@en ,
+                                                           "se suplementa con"@es ;
+                                                rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#isVariantFormOf
+<http://data.inia.es/def/core#isVariantFormOf> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                               rdfs:comment "indica que A es un variante o forma diferente de B, or ejemplo una forma calculada o calibrada"@es ,
+                                                            "indicates A is a variant or different form of B, e.g. calculated or calibrated form or different packaging"@en ;
+                                               rdfs:label "es una variante de"@es ,
+                                                          "is variant form of"@en ;
+                                               rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#producer
+<http://data.inia.es/def/core#producer> rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                        rdfs:label "producer"@en ,
+                                                   "productor"@es .
+
+
+###  http://data.inia.es/def/core#projectLeader
+<http://data.inia.es/def/core#projectLeader> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                             rdfs:label "líder de proyecto"@es ,
+                                                        "project leader"@en .
+
+
+###  http://data.inia.es/def/core#projectManager
+<http://data.inia.es/def/core#projectManager> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                              rdfs:label "jefe de proyecto"@es ,
+                                                         "project manager"@en .
+
+
+###  http://data.inia.es/def/core#references
+<http://data.inia.es/def/core#references> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                          rdfs:comment "indica que B es utilizado como fuente de información de A"@es ,
+                                                       "indicates B is used as a source of information for A"@en ;
+                                          rdfs:label "references"@en ,
+                                                     "referencia"@es ;
+                                          rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#registrationAgency
+<http://data.inia.es/def/core#registrationAgency> rdf:type owl:ObjectProperty ;
+                                                  rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                                  rdfs:label "agencia de registro"@es ,
+                                                             "registration agency"@en .
+
+
+###  http://data.inia.es/def/core#registrationAuthority
+<http://data.inia.es/def/core#registrationAuthority> rdf:type owl:ObjectProperty ;
+                                                     rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                                     rdfs:label "autoridad de registro"@es ,
+                                                                "registration authority"@en .
+
+
+###  http://data.inia.es/def/core#relatedPerson
+<http://data.inia.es/def/core#relatedPerson> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                             rdfs:label "persona relacionada"@es ,
+                                                        "related person"@en .
+
+
+###  http://data.inia.es/def/core#researchGroup
+<http://data.inia.es/def/core#researchGroup> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                             rdfs:label "grupo de investigación"@es ,
+                                                        "research group"@en .
+
+
+###  http://data.inia.es/def/core#researcher
+<http://data.inia.es/def/core#researcher> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                          rdfs:label "investigador"@es ,
+                                                     "researcher"@en .
+
+
+###  http://data.inia.es/def/core#reviews
+<http://data.inia.es/def/core#reviews> rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf <http://data.inia.es/def/core#hasRelatedResource> ;
+                                       rdfs:comment "indica que A  es una revisión de B"@es ,
+                                                    "indicates that A is a review of B"@en ;
+                                       rdfs:label "reviews"@en ,
+                                                  "revisa"@es ;
+                                       rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
+
+
+###  http://data.inia.es/def/core#rightsHolder
+<http://data.inia.es/def/core#rightsHolder> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ,
+                                                               <http://purl.org/dc/terms/rightsHolder> ;
+                                            rdfs:label "rights holder"@en ,
+                                                       "titular de derechos"@es .
+
+
+###  http://data.inia.es/def/core#specie
+<http://data.inia.es/def/core#specie> rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
+                                      rdfs:comment "indica la categoría taxonómica especie"@es ;
+                                      rdfs:label "especie"@es ,
+                                                 "specie"@en .
+
+
+###  http://data.inia.es/def/core#sponsor
+<http://data.inia.es/def/core#sponsor> rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                       rdfs:label "financiador"@es ,
+                                                  "sponsor"@en .
+
+
+###  http://data.inia.es/def/core#supervisor
+<http://data.inia.es/def/core#supervisor> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                          rdfs:label "supervisor"@en ,
+                                                     "supervisor"@es .
+
+
+###  http://data.inia.es/def/core#taxonomicalScope
+<http://data.inia.es/def/core#taxonomicalScope> rdf:type owl:ObjectProperty ;
+                                                rdfs:comment "Relación genera para indicar el ámbito taxonómico que puede ser especializada por una o mas de sus subpropiedades."@es ;
+                                                rdfs:label "taxonomical scope"@en ,
+                                                           "ámbito taxonómico"@es .
+
+
+###  http://data.inia.es/def/core#workPackageLeader
+<http://data.inia.es/def/core#workPackageLeader> rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                                 rdfs:label "líder de paquete de trabajo"@es ,
+                                                            "work package leader"@en .
+
+
 ###  http://dataid.dbpedia.org/ns/core#identifier
 <http://dataid.dbpedia.org/ns/core#identifier> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf <http://purl.org/spar/datacite/hasIdentifier> ;
@@ -654,7 +1097,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://rs.tdwg.org/dwc/terms/class
 <http://rs.tdwg.org/dwc/terms/class> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf <https://w3id.org/def/inia#taxonomicalScope> ;
+                                     rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
                                      rdfs:comment "indica la categoría taxonómica clase"@es ;
                                      rdfs:label "clase"@es ,
                                                 "class"@en .
@@ -662,7 +1105,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://rs.tdwg.org/dwc/terms/family
 <http://rs.tdwg.org/dwc/terms/family> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf <https://w3id.org/def/inia#taxonomicalScope> ;
+                                      rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
                                       rdfs:comment "indica la categoría taxonómica familia"@es ;
                                       rdfs:label "familia"@es ,
                                                  "family"@en .
@@ -670,7 +1113,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://rs.tdwg.org/dwc/terms/genus
 <http://rs.tdwg.org/dwc/terms/genus> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf <https://w3id.org/def/inia#taxonomicalScope> ;
+                                     rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
                                      rdfs:comment "indica la categoría taxonómica género"@es ;
                                      rdfs:label "genus"@en ,
                                                 "género"@es .
@@ -678,7 +1121,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://rs.tdwg.org/dwc/terms/kingdom
 <http://rs.tdwg.org/dwc/terms/kingdom> rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf <https://w3id.org/def/inia#taxonomicalScope> ;
+                                       rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
                                        rdfs:comment "indica la categoría taxonómica reino"@es ;
                                        rdfs:label "kingdom"@en ,
                                                   "reino"@es .
@@ -686,7 +1129,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://rs.tdwg.org/dwc/terms/order
 <http://rs.tdwg.org/dwc/terms/order> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf <https://w3id.org/def/inia#taxonomicalScope> ;
+                                     rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
                                      rdfs:comment "indica la categoría taxonómica orden"@es ;
                                      rdfs:label "orden"@es ,
                                                 "order"@en .
@@ -694,7 +1137,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://rs.tdwg.org/dwc/terms/phylum
 <http://rs.tdwg.org/dwc/terms/phylum> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf <https://w3id.org/def/inia#taxonomicalScope> ;
+                                      rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
                                       rdfs:comment "indica la categoría taxonómica filo o división"@es ;
                                       rdfs:label "filo"@es ,
                                                  "phylum"@en .
@@ -724,452 +1167,87 @@ xsd:date rdf:type rdfs:Datatype .
 <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/def/inia#cites
-<https://w3id.org/def/inia#cites> rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                  owl:inverseOf <https://w3id.org/def/inia#isCitedBy> ;
-                                  rdfs:comment "indica que A incluye a B en una cita"@es ,
-                                               "indicates that A includes B in a citation"@en ;
-                                  rdfs:label "cita"@es ,
-                                             "cites"@en ;
-                                  rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#compiles
-<https://w3id.org/def/inia#compiles> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                     owl:inverseOf <https://w3id.org/def/inia#isCompiledBy> ;
-                                     rdfs:comment "Indica que B es el resultado de un evento de compilación o creación utilizando A"@es ,
-                                                  "indicates B is the result of a compile or creation event using A"@en ;
-                                     rdfs:label "compila"@es ,
-                                                "compiles"@en ;
-                                     rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#contactPerson
-<https://w3id.org/def/inia#contactPerson> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                          rdfs:label "contact person"@en ,
-                                                     "persona de contacto"@es .
-
-
-###  https://w3id.org/def/inia#continues
-<https://w3id.org/def/inia#continues> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                      owl:inverseOf <https://w3id.org/def/inia#isContinuedBy> ;
-                                      rdfs:comment "Indica que A es una continuación del trabajo B"@es ,
-                                                   "indicates A is a continuation of the work B"@en ;
-                                      rdfs:label "continues"@en ,
-                                                 "continúa"@es ;
-                                      rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#dataCollector
-<https://w3id.org/def/inia#dataCollector> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                          rdfs:label "data collector"@en ,
-                                                     "recolector de datos"@es .
-
-
-###  https://w3id.org/def/inia#dataCurator
-<https://w3id.org/def/inia#dataCurator> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                        rdfs:label "data curator"@en .
-
-
-###  https://w3id.org/def/inia#dataManager
-<https://w3id.org/def/inia#dataManager> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                        rdfs:label "data manager"@en ,
-                                                   "gestor de datos"@es .
-
-
-###  https://w3id.org/def/inia#developedWithinProject
-<https://w3id.org/def/inia#developedWithinProject> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain <https://w3id.org/def/inia#Dataset> ;
-                                                   rdfs:range <http://xmlns.com/foaf/0.1/Project> ;
-                                                   rdfs:comment "proyecto en el cual se ha creado el dataset"@es ;
-                                                   rdfs:label "desarrollado en proyecto"@es ,
-                                                              "developed within project"@en .
-
-
-###  https://w3id.org/def/inia#distributor
-<https://w3id.org/def/inia#distributor> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                        rdfs:label "distribuidor"@es ,
-                                                   "distributor"@en .
-
-
-###  https://w3id.org/def/inia#documents
-<https://w3id.org/def/inia#documents> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                      owl:inverseOf <https://w3id.org/def/inia#isDocumentedBy> ;
-                                      rdfs:comment "indica que A es documentación sobre B"@es ,
-                                                   "indicates A is documentation about B"@en ;
-                                      rdfs:label "documenta"@es ,
-                                                 "documents"@en ;
-                                      rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#editor
-<https://w3id.org/def/inia#editor> rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                   rdfs:label "editor"@en ,
-                                              "editor"@es .
-
-
-###  https://w3id.org/def/inia#fundedBy
-<https://w3id.org/def/inia#fundedBy> rdf:type owl:ObjectProperty ;
-                                     rdfs:domain <http://xmlns.com/foaf/0.1/Project> ;
-                                     rdfs:range <http://www.w3.org/ns/org#Organization> ;
-                                     rdfs:comment "relación entre un proyecto y la organización que lo financia"@es ;
-                                     rdfs:label "financiado por"@es ,
-                                                "funded by"@en .
-
-
-###  https://w3id.org/def/inia#hasMetadata
-<https://w3id.org/def/inia#hasMetadata> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                        owl:inverseOf <https://w3id.org/def/inia#isMetadataFor> ;
-                                        rdfs:comment "indica que el recurso A tiene como metadatos adicionales el recurso B"@es ,
-                                                     "indicates resource A has additional metadata B"@en ;
-                                        rdfs:label "has metadata"@en ,
-                                                   "tiene metadatos"@es ;
-                                        rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#hasPart
-<https://w3id.org/def/inia#hasPart> rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                    owl:inverseOf <https://w3id.org/def/inia#isPartOf> ;
-                                    rdfs:comment "indica que A incluye a B como una de sus partes"@es ,
-                                                 "indicates A includes the part B"@en ;
-                                    rdfs:label "has part"@en ,
-                                               "tiene parte"@es ;
-                                    rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#hasRelatedResource
-<https://w3id.org/def/inia#hasRelatedResource> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain <https://w3id.org/def/inia#Resource> ;
-                                               rdfs:range <https://w3id.org/def/inia#Resource> ;
-                                               rdfs:comment "Relación entre dos recursos relacionados entre sí. Esta relación tiene una serie de sub relaciones específicas alineadas con el esquema de data cite."@es ;
-                                               rdfs:label "has related resource"@en ,
-                                                          "tiene relación con recurso"@es .
-
-
-###  https://w3id.org/def/inia#hostingInstitution
-<https://w3id.org/def/inia#hostingInstitution> rdf:type owl:ObjectProperty ;
-                                               rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                               rdfs:label "hosting institution"@en ,
-                                                          "institución anfitriona"@es .
-
-
-###  https://w3id.org/def/inia#isCitedBy
-<https://w3id.org/def/inia#isCitedBy> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                      rdfs:comment "indica que B incluye a A en una cita"@es ,
-                                                   "indicates that B includes A in a citation"@en ;
-                                      rdfs:label "es citado por"@es ,
-                                                 "is cited by"@en ;
-                                      rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isCompiledBy
-<https://w3id.org/def/inia#isCompiledBy> rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                         rdfs:comment "indica que B es utilizado para compilar o crear A"@es ,
-                                                      "indicates B is used to compile or create A"@en ;
-                                         rdfs:label "es compilado por"@es ,
-                                                    "is compiled by"@en ;
-                                         rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isContinuedBy
-<https://w3id.org/def/inia#isContinuedBy> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                          rdfs:comment "indica que A es continuado por el trabajo B"@es ,
-                                                       "indicates A is continued by the work B"@en ;
-                                          rdfs:label "es continuado por"@es ,
-                                                     "is continued by"@en ;
-                                          rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isDerivedFrom
-<https://w3id.org/def/inia#isDerivedFrom> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                          owl:inverseOf <https://w3id.org/def/inia#isSourceOf> ;
-                                          rdfs:comment "indica que B es una fuente en la que está basado A"@es ,
-                                                       "indicates B is a source upon which A is based"@en ;
-                                          rdfs:label "es derivado de"@es ,
-                                                     "is derived from"@en ;
-                                          rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isDocumentedBy
-<https://w3id.org/def/inia#isDocumentedBy> rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                           rdfs:comment "indica que B es la documentación sobre A"@es ,
-                                                        "indicates B is documentation about explaining A"@en ;
-                                           rdfs:label "está documentado por"@es ,
-                                                      "is documented by"@en ;
-                                           rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isIdenticalTo
-<https://w3id.org/def/inia#isIdenticalTo> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                          rdfs:comment "Esta relación no debe utilizarse, owl:sameAs debe ser utilizado en su lugar. Se crea sólo para mantener un registro de su existencia en el esquema de datacite."@es ,
-                                                       "This relation is not to be used, owl:sameAs should be used instead. It is created just to keep record of its existance in datacite schema."@en ,
-                                                       "indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource"@en ;
-                                          rdfs:label "es idéntico a"@es ,
-                                                     "isIdenticalTo"@en ;
-                                          rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es ;
-                                          owl:deprecated "true"^^xsd:boolean ;
-                                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unestable"@es .
-
-
-###  https://w3id.org/def/inia#isMetadataFor
-<https://w3id.org/def/inia#isMetadataFor> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                          rdfs:comment "indica que A contiene metadatos adicionales sobre el recurso B"@es ,
-                                                       "indicates additional metadata A for a resource B"@en ;
-                                          rdfs:label "es metadatos de"@es ,
-                                                     "is metadata for"@en ;
-                                          rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isNewVersionOf
-<https://w3id.org/def/inia#isNewVersionOf> rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf <http://dataid.dbpedia.org/ns/core#previousVersion> ,
-                                                              <https://w3id.org/def/inia#hasRelatedResource> ;
-                                           owl:inverseOf <https://w3id.org/def/inia#isPreviousVersionOf> ;
-                                           rdfs:comment "indica que A es una nueva edición de B, donde la nueva edición ha sido modifcada o actualizada"@es ,
-                                                        "indicates A is a new edition of B, where the new edition has been modified or updated"@en ;
-                                           rdfs:label "es nueva versión de"@es ,
-                                                      "is new version of"@en ;
-                                           rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isOriginalFormOf
-<https://w3id.org/def/inia#isOriginalFormOf> rdf:type owl:ObjectProperty ;
-                                             rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                             owl:inverseOf <https://w3id.org/def/inia#isVariantFormOf> ;
-                                             rdfs:comment "indica que A es la forma origen de B"@es ,
-                                                          "indicates A is the original form of B"@en ;
-                                             rdfs:label "es forma original de"@es ,
-                                                        "is original form of"@en ;
-                                             rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isPartOf
-<https://w3id.org/def/inia#isPartOf> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf> ,
-                                                        <https://w3id.org/def/inia#hasRelatedResource> ;
-                                     rdfs:comment "indica que A es una porciónde B, esta relación puede ser utilizada para elementos de una serie"@es ,
-                                                  "indicates A is a portion of B; may be used for elements of a series"@en ;
-                                     rdfs:label "es parte de"@es ,
-                                                "is part of"@en ;
-                                     rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isPreviousVersionOf
-<https://w3id.org/def/inia#isPreviousVersionOf> rdf:type owl:ObjectProperty ;
-                                                rdfs:subPropertyOf <http://dataid.dbpedia.org/ns/core#nextVersion> ,
-                                                                   <https://w3id.org/def/inia#hasRelatedResource> ;
-                                                rdfs:comment "indica que A es una edición previa de B"@es ,
-                                                             "indicates A is a previous edition of B"@en ;
-                                                rdfs:label "es versión previa de"@es ,
-                                                           "is previous version of"@en ;
-                                                rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isReferencedBy
-<https://w3id.org/def/inia#isReferencedBy> rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                           owl:inverseOf <https://w3id.org/def/inia#references> ;
-                                           rdfs:comment "indica que A es utilizado como fuente de información por B"@es ,
-                                                        "indicates A is used as a source of information by B"@en ;
-                                           rdfs:label "es referenciado por"@es ,
-                                                      "is referenced by"@en ;
-                                           rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isReviewedBy
-<https://w3id.org/def/inia#isReviewedBy> rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                         owl:inverseOf <https://w3id.org/def/inia#reviews> ;
-                                         rdfs:comment "indica que A es revisado por B"@es ,
-                                                      "indicates that A is reviewed by B"@en ;
-                                         rdfs:label "es revisado por"@es ,
-                                                    "is reviewed by"@en ;
-                                         rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isSourceOf
-<https://w3id.org/def/inia#isSourceOf> rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                       rdfs:comment "indica que A es una fuente sobre la que B está basado"@es ,
-                                                    "indicates A is a source upon which B is based"@en ;
-                                       rdfs:label "es fuente de"@es ,
-                                                  "is source of"@en ;
-                                       rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isSupplementTo
-<https://w3id.org/def/inia#isSupplementTo> rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                           owl:inverseOf <https://w3id.org/def/inia#isSupplementedBy> ;
-                                           rdfs:comment "indica que A es un suplemento de B"@es ,
-                                                        "indicates that A is a supplement to B"@en ;
-                                           rdfs:label "es suplemento de"@es ,
-                                                      "is supplement to"@en ;
-                                           rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isSupplementedBy
-<https://w3id.org/def/inia#isSupplementedBy> rdf:type owl:ObjectProperty ;
-                                             rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                             rdfs:comment "indica que B es un suplemento de A"@es ,
-                                                          "indicates that B is a supplement to A"@en ;
-                                             rdfs:label "is supplemented by"@en ,
-                                                        "se suplementa con"@es ;
-                                             rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#isVariantFormOf
-<https://w3id.org/def/inia#isVariantFormOf> rdf:type owl:ObjectProperty ;
-                                            rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                            rdfs:comment "indica que A es un variante o forma diferente de B, or ejemplo una forma calculada o calibrada"@es ,
-                                                         "indicates A is a variant or different form of B, e.g. calculated or calibrated form or different packaging"@en ;
-                                            rdfs:label "es una variante de"@es ,
-                                                       "is variant form of"@en ;
-                                            rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#producer
-<https://w3id.org/def/inia#producer> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                     rdfs:label "producer"@en ,
-                                                "productor"@es .
-
-
-###  https://w3id.org/def/inia#projectLeader
-<https://w3id.org/def/inia#projectLeader> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                          rdfs:label "líder de proyecto"@es ,
-                                                     "project leader"@en .
-
-
-###  https://w3id.org/def/inia#projectManager
-<https://w3id.org/def/inia#projectManager> rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                           rdfs:label "jefe de proyecto"@es ,
-                                                      "project manager"@en .
-
-
-###  https://w3id.org/def/inia#references
-<https://w3id.org/def/inia#references> rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                       rdfs:comment "indica que B es utilizado como fuente de información de A"@es ,
-                                                    "indicates B is used as a source of information for A"@en ;
-                                       rdfs:label "references"@en ,
-                                                  "referencia"@es ;
-                                       rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#registrationAgency
-<https://w3id.org/def/inia#registrationAgency> rdf:type owl:ObjectProperty ;
-                                               rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                               rdfs:label "agencia de registro"@es ,
-                                                          "registration agency"@en .
-
-
-###  https://w3id.org/def/inia#registrationAuthority
-<https://w3id.org/def/inia#registrationAuthority> rdf:type owl:ObjectProperty ;
-                                                  rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                                  rdfs:label "autoridad de registro"@es ,
-                                                             "registration authority"@en .
-
-
-###  https://w3id.org/def/inia#relatedPerson
-<https://w3id.org/def/inia#relatedPerson> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                          rdfs:label "persona relacionada"@es ,
-                                                     "related person"@en .
-
-
-###  https://w3id.org/def/inia#researchGroup
-<https://w3id.org/def/inia#researchGroup> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                          rdfs:label "grupo de investigación"@es ,
-                                                     "research group"@en .
-
-
-###  https://w3id.org/def/inia#researcher
-<https://w3id.org/def/inia#researcher> rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                       rdfs:label "investigador"@es ,
-                                                  "researcher"@en .
-
-
-###  https://w3id.org/def/inia#reviews
-<https://w3id.org/def/inia#reviews> rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf <https://w3id.org/def/inia#hasRelatedResource> ;
-                                    rdfs:comment "indica que A  es una revisión de B"@es ,
-                                                 "indicates that A is a review of B"@en ;
-                                    rdfs:label "reviews"@en ,
-                                               "revisa"@es ;
-                                    rdfs:seeAlso "https://schema.datacite.org/meta/kernel-4.0/"@es .
-
-
-###  https://w3id.org/def/inia#rightsHolder
-<https://w3id.org/def/inia#rightsHolder> rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ,
-                                                            <http://purl.org/dc/terms/rightsHolder> ;
-                                         rdfs:label "rights holder"@en ,
-                                                    "titular de derechos"@es .
-
-
-###  https://w3id.org/def/inia#specie
-<https://w3id.org/def/inia#specie> rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf <https://w3id.org/def/inia#taxonomicalScope> ;
-                                   rdfs:comment "indica la categoría taxonómica especie"@es ;
-                                   rdfs:label "especie"@es ,
-                                              "specie"@en .
-
-
-###  https://w3id.org/def/inia#sponsor
-<https://w3id.org/def/inia#sponsor> rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                    rdfs:label "financiador"@es ,
-                                               "sponsor"@en .
-
-
-###  https://w3id.org/def/inia#supervisor
-<https://w3id.org/def/inia#supervisor> rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                       rdfs:label "supervisor"@en ,
-                                                  "supervisor"@es .
-
-
-###  https://w3id.org/def/inia#taxonomicalScope
-<https://w3id.org/def/inia#taxonomicalScope> rdf:type owl:ObjectProperty ;
-                                             rdfs:comment "Relación genera para indicar el ámbito taxonómico que puede ser especializada por una o mas de sus subpropiedades."@es ;
-                                             rdfs:label "taxonomical scope"@en ,
-                                                        "ámbito taxonómico"@es .
-
-
-###  https://w3id.org/def/inia#workPackageLeader
-<https://w3id.org/def/inia#workPackageLeader> rdf:type owl:ObjectProperty ;
-                                              rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
-                                              rdfs:label "líder de paquete de trabajo"@es ,
-                                                         "work package leader"@en .
-
-
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://data.inia.es/def/core#elementsNumber
+<http://data.inia.es/def/core#elementsNumber> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://data.inia.es/def/core#Dataset> ;
+                                              rdfs:comment "Número de instancias de la colección."@es ;
+                                              rdfs:label "elements number"@en ,
+                                                         "número de elementos"@es .
+
+
+###  http://data.inia.es/def/core#embargoDate
+<http://data.inia.es/def/core#embargoDate> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://data.inia.es/def/core#Dataset> ;
+                                           rdfs:range xsd:date ;
+                                           rdfs:comment "Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre."@es ;
+                                           rdfs:label "embargo date"@en ,
+                                                      "fecha de embargo"@es .
+
+
+###  http://data.inia.es/def/core#equipment
+<http://data.inia.es/def/core#equipment> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <http://data.inia.es/def/core#Dataset> ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "En caso de ser relevante el instrumento de medida utilizado, marca modelo precisión etc."@es ,
+                                                      "Instrumentación de medida"@es ;
+                                         rdfs:label "equipment"@en .
+
+
+###  http://data.inia.es/def/core#finalDate
+<http://data.inia.es/def/core#finalDate> rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                         rdfs:range xsd:date ;
+                                         rdfs:label "Fecha final, relacionada con el ámbito del Dataset. Este atributo suele utilizarse en combinación con inia:startingDate como alternativa a dcterms:temporal."@es ,
+                                                    "fecha final"@es ,
+                                                    "final date"@en .
+
+
+###  http://data.inia.es/def/core#projectCode
+<http://data.inia.es/def/core#projectCode> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://xmlns.com/foaf/0.1/Project> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "código del proyecto en el que se ha desarrollado un dataset"@es ;
+                                           rdfs:label "código de proyecto"@es ,
+                                                      "project code"@en .
+
+
+###  http://data.inia.es/def/core#software
+<http://data.inia.es/def/core#software> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                        rdfs:domain <http://data.inia.es/def/core#Dataset> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "Hace referencia al software utilizado para la eleboración del dataset o para su visualización o explotación, nombre, versión, marca."@es ;
+                                        rdfs:label "software"@en ,
+                                                   "software"@es .
+
+
+###  http://data.inia.es/def/core#spatialScope
+<http://data.inia.es/def/core#spatialScope> rdf:type owl:DatatypeProperty ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "Descripción textual del ámbito geográfico relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar determinadas zonas de manera textual, península ibérica, cuenca alta del Júcar, sierra de Cazorla, Madrid."@es ;
+                                            rdfs:label "ambito geográfico"@es ,
+                                                       "spatial scope"@en .
+
+
+###  http://data.inia.es/def/core#startingDate
+<http://data.inia.es/def/core#startingDate> rdf:type owl:DatatypeProperty ;
+                                            rdfs:range xsd:date ;
+                                            rdfs:comment "Fecha inicial, relacionada con el ámbito del Dataset ejemplo: fecha inicial de las toma de muestras del material incluido en el Dataset 25/06/1938. Este atributo suele utilizarse en combinación con inia:finalDate como alternativa a dcterms:temporal."@es ,
+                                                         "fecha inicial"@es ;
+                                            rdfs:label "starting date"@en .
+
+
+###  http://data.inia.es/def/core#temporalScope
+<http://data.inia.es/def/core#temporalScope> rdf:type owl:DatatypeProperty ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:comment "Descripción textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cretácico, Edad media."@es ;
+                                             rdfs:label "temporal scope"@en ,
+                                                        "ámbito temporal"@es .
+
 
 ###  http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> rdf:type owl:DatatypeProperty ;
@@ -1289,87 +1367,50 @@ xsd:date rdf:type rdfs:Datatype .
                                                "palabra clave"@es .
 
 
-###  https://w3id.org/def/inia#elementsNumber
-<https://w3id.org/def/inia#elementsNumber> rdf:type owl:DatatypeProperty ;
-                                           rdfs:domain <https://w3id.org/def/inia#Dataset> ;
-                                           rdfs:comment "Número de instancias de la colección."@es ;
-                                           rdfs:label "elements number"@en ,
-                                                      "número de elementos"@es .
-
-
-###  https://w3id.org/def/inia#embargoDate
-<https://w3id.org/def/inia#embargoDate> rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain <https://w3id.org/def/inia#Dataset> ;
-                                        rdfs:range xsd:date ;
-                                        rdfs:comment "Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre."@es ;
-                                        rdfs:label "embargo date"@en ,
-                                                   "fecha de embargo"@es .
-
-
-###  https://w3id.org/def/inia#equipment
-<https://w3id.org/def/inia#equipment> rdf:type owl:DatatypeProperty ;
-                                      rdfs:domain <https://w3id.org/def/inia#Dataset> ;
-                                      rdfs:range xsd:string ;
-                                      rdfs:comment "En caso de ser relevante el instrumento de medida utilizado, marca modelo precisión etc."@es ,
-                                                   "Instrumentación de medida"@es ;
-                                      rdfs:label "equipment"@en .
-
-
-###  https://w3id.org/def/inia#finalDate
-<https://w3id.org/def/inia#finalDate> rdf:type owl:DatatypeProperty ;
-                                      rdfs:subPropertyOf owl:topDataProperty ;
-                                      rdfs:range xsd:date ;
-                                      rdfs:label "Fecha final, relacionada con el ámbito del Dataset. Este atributo suele utilizarse en combinación con inia:startingDate como alternativa a dcterms:temporal."@es ,
-                                                 "fecha final"@es ,
-                                                 "final date"@en .
-
-
-###  https://w3id.org/def/inia#projectCode
-<https://w3id.org/def/inia#projectCode> rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain <http://xmlns.com/foaf/0.1/Project> ;
-                                        rdfs:range xsd:string ;
-                                        rdfs:comment "código del proyecto en el que se ha desarrollado un dataset"@es ;
-                                        rdfs:label "código de proyecto"@es ,
-                                                   "project code"@en .
-
-
-###  https://w3id.org/def/inia#software
-<https://w3id.org/def/inia#software> rdf:type owl:DatatypeProperty ;
-                                     rdfs:subPropertyOf owl:topDataProperty ;
-                                     rdfs:domain <https://w3id.org/def/inia#Dataset> ;
-                                     rdfs:range xsd:string ;
-                                     rdfs:comment "Hace referencia al software utilizado para la eleboración del dataset o para su visualización o explotación, nombre, versión, marca."@es ;
-                                     rdfs:label "software"@en ,
-                                                "software"@es .
-
-
-###  https://w3id.org/def/inia#spatialScope
-<https://w3id.org/def/inia#spatialScope> rdf:type owl:DatatypeProperty ;
-                                         rdfs:range xsd:string ;
-                                         rdfs:comment "Descripción textual del ámbito geográfico relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar determinadas zonas de manera textual, península ibérica, cuenca alta del Júcar, sierra de Cazorla, Madrid."@es ;
-                                         rdfs:label "ambito geográfico"@es ,
-                                                    "spatial scope"@en .
-
-
-###  https://w3id.org/def/inia#startingDate
-<https://w3id.org/def/inia#startingDate> rdf:type owl:DatatypeProperty ;
-                                         rdfs:range xsd:date ;
-                                         rdfs:comment "Fecha inicial, relacionada con el ámbito del Dataset ejemplo: fecha inicial de las toma de muestras del material incluido en el Dataset 25/06/1938. Este atributo suele utilizarse en combinación con inia:finalDate como alternativa a dcterms:temporal."@es ,
-                                                      "fecha inicial"@es ;
-                                         rdfs:label "starting date"@en .
-
-
-###  https://w3id.org/def/inia#temporalScope
-<https://w3id.org/def/inia#temporalScope> rdf:type owl:DatatypeProperty ;
-                                          rdfs:range xsd:string ;
-                                          rdfs:comment "Descripción textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cretácico, Edad media."@es ;
-                                          rdfs:label "temporal scope"@en ,
-                                                     "ámbito temporal"@es .
-
-
 #################################################################
 #    Classes
 #################################################################
+
+###  http://data.inia.es/def/core#Dataset
+<http://data.inia.es/def/core#Dataset> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://data.inia.es/def/core#Resource> ,
+                                                       <http://dataid.dbpedia.org/ns/core#Dataset> ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.org/dc/terms/creator> ;
+                                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.org/dc/terms/publisher> ;
+                                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass <http://www.w3.org/ns/org#Organization>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.w3.org/ns/dcat#theme> ;
+                                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.org/dc/terms/description> ;
+                                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.org/dc/terms/issued> ;
+                                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                         owl:onDataRange xsd:date
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.org/dc/terms/title> ;
+                                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                       ] ;
+                                       rdfs:comment "Dataset definido en la ontología INIA. Este dataset tendrá propiedades particulares de los metadatos manejados en los conjuntos de datos INIA."@es ;
+                                       rdfs:label "Conjunto de datos"@es ,
+                                                  "Dataset"@en .
+
+
+###  http://data.inia.es/def/core#Resource
+<http://data.inia.es/def/core#Resource> rdf:type owl:Class ;
+                                        rdfs:label "Resource"@en .
+
 
 ###  http://dataid.dbpedia.org/ns/core#DataId
 <http://dataid.dbpedia.org/ns/core#DataId> rdf:type owl:Class .
@@ -1669,47 +1710,6 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://xmlns.com/foaf/0.1/Project
 <http://xmlns.com/foaf/0.1/Project> rdfs:comment "Un proyecto (un esfuerzo colectivo de algún tipo)."@es ;
                                     rdfs:label "Proyecto"@es .
-
-
-###  https://w3id.org/def/inia#Dataset
-<https://w3id.org/def/inia#Dataset> rdf:type owl:Class ;
-                                    rdfs:subClassOf <http://dataid.dbpedia.org/ns/core#Dataset> ,
-                                                    <https://w3id.org/def/inia#Resource> ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://purl.org/dc/terms/creator> ;
-                                                      owl:minCardinality "1"^^xsd:nonNegativeInteger
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://purl.org/dc/terms/publisher> ;
-                                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                      owl:onClass <http://www.w3.org/ns/org#Organization>
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://www.w3.org/ns/dcat#theme> ;
-                                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                      owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://purl.org/dc/terms/description> ;
-                                                      owl:minCardinality "1"^^xsd:nonNegativeInteger
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://purl.org/dc/terms/issued> ;
-                                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                      owl:onDataRange xsd:date
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://purl.org/dc/terms/title> ;
-                                                      owl:minCardinality "1"^^xsd:nonNegativeInteger
-                                                    ] ;
-                                    rdfs:comment "Dataset definido en la ontología INIA. Este dataset tendrá propiedades particulares de los metadatos manejados en los conjuntos de datos INIA."@es ;
-                                    rdfs:label "Conjunto de datos"@es ,
-                                               "Dataset"@en .
-
-
-###  https://w3id.org/def/inia#Resource
-<https://w3id.org/def/inia#Resource> rdf:type owl:Class ;
-                                     rdfs:label "Resource"@en .
 
 
 #################################################################
