@@ -2,10 +2,12 @@
 <http://data.inia.es/def/core#> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/datacite/> .
 <http://data.inia.es/def/core#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/org#> .
 <http://data.inia.es/def/core#> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<http://data.inia.es/def/core#> <http://purl.org/dc/elements/1.1/creator> "http://w3id.org/people/mpoveda" .
 <http://data.inia.es/def/core#> <http://purl.org/dc/elements/1.1/publisher> <http://www.inia.es> .
 <http://data.inia.es/def/core#> <http://purl.org/dc/elements/1.1/title> "Ontolog\u00EDa datasets INIA"@en .
+<http://data.inia.es/def/core#> <http://purl.org/dc/terms/contributor> <http://agripa.org/profile/ajspadial> .
 <http://data.inia.es/def/core#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<http://data.inia.es/def/core#> <http://purl.org/dc/terms/modified> "2017-27-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.inia.es/def/core#> <http://purl.org/dc/terms/modified> "2017-04-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.inia.es/def/core#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "inia" .
 <http://data.inia.es/def/core#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://data.inia.es/def/core#" .
 <http://data.inia.es/def/core#> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta ontolog\u00EDa representa los datasets publicados por el INIA"@en .
@@ -384,6 +386,7 @@
 # http://data.inia.es/def/core#dataCurator
 <http://data.inia.es/def/core#dataCurator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.inia.es/def/core#dataCurator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://data.inia.es/def/core#dataCurator> <http://www.w3.org/2000/01/rdf-schema#comment> "asegurador de calidad de los datos"@es .
 <http://data.inia.es/def/core#dataCurator> <http://www.w3.org/2000/01/rdf-schema#label> "data curator"@en .
 # 
 # http://data.inia.es/def/core#dataManager
@@ -705,7 +708,8 @@
 # http://data.inia.es/def/core#specie
 <http://data.inia.es/def/core#specie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.inia.es/def/core#specie> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
-<http://data.inia.es/def/core#specie> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica especie"@es .
+<http://data.inia.es/def/core#specie> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la categor\u00EDa taxon\u00F3mica especie"@es .
+<http://data.inia.es/def/core#specie> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the taxonomical specie"@en .
 <http://data.inia.es/def/core#specie> <http://www.w3.org/2000/01/rdf-schema#label> "especie"@es .
 <http://data.inia.es/def/core#specie> <http://www.w3.org/2000/01/rdf-schema#label> "specie"@en .
 # 
@@ -761,8 +765,10 @@
 <http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dataid.dbpedia.org/ns/core#Dataset> .
 <http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#range> <http://dataid.dbpedia.org/ns/core#SimpleStatement> .
+<http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#comment> "Descripci\u00F3n general de c\u00F3mo se compartir\u00E1n los datos. Por ejemplo, per\u00EDodos de embargo (si los hay), esquemas de mecanismos t\u00E9cnicos para diseminaci\u00F3n o una definici\u00F3n de si el acceso ser\u00E1 ampliamente abierto o restringido a grupos espec\u00EDficos. En caso de que el conjunto de datos no se pueda compartir, se deben mencionar los motivos (por ejemplo, normas \u00E9ticas, de datos personales, propiedad intelectual, comercial, relacionadas con la seguridad, relacionadas con la seguridad)."@es .
 <http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#comment> "General description of how data will be shared. For example embargo periods (if any), outlines of technical mechanisms for dissemination or a definition of whether access will be widely open or restricted to specific groups. In case the Dataset cannot be shared, the reasons for this should be mentioned (e.g. ethical, rules of personal data, intellectual property, commercial, privacy-related, security-related)."@en .
 <http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dataid.dbpedia.org/ns/dmp#> .
+<http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#label> "apertura"@es .
 <http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#label> "openness"@en .
 # 
 # http://dataid.dbpedia.org/ns/core#previousVersion
@@ -774,25 +780,6 @@
 # http://purl.org/dc/terms/accessRights
 <http://purl.org/dc/terms/accessRights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/dc/terms/accessRights> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/rights> .
-# 
-# http://purl.org/dc/terms/accrualMethod
-<http://purl.org/dc/terms/accrualMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/accrualMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/dcmitype/Collection> .
-<http://purl.org/dc/terms/accrualMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/MethodOfAccrual> .
-# 
-# http://purl.org/dc/terms/accrualPeriodicity
-<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/dcmitype/Collection> .
-<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Frequency> .
-# 
-# http://purl.org/dc/terms/accrualPolicy
-<http://purl.org/dc/terms/accrualPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/accrualPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/dcmitype/Collection> .
-<http://purl.org/dc/terms/accrualPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Policy> .
-# 
-# http://purl.org/dc/terms/audience
-<http://purl.org/dc/terms/audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/audience> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/AgentClass> .
 # 
 # http://purl.org/dc/terms/conformsTo
 <http://purl.org/dc/terms/conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -808,18 +795,6 @@
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
 # 
-# http://purl.org/dc/terms/educationLevel
-<http://purl.org/dc/terms/educationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/educationLevel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/audience> .
-<http://purl.org/dc/terms/educationLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/AgentClass> .
-# 
-# http://purl.org/dc/terms/extent
-<http://purl.org/dc/terms/extent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/extent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/format> .
-# 
-# http://purl.org/dc/terms/format
-<http://purl.org/dc/terms/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
 # http://purl.org/dc/terms/hasFormat
 <http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/dc/terms/hasFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
@@ -834,7 +809,6 @@
 # 
 # http://purl.org/dc/terms/instructionalMethod
 <http://purl.org/dc/terms/instructionalMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/instructionalMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/MethodOfInstruction> .
 # 
 # http://purl.org/dc/terms/isFormatOf
 <http://purl.org/dc/terms/isFormatOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -867,19 +841,8 @@
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/rights> .
 # 
-# http://purl.org/dc/terms/mediator
-<http://purl.org/dc/terms/mediator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/mediator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/audience> .
-<http://purl.org/dc/terms/mediator> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/AgentClass> .
-# 
-# http://purl.org/dc/terms/medium
-<http://purl.org/dc/terms/medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/medium> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/format> .
-<http://purl.org/dc/terms/medium> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/terms/PhysicalResource> .
-# 
 # http://purl.org/dc/terms/provenance
 <http://purl.org/dc/terms/provenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/provenance> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/ProvenanceStatement> .
 # 
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -933,49 +896,57 @@
 # http://rs.tdwg.org/dwc/terms/class
 <http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
-<http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica clase"@es .
+<http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la categor\u00EDa taxon\u00F3mica clase"@es .
+<http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the taxonomical class"@en .
 <http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#label> "clase"@es .
 <http://rs.tdwg.org/dwc/terms/class> <http://www.w3.org/2000/01/rdf-schema#label> "class"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/family
 <http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
-<http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica familia"@es .
+<http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la categor\u00EDa taxon\u00F3mica familia"@es .
+<http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the taxonomical family"@en .
 <http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#label> "familia"@es .
 <http://rs.tdwg.org/dwc/terms/family> <http://www.w3.org/2000/01/rdf-schema#label> "family"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/genus
 <http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
-<http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica g\u00E9nero"@es .
+<http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la categor\u00EDa taxon\u00F3mica g\u00E9nero"@es .
+<http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the taxonomical genus"@en .
 <http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#label> "genus"@en .
 <http://rs.tdwg.org/dwc/terms/genus> <http://www.w3.org/2000/01/rdf-schema#label> "g\u00E9nero"@es .
 # 
 # http://rs.tdwg.org/dwc/terms/kingdom
 <http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
-<http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica reino"@es .
+<http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la categor\u00EDa taxon\u00F3mica reino"@es .
+<http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the taxonomical kingdom"@en .
 <http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#label> "kingdom"@en .
 <http://rs.tdwg.org/dwc/terms/kingdom> <http://www.w3.org/2000/01/rdf-schema#label> "reino"@es .
 # 
 # http://rs.tdwg.org/dwc/terms/order
 <http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
-<http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica orden"@es .
+<http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la categor\u00EDa taxon\u00F3mica orden"@es .
+<http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the taxonomical order"@en .
 <http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#label> "orden"@es .
 <http://rs.tdwg.org/dwc/terms/order> <http://www.w3.org/2000/01/rdf-schema#label> "order"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/phylum
 <http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.inia.es/def/core#taxonomicalScope> .
-<http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#comment> "indica la categor\u00EDa taxon\u00F3mica filo o divisi\u00F3n"@es .
+<http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la categor\u00EDa taxon\u00F3mica filo o divisi\u00F3n"@es .
+<http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the taxonomical phylum"@en .
 <http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#label> "filo"@es .
 <http://rs.tdwg.org/dwc/terms/phylum> <http://www.w3.org/2000/01/rdf-schema#label> "phylum"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/vernacularName
 <http://rs.tdwg.org/dwc/terms/vernacularName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://rs.tdwg.org/dwc/terms/vernacularName> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre com\u00FAn por ejemplo Mel\u00F3n, algarroba, Pino Carrasco, Cerdo Ib\u00E9rico."@es .
+<http://rs.tdwg.org/dwc/terms/vernacularName> <http://www.w3.org/2000/01/rdf-schema#comment> "Verancular name for example melon, carob, pine, Iberian pig."@en .
 <http://rs.tdwg.org/dwc/terms/vernacularName> <http://www.w3.org/2000/01/rdf-schema#label> "nombre com\u00FAn"@es .
+<http://rs.tdwg.org/dwc/terms/vernacularName> <http://www.w3.org/2000/01/rdf-schema#label> "vernacular name"@en .
+<http://rs.tdwg.org/dwc/terms/vernacularName> <http://www.w3.org/2002/07/owl#priorVersion> "Nombre com\u00FAn por ejemplo Mel\u00F3n, algarroba, Pino Carrasco, Cerdo Ib\u00E9rico."@es .
 # 
 # http://www.w3.org/ns/dcat#distribution
 <http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1004,6 +975,7 @@
 # http://data.inia.es/def/core#elementsNumber
 <http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.inia.es/def/core#Dataset> .
+<http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of instances of the collection"@en .
 <http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "N\u00FAmero de instancias de la colecci\u00F3n."@es .
 <http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#label> "elements number"@en .
 <http://data.inia.es/def/core#elementsNumber> <http://www.w3.org/2000/01/rdf-schema#label> "n\u00FAmero de elementos"@es .
@@ -1012,6 +984,7 @@
 <http://data.inia.es/def/core#embargoDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.inia.es/def/core#Dataset> .
 <http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date in which the embargo is fulfilled and the resource becomes free for use."@en .
 <http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre."@es .
 <http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#label> "embargo date"@en .
 <http://data.inia.es/def/core#embargoDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de embargo"@es .
@@ -1020,7 +993,8 @@
 <http://data.inia.es/def/core#equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.inia.es/def/core#Dataset> .
 <http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "En caso de ser relevante el instrumento de medida utilizado, marca modelo precisi\u00F3n etc."@es .
+<http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "En caso de ser relevante el instrumento de medida utilizado, marca, modelo, precisi\u00F3n etc."@es .
+<http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "In case the measuring instrument used is relevant, brand, model, precision etc."@en .
 <http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Instrumentaci\u00F3n de medida"@es .
 <http://data.inia.es/def/core#equipment> <http://www.w3.org/2000/01/rdf-schema#label> "equipment"@en .
 # 
@@ -1028,6 +1002,7 @@
 <http://data.inia.es/def/core#finalDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Final date, related to the scope of the Dataset. This attribute is often used in combination with inia:startingDate as an alternative to dcterms:temporal."@en .
 <http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha final, relacionada con el \u00E1mbito del Dataset. Este atributo suele utilizarse en combinaci\u00F3n con inia:startingDate como alternativa a dcterms:temporal."@es .
 <http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha final"@es .
 <http://data.inia.es/def/core#finalDate> <http://www.w3.org/2000/01/rdf-schema#label> "final date"@en .
@@ -1036,7 +1011,8 @@
 <http://data.inia.es/def/core#projectCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
 <http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#comment> "c\u00F3digo del proyecto en el que se ha desarrollado un dataset"@es .
+<http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Code of the project in which context a dataset has been developed"@en .
+<http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#comment> "C\u00F3digo del proyecto en el que se ha desarrollado un dataset"@es .
 <http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#label> "c\u00F3digo de proyecto"@es .
 <http://data.inia.es/def/core#projectCode> <http://www.w3.org/2000/01/rdf-schema#label> "project code"@en .
 # 
@@ -1046,6 +1022,7 @@
 <http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.inia.es/def/core#Dataset> .
 <http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#comment> "Hace referencia al software utilizado para la eleboraci\u00F3n del dataset o para su visualizaci\u00F3n o explotaci\u00F3n, nombre, versi\u00F3n, marca."@es .
+<http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the software used to prepare the dataset or to visualize or exploit it, name, version, brand."@en .
 <http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#label> "software"@en .
 <http://data.inia.es/def/core#software> <http://www.w3.org/2000/01/rdf-schema#label> "software"@es .
 # 
@@ -1053,6 +1030,7 @@
 <http://data.inia.es/def/core#spatialScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.inia.es/def/core#spatialScope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.inia.es/def/core#spatialScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Descripci\u00F3n textual del \u00E1mbito geogr\u00E1fico relacionado con el contenido o la toma de muestras del Dataset, este metadato est\u00E1 especialmente indicado en los \u00E1mbitos de investigaci\u00F3n donde es habitual  expresar determinadas zonas de manera textual, pen\u00EDnsula ib\u00E9rica, cuenca alta del J\u00FAcar, sierra de Cazorla, Madrid."@es .
+<http://data.inia.es/def/core#spatialScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description of the geographical area related to the content or sampling of the Dataset, this metadata is especially indicated in the research areas where it is usual to express certain areas in a textual manner, the Iberian Peninsula, the upper J\u00FAcar basin, the Cazorla mountain range, Madrid."@en .
 <http://data.inia.es/def/core#spatialScope> <http://www.w3.org/2000/01/rdf-schema#label> "ambito geogr\u00E1fico"@es .
 <http://data.inia.es/def/core#spatialScope> <http://www.w3.org/2000/01/rdf-schema#label> "spatial scope"@en .
 # 
@@ -1060,6 +1038,7 @@
 <http://data.inia.es/def/core#startingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.inia.es/def/core#startingDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
 <http://data.inia.es/def/core#startingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha inicial, relacionada con el \u00E1mbito del Dataset ejemplo: fecha inicial de las toma de muestras del material incluido en el Dataset 25/06/1938. Este atributo suele utilizarse en combinaci\u00F3n con inia:finalDate como alternativa a dcterms:temporal."@es .
+<http://data.inia.es/def/core#startingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Initial date, related to the scope of the Dataset example: initial date of the sampling of the material included in the Dataset 06/25/1938. This attribute is usually used in combination with inia:finalDate as an alternative to dcterms:temporal."@en .
 <http://data.inia.es/def/core#startingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha inicial"@es .
 <http://data.inia.es/def/core#startingDate> <http://www.w3.org/2000/01/rdf-schema#label> "starting date"@en .
 # 
@@ -1067,6 +1046,7 @@
 <http://data.inia.es/def/core#temporalScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.inia.es/def/core#temporalScope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.inia.es/def/core#temporalScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Descripci\u00F3n textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato est\u00E1 especialmente indicado en los \u00E1mbitos de investigaci\u00F3n donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cret\u00E1cico, Edad media."@es .
+<http://data.inia.es/def/core#temporalScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description time period related to the content or sampling of the Dataset, this metadata is especially indicated in research fields where it is usual to express the periods in textual form by examples: XVI century, Cretaceous, Middle Ages."@en .
 <http://data.inia.es/def/core#temporalScope> <http://www.w3.org/2000/01/rdf-schema#label> "temporal scope"@en .
 <http://data.inia.es/def/core#temporalScope> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E1mbito temporal"@es .
 # 
@@ -1075,6 +1055,7 @@
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> .
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> <http://www.w3.org/2000/01/rdf-schema#label> "l\u00EDmite longitud este"@es .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude> <http://www.w3.org/2000/01/rdf-schema#label> "east bound longitude" .
 # 
 # http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude
@@ -1082,6 +1063,7 @@
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> .
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude> <http://www.w3.org/2000/01/rdf-schema#label> "l\u00EDmite latitud norte"@es .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude> <http://www.w3.org/2000/01/rdf-schema#label> "north bound latitude" .
 # 
 # http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude
@@ -1089,6 +1071,7 @@
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> .
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude> <http://www.w3.org/2000/01/rdf-schema#label> "l\u00EDmite latitud sur"@es .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude> <http://www.w3.org/2000/01/rdf-schema#label> "south bound latitude" .
 # 
 # http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude
@@ -1096,6 +1079,7 @@
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> .
+<http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude> <http://www.w3.org/2000/01/rdf-schema#label> "l\u00EDmite longitud oeste"@es .
 <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude> <http://www.w3.org/2000/01/rdf-schema#label> "west bound longitude" .
 # 
 # http://purl.org/dc/terms/abstract
@@ -1207,12 +1191,16 @@ _:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XML
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/title> .
 _:genid6 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataset defined in the INIA ontology. These datasets might have particular properties related to the INIA datasets metadata."@en .
 <http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataset definido en la ontolog\u00EDa INIA. Este dataset tendr\u00E1 propiedades particulares de los metadatos manejados en los conjuntos de datos INIA."@es .
 <http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Conjunto de datos"@es .
 <http://data.inia.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
 # 
 # http://data.inia.es/def/core#Resource
 <http://data.inia.es/def/core#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.inia.es/def/core#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase general para representar datasets, documentos, ficheros, etc. u otros recursos asociados a una investigaci\u00F3n."@es .
+<http://data.inia.es/def/core#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of documents, datasets, files, etc. or other type of resources related to research results."@en .
+<http://data.inia.es/def/core#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Recurso"@es .
 <http://data.inia.es/def/core#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@en .
 # 
 # http://dataid.dbpedia.org/ns/core#DataId
@@ -1321,7 +1309,9 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 # http://lexvo.org/ontology#Language
 <http://lexvo.org/ontology#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#comment> "Idioma en el que se expresa el contenido de un recurso."@es .
+<http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#comment> "Language in which the dataset is expressed."@en .
 <http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#label> "Idioma"@es .
+<http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#label> "Language"@en .
 # 
 # http://purl.org/dc/dcam/VocabularyEncodingScheme
 <http://purl.org/dc/dcam/VocabularyEncodingScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1338,74 +1328,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 # http://purl.org/dc/terms/AgentClass
 <http://purl.org/dc/terms/AgentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/dc/terms/AgentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Class> .
-# 
-# http://purl.org/dc/terms/BibliographicResource
-<http://purl.org/dc/terms/BibliographicResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/FileFormat
-<http://purl.org/dc/terms/FileFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/FileFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/MediaType> .
-# 
-# http://purl.org/dc/terms/Frequency
-<http://purl.org/dc/terms/Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/Jurisdiction
-<http://purl.org/dc/terms/Jurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/Jurisdiction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> .
-# 
-# http://purl.org/dc/terms/LicenseDocument
-<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/RightsStatement> .
-# 
-# http://purl.org/dc/terms/LinguisticSystem
-<http://purl.org/dc/terms/LinguisticSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/Location
-<http://purl.org/dc/terms/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> .
-# 
-# http://purl.org/dc/terms/LocationPeriodOrJurisdiction
-<http://purl.org/dc/terms/LocationPeriodOrJurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/MediaType
-<http://purl.org/dc/terms/MediaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/MediaType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/MediaTypeOrExtent> .
-# 
-# http://purl.org/dc/terms/MediaTypeOrExtent
-<http://purl.org/dc/terms/MediaTypeOrExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/MethodOfAccrual
-<http://purl.org/dc/terms/MethodOfAccrual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/MethodOfInstruction
-<http://purl.org/dc/terms/MethodOfInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/PeriodOfTime
-<http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> .
-# 
-# http://purl.org/dc/terms/PhysicalMedium
-<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/MediaType> .
-# 
-# http://purl.org/dc/terms/PhysicalResource
-<http://purl.org/dc/terms/PhysicalResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/Policy
-<http://purl.org/dc/terms/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/ProvenanceStatement
-<http://purl.org/dc/terms/ProvenanceStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/RightsStatement
-<http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/dc/terms/SizeOrDuration
-<http://purl.org/dc/terms/SizeOrDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/SizeOrDuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/MediaTypeOrExtent> .
-# 
-# http://purl.org/dc/terms/Standard
-<http://purl.org/dc/terms/Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.org/spar/datacite/Identifier
 <http://purl.org/spar/datacite/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1452,7 +1374,9 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 # 
 # http://www.w3.org/ns/odrl/2/Policy
 <http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-empty group of Permissions and/or Prohibitions."@en .
 <http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "Un grupo no vacio de permisos y/o prohibiciones."@es .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Policy"@en .
 <http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Pol\u00EDtica de uso"@es .
 # 
 # http://www.w3.org/ns/prov#Entity
@@ -2167,12 +2091,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://purl.org/dc/terms/AgentClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/AgentClass> <http://www.w3.org/2000/01/rdf-schema#label> "Agent Class"@en .
 # 
-<http://purl.org/dc/terms/BibliographicResource> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#BibliographicResource-001> .
-<http://purl.org/dc/terms/BibliographicResource> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/BibliographicResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A book, article, or other documentary resource."@en .
-<http://purl.org/dc/terms/BibliographicResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/BibliographicResource> <http://www.w3.org/2000/01/rdf-schema#label> "Bibliographic Resource"@en .
-# 
 <http://purl.org/dc/terms/Box> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Box-003> .
 <http://purl.org/dc/terms/Box> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/Box> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2180,19 +2098,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://purl.org/dc/terms/Box> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/Box> <http://www.w3.org/2000/01/rdf-schema#label> "DCMI Box"@en .
 <http://purl.org/dc/terms/Box> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dublincore.org/documents/dcmi-box/> .
-# 
-<http://purl.org/dc/terms/FileFormat> <http://purl.org/dc/terms/description> "Examples include the formats defined by the list of Internet Media Types."@en .
-<http://purl.org/dc/terms/FileFormat> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#FileFormat-001> .
-<http://purl.org/dc/terms/FileFormat> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/FileFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "A digital resource format."@en .
-<http://purl.org/dc/terms/FileFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/FileFormat> <http://www.w3.org/2000/01/rdf-schema#label> "File Format"@en .
-# 
-<http://purl.org/dc/terms/Frequency> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Frequency-001> .
-<http://purl.org/dc/terms/Frequency> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/Frequency> <http://www.w3.org/2000/01/rdf-schema#comment> "A rate at which something recurs."@en .
-<http://purl.org/dc/terms/Frequency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency"@en .
 # 
 <http://purl.org/dc/terms/ISO3166> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#ISO3166-004> .
 <http://purl.org/dc/terms/ISO3166> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2217,61 +2122,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://purl.org/dc/terms/ISO639-3> <http://www.w3.org/2000/01/rdf-schema#label> "ISO 639-3"@en .
 <http://purl.org/dc/terms/ISO639-3> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.sil.org/iso639-3/> .
 # 
-<http://purl.org/dc/terms/Jurisdiction> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Jurisdiction-001> .
-<http://purl.org/dc/terms/Jurisdiction> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/Jurisdiction> <http://www.w3.org/2000/01/rdf-schema#comment> "The extent or range of judicial, law enforcement, or other authority."@en .
-<http://purl.org/dc/terms/Jurisdiction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/Jurisdiction> <http://www.w3.org/2000/01/rdf-schema#label> "Jurisdiction"@en .
-# 
-<http://purl.org/dc/terms/LicenseDocument> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#LicenseDocument-001> .
-<http://purl.org/dc/terms/LicenseDocument> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A legal document giving official permission to do something with a Resource."@en .
-<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/2000/01/rdf-schema#label> "License Document"@en .
-# 
-<http://purl.org/dc/terms/LinguisticSystem> <http://purl.org/dc/terms/description> "Examples include written, spoken, sign, and computer languages."@en .
-<http://purl.org/dc/terms/LinguisticSystem> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#LinguisticSystem-001> .
-<http://purl.org/dc/terms/LinguisticSystem> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/LinguisticSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A system of signs, symbols, sounds, gestures, or rules used in communication."@en .
-<http://purl.org/dc/terms/LinguisticSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/LinguisticSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Linguistic System"@en .
-# 
-<http://purl.org/dc/terms/Location> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Location-001> .
-<http://purl.org/dc/terms/Location> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A spatial region or named place."@en .
-<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
-# 
-<http://purl.org/dc/terms/LocationPeriodOrJurisdiction> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#LocationPeriodOrJurisdiction-001> .
-<http://purl.org/dc/terms/LocationPeriodOrJurisdiction> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/LocationPeriodOrJurisdiction> <http://www.w3.org/2000/01/rdf-schema#comment> "A location, period of time, or jurisdiction."@en .
-<http://purl.org/dc/terms/LocationPeriodOrJurisdiction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/LocationPeriodOrJurisdiction> <http://www.w3.org/2000/01/rdf-schema#label> "Location, Period, or Jurisdiction"@en .
-# 
-<http://purl.org/dc/terms/MediaType> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#MediaType-001> .
-<http://purl.org/dc/terms/MediaType> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/MediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "A file format or physical medium."@en .
-<http://purl.org/dc/terms/MediaType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/MediaType> <http://www.w3.org/2000/01/rdf-schema#label> "Media Type"@en .
-# 
-<http://purl.org/dc/terms/MediaTypeOrExtent> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#MediaTypeOrExtent-001> .
-<http://purl.org/dc/terms/MediaTypeOrExtent> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/MediaTypeOrExtent> <http://www.w3.org/2000/01/rdf-schema#comment> "A media type or extent."@en .
-<http://purl.org/dc/terms/MediaTypeOrExtent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/MediaTypeOrExtent> <http://www.w3.org/2000/01/rdf-schema#label> "Media Type or Extent"@en .
-# 
-<http://purl.org/dc/terms/MethodOfAccrual> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#MethodOfAccrual-001> .
-<http://purl.org/dc/terms/MethodOfAccrual> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/MethodOfAccrual> <http://www.w3.org/2000/01/rdf-schema#comment> "A method by which resources are added to a collection."@en .
-<http://purl.org/dc/terms/MethodOfAccrual> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/MethodOfAccrual> <http://www.w3.org/2000/01/rdf-schema#label> "Method of Accrual"@en .
-# 
-<http://purl.org/dc/terms/MethodOfInstruction> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#MethodOfInstruction-001> .
-<http://purl.org/dc/terms/MethodOfInstruction> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/MethodOfInstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "A process that is used to engender knowledge, attitudes, and skills."@en .
-<http://purl.org/dc/terms/MethodOfInstruction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/MethodOfInstruction> <http://www.w3.org/2000/01/rdf-schema#label> "Method of Instruction"@en .
-# 
 <http://purl.org/dc/terms/Period> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Period-003> .
 <http://purl.org/dc/terms/Period> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/Period> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2280,25 +2130,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://purl.org/dc/terms/Period> <http://www.w3.org/2000/01/rdf-schema#label> "DCMI Period"@en .
 <http://purl.org/dc/terms/Period> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dublincore.org/documents/dcmi-period/> .
 # 
-<http://purl.org/dc/terms/PeriodOfTime> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#PeriodOfTime-001> .
-<http://purl.org/dc/terms/PeriodOfTime> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An interval of time that is named or defined by its start and end dates."@en .
-<http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/2000/01/rdf-schema#label> "Period of Time"@en .
-# 
-<http://purl.org/dc/terms/PhysicalMedium> <http://purl.org/dc/terms/description> "Examples include paper, canvas, or DVD."@en .
-<http://purl.org/dc/terms/PhysicalMedium> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#PhysicalMedium-001> .
-<http://purl.org/dc/terms/PhysicalMedium> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical material or carrier."@en .
-<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Medium"@en .
-# 
-<http://purl.org/dc/terms/PhysicalResource> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#PhysicalResource-001> .
-<http://purl.org/dc/terms/PhysicalResource> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/PhysicalResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A material thing."@en .
-<http://purl.org/dc/terms/PhysicalResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/PhysicalResource> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Resource"@en .
-# 
 <http://purl.org/dc/terms/Point> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Point-003> .
 <http://purl.org/dc/terms/Point> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/Point> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2306,18 +2137,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://purl.org/dc/terms/Point> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/Point> <http://www.w3.org/2000/01/rdf-schema#label> "DCMI Point"@en .
 <http://purl.org/dc/terms/Point> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dublincore.org/documents/dcmi-point/> .
-# 
-<http://purl.org/dc/terms/Policy> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Policy-001> .
-<http://purl.org/dc/terms/Policy> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters."@en .
-<http://purl.org/dc/terms/Policy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Policy"@en .
-# 
-<http://purl.org/dc/terms/ProvenanceStatement> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#ProvenanceStatement-001> .
-<http://purl.org/dc/terms/ProvenanceStatement> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/ProvenanceStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."@en .
-<http://purl.org/dc/terms/ProvenanceStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/ProvenanceStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Provenance Statement"@en .
 # 
 <http://purl.org/dc/terms/RFC1766> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#RFC1766-003> .
 <http://purl.org/dc/terms/RFC1766> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2352,25 +2171,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://purl.org/dc/terms/RFC5646> <http://www.w3.org/2000/01/rdf-schema#label> "RFC 5646"@en .
 <http://purl.org/dc/terms/RFC5646> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ietf.org/rfc/rfc5646.txt> .
 # 
-<http://purl.org/dc/terms/RightsStatement> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#RightsStatement-001> .
-<http://purl.org/dc/terms/RightsStatement> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "A statement about the intellectual property rights (IPR) held in or over a Resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en .
-<http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Statement"@en .
-# 
-<http://purl.org/dc/terms/SizeOrDuration> <http://purl.org/dc/terms/description> "Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds."@en .
-<http://purl.org/dc/terms/SizeOrDuration> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#SizeOrDuration-001> .
-<http://purl.org/dc/terms/SizeOrDuration> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/SizeOrDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "A dimension or extent, or a time taken to play or execute."@en .
-<http://purl.org/dc/terms/SizeOrDuration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/SizeOrDuration> <http://www.w3.org/2000/01/rdf-schema#label> "Size or Duration"@en .
-# 
-<http://purl.org/dc/terms/Standard> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Standard-001> .
-<http://purl.org/dc/terms/Standard> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/Standard> <http://www.w3.org/2000/01/rdf-schema#comment> "A basis for comparison; a reference point against which other things can be evaluated."@en .
-<http://purl.org/dc/terms/Standard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/Standard> <http://www.w3.org/2000/01/rdf-schema#label> "Standard"@en .
-# 
 <http://purl.org/dc/terms/URI> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#URI-003> .
 <http://purl.org/dc/terms/URI> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/URI> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2402,27 +2202,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://purl.org/dc/terms/accessRights> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/accessRights> <http://www.w3.org/2000/01/rdf-schema#label> "Access Rights"@en .
 # 
-<http://purl.org/dc/terms/accrualMethod> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualMethod-003> .
-<http://purl.org/dc/terms/accrualMethod> <http://purl.org/dc/terms/issued> "2005-06-13"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/accrualMethod> <http://purl.org/dc/terms/modified> "2010-10-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/accrualMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "The method by which items are added to a collection."@en .
-<http://purl.org/dc/terms/accrualMethod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/accrualMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Accrual Method"@en .
-# 
-<http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualPeriodicity-003> .
-<http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/dc/terms/issued> "2005-06-13"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/dc/terms/modified> "2010-10-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/2000/01/rdf-schema#comment> "The frequency with which items are added to a collection."@en .
-<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/2000/01/rdf-schema#label> "Accrual Periodicity"@en .
-# 
-<http://purl.org/dc/terms/accrualPolicy> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualPolicy-003> .
-<http://purl.org/dc/terms/accrualPolicy> <http://purl.org/dc/terms/issued> "2005-06-13"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/accrualPolicy> <http://purl.org/dc/terms/modified> "2010-10-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/accrualPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "The policy governing the addition of items to a collection."@en .
-<http://purl.org/dc/terms/accrualPolicy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/accrualPolicy> <http://www.w3.org/2000/01/rdf-schema#label> "Accrual Policy"@en .
-# 
 <http://purl.org/dc/terms/alternative> <http://purl.org/dc/terms/description> "The distinction between titles and alternative titles is application-specific."@en .
 <http://purl.org/dc/terms/alternative> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#alternative-003> .
 <http://purl.org/dc/terms/alternative> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2430,13 +2209,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#comment> "An alternative name for the resource."@en .
 <http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#label> "Alternative Title"@en .
-# 
-<http://purl.org/dc/terms/audience> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#audience-003> .
-<http://purl.org/dc/terms/audience> <http://purl.org/dc/terms/issued> "2001-05-21"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/audience> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/audience> <http://www.w3.org/2000/01/rdf-schema#comment> "A class of entity for whom the resource is intended or useful."@en .
-<http://purl.org/dc/terms/audience> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/audience> <http://www.w3.org/2000/01/rdf-schema#label> "Audience"@en .
 # 
 <http://purl.org/dc/terms/available> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#available-003> .
 <http://purl.org/dc/terms/available> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2537,28 +2309,6 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "Description"@en .
 <http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "descripci\u00F3n"@es .
-# 
-<http://purl.org/dc/terms/educationLevel> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#educationLevel-002> .
-<http://purl.org/dc/terms/educationLevel> <http://purl.org/dc/terms/issued> "2002-07-13"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/educationLevel> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/educationLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."@en .
-<http://purl.org/dc/terms/educationLevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/educationLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Audience Education Level"@en .
-# 
-<http://purl.org/dc/terms/extent> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#extent-003> .
-<http://purl.org/dc/terms/extent> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/extent> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/extent> <http://www.w3.org/2000/01/rdf-schema#comment> "The size or duration of the resource."@en .
-<http://purl.org/dc/terms/extent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/extent> <http://www.w3.org/2000/01/rdf-schema#label> "Extent"@en .
-# 
-<http://purl.org/dc/terms/format> <http://purl.org/dc/terms/description> "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."@en .
-<http://purl.org/dc/terms/format> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#formatT-001> .
-<http://purl.org/dc/terms/format> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/format> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/format> <http://www.w3.org/2000/01/rdf-schema#comment> "The file format, physical medium, or dimensions of the resource."@en .
-<http://purl.org/dc/terms/format> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/format> <http://www.w3.org/2000/01/rdf-schema#label> "Format"@en .
 # 
 <http://purl.org/dc/terms/hasFormat> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#hasFormat-003> .
 <http://purl.org/dc/terms/hasFormat> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2677,27 +2427,14 @@ _:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#label> "License"@en .
 # 
-<http://purl.org/dc/terms/mediator> <http://purl.org/dc/terms/description> "In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."@en .
-<http://purl.org/dc/terms/mediator> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#mediator-003> .
-<http://purl.org/dc/terms/mediator> <http://purl.org/dc/terms/issued> "2001-05-21"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/mediator> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/mediator> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that mediates access to the resource and for whom the resource is intended or useful."@en .
-<http://purl.org/dc/terms/mediator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/mediator> <http://www.w3.org/2000/01/rdf-schema#label> "Mediator"@en .
-# 
-<http://purl.org/dc/terms/medium> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#medium-003> .
-<http://purl.org/dc/terms/medium> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/medium> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/medium> <http://www.w3.org/2000/01/rdf-schema#comment> "The material or physical carrier of the resource."@en .
-<http://purl.org/dc/terms/medium> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/medium> <http://www.w3.org/2000/01/rdf-schema#label> "Medium"@en .
-# 
 <http://purl.org/dc/terms/modified> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#modified-003> .
 <http://purl.org/dc/terms/modified> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/modified> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#comment> "Date on which the resource was changed."@en .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que el recurso ha sido modificado."@es .
 <http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#label> "Date Modified"@en .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha modificaci\u00F3n"@es .
 # 
 <http://purl.org/dc/terms/provenance> <http://purl.org/dc/terms/description> "The statement may include a description of any changes successive custodians made to the resource."@en .
 <http://purl.org/dc/terms/provenance> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#provenance-002> .

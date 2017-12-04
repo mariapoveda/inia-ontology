@@ -10,10 +10,12 @@
                                  owl:imports <http://purl.org/spar/datacite/> ,
                                              <http://www.w3.org/ns/org#> ,
                                              <http://xmlns.com/foaf/0.1/> ;
+                                 <http://purl.org/dc/elements/1.1/creator> "http://w3id.org/people/mpoveda"^^xsd:string ;
                                  <http://purl.org/dc/elements/1.1/publisher> <http://www.inia.es> ;
                                  <http://purl.org/dc/elements/1.1/title> "Ontología datasets INIA"@en ;
+                                 <http://purl.org/dc/terms/contributor> <http://agripa.org/profile/ajspadial> ;
                                  <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                 <http://purl.org/dc/terms/modified> "2017-27-11"^^xsd:date ;
+                                 <http://purl.org/dc/terms/modified> "2017-04-12"^^xsd:date ;
                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "inia"^^xsd:string ;
                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "http://data.inia.es/def/core#"^^xsd:string ;
                                  rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
@@ -459,6 +461,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://data.inia.es/def/core#dataCurator
 <http://data.inia.es/def/core#dataCurator> rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> ;
+                                           rdfs:comment "asegurador de calidad de los datos"@es ;
                                            rdfs:label "data curator"@en .
 
 
@@ -819,7 +822,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://data.inia.es/def/core#specie
 <http://data.inia.es/def/core#specie> rdf:type owl:ObjectProperty ;
                                       rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-                                      rdfs:comment "indica la categoría taxonómica especie"@es ;
+                                      rdfs:comment "Indica la categoría taxonómica especie"@es ,
+                                                   "Indicates the taxonomical specie"@en ;
                                       rdfs:label "especie"@es ,
                                                  "specie"@en .
 
@@ -883,9 +887,11 @@ xsd:date rdf:type rdfs:Datatype .
 <http://dataid.dbpedia.org/ns/core#openness> rdf:type owl:ObjectProperty ;
                                              rdfs:domain <http://dataid.dbpedia.org/ns/core#Dataset> ;
                                              rdfs:range <http://dataid.dbpedia.org/ns/core#SimpleStatement> ;
-                                             rdfs:comment "General description of how data will be shared. For example embargo periods (if any), outlines of technical mechanisms for dissemination or a definition of whether access will be widely open or restricted to specific groups. In case the Dataset cannot be shared, the reasons for this should be mentioned (e.g. ethical, rules of personal data, intellectual property, commercial, privacy-related, security-related)."@en ;
+                                             rdfs:comment "Descripción general de cómo se compartirán los datos. Por ejemplo, períodos de embargo (si los hay), esquemas de mecanismos técnicos para diseminación o una definición de si el acceso será ampliamente abierto o restringido a grupos específicos. En caso de que el conjunto de datos no se pueda compartir, se deben mencionar los motivos (por ejemplo, normas éticas, de datos personales, propiedad intelectual, comercial, relacionadas con la seguridad, relacionadas con la seguridad)."@es ,
+                                                          "General description of how data will be shared. For example embargo periods (if any), outlines of technical mechanisms for dissemination or a definition of whether access will be widely open or restricted to specific groups. In case the Dataset cannot be shared, the reasons for this should be mentioned (e.g. ethical, rules of personal data, intellectual property, commercial, privacy-related, security-related)."@en ;
                                              rdfs:isDefinedBy <http://dataid.dbpedia.org/ns/dmp#> ;
-                                             rdfs:label "openness"@en .
+                                             rdfs:label "apertura"@es ,
+                                                        "openness"@en .
 
 
 ###  http://dataid.dbpedia.org/ns/core#previousVersion
@@ -899,29 +905,6 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/dc/terms/accessRights
 <http://purl.org/dc/terms/accessRights> rdf:type owl:ObjectProperty ;
                                         rdfs:subPropertyOf <http://purl.org/dc/terms/rights> .
-
-
-###  http://purl.org/dc/terms/accrualMethod
-<http://purl.org/dc/terms/accrualMethod> rdf:type owl:ObjectProperty ;
-                                         rdfs:domain <http://purl.org/dc/dcmitype/Collection> ;
-                                         rdfs:range <http://purl.org/dc/terms/MethodOfAccrual> .
-
-
-###  http://purl.org/dc/terms/accrualPeriodicity
-<http://purl.org/dc/terms/accrualPeriodicity> rdf:type owl:ObjectProperty ;
-                                              rdfs:domain <http://purl.org/dc/dcmitype/Collection> ;
-                                              rdfs:range <http://purl.org/dc/terms/Frequency> .
-
-
-###  http://purl.org/dc/terms/accrualPolicy
-<http://purl.org/dc/terms/accrualPolicy> rdf:type owl:ObjectProperty ;
-                                         rdfs:domain <http://purl.org/dc/dcmitype/Collection> ;
-                                         rdfs:range <http://purl.org/dc/terms/Policy> .
-
-
-###  http://purl.org/dc/terms/audience
-<http://purl.org/dc/terms/audience> rdf:type owl:ObjectProperty ;
-                                    rdfs:range <http://purl.org/dc/terms/AgentClass> .
 
 
 ###  http://purl.org/dc/terms/conformsTo
@@ -942,21 +925,6 @@ xsd:date rdf:type rdfs:Datatype .
                                    rdfs:subPropertyOf <http://purl.org/dc/terms/contributor> .
 
 
-###  http://purl.org/dc/terms/educationLevel
-<http://purl.org/dc/terms/educationLevel> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf <http://purl.org/dc/terms/audience> ;
-                                          rdfs:range <http://purl.org/dc/terms/AgentClass> .
-
-
-###  http://purl.org/dc/terms/extent
-<http://purl.org/dc/terms/extent> rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf <http://purl.org/dc/terms/format> .
-
-
-###  http://purl.org/dc/terms/format
-<http://purl.org/dc/terms/format> rdf:type owl:ObjectProperty .
-
-
 ###  http://purl.org/dc/terms/hasFormat
 <http://purl.org/dc/terms/hasFormat> rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
@@ -973,8 +941,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://purl.org/dc/terms/instructionalMethod
-<http://purl.org/dc/terms/instructionalMethod> rdf:type owl:ObjectProperty ;
-                                               rdfs:range <http://purl.org/dc/terms/MethodOfInstruction> .
+<http://purl.org/dc/terms/instructionalMethod> rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.org/dc/terms/isFormatOf
@@ -1016,21 +983,8 @@ xsd:date rdf:type rdfs:Datatype .
                                    rdfs:subPropertyOf <http://purl.org/dc/terms/rights> .
 
 
-###  http://purl.org/dc/terms/mediator
-<http://purl.org/dc/terms/mediator> rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf <http://purl.org/dc/terms/audience> ;
-                                    rdfs:range <http://purl.org/dc/terms/AgentClass> .
-
-
-###  http://purl.org/dc/terms/medium
-<http://purl.org/dc/terms/medium> rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf <http://purl.org/dc/terms/format> ;
-                                  rdfs:domain <http://purl.org/dc/terms/PhysicalResource> .
-
-
 ###  http://purl.org/dc/terms/provenance
-<http://purl.org/dc/terms/provenance> rdf:type owl:ObjectProperty ;
-                                      rdfs:range <http://purl.org/dc/terms/ProvenanceStatement> .
+<http://purl.org/dc/terms/provenance> rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.org/dc/terms/publisher
@@ -1098,7 +1052,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://rs.tdwg.org/dwc/terms/class
 <http://rs.tdwg.org/dwc/terms/class> rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-                                     rdfs:comment "indica la categoría taxonómica clase"@es ;
+                                     rdfs:comment "Indica la categoría taxonómica clase"@es ,
+                                                  "Indicates the taxonomical class"@en ;
                                      rdfs:label "clase"@es ,
                                                 "class"@en .
 
@@ -1106,7 +1061,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://rs.tdwg.org/dwc/terms/family
 <http://rs.tdwg.org/dwc/terms/family> rdf:type owl:ObjectProperty ;
                                       rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-                                      rdfs:comment "indica la categoría taxonómica familia"@es ;
+                                      rdfs:comment "Indica la categoría taxonómica familia"@es ,
+                                                   "Indicates the taxonomical family"@en ;
                                       rdfs:label "familia"@es ,
                                                  "family"@en .
 
@@ -1114,7 +1070,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://rs.tdwg.org/dwc/terms/genus
 <http://rs.tdwg.org/dwc/terms/genus> rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-                                     rdfs:comment "indica la categoría taxonómica género"@es ;
+                                     rdfs:comment "Indica la categoría taxonómica género"@es ,
+                                                  "Indicates the taxonomical genus"@en ;
                                      rdfs:label "genus"@en ,
                                                 "género"@es .
 
@@ -1122,7 +1079,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://rs.tdwg.org/dwc/terms/kingdom
 <http://rs.tdwg.org/dwc/terms/kingdom> rdf:type owl:ObjectProperty ;
                                        rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-                                       rdfs:comment "indica la categoría taxonómica reino"@es ;
+                                       rdfs:comment "Indica la categoría taxonómica reino"@es ,
+                                                    "Indicates the taxonomical kingdom"@en ;
                                        rdfs:label "kingdom"@en ,
                                                   "reino"@es .
 
@@ -1130,7 +1088,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://rs.tdwg.org/dwc/terms/order
 <http://rs.tdwg.org/dwc/terms/order> rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-                                     rdfs:comment "indica la categoría taxonómica orden"@es ;
+                                     rdfs:comment "Indica la categoría taxonómica orden"@es ,
+                                                  "Indicates the taxonomical order"@en ;
                                      rdfs:label "orden"@es ,
                                                 "order"@en .
 
@@ -1138,15 +1097,18 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://rs.tdwg.org/dwc/terms/phylum
 <http://rs.tdwg.org/dwc/terms/phylum> rdf:type owl:ObjectProperty ;
                                       rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-                                      rdfs:comment "indica la categoría taxonómica filo o división"@es ;
+                                      rdfs:comment "Indica la categoría taxonómica filo o división"@es ,
+                                                   "Indicates the taxonomical phylum"@en ;
                                       rdfs:label "filo"@es ,
                                                  "phylum"@en .
 
 
 ###  http://rs.tdwg.org/dwc/terms/vernacularName
 <http://rs.tdwg.org/dwc/terms/vernacularName> rdf:type owl:ObjectProperty ;
-                                              rdfs:comment "Nombre común por ejemplo Melón, algarroba, Pino Carrasco, Cerdo Ibérico."@es ;
-                                              rdfs:label "nombre común"@es .
+                                              rdfs:comment "Verancular name for example melon, carob, pine, Iberian pig."@en ;
+                                              rdfs:label "nombre común"@es ,
+                                                         "vernacular name"@en ;
+                                              owl:priorVersion "Nombre común por ejemplo Melón, algarroba, Pino Carrasco, Cerdo Ibérico."@es .
 
 
 ###  http://www.w3.org/ns/dcat#distribution
@@ -1174,7 +1136,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://data.inia.es/def/core#elementsNumber
 <http://data.inia.es/def/core#elementsNumber> rdf:type owl:DatatypeProperty ;
                                               rdfs:domain <http://data.inia.es/def/core#Dataset> ;
-                                              rdfs:comment "Número de instancias de la colección."@es ;
+                                              rdfs:comment "Number of instances of the collection"@en ,
+                                                           "Número de instancias de la colección."@es ;
                                               rdfs:label "elements number"@en ,
                                                          "número de elementos"@es .
 
@@ -1183,7 +1146,8 @@ xsd:date rdf:type rdfs:Datatype .
 <http://data.inia.es/def/core#embargoDate> rdf:type owl:DatatypeProperty ;
                                            rdfs:domain <http://data.inia.es/def/core#Dataset> ;
                                            rdfs:range xsd:date ;
-                                           rdfs:comment "Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre."@es ;
+                                           rdfs:comment "Date in which the embargo is fulfilled and the resource becomes free for use."@en ,
+                                                        "Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre."@es ;
                                            rdfs:label "embargo date"@en ,
                                                       "fecha de embargo"@es .
 
@@ -1192,7 +1156,8 @@ xsd:date rdf:type rdfs:Datatype .
 <http://data.inia.es/def/core#equipment> rdf:type owl:DatatypeProperty ;
                                          rdfs:domain <http://data.inia.es/def/core#Dataset> ;
                                          rdfs:range xsd:string ;
-                                         rdfs:comment "En caso de ser relevante el instrumento de medida utilizado, marca modelo precisión etc."@es ,
+                                         rdfs:comment "En caso de ser relevante el instrumento de medida utilizado, marca, modelo, precisión etc."@es ,
+                                                      "In case the measuring instrument used is relevant, brand, model, precision etc."@en ,
                                                       "Instrumentación de medida"@es ;
                                          rdfs:label "equipment"@en .
 
@@ -1201,6 +1166,7 @@ xsd:date rdf:type rdfs:Datatype .
 <http://data.inia.es/def/core#finalDate> rdf:type owl:DatatypeProperty ;
                                          rdfs:subPropertyOf owl:topDataProperty ;
                                          rdfs:range xsd:date ;
+                                         rdfs:comment "Final date, related to the scope of the Dataset. This attribute is often used in combination with inia:startingDate as an alternative to dcterms:temporal."@en ;
                                          rdfs:label "Fecha final, relacionada con el ámbito del Dataset. Este atributo suele utilizarse en combinación con inia:startingDate como alternativa a dcterms:temporal."@es ,
                                                     "fecha final"@es ,
                                                     "final date"@en .
@@ -1210,7 +1176,8 @@ xsd:date rdf:type rdfs:Datatype .
 <http://data.inia.es/def/core#projectCode> rdf:type owl:DatatypeProperty ;
                                            rdfs:domain <http://xmlns.com/foaf/0.1/Project> ;
                                            rdfs:range xsd:string ;
-                                           rdfs:comment "código del proyecto en el que se ha desarrollado un dataset"@es ;
+                                           rdfs:comment "Code of the project in which context a dataset has been developed"@en ,
+                                                        "Código del proyecto en el que se ha desarrollado un dataset"@es ;
                                            rdfs:label "código de proyecto"@es ,
                                                       "project code"@en .
 
@@ -1220,7 +1187,8 @@ xsd:date rdf:type rdfs:Datatype .
                                         rdfs:subPropertyOf owl:topDataProperty ;
                                         rdfs:domain <http://data.inia.es/def/core#Dataset> ;
                                         rdfs:range xsd:string ;
-                                        rdfs:comment "Hace referencia al software utilizado para la eleboración del dataset o para su visualización o explotación, nombre, versión, marca."@es ;
+                                        rdfs:comment "Hace referencia al software utilizado para la eleboración del dataset o para su visualización o explotación, nombre, versión, marca."@es ,
+                                                     "It refers to the software used to prepare the dataset or to visualize or exploit it, name, version, brand."@en ;
                                         rdfs:label "software"@en ,
                                                    "software"@es .
 
@@ -1228,7 +1196,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://data.inia.es/def/core#spatialScope
 <http://data.inia.es/def/core#spatialScope> rdf:type owl:DatatypeProperty ;
                                             rdfs:range xsd:string ;
-                                            rdfs:comment "Descripción textual del ámbito geográfico relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar determinadas zonas de manera textual, península ibérica, cuenca alta del Júcar, sierra de Cazorla, Madrid."@es ;
+                                            rdfs:comment "Descripción textual del ámbito geográfico relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar determinadas zonas de manera textual, península ibérica, cuenca alta del Júcar, sierra de Cazorla, Madrid."@es ,
+                                                         "Textual description of the geographical area related to the content or sampling of the Dataset, this metadata is especially indicated in the research areas where it is usual to express certain areas in a textual manner, the Iberian Peninsula, the upper Júcar basin, the Cazorla mountain range, Madrid."@en ;
                                             rdfs:label "ambito geográfico"@es ,
                                                        "spatial scope"@en .
 
@@ -1237,6 +1206,7 @@ xsd:date rdf:type rdfs:Datatype .
 <http://data.inia.es/def/core#startingDate> rdf:type owl:DatatypeProperty ;
                                             rdfs:range xsd:date ;
                                             rdfs:comment "Fecha inicial, relacionada con el ámbito del Dataset ejemplo: fecha inicial de las toma de muestras del material incluido en el Dataset 25/06/1938. Este atributo suele utilizarse en combinación con inia:finalDate como alternativa a dcterms:temporal."@es ,
+                                                         "Initial date, related to the scope of the Dataset example: initial date of the sampling of the material included in the Dataset 06/25/1938. This attribute is usually used in combination with inia:finalDate as an alternative to dcterms:temporal."@en ,
                                                          "fecha inicial"@es ;
                                             rdfs:label "starting date"@en .
 
@@ -1244,7 +1214,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://data.inia.es/def/core#temporalScope
 <http://data.inia.es/def/core#temporalScope> rdf:type owl:DatatypeProperty ;
                                              rdfs:range xsd:string ;
-                                             rdfs:comment "Descripción textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cretácico, Edad media."@es ;
+                                             rdfs:comment "Descripción textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cretácico, Edad media."@es ,
+                                                          "Textual description time period related to the content or sampling of the Dataset, this metadata is especially indicated in research fields where it is usual to express the periods in textual form by examples: XVI century, Cretaceous, Middle Ages."@en ;
                                              rdfs:label "temporal scope"@en ,
                                                         "ámbito temporal"@es .
 
@@ -1254,7 +1225,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
                                                                                rdfs:range xsd:decimal ;
                                                                                rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
-                                                                               rdfs:label "east bound longitude"^^xsd:string .
+                                                                               rdfs:label "límite longitud este"@es ,
+                                                                                          "east bound longitude"^^xsd:string .
 
 
 ###  http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude
@@ -1262,7 +1234,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
                                                                                rdfs:range xsd:decimal ;
                                                                                rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
-                                                                               rdfs:label "north bound latitude"^^xsd:string .
+                                                                               rdfs:label "límite latitud norte"@es ,
+                                                                                          "north bound latitude"^^xsd:string .
 
 
 ###  http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude
@@ -1270,7 +1243,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
                                                                                rdfs:range xsd:decimal ;
                                                                                rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
-                                                                               rdfs:label "south bound latitude"^^xsd:string .
+                                                                               rdfs:label "límite latitud sur"@es ,
+                                                                                          "south bound latitude"^^xsd:string .
 
 
 ###  http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude
@@ -1278,7 +1252,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
                                                                                rdfs:range xsd:decimal ;
                                                                                rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
-                                                                               rdfs:label "west bound longitude"^^xsd:string .
+                                                                               rdfs:label "límite longitud oeste"@es ,
+                                                                                          "west bound longitude"^^xsd:string .
 
 
 ###  http://purl.org/dc/terms/abstract
@@ -1402,14 +1377,18 @@ xsd:date rdf:type rdfs:Datatype .
                                                          owl:onProperty <http://purl.org/dc/terms/title> ;
                                                          owl:minCardinality "1"^^xsd:nonNegativeInteger
                                                        ] ;
-                                       rdfs:comment "Dataset definido en la ontología INIA. Este dataset tendrá propiedades particulares de los metadatos manejados en los conjuntos de datos INIA."@es ;
+                                       rdfs:comment "Dataset defined in the INIA ontology. These datasets might have particular properties related to the INIA datasets metadata."@en ,
+                                                    "Dataset definido en la ontología INIA. Este dataset tendrá propiedades particulares de los metadatos manejados en los conjuntos de datos INIA."@es ;
                                        rdfs:label "Conjunto de datos"@es ,
                                                   "Dataset"@en .
 
 
 ###  http://data.inia.es/def/core#Resource
 <http://data.inia.es/def/core#Resource> rdf:type owl:Class ;
-                                        rdfs:label "Resource"@en .
+                                        rdfs:comment "Clase general para representar datasets, documentos, ficheros, etc. u otros recursos asociados a una investigación."@es ,
+                                                     "The class of documents, datasets, files, etc. or other type of resources related to research results."@en ;
+                                        rdfs:label "Recurso"@es ,
+                                                   "Resource"@en .
 
 
 ###  http://dataid.dbpedia.org/ns/core#DataId
@@ -1528,8 +1507,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://lexvo.org/ontology#Language
 <http://lexvo.org/ontology#Language> rdf:type owl:Class ;
-                                     rdfs:comment "Idioma en el que se expresa el contenido de un recurso."@es ;
-                                     rdfs:label "Idioma"@es .
+                                     rdfs:comment "Idioma en el que se expresa el contenido de un recurso."@es ,
+                                                  "Language in which the dataset is expressed."@en ;
+                                     rdfs:label "Idioma"@es ,
+                                                "Language"@en .
 
 
 ###  http://purl.org/dc/dcam/VocabularyEncodingScheme
@@ -1551,94 +1532,6 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/dc/terms/AgentClass
 <http://purl.org/dc/terms/AgentClass> rdf:type owl:Class ;
                                       rdfs:subClassOf rdfs:Class .
-
-
-###  http://purl.org/dc/terms/BibliographicResource
-<http://purl.org/dc/terms/BibliographicResource> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/FileFormat
-<http://purl.org/dc/terms/FileFormat> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://purl.org/dc/terms/MediaType> .
-
-
-###  http://purl.org/dc/terms/Frequency
-<http://purl.org/dc/terms/Frequency> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/Jurisdiction
-<http://purl.org/dc/terms/Jurisdiction> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> .
-
-
-###  http://purl.org/dc/terms/LicenseDocument
-<http://purl.org/dc/terms/LicenseDocument> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://purl.org/dc/terms/RightsStatement> .
-
-
-###  http://purl.org/dc/terms/LinguisticSystem
-<http://purl.org/dc/terms/LinguisticSystem> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/Location
-<http://purl.org/dc/terms/Location> rdf:type owl:Class ;
-                                    rdfs:subClassOf <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> .
-
-
-###  http://purl.org/dc/terms/LocationPeriodOrJurisdiction
-<http://purl.org/dc/terms/LocationPeriodOrJurisdiction> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/MediaType
-<http://purl.org/dc/terms/MediaType> rdf:type owl:Class ;
-                                     rdfs:subClassOf <http://purl.org/dc/terms/MediaTypeOrExtent> .
-
-
-###  http://purl.org/dc/terms/MediaTypeOrExtent
-<http://purl.org/dc/terms/MediaTypeOrExtent> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/MethodOfAccrual
-<http://purl.org/dc/terms/MethodOfAccrual> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/MethodOfInstruction
-<http://purl.org/dc/terms/MethodOfInstruction> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/PeriodOfTime
-<http://purl.org/dc/terms/PeriodOfTime> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> .
-
-
-###  http://purl.org/dc/terms/PhysicalMedium
-<http://purl.org/dc/terms/PhysicalMedium> rdf:type owl:Class ;
-                                          rdfs:subClassOf <http://purl.org/dc/terms/MediaType> .
-
-
-###  http://purl.org/dc/terms/PhysicalResource
-<http://purl.org/dc/terms/PhysicalResource> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/Policy
-<http://purl.org/dc/terms/Policy> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/ProvenanceStatement
-<http://purl.org/dc/terms/ProvenanceStatement> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/RightsStatement
-<http://purl.org/dc/terms/RightsStatement> rdf:type owl:Class .
-
-
-###  http://purl.org/dc/terms/SizeOrDuration
-<http://purl.org/dc/terms/SizeOrDuration> rdf:type owl:Class ;
-                                          rdfs:subClassOf <http://purl.org/dc/terms/MediaTypeOrExtent> .
-
-
-###  http://purl.org/dc/terms/Standard
-<http://purl.org/dc/terms/Standard> rdf:type owl:Class .
 
 
 ###  http://purl.org/spar/datacite/Identifier
@@ -1699,8 +1592,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/ns/odrl/2/Policy
 <http://www.w3.org/ns/odrl/2/Policy> rdf:type owl:Class ;
-                                     rdfs:comment "Un grupo no vacio de permisos y/o prohibiciones."@es ;
-                                     rdfs:label "Política de uso"@es .
+                                     rdfs:comment "A non-empty group of Permissions and/or Prohibitions."@en ,
+                                                  "Un grupo no vacio de permisos y/o prohibiciones."@es ;
+                                     rdfs:label "Policy"@en ,
+                                                "Política de uso"@es .
 
 
 ###  http://www.w3.org/ns/prov#Entity
@@ -2608,13 +2503,6 @@ xsd:date rdf:type rdfs:Datatype .
                                       rdfs:label "Agent Class"@en .
 
 
-<http://purl.org/dc/terms/BibliographicResource> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#BibliographicResource-001> ;
-                                                 <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                                 rdfs:comment "A book, article, or other documentary resource."@en ;
-                                                 rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                                 rdfs:label "Bibliographic Resource"@en .
-
-
 <http://purl.org/dc/terms/Box> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Box-003> ;
                                <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
                                <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
@@ -2622,21 +2510,6 @@ xsd:date rdf:type rdfs:Datatype .
                                rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                rdfs:label "DCMI Box"@en ;
                                rdfs:seeAlso <http://dublincore.org/documents/dcmi-box/> .
-
-
-<http://purl.org/dc/terms/FileFormat> <http://purl.org/dc/terms/description> "Examples include the formats defined by the list of Internet Media Types."@en ;
-                                      <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#FileFormat-001> ;
-                                      <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                      rdfs:comment "A digital resource format."@en ;
-                                      rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                      rdfs:label "File Format"@en .
-
-
-<http://purl.org/dc/terms/Frequency> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Frequency-001> ;
-                                     <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                     rdfs:comment "A rate at which something recurs."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                     rdfs:label "Frequency"@en .
 
 
 <http://purl.org/dc/terms/ISO3166> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#ISO3166-004> ;
@@ -2665,70 +2538,6 @@ xsd:date rdf:type rdfs:Datatype .
                                     rdfs:seeAlso <http://www.sil.org/iso639-3/> .
 
 
-<http://purl.org/dc/terms/Jurisdiction> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Jurisdiction-001> ;
-                                        <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                        rdfs:comment "The extent or range of judicial, law enforcement, or other authority."@en ;
-                                        rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                        rdfs:label "Jurisdiction"@en .
-
-
-<http://purl.org/dc/terms/LicenseDocument> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#LicenseDocument-001> ;
-                                           <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                           rdfs:comment "A legal document giving official permission to do something with a Resource."@en ;
-                                           rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                           rdfs:label "License Document"@en .
-
-
-<http://purl.org/dc/terms/LinguisticSystem> <http://purl.org/dc/terms/description> "Examples include written, spoken, sign, and computer languages."@en ;
-                                            <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#LinguisticSystem-001> ;
-                                            <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                            rdfs:comment "A system of signs, symbols, sounds, gestures, or rules used in communication."@en ;
-                                            rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                            rdfs:label "Linguistic System"@en .
-
-
-<http://purl.org/dc/terms/Location> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Location-001> ;
-                                    <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                    rdfs:comment "A spatial region or named place."@en ;
-                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                    rdfs:label "Location"@en .
-
-
-<http://purl.org/dc/terms/LocationPeriodOrJurisdiction> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#LocationPeriodOrJurisdiction-001> ;
-                                                        <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                                        rdfs:comment "A location, period of time, or jurisdiction."@en ;
-                                                        rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                                        rdfs:label "Location, Period, or Jurisdiction"@en .
-
-
-<http://purl.org/dc/terms/MediaType> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#MediaType-001> ;
-                                     <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                     rdfs:comment "A file format or physical medium."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                     rdfs:label "Media Type"@en .
-
-
-<http://purl.org/dc/terms/MediaTypeOrExtent> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#MediaTypeOrExtent-001> ;
-                                             <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                             rdfs:comment "A media type or extent."@en ;
-                                             rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                             rdfs:label "Media Type or Extent"@en .
-
-
-<http://purl.org/dc/terms/MethodOfAccrual> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#MethodOfAccrual-001> ;
-                                           <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                           rdfs:comment "A method by which resources are added to a collection."@en ;
-                                           rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                           rdfs:label "Method of Accrual"@en .
-
-
-<http://purl.org/dc/terms/MethodOfInstruction> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#MethodOfInstruction-001> ;
-                                               <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                               rdfs:comment "A process that is used to engender knowledge, attitudes, and skills."@en ;
-                                               rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                               rdfs:label "Method of Instruction"@en .
-
-
 <http://purl.org/dc/terms/Period> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Period-003> ;
                                   <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
                                   <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
@@ -2738,28 +2547,6 @@ xsd:date rdf:type rdfs:Datatype .
                                   rdfs:seeAlso <http://dublincore.org/documents/dcmi-period/> .
 
 
-<http://purl.org/dc/terms/PeriodOfTime> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#PeriodOfTime-001> ;
-                                        <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                        rdfs:comment "An interval of time that is named or defined by its start and end dates."@en ;
-                                        rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                        rdfs:label "Period of Time"@en .
-
-
-<http://purl.org/dc/terms/PhysicalMedium> <http://purl.org/dc/terms/description> "Examples include paper, canvas, or DVD."@en ;
-                                          <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#PhysicalMedium-001> ;
-                                          <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                          rdfs:comment "A physical material or carrier."@en ;
-                                          rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                          rdfs:label "Physical Medium"@en .
-
-
-<http://purl.org/dc/terms/PhysicalResource> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#PhysicalResource-001> ;
-                                            <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                            rdfs:comment "A material thing."@en ;
-                                            rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                            rdfs:label "Physical Resource"@en .
-
-
 <http://purl.org/dc/terms/Point> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Point-003> ;
                                  <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
                                  <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
@@ -2767,20 +2554,6 @@ xsd:date rdf:type rdfs:Datatype .
                                  rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                  rdfs:label "DCMI Point"@en ;
                                  rdfs:seeAlso <http://dublincore.org/documents/dcmi-point/> .
-
-
-<http://purl.org/dc/terms/Policy> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Policy-001> ;
-                                  <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                  rdfs:comment "A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters."@en ;
-                                  rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                  rdfs:label "Policy"@en .
-
-
-<http://purl.org/dc/terms/ProvenanceStatement> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#ProvenanceStatement-001> ;
-                                               <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                               rdfs:comment "A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."@en ;
-                                               rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                               rdfs:label "Provenance Statement"@en .
 
 
 <http://purl.org/dc/terms/RFC1766> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#RFC1766-003> ;
@@ -2820,28 +2593,6 @@ xsd:date rdf:type rdfs:Datatype .
                                    rdfs:seeAlso <http://www.ietf.org/rfc/rfc5646.txt> .
 
 
-<http://purl.org/dc/terms/RightsStatement> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#RightsStatement-001> ;
-                                           <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                           rdfs:comment "A statement about the intellectual property rights (IPR) held in or over a Resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en ;
-                                           rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                           rdfs:label "Rights Statement"@en .
-
-
-<http://purl.org/dc/terms/SizeOrDuration> <http://purl.org/dc/terms/description> "Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds."@en ;
-                                          <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#SizeOrDuration-001> ;
-                                          <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                          rdfs:comment "A dimension or extent, or a time taken to play or execute."@en ;
-                                          rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                          rdfs:label "Size or Duration"@en .
-
-
-<http://purl.org/dc/terms/Standard> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#Standard-001> ;
-                                    <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                    rdfs:comment "A basis for comparison; a reference point against which other things can be evaluated."@en ;
-                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                    rdfs:label "Standard"@en .
-
-
 <http://purl.org/dc/terms/URI> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#URI-003> ;
                                <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
                                <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
@@ -2877,30 +2628,6 @@ xsd:date rdf:type rdfs:Datatype .
                                         rdfs:label "Access Rights"@en .
 
 
-<http://purl.org/dc/terms/accrualMethod> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualMethod-003> ;
-                                         <http://purl.org/dc/terms/issued> "2005-06-13"^^xsd:date ;
-                                         <http://purl.org/dc/terms/modified> "2010-10-11"^^xsd:date ;
-                                         rdfs:comment "The method by which items are added to a collection."@en ;
-                                         rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                         rdfs:label "Accrual Method"@en .
-
-
-<http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualPeriodicity-003> ;
-                                              <http://purl.org/dc/terms/issued> "2005-06-13"^^xsd:date ;
-                                              <http://purl.org/dc/terms/modified> "2010-10-11"^^xsd:date ;
-                                              rdfs:comment "The frequency with which items are added to a collection."@en ;
-                                              rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                              rdfs:label "Accrual Periodicity"@en .
-
-
-<http://purl.org/dc/terms/accrualPolicy> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualPolicy-003> ;
-                                         <http://purl.org/dc/terms/issued> "2005-06-13"^^xsd:date ;
-                                         <http://purl.org/dc/terms/modified> "2010-10-11"^^xsd:date ;
-                                         rdfs:comment "The policy governing the addition of items to a collection."@en ;
-                                         rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                         rdfs:label "Accrual Policy"@en .
-
-
 <http://purl.org/dc/terms/alternative> <http://purl.org/dc/terms/description> "The distinction between titles and alternative titles is application-specific."@en ;
                                        <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#alternative-003> ;
                                        <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
@@ -2908,14 +2635,6 @@ xsd:date rdf:type rdfs:Datatype .
                                        rdfs:comment "An alternative name for the resource."@en ;
                                        rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                        rdfs:label "Alternative Title"@en .
-
-
-<http://purl.org/dc/terms/audience> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#audience-003> ;
-                                    <http://purl.org/dc/terms/issued> "2001-05-21"^^xsd:date ;
-                                    <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
-                                    rdfs:comment "A class of entity for whom the resource is intended or useful."@en ;
-                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                    rdfs:label "Audience"@en .
 
 
 <http://purl.org/dc/terms/available> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#available-003> ;
@@ -3028,31 +2747,6 @@ xsd:date rdf:type rdfs:Datatype .
                                        rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                        rdfs:label "Description"@en ,
                                                   "descripción"@es .
-
-
-<http://purl.org/dc/terms/educationLevel> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#educationLevel-002> ;
-                                          <http://purl.org/dc/terms/issued> "2002-07-13"^^xsd:date ;
-                                          <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
-                                          rdfs:comment "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."@en ;
-                                          rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                          rdfs:label "Audience Education Level"@en .
-
-
-<http://purl.org/dc/terms/extent> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#extent-003> ;
-                                  <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
-                                  <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
-                                  rdfs:comment "The size or duration of the resource."@en ;
-                                  rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                  rdfs:label "Extent"@en .
-
-
-<http://purl.org/dc/terms/format> <http://purl.org/dc/terms/description> "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."@en ;
-                                  <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#formatT-001> ;
-                                  <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                  <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
-                                  rdfs:comment "The file format, physical medium, or dimensions of the resource."@en ;
-                                  rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                  rdfs:label "Format"@en .
 
 
 <http://purl.org/dc/terms/hasFormat> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#hasFormat-003> ;
@@ -3186,29 +2880,14 @@ xsd:date rdf:type rdfs:Datatype .
                                    rdfs:label "License"@en .
 
 
-<http://purl.org/dc/terms/mediator> <http://purl.org/dc/terms/description> "In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."@en ;
-                                    <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#mediator-003> ;
-                                    <http://purl.org/dc/terms/issued> "2001-05-21"^^xsd:date ;
-                                    <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
-                                    rdfs:comment "An entity that mediates access to the resource and for whom the resource is intended or useful."@en ;
-                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                    rdfs:label "Mediator"@en .
-
-
-<http://purl.org/dc/terms/medium> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#medium-003> ;
-                                  <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
-                                  <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
-                                  rdfs:comment "The material or physical carrier of the resource."@en ;
-                                  rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                  rdfs:label "Medium"@en .
-
-
 <http://purl.org/dc/terms/modified> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#modified-003> ;
                                     <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
                                     <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
-                                    rdfs:comment "Date on which the resource was changed."@en ;
+                                    rdfs:comment "Date on which the resource was changed."@en ,
+                                                 "Fecha en la que el recurso ha sido modificado."@es ;
                                     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                    rdfs:label "Date Modified"@en .
+                                    rdfs:label "Date Modified"@en ,
+                                               "Fecha modificación"@es .
 
 
 <http://purl.org/dc/terms/provenance> <http://purl.org/dc/terms/description> "The statement may include a description of any changes successive custodians made to the resource."@en ;
