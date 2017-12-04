@@ -9,18 +9,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
+         <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Conjunto de datos</a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/ns/dcat#Dataset" title="http://www.w3.org/ns/dcat#Dataset">Conjunto de datos</a>
       </li>
       <li>
-         <a href="#Dataset" title="https://w3id.org/def/inia#Dataset">Conjunto de datos</a>
-      </li>
-      <li>
          <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/FileFormat" title="http://purl.org/dc/terms/FileFormat">
-            <span>File Format</span>
-         </a>
       </li>
       <li>
          <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
@@ -36,45 +31,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <a href="#http://www.w3.org/2006/time#Interval" title="http://www.w3.org/2006/time#Interval">Intervalo de tiempo</a>
       </li>
       <li>
-         <a href="#http://purl.org/dc/terms/Jurisdiction" title="http://purl.org/dc/terms/Jurisdiction">
-            <span>Jurisdiction</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/LicenseDocument" title="http://purl.org/dc/terms/LicenseDocument">
-            <span>License Document</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/Location" title="http://purl.org/dc/terms/Location">
-            <span>Location</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/MediaType" title="http://purl.org/dc/terms/MediaType">
-            <span>Media Type</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/PeriodOfTime" title="http://purl.org/dc/terms/PeriodOfTime">
-            <span>Period of Time</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/PhysicalMedium" title="http://purl.org/dc/terms/PhysicalMedium">
-            <span>Physical Medium</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://www.w3.org/ns/odrl/2/Policy" title="http://www.w3.org/ns/odrl/2/Policy">Política de uso</a>
       </li>
       <li>
-         <a href="#Resource" title="https://w3id.org/def/inia#Resource">Resource</a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/SizeOrDuration" title="http://purl.org/dc/terms/SizeOrDuration">
-            <span>Size or Duration</span>
-         </a>
+         <a href="#Resource" title="http://data.inia.es/def/core#Resource">Recurso</a>
       </li>
       <li>
          <a href="#http://dataid.dbpedia.org/ns/core#Superset" title="http://dataid.dbpedia.org/ns/core#Superset">Superset</a>
@@ -92,13 +52,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd>
             <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Class">class</span>
          </dd>
-         <dt>en rango de</dt>
-         <dd>
-            <a href="#http://purl.org/dc/terms/audience" title="http://purl.org/dc/terms/audience">Audience</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#http://purl.org/dc/terms/educationLevel" title="http://purl.org/dc/terms/educationLevel">Audience Education Level</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#http://purl.org/dc/terms/mediator" title="http://purl.org/dc/terms/mediator">Mediator</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
          <dt>miembros</dt>
          <dd>
             <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
@@ -106,6 +59,64 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dd>
          <dt>también definida por</dt>
          <dd>Individuo</dd>
+      </dl>
+   </div>
+   <div class="entity" id="Dataset">
+      <h3>Conjunto de datos<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#Dataset</p>
+      <div class="comment">
+         <span class="markdown">Dataset definido en la ontología INIA. Este dataset tendrá propiedades particulares de los metadatos manejados en los conjuntos de datos INIA.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#Resource" title="http://data.inia.es/def/core#Resource">Recurso</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">autor</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/terms/publisher">Publisher</span>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup> 
+            <span class="logic">min</span> 1 <span class="dotted" title="http://www.w3.org/ns/org#Organization">organization</span>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">temática</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup> 
+            <span class="logic">min</span> 1 <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">Concepto</span>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/terms/description">descripción</span>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">fecha de publicación</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/terms/title">Título del dataset. Al menos debe tener uno.</span>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#developedWithinProject"
+               title="http://data.inia.es/def/core#developedWithinProject">desarrollado en proyecto</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#equipment" title="http://data.inia.es/def/core#equipment">equipment</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#embargoDate" title="http://data.inia.es/def/core#embargoDate">fecha de embargo</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#elementsNumber" title="http://data.inia.es/def/core#elementsNumber">número de elementos</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#software" title="http://data.inia.es/def/core#software">software</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://www.w3.org/ns/dcat#Dataset">
@@ -140,64 +151,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             <a href="#http://www.w3.org/ns/dcat#keyword" title="http://www.w3.org/ns/dcat#keyword">palabra clave</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">temática</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Dataset">
-      <h3>Conjunto de datos<sup class="type-c" title="clase">c</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#Dataset</p>
-      <div class="comment">
-         <span class="markdown">Dataset definido en la ontología INIA. Este dataset tendrá propiedades particulares de los metadatos manejados en los conjuntos de datos INIA.</span>
-      </div>
-      <dl class="description">
-         <dt>tiene superclases</dt>
-         <dd>
-            <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dd>
-            <a href="#Resource" title="https://w3id.org/def/inia#Resource">Resource</a>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">autor</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup> 
-            <span class="logic">min</span> 1</dd>
-         <dd>
-            <span class="dotted" title="http://purl.org/dc/terms/publisher">Publisher</span>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup> 
-            <span class="logic">min</span> 1 <span class="dotted" title="http://www.w3.org/ns/org#Organization">organization</span>
-         </dd>
-         <dd>
-            <a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">temática</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup> 
-            <span class="logic">min</span> 1 <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">Concepto</span>
-         </dd>
-         <dd>
-            <span class="dotted" title="http://purl.org/dc/terms/description">descripción</span>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup> 
-            <span class="logic">min</span> 1</dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">fecha de publicación</a>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup> 
-            <span class="logic">min</span> 1</dd>
-         <dd>
-            <span class="dotted" title="http://purl.org/dc/terms/title">Título del dataset. Al menos debe tener uno.</span>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup> 
-            <span class="logic">min</span> 1</dd>
-         <dt>en dominio de</dt>
-         <dd>
-            <a href="#developedWithinProject"
-               title="https://w3id.org/def/inia#developedWithinProject">desarrollado en proyecto</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#equipment" title="https://w3id.org/def/inia#equipment">equipment</a>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#embargoDate" title="https://w3id.org/def/inia#embargoDate">fecha de embargo</a>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#elementsNumber" title="https://w3id.org/def/inia#elementsNumber">número de elementos</a>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#software" title="https://w3id.org/def/inia#software">software</a>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup>
          </dd>
       </dl>
    </div>
@@ -321,32 +274,15 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dd>
          <dt>tiene subclases</dt>
          <dd>
-            <a href="#Dataset" title="https://w3id.org/def/inia#Dataset">Conjunto de datos</a>
+            <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Conjunto de datos</a>
             <sup class="type-c" title="clase">c</sup>, <a href="#http://dataid.dbpedia.org/ns/core#Superset" title="http://dataid.dbpedia.org/ns/core#Superset">Superset</a>
             <sup class="type-c" title="clase">c</sup>
          </dd>
          <dt>en dominio de</dt>
          <dd>
-            <a href="#http://dataid.dbpedia.org/ns/core#openness" title="http://dataid.dbpedia.org/ns/core#openness">openness</a>
+            <a href="#http://dataid.dbpedia.org/ns/core#openness" title="http://dataid.dbpedia.org/ns/core#openness">apertura</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
          </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/FileFormat">
-      <h3>File Format<sup class="type-c" title="clase">c</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/FileFormat</p>
-      <dl class="description">
-         <dt>tiene superclases</dt>
-         <dd>
-            <a href="#http://purl.org/dc/terms/MediaType" title="http://purl.org/dc/terms/MediaType">Media Type</a>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dt>también definida por</dt>
-         <dd>Individuo</dd>
       </dl>
    </div>
    <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">
@@ -371,34 +307,34 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dd>
          <dd>
             <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude"
-               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">east bound longitude</a>
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">límite longitud este</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="logic">exactly</span> 1</dd>
          <dd>
             <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude"
-               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">north bound latitude</a>
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">límite latitud norte</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="logic">exactly</span> 1</dd>
          <dd>
             <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude"
-               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">south bound latitude</a>
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">límite latitud sur</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="logic">exactly</span> 1</dd>
          <dd>
             <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude"
-               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">west bound longitude</a>
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">límite longitud oeste</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="logic">exactly</span> 1</dd>
          <dt>en dominio de</dt>
          <dd>
-            <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude"
-               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">east bound longitude</a>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude"
-               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">north bound latitude</a>
+            <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude"
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">límite latitud norte</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude"
-               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">south bound latitude</a>
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">límite latitud sur</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude"
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">límite longitud este</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude"
-               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">west bound longitude</a>
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">límite longitud oeste</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>
          </dd>
       </dl>
@@ -443,137 +379,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <span class="markdown">Entidad temporal con extensión o duración.</span>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/dc/terms/Jurisdiction">
-      <h3>Jurisdiction<sup class="type-c" title="clase">c</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/Jurisdiction</p>
-      <dl class="description">
-         <dt>tiene superclases</dt>
-         <dd>
-            <span class="dotted"
-                  title="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">Location, Period, or Jurisdiction</span>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dt>también definida por</dt>
-         <dd>Individuo</dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/LicenseDocument">
-      <h3>License Document<sup class="type-c" title="clase">c</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/LicenseDocument</p>
-      <dl class="description">
-         <dt>tiene superclases</dt>
-         <dd>
-            <span class="dotted" title="http://purl.org/dc/terms/RightsStatement">Rights Statement</span>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dt>en rango de</dt>
-         <dd>
-            <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">License</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
-         <dt>también definida por</dt>
-         <dd>Individuo</dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/Location">
-      <h3>Location<sup class="type-c" title="clase">c</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/Location</p>
-      <dl class="description">
-         <dt>tiene superclases</dt>
-         <dd>
-            <span class="dotted"
-                  title="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">Location, Period, or Jurisdiction</span>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dt>en rango de</dt>
-         <dd>
-            <a href="#http://purl.org/dc/terms/spatial" title="http://purl.org/dc/terms/spatial">Spatial Coverage</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
-         <dt>también definida por</dt>
-         <dd>Individuo</dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/MediaType">
-      <h3>Media Type<sup class="type-c" title="clase">c</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/MediaType</p>
-      <dl class="description">
-         <dt>tiene superclases</dt>
-         <dd>
-            <span class="dotted" title="http://purl.org/dc/terms/MediaTypeOrExtent">Media Type or Extent</span>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dt>tiene subclases</dt>
-         <dd>
-            <a href="#http://purl.org/dc/terms/FileFormat" title="http://purl.org/dc/terms/FileFormat">File Format</a>
-            <sup class="type-c" title="clase">c</sup>, <a href="#http://purl.org/dc/terms/PhysicalMedium" title="http://purl.org/dc/terms/PhysicalMedium">Physical Medium</a>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dt>también definida por</dt>
-         <dd>Individuo</dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/PeriodOfTime">
-      <h3>Period of Time<sup class="type-c" title="clase">c</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/PeriodOfTime</p>
-      <dl class="description">
-         <dt>tiene superclases</dt>
-         <dd>
-            <span class="dotted"
-                  title="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">Location, Period, or Jurisdiction</span>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dt>en rango de</dt>
-         <dd>
-            <a href="#http://purl.org/dc/terms/temporal" title="http://purl.org/dc/terms/temporal">ambito temporal</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
-         <dt>también definida por</dt>
-         <dd>Individuo</dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/PhysicalMedium">
-      <h3>Physical Medium<sup class="type-c" title="clase">c</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/PhysicalMedium</p>
-      <dl class="description">
-         <dt>tiene superclases</dt>
-         <dd>
-            <a href="#http://purl.org/dc/terms/MediaType" title="http://purl.org/dc/terms/MediaType">Media Type</a>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dt>en rango de</dt>
-         <dd>
-            <a href="#http://purl.org/dc/terms/medium" title="http://purl.org/dc/terms/medium">Medium</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
-         <dt>también definida por</dt>
-         <dd>Individuo</dd>
-      </dl>
-   </div>
    <div class="entity" id="http://www.w3.org/ns/odrl/2/Policy">
       <h3>Política de uso<sup class="type-c" title="clase">c</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
@@ -586,50 +391,31 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </div>
    </div>
    <div class="entity" id="Resource">
-      <h3>Resource<sup class="type-c" title="clase">c</sup>
+      <h3>Recurso<sup class="type-c" title="clase">c</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#Resource</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#Resource</p>
+      <div class="comment">
+         <span class="markdown">Clase general para representar datasets, documentos, ficheros, etc. u otros recursos asociados a una investigación.</span>
+      </div>
       <dl class="description">
          <dt>tiene subclases</dt>
          <dd>
-            <a href="#Dataset" title="https://w3id.org/def/inia#Dataset">Conjunto de datos</a>
+            <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Conjunto de datos</a>
             <sup class="type-c" title="clase">c</sup>
          </dd>
          <dt>en dominio de</dt>
          <dd>
-            <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+            <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
          </dd>
          <dt>en rango de</dt>
          <dd>
-            <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+            <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
          </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/SizeOrDuration">
-      <h3>Size or Duration<sup class="type-c" title="clase">c</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/SizeOrDuration</p>
-      <dl class="description">
-         <dt>tiene superclases</dt>
-         <dd>
-            <span class="dotted" title="http://purl.org/dc/terms/MediaTypeOrExtent">Media Type or Extent</span>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
-         <dt>en rango de</dt>
-         <dd>
-            <a href="#http://purl.org/dc/terms/extent" title="http://purl.org/dc/terms/extent">Extent</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
-         <dt>también definida por</dt>
-         <dd>Individuo</dd>
       </dl>
    </div>
    <div class="entity" id="http://dataid.dbpedia.org/ns/core#Superset">
@@ -671,22 +457,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/dc/terms/accrualMethod" title="http://purl.org/dc/terms/accrualMethod">
-            <span>Accrual Method</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/accrualPeriodicity" title="http://purl.org/dc/terms/accrualPeriodicity">
-            <span>Accrual Periodicity</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/accrualPolicy" title="http://purl.org/dc/terms/accrualPolicy">
-            <span>Accrual Policy</span>
-         </a>
-      </li>
-      <li>
-         <a href="#registrationAgency" title="https://w3id.org/def/inia#registrationAgency">agencia de registro</a>
+         <a href="#registrationAgency" title="http://data.inia.es/def/core#registrationAgency">agencia de registro</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/temporal" title="http://purl.org/dc/terms/temporal">
@@ -694,14 +465,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/dc/terms/audience" title="http://purl.org/dc/terms/audience">
-            <span>Audience</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/educationLevel" title="http://purl.org/dc/terms/educationLevel">
-            <span>Audience Education Level</span>
-         </a>
+         <a href="#http://dataid.dbpedia.org/ns/core#openness" title="http://dataid.dbpedia.org/ns/core#openness">apertura</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
@@ -709,16 +473,17 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#registrationAuthority" title="https://w3id.org/def/inia#registrationAuthority">autoridad de registro</a>
+         <a href="#registrationAuthority"
+            title="http://data.inia.es/def/core#registrationAuthority">autoridad de registro</a>
       </li>
       <li>
-         <a href="#cites" title="https://w3id.org/def/inia#cites">cita</a>
+         <a href="#cites" title="http://data.inia.es/def/core#cites">cita</a>
       </li>
       <li>
          <a href="#http://rs.tdwg.org/dwc/terms/class" title="http://rs.tdwg.org/dwc/terms/class">clase</a>
       </li>
       <li>
-         <a href="#compiles" title="https://w3id.org/def/inia#compiles">compila</a>
+         <a href="#compiles" title="http://data.inia.es/def/core#compiles">compila</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/conformsTo" title="http://purl.org/dc/terms/conformsTo">
@@ -726,79 +491,75 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#continues" title="https://w3id.org/def/inia#continues">continúa</a>
+         <a href="#continues" title="http://data.inia.es/def/core#continues">continúa</a>
       </li>
       <li>
-         <a href="#dataCurator" title="https://w3id.org/def/inia#dataCurator">data curator</a>
+         <a href="#dataCurator" title="http://data.inia.es/def/core#dataCurator">data curator</a>
       </li>
       <li>
          <a href="#developedWithinProject"
-            title="https://w3id.org/def/inia#developedWithinProject">desarrollado en proyecto</a>
+            title="http://data.inia.es/def/core#developedWithinProject">desarrollado en proyecto</a>
       </li>
       <li>
-         <a href="#distributor" title="https://w3id.org/def/inia#distributor">distribuidor</a>
+         <a href="#distributor" title="http://data.inia.es/def/core#distributor">distribuidor</a>
       </li>
       <li>
-         <a href="#documents" title="https://w3id.org/def/inia#documents">documenta</a>
+         <a href="#documents" title="http://data.inia.es/def/core#documents">documenta</a>
       </li>
       <li>
-         <a href="#editor" title="https://w3id.org/def/inia#editor">editor</a>
+         <a href="#editor" title="http://data.inia.es/def/core#editor">editor</a>
       </li>
       <li>
-         <a href="#isCitedBy" title="https://w3id.org/def/inia#isCitedBy">es citado por</a>
+         <a href="#isCitedBy" title="http://data.inia.es/def/core#isCitedBy">es citado por</a>
       </li>
       <li>
-         <a href="#isCompiledBy" title="https://w3id.org/def/inia#isCompiledBy">es compilado por</a>
+         <a href="#isCompiledBy" title="http://data.inia.es/def/core#isCompiledBy">es compilado por</a>
       </li>
       <li>
-         <a href="#isContinuedBy" title="https://w3id.org/def/inia#isContinuedBy">es continuado por</a>
+         <a href="#isContinuedBy" title="http://data.inia.es/def/core#isContinuedBy">es continuado por</a>
       </li>
       <li>
-         <a href="#isDerivedFrom" title="https://w3id.org/def/inia#isDerivedFrom">es derivado de</a>
+         <a href="#isDerivedFrom" title="http://data.inia.es/def/core#isDerivedFrom">es derivado de</a>
       </li>
       <li>
-         <a href="#isOriginalFormOf" title="https://w3id.org/def/inia#isOriginalFormOf">es forma original de</a>
+         <a href="#isOriginalFormOf" title="http://data.inia.es/def/core#isOriginalFormOf">es forma original de</a>
       </li>
       <li>
-         <a href="#isSourceOf" title="https://w3id.org/def/inia#isSourceOf">es fuente de</a>
+         <a href="#isSourceOf" title="http://data.inia.es/def/core#isSourceOf">es fuente de</a>
       </li>
       <li>
-         <a href="#isIdenticalTo" title="https://w3id.org/def/inia#isIdenticalTo">es idéntico a</a>
+         <a href="#isIdenticalTo" title="http://data.inia.es/def/core#isIdenticalTo">es idéntico a</a>
       </li>
       <li>
-         <a href="#isMetadataFor" title="https://w3id.org/def/inia#isMetadataFor">es metadatos de</a>
+         <a href="#isMetadataFor" title="http://data.inia.es/def/core#isMetadataFor">es metadatos de</a>
       </li>
       <li>
-         <a href="#isNewVersionOf" title="https://w3id.org/def/inia#isNewVersionOf">es nueva versión de</a>
+         <a href="#isNewVersionOf" title="http://data.inia.es/def/core#isNewVersionOf">es nueva versión de</a>
       </li>
       <li>
-         <a href="#isPartOf" title="https://w3id.org/def/inia#isPartOf">es parte de</a>
+         <a href="#isPartOf" title="http://data.inia.es/def/core#isPartOf">es parte de</a>
       </li>
       <li>
-         <a href="#isReferencedBy" title="https://w3id.org/def/inia#isReferencedBy">es referenciado por</a>
+         <a href="#isReferencedBy" title="http://data.inia.es/def/core#isReferencedBy">es referenciado por</a>
       </li>
       <li>
-         <a href="#isReviewedBy" title="https://w3id.org/def/inia#isReviewedBy">es revisado por</a>
+         <a href="#isReviewedBy" title="http://data.inia.es/def/core#isReviewedBy">es revisado por</a>
       </li>
       <li>
-         <a href="#isSupplementTo" title="https://w3id.org/def/inia#isSupplementTo">es suplemento de</a>
+         <a href="#isSupplementTo" title="http://data.inia.es/def/core#isSupplementTo">es suplemento de</a>
       </li>
       <li>
-         <a href="#isVariantFormOf" title="https://w3id.org/def/inia#isVariantFormOf">es una variante de</a>
+         <a href="#isVariantFormOf" title="http://data.inia.es/def/core#isVariantFormOf">es una variante de</a>
       </li>
       <li>
-         <a href="#isPreviousVersionOf" title="https://w3id.org/def/inia#isPreviousVersionOf">es versión previa de</a>
+         <a href="#isPreviousVersionOf"
+            title="http://data.inia.es/def/core#isPreviousVersionOf">es versión previa de</a>
       </li>
       <li>
-         <a href="#specie" title="https://w3id.org/def/inia#specie">especie</a>
+         <a href="#specie" title="http://data.inia.es/def/core#specie">especie</a>
       </li>
       <li>
-         <a href="#isDocumentedBy" title="https://w3id.org/def/inia#isDocumentedBy">está documentado por</a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/extent" title="http://purl.org/dc/terms/extent">
-            <span>Extent</span>
-         </a>
+         <a href="#isDocumentedBy" title="http://data.inia.es/def/core#isDocumentedBy">está documentado por</a>
       </li>
       <li>
          <a href="#http://rs.tdwg.org/dwc/terms/family" title="http://rs.tdwg.org/dwc/terms/family">familia</a>
@@ -807,16 +568,16 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <a href="#http://rs.tdwg.org/dwc/terms/phylum" title="http://rs.tdwg.org/dwc/terms/phylum">filo</a>
       </li>
       <li>
-         <a href="#fundedBy" title="https://w3id.org/def/inia#fundedBy">financiado por</a>
+         <a href="#fundedBy" title="http://data.inia.es/def/core#fundedBy">financiado por</a>
       </li>
       <li>
-         <a href="#sponsor" title="https://w3id.org/def/inia#sponsor">financiador</a>
+         <a href="#sponsor" title="http://data.inia.es/def/core#sponsor">financiador</a>
       </li>
       <li>
-         <a href="#dataManager" title="https://w3id.org/def/inia#dataManager">gestor de datos</a>
+         <a href="#dataManager" title="http://data.inia.es/def/core#dataManager">gestor de datos</a>
       </li>
       <li>
-         <a href="#researchGroup" title="https://w3id.org/def/inia#researchGroup">grupo de investigación</a>
+         <a href="#researchGroup" title="http://data.inia.es/def/core#researchGroup">grupo de investigación</a>
       </li>
       <li>
          <a href="#http://rs.tdwg.org/dwc/terms/genus" title="http://rs.tdwg.org/dwc/terms/genus">género</a>
@@ -840,15 +601,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <a href="#http://dataid.dbpedia.org/ns/core#identifier" title="http://dataid.dbpedia.org/ns/core#identifier">identifier</a>
       </li>
       <li>
-         <a href="#hostingInstitution" title="https://w3id.org/def/inia#hostingInstitution">institución anfitriona</a>
+         <a href="#hostingInstitution" title="http://data.inia.es/def/core#hostingInstitution">institución anfitriona</a>
       </li>
       <li>
-         <a href="#http://purl.org/dc/terms/instructionalMethod" title="http://purl.org/dc/terms/instructionalMethod">
-            <span>Instructional Method</span>
-         </a>
-      </li>
-      <li>
-         <a href="#researcher" title="https://w3id.org/def/inia#researcher">investigador</a>
+         <a href="#researcher" title="http://data.inia.es/def/core#researcher">investigador</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/isFormatOf" title="http://purl.org/dc/terms/isFormatOf">
@@ -881,7 +637,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#projectManager" title="https://w3id.org/def/inia#projectManager">jefe de proyecto</a>
+         <a href="#projectManager" title="http://data.inia.es/def/core#projectManager">jefe de proyecto</a>
       </li>
       <li>
          <a href="#http://dataid.dbpedia.org/ns/core#latestVersion" title="http://dataid.dbpedia.org/ns/core#latestVersion">latest version</a>
@@ -892,20 +648,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#workPackageLeader" title="https://w3id.org/def/inia#workPackageLeader">líder de paquete de trabajo</a>
+         <a href="#workPackageLeader" title="http://data.inia.es/def/core#workPackageLeader">líder de paquete de trabajo</a>
       </li>
       <li>
-         <a href="#projectLeader" title="https://w3id.org/def/inia#projectLeader">líder de proyecto</a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/mediator" title="http://purl.org/dc/terms/mediator">
-            <span>Mediator</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/medium" title="http://purl.org/dc/terms/medium">
-            <span>Medium</span>
-         </a>
+         <a href="#projectLeader" title="http://data.inia.es/def/core#projectLeader">líder de proyecto</a>
       </li>
       <li>
          <a href="#http://dataid.dbpedia.org/ns/core#nextVersion" title="http://dataid.dbpedia.org/ns/core#nextVersion">next version</a>
@@ -914,27 +660,19 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <a href="#http://rs.tdwg.org/dwc/terms/vernacularName" title="http://rs.tdwg.org/dwc/terms/vernacularName">nombre común</a>
       </li>
       <li>
-         <a href="#http://dataid.dbpedia.org/ns/core#openness" title="http://dataid.dbpedia.org/ns/core#openness">openness</a>
-      </li>
-      <li>
          <a href="#http://rs.tdwg.org/dwc/terms/order" title="http://rs.tdwg.org/dwc/terms/order">orden</a>
       </li>
       <li>
-         <a href="#contactPerson" title="https://w3id.org/def/inia#contactPerson">persona de contacto</a>
+         <a href="#contactPerson" title="http://data.inia.es/def/core#contactPerson">persona de contacto</a>
       </li>
       <li>
-         <a href="#relatedPerson" title="https://w3id.org/def/inia#relatedPerson">persona relacionada</a>
+         <a href="#relatedPerson" title="http://data.inia.es/def/core#relatedPerson">persona relacionada</a>
       </li>
       <li>
-         <a href="#producer" title="https://w3id.org/def/inia#producer">productor</a>
+         <a href="#producer" title="http://data.inia.es/def/core#producer">productor</a>
       </li>
       <li>
-         <a href="#http://purl.org/dc/terms/provenance" title="http://purl.org/dc/terms/provenance">
-            <span>Provenance</span>
-         </a>
-      </li>
-      <li>
-         <a href="#dataCollector" title="https://w3id.org/def/inia#dataCollector">recolector de datos</a>
+         <a href="#dataCollector" title="http://data.inia.es/def/core#dataCollector">recolector de datos</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/references" title="http://purl.org/dc/terms/references">
@@ -942,7 +680,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#references" title="https://w3id.org/def/inia#references">referencia</a>
+         <a href="#references" title="http://data.inia.es/def/core#references">referencia</a>
       </li>
       <li>
          <a href="#http://rs.tdwg.org/dwc/terms/kingdom" title="http://rs.tdwg.org/dwc/terms/kingdom">reino</a>
@@ -958,7 +696,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#reviews" title="https://w3id.org/def/inia#reviews">revisa</a>
+         <a href="#reviews" title="http://data.inia.es/def/core#reviews">revisa</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/rightsHolder" title="http://purl.org/dc/terms/rightsHolder">
@@ -966,7 +704,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#isSupplementedBy" title="https://w3id.org/def/inia#isSupplementedBy">se suplementa con</a>
+         <a href="#isSupplementedBy" title="http://data.inia.es/def/core#isSupplementedBy">se suplementa con</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source">
@@ -979,7 +717,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#supervisor" title="https://w3id.org/def/inia#supervisor">supervisor</a>
+         <a href="#supervisor" title="http://data.inia.es/def/core#supervisor">supervisor</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">temática</a>
@@ -988,16 +726,16 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <a href="#http://purl.org/spar/datacite/hasIdentifier" title="http://purl.org/spar/datacite/hasIdentifier">tiene identificador</a>
       </li>
       <li>
-         <a href="#hasMetadata" title="https://w3id.org/def/inia#hasMetadata">tiene metadatos</a>
+         <a href="#hasMetadata" title="http://data.inia.es/def/core#hasMetadata">tiene metadatos</a>
       </li>
       <li>
-         <a href="#hasPart" title="https://w3id.org/def/inia#hasPart">tiene parte</a>
+         <a href="#hasPart" title="http://data.inia.es/def/core#hasPart">tiene parte</a>
       </li>
       <li>
-         <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+         <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
       </li>
       <li>
-         <a href="#rightsHolder" title="https://w3id.org/def/inia#rightsHolder">titular de derechos</a>
+         <a href="#rightsHolder" title="http://data.inia.es/def/core#rightsHolder">titular de derechos</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/type" title="http://purl.org/dc/terms/type">
@@ -1005,7 +743,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#taxonomicalScope" title="https://w3id.org/def/inia#taxonomicalScope">ámbito taxonómico</a>
+         <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">ámbito taxonómico</a>
       </li>
    </ul>
    <div class="entity" id="http://purl.org/dc/terms/accessRights">
@@ -1028,85 +766,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/dc/terms/accrualMethod">
-      <h3>Accrual Method<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/accrualMethod</p>
-      <div class="description">
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/dcmitype/Collection">collection</span>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/MethodOfAccrual">Method of Accrual</span>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>Individuo</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/accrualPeriodicity">
-      <h3>Accrual Periodicity<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/accrualPeriodicity</p>
-      <div class="description">
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/dcmitype/Collection">collection</span>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/Frequency">Frequency</span>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>Individuo</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/accrualPolicy">
-      <h3>Accrual Policy<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/accrualPolicy</p>
-      <div class="description">
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/dcmitype/Collection">collection</span>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/Policy">Policy</span>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>Individuo</dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="registrationAgency">
       <h3>agencia de registro<sup class="type-op" title="Propiedad entre objetos">op</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#registrationAgency</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#registrationAgency</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -1137,52 +803,35 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/dc/terms/audience">
-      <h3>Audience<sup class="type-op" title="Propiedad entre objetos">op</sup>
+   <div class="entity" id="http://dataid.dbpedia.org/ns/core#openness">
+      <h3>apertura<sup class="type-op" title="Propiedad entre objetos">op</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/audience</p>
-      <div class="description">
-         <dl>
-            <dt>tiene subpropiedades</dt>
-            <dd>
-               <a href="#http://purl.org/dc/terms/educationLevel" title="http://purl.org/dc/terms/educationLevel">Audience Education Level</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#http://purl.org/dc/terms/mediator" title="http://purl.org/dc/terms/mediator">Mediator</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <a href="#http://purl.org/dc/terms/AgentClass" title="http://purl.org/dc/terms/AgentClass">Agent Class</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>Individuo</dd>
-         </dl>
+         <strong>IRI:</strong> http://dataid.dbpedia.org/ns/core#openness</p>
+      <div class="comment">
+         <span class="markdown">Descripción general de cómo se compartirán los datos. Por ejemplo, períodos de embargo (si los hay), esquemas de mecanismos técnicos para diseminación o una definición de si el acceso será ampliamente abierto o restringido a grupos específicos. En caso de que el conjunto de datos no se pueda compartir, se deben mencionar los motivos (por ejemplo, normas éticas, de datos personales, propiedad intelectual, comercial, relacionadas con la seguridad, relacionadas con la seguridad).</span>
       </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/educationLevel">
-      <h3>Audience Education Level<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/educationLevel</p>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://dataid.dbpedia.org/ns/dmp#">http://dataid.dbpedia.org/ns/dmp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
-            <dt>tiene superpropiedades</dt>
+            <dt>dominio</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/audience" title="http://purl.org/dc/terms/audience">Audience</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+               <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+               <sup class="type-c" title="clase">c</sup>
             </dd>
             <dt>rango</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/AgentClass" title="http://purl.org/dc/terms/AgentClass">Agent Class</a>
+               <span class="dotted"
+                     title="http://dataid.dbpedia.org/ns/core#SimpleStatement">simple statement</span>
                <sup class="type-c" title="clase">c</sup>
             </dd>
-            <dt>también definida por</dt>
-            <dd>Individuo</dd>
          </dl>
       </div>
    </div>
@@ -1212,7 +861,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#registrationAuthority</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#registrationAuthority</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -1229,7 +878,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#cites</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#cites</p>
       <div class="comment">
          <span class="markdown">indica que A incluye a B en una cita</span>
       </div>
@@ -1237,12 +886,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isCitedBy" title="https://w3id.org/def/inia#isCitedBy">es citado por</a>
+               <a href="#isCitedBy" title="http://data.inia.es/def/core#isCitedBy">es citado por</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1256,13 +905,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/class</p>
       <div class="comment">
-         <span class="markdown">indica la categoría taxonómica clase</span>
+         <span class="markdown">Indica la categoría taxonómica clase</span>
       </div>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#taxonomicalScope" title="https://w3id.org/def/inia#taxonomicalScope">ámbito taxonómico</a>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">ámbito taxonómico</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1274,7 +923,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#compiles</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#compiles</p>
       <div class="comment">
          <span class="markdown">Indica que B es el resultado de un evento de compilación o creación utilizando A</span>
       </div>
@@ -1282,12 +931,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isCompiledBy" title="https://w3id.org/def/inia#isCompiledBy">es compilado por</a>
+               <a href="#isCompiledBy" title="http://data.inia.es/def/core#isCompiledBy">es compilado por</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1319,7 +968,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#continues</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#continues</p>
       <div class="comment">
          <span class="markdown">Indica que A es una continuación del trabajo B</span>
       </div>
@@ -1327,12 +976,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isContinuedBy" title="https://w3id.org/def/inia#isContinuedBy">es continuado por</a>
+               <a href="#isContinuedBy" title="http://data.inia.es/def/core#isContinuedBy">es continuado por</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1344,7 +993,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#dataCurator</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#dataCurator</p>
+      <div class="comment">
+         <span class="markdown">asegurador de calidad de los datos</span>
+      </div>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -1361,7 +1013,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#developedWithinProject</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#developedWithinProject</p>
       <div class="comment">
          <span class="markdown">proyecto en el cual se ha creado el dataset</span>
       </div>
@@ -1369,7 +1021,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>dominio</dt>
             <dd>
-               <a href="#Dataset" title="https://w3id.org/def/inia#Dataset">Conjunto de datos</a>
+               <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Conjunto de datos</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
             <dt>rango</dt>
@@ -1385,7 +1037,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#distributor</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#distributor</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -1402,7 +1054,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#documents</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#documents</p>
       <div class="comment">
          <span class="markdown">indica que A es documentación sobre B</span>
       </div>
@@ -1410,12 +1062,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isDocumentedBy" title="https://w3id.org/def/inia#isDocumentedBy">está documentado por</a>
+               <a href="#isDocumentedBy" title="http://data.inia.es/def/core#isDocumentedBy">está documentado por</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1427,7 +1079,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#editor</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#editor</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -1444,7 +1096,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isCitedBy</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isCitedBy</p>
       <div class="comment">
          <span class="markdown">indica que B incluye a A en una cita</span>
       </div>
@@ -1452,12 +1104,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#cites" title="https://w3id.org/def/inia#cites">cita</a>
+               <a href="#cites" title="http://data.inia.es/def/core#cites">cita</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1469,7 +1121,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isCompiledBy</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isCompiledBy</p>
       <div class="comment">
          <span class="markdown">indica que B es utilizado para compilar o crear A</span>
       </div>
@@ -1477,12 +1129,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#compiles" title="https://w3id.org/def/inia#compiles">compila</a>
+               <a href="#compiles" title="http://data.inia.es/def/core#compiles">compila</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1494,7 +1146,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isContinuedBy</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isContinuedBy</p>
       <div class="comment">
          <span class="markdown">indica que A es continuado por el trabajo B</span>
       </div>
@@ -1502,12 +1154,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#continues" title="https://w3id.org/def/inia#continues">continúa</a>
+               <a href="#continues" title="http://data.inia.es/def/core#continues">continúa</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1519,7 +1171,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isDerivedFrom</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isDerivedFrom</p>
       <div class="comment">
          <span class="markdown">indica que B es una fuente en la que está basado A</span>
       </div>
@@ -1527,12 +1179,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isSourceOf" title="https://w3id.org/def/inia#isSourceOf">es fuente de</a>
+               <a href="#isSourceOf" title="http://data.inia.es/def/core#isSourceOf">es fuente de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1544,7 +1196,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isOriginalFormOf</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isOriginalFormOf</p>
       <div class="comment">
          <span class="markdown">indica que A es la forma origen de B</span>
       </div>
@@ -1552,12 +1204,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isVariantFormOf" title="https://w3id.org/def/inia#isVariantFormOf">es una variante de</a>
+               <a href="#isVariantFormOf" title="http://data.inia.es/def/core#isVariantFormOf">es una variante de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1569,7 +1221,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isSourceOf</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isSourceOf</p>
       <div class="comment">
          <span class="markdown">indica que A es una fuente sobre la que B está basado</span>
       </div>
@@ -1577,12 +1229,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isDerivedFrom" title="https://w3id.org/def/inia#isDerivedFrom">es derivado de</a>
+               <a href="#isDerivedFrom" title="http://data.inia.es/def/core#isDerivedFrom">es derivado de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1594,7 +1246,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isIdenticalTo</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isIdenticalTo</p>
       <div class="comment">
          <span class="markdown">Esta relación no debe utilizarse, owl:sameAs debe ser utilizado en su lugar. Se crea sólo para mantener un registro de su existencia en el esquema de datacite.</span>
       </div>
@@ -1610,7 +1262,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1622,7 +1274,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isMetadataFor</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isMetadataFor</p>
       <div class="comment">
          <span class="markdown">indica que A contiene metadatos adicionales sobre el recurso B</span>
       </div>
@@ -1630,12 +1282,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#hasMetadata" title="https://w3id.org/def/inia#hasMetadata">tiene metadatos</a>
+               <a href="#hasMetadata" title="http://data.inia.es/def/core#hasMetadata">tiene metadatos</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1647,7 +1299,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isNewVersionOf</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isNewVersionOf</p>
       <div class="comment">
          <span class="markdown">indica que A es una nueva edición de B, donde la nueva edición ha sido modifcada o actualizada</span>
       </div>
@@ -1655,17 +1307,18 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dd>
                <span class="dotted"
                      title="http://dataid.dbpedia.org/ns/core#previousVersion">previous version</span>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
-            <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>
-            </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isPreviousVersionOf" title="https://w3id.org/def/inia#isPreviousVersionOf">es versión previa de</a>
+               <a href="#isPreviousVersionOf"
+                  title="http://data.inia.es/def/core#isPreviousVersionOf">es versión previa de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1677,7 +1330,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isPartOf</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isPartOf</p>
       <div class="comment">
          <span class="markdown">indica que A es una porciónde B, esta relación puede ser utilizada para elementos de una serie</span>
       </div>
@@ -1685,16 +1338,16 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#http://purl.org/dc/terms/isPartOf" title="http://purl.org/dc/terms/isPartOf">Is Part Of</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#http://purl.org/dc/terms/isPartOf" title="http://purl.org/dc/terms/isPartOf">Is Part Of</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#hasPart" title="https://w3id.org/def/inia#hasPart">tiene parte</a>
+               <a href="#hasPart" title="http://data.inia.es/def/core#hasPart">tiene parte</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1706,7 +1359,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isReferencedBy</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isReferencedBy</p>
       <div class="comment">
          <span class="markdown">indica que A es utilizado como fuente de información por B</span>
       </div>
@@ -1714,12 +1367,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#references" title="https://w3id.org/def/inia#references">referencia</a>
+               <a href="#references" title="http://data.inia.es/def/core#references">referencia</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1731,7 +1384,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isReviewedBy</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isReviewedBy</p>
       <div class="comment">
          <span class="markdown">indica que A es revisado por B</span>
       </div>
@@ -1739,12 +1392,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#reviews" title="https://w3id.org/def/inia#reviews">revisa</a>
+               <a href="#reviews" title="http://data.inia.es/def/core#reviews">revisa</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1756,7 +1409,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isSupplementTo</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isSupplementTo</p>
       <div class="comment">
          <span class="markdown">indica que A es un suplemento de B</span>
       </div>
@@ -1764,12 +1417,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isSupplementedBy" title="https://w3id.org/def/inia#isSupplementedBy">se suplementa con</a>
+               <a href="#isSupplementedBy" title="http://data.inia.es/def/core#isSupplementedBy">se suplementa con</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1781,7 +1434,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isVariantFormOf</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isVariantFormOf</p>
       <div class="comment">
          <span class="markdown">indica que A es un variante o forma diferente de B, or ejemplo una forma calculada o calibrada</span>
       </div>
@@ -1789,12 +1442,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isOriginalFormOf" title="https://w3id.org/def/inia#isOriginalFormOf">es forma original de</a>
+               <a href="#isOriginalFormOf" title="http://data.inia.es/def/core#isOriginalFormOf">es forma original de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1806,7 +1459,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isPreviousVersionOf</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isPreviousVersionOf</p>
       <div class="comment">
          <span class="markdown">indica que A es una edición previa de B</span>
       </div>
@@ -1814,16 +1467,16 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#http://dataid.dbpedia.org/ns/core#nextVersion" title="http://dataid.dbpedia.org/ns/core#nextVersion">next version</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#http://dataid.dbpedia.org/ns/core#nextVersion" title="http://dataid.dbpedia.org/ns/core#nextVersion">next version</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isNewVersionOf" title="https://w3id.org/def/inia#isNewVersionOf">es nueva versión de</a>
+               <a href="#isNewVersionOf" title="http://data.inia.es/def/core#isNewVersionOf">es nueva versión de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1835,15 +1488,15 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#specie</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#specie</p>
       <div class="comment">
-         <span class="markdown">indica la categoría taxonómica especie</span>
+         <span class="markdown">Indica la categoría taxonómica especie</span>
       </div>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#taxonomicalScope" title="https://w3id.org/def/inia#taxonomicalScope">ámbito taxonómico</a>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">ámbito taxonómico</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1855,7 +1508,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isDocumentedBy</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isDocumentedBy</p>
       <div class="comment">
          <span class="markdown">indica que B es la documentación sobre A</span>
       </div>
@@ -1863,34 +1516,14 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#documents" title="https://w3id.org/def/inia#documents">documenta</a>
+               <a href="#documents" title="http://data.inia.es/def/core#documents">documenta</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/extent">
-      <h3>Extent<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/extent</p>
-      <div class="description">
-         <dl>
-            <dt>tiene superpropiedades</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/format">Format</span>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>
-               <a href="#http://purl.org/dc/terms/extent">propiedad de anotación</a>, Individuo</dd>
          </dl>
       </div>
    </div>
@@ -1902,13 +1535,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/family</p>
       <div class="comment">
-         <span class="markdown">indica la categoría taxonómica familia</span>
+         <span class="markdown">Indica la categoría taxonómica familia</span>
       </div>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#taxonomicalScope" title="https://w3id.org/def/inia#taxonomicalScope">ámbito taxonómico</a>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">ámbito taxonómico</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1922,13 +1555,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/phylum</p>
       <div class="comment">
-         <span class="markdown">indica la categoría taxonómica filo o división</span>
+         <span class="markdown">Indica la categoría taxonómica filo o división</span>
       </div>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#taxonomicalScope" title="https://w3id.org/def/inia#taxonomicalScope">ámbito taxonómico</a>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">ámbito taxonómico</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -1940,7 +1573,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#fundedBy</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#fundedBy</p>
       <div class="comment">
          <span class="markdown">relación entre un proyecto y la organización que lo financia</span>
       </div>
@@ -1963,7 +1596,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#sponsor</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#sponsor</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -1980,7 +1613,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#dataManager</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#dataManager</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -1997,7 +1630,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#researchGroup</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#researchGroup</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2016,13 +1649,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/genus</p>
       <div class="comment">
-         <span class="markdown">indica la categoría taxonómica género</span>
+         <span class="markdown">Indica la categoría taxonómica género</span>
       </div>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#taxonomicalScope" title="https://w3id.org/def/inia#taxonomicalScope">ámbito taxonómico</a>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">ámbito taxonómico</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -2127,7 +1760,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#hostingInstitution</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#hostingInstitution</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2138,32 +1771,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/dc/terms/instructionalMethod">
-      <h3>Instructional Method<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/instructionalMethod</p>
-      <div class="description">
-         <dl>
-            <dt>rango</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/MethodOfInstruction">Method of Instruction</span>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>Individuo</dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="researcher">
       <h3>investigador<sup class="type-op" title="Propiedad entre objetos">op</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#researcher</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#researcher</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2210,7 +1824,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </dd>
             <dt>tiene subpropiedades</dt>
             <dd>
-               <a href="#isPartOf" title="https://w3id.org/def/inia#isPartOf">es parte de</a>
+               <a href="#isPartOf" title="http://data.inia.es/def/core#isPartOf">es parte de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>también definida por</dt>
@@ -2305,7 +1919,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#projectManager</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#projectManager</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2373,7 +1987,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#workPackageLeader</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#workPackageLeader</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2390,7 +2004,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#projectLeader</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#projectLeader</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2398,55 +2012,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                <span class="dotted" title="http://purl.org/dc/terms/contributor">colaborador</span>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/mediator">
-      <h3>Mediator<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/mediator</p>
-      <div class="description">
-         <dl>
-            <dt>tiene superpropiedades</dt>
-            <dd>
-               <a href="#http://purl.org/dc/terms/audience" title="http://purl.org/dc/terms/audience">Audience</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <a href="#http://purl.org/dc/terms/AgentClass" title="http://purl.org/dc/terms/AgentClass">Agent Class</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>Individuo</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/medium">
-      <h3>Medium<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/medium</p>
-      <div class="description">
-         <dl>
-            <dt>tiene superpropiedades</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/format">Format</span>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>
-            </dd>
-            <dt>dominio</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/PhysicalResource">Physical Resource</span>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>
-               <a href="#http://purl.org/dc/terms/medium">propiedad de anotación</a>, Individuo</dd>
          </dl>
       </div>
    </div>
@@ -2470,7 +2035,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene subpropiedades</dt>
             <dd>
-               <a href="#isPreviousVersionOf" title="https://w3id.org/def/inia#isPreviousVersionOf">es versión previa de</a>
+               <a href="#isPreviousVersionOf"
+                  title="http://data.inia.es/def/core#isPreviousVersionOf">es versión previa de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
@@ -2490,40 +2056,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/vernacularName</p>
       <div class="comment">
-         <span class="markdown">Nombre común por ejemplo Melón, algarroba, Pino Carrasco, Cerdo Ibérico.</span>
+         <span class="markdown">Verancular name for example melon, carob, pine, Iberian pig.</span>
       </div>
-   </div>
-   <div class="entity" id="http://dataid.dbpedia.org/ns/core#openness">
-      <h3>openness<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://dataid.dbpedia.org/ns/core#openness</p>
-      <div class="comment">
-         <span class="markdown">General description of how data will be shared. For example embargo periods (if any), outlines of technical mechanisms for dissemination or a definition of whether access will be widely open or restricted to specific groups. In case the Dataset cannot be shared, the reasons for this should be mentioned (e.g. ethical, rules of personal data, intellectual property, commercial, privacy-related, security-related).</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Definida por</dt>
-         <dd>
-            <a href="http://dataid.dbpedia.org/ns/dmp#">http://dataid.dbpedia.org/ns/dmp#</a>
-         </dd>
+      <dl>
+         <dt>Versión previa:</dt>
+         <dd>Nombre común por ejemplo Melón, algarroba, Pino Carrasco, Cerdo Ibérico.</dd>
       </dl>
-      <div class="description">
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://dataid.dbpedia.org/ns/core#SimpleStatement">simple statement</span>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-         </dl>
-      </div>
    </div>
    <div class="entity" id="http://rs.tdwg.org/dwc/terms/order">
       <h3>orden<sup class="type-op" title="Propiedad entre objetos">op</sup>
@@ -2533,13 +2071,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/order</p>
       <div class="comment">
-         <span class="markdown">indica la categoría taxonómica orden</span>
+         <span class="markdown">Indica la categoría taxonómica orden</span>
       </div>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#taxonomicalScope" title="https://w3id.org/def/inia#taxonomicalScope">ámbito taxonómico</a>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">ámbito taxonómico</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -2551,7 +2089,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#contactPerson</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#contactPerson</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2568,7 +2106,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#relatedPerson</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#relatedPerson</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2585,7 +2123,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#producer</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#producer</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2596,32 +2134,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/dc/terms/provenance">
-      <h3>Provenance<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/provenance</p>
-      <div class="description">
-         <dl>
-            <dt>rango</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/ProvenanceStatement">Provenance Statement</span>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>Individuo</dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="dataCollector">
       <h3>recolector de datos<sup class="type-op" title="Propiedad entre objetos">op</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#dataCollector</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#dataCollector</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2658,7 +2177,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#references</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#references</p>
       <div class="comment">
          <span class="markdown">indica que B es utilizado como fuente de información de A</span>
       </div>
@@ -2666,12 +2185,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isReferencedBy" title="https://w3id.org/def/inia#isReferencedBy">es referenciado por</a>
+               <a href="#isReferencedBy" title="http://data.inia.es/def/core#isReferencedBy">es referenciado por</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -2685,13 +2204,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/kingdom</p>
       <div class="comment">
-         <span class="markdown">indica la categoría taxonómica reino</span>
+         <span class="markdown">Indica la categoría taxonómica reino</span>
       </div>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#taxonomicalScope" title="https://w3id.org/def/inia#taxonomicalScope">ámbito taxonómico</a>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">ámbito taxonómico</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -2743,7 +2262,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#reviews</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#reviews</p>
       <div class="comment">
          <span class="markdown">indica que A  es una revisión de B</span>
       </div>
@@ -2751,12 +2270,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isReviewedBy" title="https://w3id.org/def/inia#isReviewedBy">es revisado por</a>
+               <a href="#isReviewedBy" title="http://data.inia.es/def/core#isReviewedBy">es revisado por</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -2773,7 +2292,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene subpropiedades</dt>
             <dd>
-               <a href="#rightsHolder" title="https://w3id.org/def/inia#rightsHolder">titular de derechos</a>
+               <a href="#rightsHolder" title="http://data.inia.es/def/core#rightsHolder">titular de derechos</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>rango</dt>
@@ -2792,7 +2311,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#isSupplementedBy</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isSupplementedBy</p>
       <div class="comment">
          <span class="markdown">indica que B es un suplemento de A</span>
       </div>
@@ -2800,12 +2319,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isSupplementTo" title="https://w3id.org/def/inia#isSupplementTo">es suplemento de</a>
+               <a href="#isSupplementTo" title="http://data.inia.es/def/core#isSupplementTo">es suplemento de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -2857,7 +2376,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#supervisor</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#supervisor</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -2918,7 +2437,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#hasMetadata</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#hasMetadata</p>
       <div class="comment">
          <span class="markdown">indica que el recurso A tiene como metadatos adicionales el recurso B</span>
       </div>
@@ -2926,12 +2445,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isMetadataFor" title="https://w3id.org/def/inia#isMetadataFor">es metadatos de</a>
+               <a href="#isMetadataFor" title="http://data.inia.es/def/core#isMetadataFor">es metadatos de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -2943,7 +2462,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#hasPart</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#hasPart</p>
       <div class="comment">
          <span class="markdown">indica que A incluye a B como una de sus partes</span>
       </div>
@@ -2951,12 +2470,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <a href="#hasRelatedResource" title="https://w3id.org/def/inia#hasRelatedResource">tiene relación con recurso</a>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">tiene relación con recurso</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>inversa de</dt>
             <dd>
-               <a href="#isPartOf" title="https://w3id.org/def/inia#isPartOf">es parte de</a>
+               <a href="#isPartOf" title="http://data.inia.es/def/core#isPartOf">es parte de</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
@@ -2968,7 +2487,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#hasRelatedResource</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#hasRelatedResource</p>
       <div class="comment">
          <span class="markdown">Relación entre dos recursos relacionados entre sí. Esta relación tiene una serie de sub relaciones específicas alineadas con el esquema de data cite.</span>
       </div>
@@ -2976,41 +2495,42 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>tiene subpropiedades</dt>
             <dd>
-               <a href="#cites" title="https://w3id.org/def/inia#cites">cita</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#compiles" title="https://w3id.org/def/inia#compiles">compila</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#continues" title="https://w3id.org/def/inia#continues">continúa</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#documents" title="https://w3id.org/def/inia#documents">documenta</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isCitedBy" title="https://w3id.org/def/inia#isCitedBy">es citado por</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isCompiledBy" title="https://w3id.org/def/inia#isCompiledBy">es compilado por</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isContinuedBy" title="https://w3id.org/def/inia#isContinuedBy">es continuado por</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isDerivedFrom" title="https://w3id.org/def/inia#isDerivedFrom">es derivado de</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isOriginalFormOf" title="https://w3id.org/def/inia#isOriginalFormOf">es forma original de</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isSourceOf" title="https://w3id.org/def/inia#isSourceOf">es fuente de</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isIdenticalTo" title="https://w3id.org/def/inia#isIdenticalTo">es idéntico a</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isMetadataFor" title="https://w3id.org/def/inia#isMetadataFor">es metadatos de</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isNewVersionOf" title="https://w3id.org/def/inia#isNewVersionOf">es nueva versión de</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isPartOf" title="https://w3id.org/def/inia#isPartOf">es parte de</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isReferencedBy" title="https://w3id.org/def/inia#isReferencedBy">es referenciado por</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isReviewedBy" title="https://w3id.org/def/inia#isReviewedBy">es revisado por</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isSupplementTo" title="https://w3id.org/def/inia#isSupplementTo">es suplemento de</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isVariantFormOf" title="https://w3id.org/def/inia#isVariantFormOf">es una variante de</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isPreviousVersionOf" title="https://w3id.org/def/inia#isPreviousVersionOf">es versión previa de</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isDocumentedBy" title="https://w3id.org/def/inia#isDocumentedBy">está documentado por</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#references" title="https://w3id.org/def/inia#references">referencia</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#reviews" title="https://w3id.org/def/inia#reviews">revisa</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isSupplementedBy" title="https://w3id.org/def/inia#isSupplementedBy">se suplementa con</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasMetadata" title="https://w3id.org/def/inia#hasMetadata">tiene metadatos</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasPart" title="https://w3id.org/def/inia#hasPart">tiene parte</a>
+               <a href="#cites" title="http://data.inia.es/def/core#cites">cita</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#compiles" title="http://data.inia.es/def/core#compiles">compila</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#continues" title="http://data.inia.es/def/core#continues">continúa</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#documents" title="http://data.inia.es/def/core#documents">documenta</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isCitedBy" title="http://data.inia.es/def/core#isCitedBy">es citado por</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isCompiledBy" title="http://data.inia.es/def/core#isCompiledBy">es compilado por</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isContinuedBy" title="http://data.inia.es/def/core#isContinuedBy">es continuado por</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isDerivedFrom" title="http://data.inia.es/def/core#isDerivedFrom">es derivado de</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isOriginalFormOf" title="http://data.inia.es/def/core#isOriginalFormOf">es forma original de</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isSourceOf" title="http://data.inia.es/def/core#isSourceOf">es fuente de</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isIdenticalTo" title="http://data.inia.es/def/core#isIdenticalTo">es idéntico a</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isMetadataFor" title="http://data.inia.es/def/core#isMetadataFor">es metadatos de</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isNewVersionOf" title="http://data.inia.es/def/core#isNewVersionOf">es nueva versión de</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isPartOf" title="http://data.inia.es/def/core#isPartOf">es parte de</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isReferencedBy" title="http://data.inia.es/def/core#isReferencedBy">es referenciado por</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isReviewedBy" title="http://data.inia.es/def/core#isReviewedBy">es revisado por</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isSupplementTo" title="http://data.inia.es/def/core#isSupplementTo">es suplemento de</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isVariantFormOf" title="http://data.inia.es/def/core#isVariantFormOf">es una variante de</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isPreviousVersionOf"
+                  title="http://data.inia.es/def/core#isPreviousVersionOf">es versión previa de</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isDocumentedBy" title="http://data.inia.es/def/core#isDocumentedBy">está documentado por</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#references" title="http://data.inia.es/def/core#references">referencia</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#reviews" title="http://data.inia.es/def/core#reviews">revisa</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isSupplementedBy" title="http://data.inia.es/def/core#isSupplementedBy">se suplementa con</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasMetadata" title="http://data.inia.es/def/core#hasMetadata">tiene metadatos</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasPart" title="http://data.inia.es/def/core#hasPart">tiene parte</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>dominio</dt>
             <dd>
-               <a href="#Resource" title="https://w3id.org/def/inia#Resource">Resource</a>
+               <a href="#Resource" title="http://data.inia.es/def/core#Resource">Recurso</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
             <dt>rango</dt>
             <dd>
-               <a href="#Resource" title="https://w3id.org/def/inia#Resource">Resource</a>
+               <a href="#Resource" title="http://data.inia.es/def/core#Resource">Recurso</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
          </dl>
@@ -3022,7 +2542,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#rightsHolder</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#rightsHolder</p>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -3063,7 +2583,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#taxonomicalScope</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#taxonomicalScope</p>
       <div class="comment">
          <span class="markdown">Relación genera para indicar el ámbito taxonómico que puede ser especializada por una o mas de sus subpropiedades.</span>
       </div>
@@ -3072,7 +2592,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             <dt>tiene subpropiedades</dt>
             <dd>
                <a href="#http://rs.tdwg.org/dwc/terms/class" title="http://rs.tdwg.org/dwc/terms/class">clase</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#specie" title="https://w3id.org/def/inia#specie">especie</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#specie" title="http://data.inia.es/def/core#specie">especie</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#http://rs.tdwg.org/dwc/terms/family" title="http://rs.tdwg.org/dwc/terms/family">familia</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#http://rs.tdwg.org/dwc/terms/phylum" title="http://rs.tdwg.org/dwc/terms/phylum">filo</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#http://rs.tdwg.org/dwc/terms/genus" title="http://rs.tdwg.org/dwc/terms/genus">género</a>
@@ -3097,7 +2617,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#spatialScope" title="https://w3id.org/def/inia#spatialScope">ambito geográfico</a>
+         <a href="#spatialScope" title="http://data.inia.es/def/core#spatialScope">ambito geográfico</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation">
@@ -3105,7 +2625,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#projectCode" title="https://w3id.org/def/inia#projectCode">código de proyecto</a>
+         <a href="#projectCode" title="http://data.inia.es/def/core#projectCode">código de proyecto</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/dateAccepted" title="http://purl.org/dc/terms/dateAccepted">
@@ -3128,11 +2648,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">
-            <span>Date Modified</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://purl.org/dc/terms/dateSubmitted" title="http://purl.org/dc/terms/dateSubmitted">
             <span>Date Submitted</span>
          </a>
@@ -3143,14 +2658,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude"
-            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">east bound longitude</a>
+         <a href="#equipment" title="http://data.inia.es/def/core#equipment">equipment</a>
       </li>
       <li>
-         <a href="#equipment" title="https://w3id.org/def/inia#equipment">equipment</a>
-      </li>
-      <li>
-         <a href="#embargoDate" title="https://w3id.org/def/inia#embargoDate">fecha de embargo</a>
+         <a href="#embargoDate" title="http://data.inia.es/def/core#embargoDate">fecha de embargo</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">
@@ -3158,27 +2669,40 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#finalDate" title="https://w3id.org/def/inia#finalDate">Fecha final, relacionada con el ámbito del Dataset. Este atributo suele utilizarse en combinación con inia:startingDate como alternativa a dcterms:temporal.</a>
+         <a href="#finalDate" title="http://data.inia.es/def/core#finalDate">Fecha final, relacionada con el ámbito del Dataset. Este atributo suele utilizarse en combinación con inia:startingDate como alternativa a dcterms:temporal.</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">
+            <span>Fecha modificación</span>
+         </a>
       </li>
       <li>
          <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude"
-            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">north bound latitude</a>
+            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">límite latitud norte</a>
       </li>
       <li>
-         <a href="#elementsNumber" title="https://w3id.org/def/inia#elementsNumber">número de elementos</a>
+         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude"
+            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">límite latitud sur</a>
+      </li>
+      <li>
+         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude"
+            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">límite longitud este</a>
+      </li>
+      <li>
+         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude"
+            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">límite longitud oeste</a>
+      </li>
+      <li>
+         <a href="#elementsNumber" title="http://data.inia.es/def/core#elementsNumber">número de elementos</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/dcat#keyword" title="http://www.w3.org/ns/dcat#keyword">palabra clave</a>
       </li>
       <li>
-         <a href="#software" title="https://w3id.org/def/inia#software">software</a>
+         <a href="#software" title="http://data.inia.es/def/core#software">software</a>
       </li>
       <li>
-         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude"
-            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">south bound latitude</a>
-      </li>
-      <li>
-         <a href="#startingDate" title="https://w3id.org/def/inia#startingDate">starting date</a>
+         <a href="#startingDate" title="http://data.inia.es/def/core#startingDate">starting date</a>
       </li>
       <li>
          <a href="#http://purl.org/dc/terms/tableOfContents" title="http://purl.org/dc/terms/tableOfContents">
@@ -3186,11 +2710,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </a>
       </li>
       <li>
-         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude"
-            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">west bound longitude</a>
-      </li>
-      <li>
-         <a href="#temporalScope" title="https://w3id.org/def/inia#temporalScope">ámbito temporal</a>
+         <a href="#temporalScope" title="http://data.inia.es/def/core#temporalScope">ámbito temporal</a>
       </li>
    </ul>
    <div class="entity" id="http://purl.org/dc/terms/abstract">
@@ -3239,7 +2759,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#spatialScope</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#spatialScope</p>
       <div class="comment">
          <span class="markdown">Descripción textual del ámbito geográfico relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar determinadas zonas de manera textual, península ibérica, cuenca alta del Júcar, sierra de Cazorla, Madrid.</span>
       </div>
@@ -3278,9 +2798,9 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#projectCode</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#projectCode</p>
       <div class="comment">
-         <span class="markdown">código del proyecto en el que se ha desarrollado un dataset</span>
+         <span class="markdown">Código del proyecto en el que se ha desarrollado un dataset</span>
       </div>
       <div class="description">
          <dl>
@@ -3375,26 +2895,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/dc/terms/modified">
-      <h3>Date Modified<sup class="type-dp" title="Propiedad de datos">dp</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
-      <div class="description">
-         <dl>
-            <dt>tiene superpropiedades</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/dc/terms/date">Date</span>
-               <sup class="type-dp" title="Propiedad de datos">dp</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>
-               <a href="#http://purl.org/dc/terms/modified">propiedad de anotación</a>, Individuo</dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://purl.org/dc/terms/dateSubmitted">
       <h3>Date Submitted<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
@@ -3435,49 +2935,21 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">
-      <h3>east bound longitude<sup class="type-dp" title="Propiedad de datos">dp</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude</p>
-      <dl class="definedBy">
-         <dt>Definida por</dt>
-         <dd>
-            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
-                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="equipment">
       <h3>equipment<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#equipment</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#equipment</p>
       <div class="comment">
-         <span class="markdown">En caso de ser relevante el instrumento de medida utilizado, marca modelo precisión etc.</span>
+         <span class="markdown">En caso de ser relevante el instrumento de medida utilizado, marca, modelo, precisión etc.</span>
       </div>
       <div class="description">
          <dl>
             <dt>dominio</dt>
             <dd>
-               <a href="#Dataset" title="https://w3id.org/def/inia#Dataset">Conjunto de datos</a>
+               <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Conjunto de datos</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
             <dt>rango</dt>
@@ -3493,7 +2965,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#embargoDate</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#embargoDate</p>
       <div class="comment">
          <span class="markdown">Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre.</span>
       </div>
@@ -3501,7 +2973,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>dominio</dt>
             <dd>
-               <a href="#Dataset" title="https://w3id.org/def/inia#Dataset">Conjunto de datos</a>
+               <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Conjunto de datos</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
             <dt>rango</dt>
@@ -3537,7 +3009,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#finalDate</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#finalDate</p>
+      <div class="comment">
+         <span class="markdown">Final date, related to the scope of the Dataset. This attribute is often used in combination with inia:startingDate as an alternative to dcterms:temporal.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>tiene superpropiedades</dt>
@@ -3551,13 +3026,117 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://purl.org/dc/terms/modified">
+      <h3>Fecha modificación<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/date">Date</span>
+               <sup class="type-dp" title="Propiedad de datos">dp</sup>
+            </dd>
+            <dt>también definida por</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/modified">propiedad de anotación</a>, Individuo</dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">
-      <h3>north bound latitude<sup class="type-dp" title="Propiedad de datos">dp</sup>
+      <h3>límite latitud norte<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude</p>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
+                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">
+      <h3>límite latitud sur<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude</p>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
+                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">
+      <h3>límite longitud este<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude</p>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
+                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">
+      <h3>límite longitud oeste<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude</p>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>
@@ -3585,7 +3164,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#elementsNumber</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#elementsNumber</p>
       <div class="comment">
          <span class="markdown">Número de instancias de la colección.</span>
       </div>
@@ -3593,7 +3172,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>dominio</dt>
             <dd>
-               <a href="#Dataset" title="https://w3id.org/def/inia#Dataset">Conjunto de datos</a>
+               <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Conjunto de datos</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
          </dl>
@@ -3629,7 +3208,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#software</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#software</p>
       <div class="comment">
          <span class="markdown">Hace referencia al software utilizado para la eleboración del dataset o para su visualización o explotación, nombre, versión, marca.</span>
       </div>
@@ -3641,40 +3220,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </dd>
             <dt>dominio</dt>
             <dd>
-               <a href="#Dataset" title="https://w3id.org/def/inia#Dataset">Conjunto de datos</a>
+               <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Conjunto de datos</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
             <dt>rango</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">
-      <h3>south bound latitude<sup class="type-dp" title="Propiedad de datos">dp</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude</p>
-      <dl class="definedBy">
-         <dt>Definida por</dt>
-         <dd>
-            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
-                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
             </dd>
          </dl>
       </div>
@@ -3685,7 +3236,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#startingDate</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#startingDate</p>
       <div class="comment">
          <span class="markdown">Fecha inicial, relacionada con el ámbito del Dataset ejemplo: fecha inicial de las toma de muestras del material incluido en el Dataset 25/06/1938. Este atributo suele utilizarse en combinación con inia:finalDate como alternativa a dcterms:temporal.</span>
       </div>
@@ -3718,41 +3269,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">
-      <h3>west bound longitude<sup class="type-dp" title="Propiedad de datos">dp</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude</p>
-      <dl class="definedBy">
-         <dt>Definida por</dt>
-         <dd>
-            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
-                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="temporalScope">
       <h3>ámbito temporal<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/inia#temporalScope</p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#temporalScope</p>
       <div class="comment">
          <span class="markdown">Descripción textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cretácico, Edad media.</span>
       </div>
@@ -3859,7 +3382,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </span>
          </dd>
          <dd>
-            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Fecha modificación</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="literal">"2012-06-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </span>
@@ -3902,7 +3425,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </span>
          </dd>
          <dd>
-            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Fecha modificación</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </span>
@@ -3945,7 +3468,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </span>
          </dd>
          <dd>
-            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Fecha modificación</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </span>
@@ -3988,7 +3511,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </span>
          </dd>
          <dd>
-            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Fecha modificación</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </span>
@@ -4031,7 +3554,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </span>
          </dd>
          <dd>
-            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Fecha modificación</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </span>
@@ -4074,7 +3597,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </span>
          </dd>
          <dd>
-            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Fecha modificación</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </span>
@@ -4117,7 +3640,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </span>
          </dd>
          <dd>
-            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Fecha modificación</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </span>
@@ -4134,7 +3657,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="description">
          <dt>hechos</dt>
          <dd>
-            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Fecha modificación</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="literal">"2012-06-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </span>
@@ -4187,7 +3710,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </span>
          </dd>
          <dd>
-            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Fecha modificación</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </span>
@@ -4230,7 +3753,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </span>
          </dd>
          <dd>
-            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Fecha modificación</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup> 
             <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </span>

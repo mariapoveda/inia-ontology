@@ -1,3 +1,6 @@
 <h2 id="desc" class="list">Ontología datasets INIA: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+<p>The main objective of the ontology is to represent the metadata of the dataset stored in the open data portal of INIA, taking into account the metadata characteristic of this type of data sets. For example, metadata may include information about the taxonomic area over which data is collected in the data set or the software with which the data should be processed. However, a large number of metadata of these data sets are common to other existing catalogs and therefore ontologies that cover such metadata already exist. After a search it was observed that the dataid ontology is currently the most complete to represent metadata of catalogs and datasets while reusing domain ontologies for specific topics such as languages, licenses, etc. To complete the rdf representation of the necessary metadata, other ontologies such as Organization ontology or FOAF have been reused.</p>
+
+<p>In Figure 1 you can see how an inia class has been defined: Dataset that specializes the dataid concept: Dataset for the particular case of the attributes and relationships needed in the case of the INIA data sets such as the inia attribute: software In addition, on this inia: Dataset, the cardinality axioms specific to this use case are defined.</p>
+
+<center><img src="resources/images/ontologiaINIA.png" alt="INIA ontology diagram.">   <figcaption>Figure 1. Graphical representation of the INIA ontology</figcaption></center>
