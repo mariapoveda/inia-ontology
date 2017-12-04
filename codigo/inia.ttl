@@ -16,13 +16,14 @@
 <http://data.inia.es/def/core#> a owl:Ontology ;
 	owl:imports <http://purl.org/spar/datacite/> , <http://www.w3.org/ns/org#> , <http://xmlns.com/foaf/0.1/> ;
 	dc:creator "http://w3id.org/people/mpoveda" ;
-	dcterms:modified "2017-27-11"^^xsd:date ;
 	dc:publisher <http://www.inia.es> ;
+	dcterms:modified "2017-04-12"^^xsd:date ;
 	rdfs:comment "Esta ontología representa los datasets publicados por el INIA"@en ;
 	vann:preferredNamespaceUri "http://data.inia.es/def/core#" ;
 	dc:title "Ontología datasets INIA"@en ;
 	vann:preferredNamespacePrefix "inia" ;
 	owl:versionInfo "0.0.2"^^xsd:date ;
+	dcterms:contributor <http://agripa.org/profile/ajspadial> ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> .
 # 
 # 
@@ -472,6 +473,7 @@ xsd:date a rdfs:Datatype .
 
 <http://data.inia.es/def/core#dataCurator> a owl:ObjectProperty ;
 	rdfs:subPropertyOf dcterms:contributor ;
+	rdfs:comment "asegurador de calidad de los datos"@es ;
 	rdfs:label "data curator"@en .
 # 
 # http://data.inia.es/def/core#dataManager
@@ -767,7 +769,7 @@ xsd:date a rdfs:Datatype .
 
 <http://data.inia.es/def/core#specie> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-	rdfs:comment "indica la categoría taxonómica especie"@es ;
+	rdfs:comment "Indica la categoría taxonómica especie"@es , "Indicates the taxonomical specie"@en ;
 	rdfs:label "especie"@es , "specie"@en .
 # 
 # http://data.inia.es/def/core#sponsor
@@ -826,9 +828,9 @@ xsd:date a rdfs:Datatype .
 <http://dataid.dbpedia.org/ns/core#openness> a owl:ObjectProperty ;
 	rdfs:domain <http://dataid.dbpedia.org/ns/core#Dataset> ;
 	rdfs:range <http://dataid.dbpedia.org/ns/core#SimpleStatement> ;
-	rdfs:comment "General description of how data will be shared. For example embargo periods (if any), outlines of technical mechanisms for dissemination or a definition of whether access will be widely open or restricted to specific groups. In case the Dataset cannot be shared, the reasons for this should be mentioned (e.g. ethical, rules of personal data, intellectual property, commercial, privacy-related, security-related)."@en ;
+	rdfs:comment "Descripción general de cómo se compartirán los datos. Por ejemplo, períodos de embargo (si los hay), esquemas de mecanismos técnicos para diseminación o una definición de si el acceso será ampliamente abierto o restringido a grupos específicos. En caso de que el conjunto de datos no se pueda compartir, se deben mencionar los motivos (por ejemplo, normas éticas, de datos personales, propiedad intelectual, comercial, relacionadas con la seguridad, relacionadas con la seguridad)."@es , "General description of how data will be shared. For example embargo periods (if any), outlines of technical mechanisms for dissemination or a definition of whether access will be widely open or restricted to specific groups. In case the Dataset cannot be shared, the reasons for this should be mentioned (e.g. ethical, rules of personal data, intellectual property, commercial, privacy-related, security-related)."@en ;
 	rdfs:isDefinedBy <http://dataid.dbpedia.org/ns/dmp#> ;
-	rdfs:label "openness"@en .
+	rdfs:label "apertura"@es , "openness"@en .
 # 
 # http://dataid.dbpedia.org/ns/core#previousVersion
 
@@ -989,49 +991,50 @@ dcterms:type a owl:ObjectProperty ;
 
 <http://rs.tdwg.org/dwc/terms/class> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-	rdfs:comment "indica la categoría taxonómica clase"@es ;
+	rdfs:comment "Indica la categoría taxonómica clase"@es , "Indicates the taxonomical class"@en ;
 	rdfs:label "clase"@es , "class"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/family
 
 <http://rs.tdwg.org/dwc/terms/family> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-	rdfs:comment "indica la categoría taxonómica familia"@es ;
+	rdfs:comment "Indica la categoría taxonómica familia"@es , "Indicates the taxonomical family"@en ;
 	rdfs:label "familia"@es , "family"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/genus
 
 <http://rs.tdwg.org/dwc/terms/genus> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-	rdfs:comment "indica la categoría taxonómica género"@es ;
+	rdfs:comment "Indica la categoría taxonómica género"@es , "Indicates the taxonomical genus"@en ;
 	rdfs:label "genus"@en , "género"@es .
 # 
 # http://rs.tdwg.org/dwc/terms/kingdom
 
 <http://rs.tdwg.org/dwc/terms/kingdom> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-	rdfs:comment "indica la categoría taxonómica reino"@es ;
+	rdfs:comment "Indica la categoría taxonómica reino"@es , "Indicates the taxonomical kingdom"@en ;
 	rdfs:label "kingdom"@en , "reino"@es .
 # 
 # http://rs.tdwg.org/dwc/terms/order
 
 <http://rs.tdwg.org/dwc/terms/order> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-	rdfs:comment "indica la categoría taxonómica orden"@es ;
+	rdfs:comment "Indica la categoría taxonómica orden"@es , "Indicates the taxonomical order"@en ;
 	rdfs:label "orden"@es , "order"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/phylum
 
 <http://rs.tdwg.org/dwc/terms/phylum> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://data.inia.es/def/core#taxonomicalScope> ;
-	rdfs:comment "indica la categoría taxonómica filo o división"@es ;
+	rdfs:comment "Indica la categoría taxonómica filo o división"@es , "Indicates the taxonomical phylum"@en ;
 	rdfs:label "filo"@es , "phylum"@en .
 # 
 # http://rs.tdwg.org/dwc/terms/vernacularName
 
 <http://rs.tdwg.org/dwc/terms/vernacularName> a owl:ObjectProperty ;
-	rdfs:comment "Nombre común por ejemplo Melón, algarroba, Pino Carrasco, Cerdo Ibérico."@es ;
-	rdfs:label "nombre común"@es .
+	rdfs:comment "Verancular name for example melon, carob, pine, Iberian pig."@en ;
+	rdfs:label "nombre común"@es , "vernacular name"@en ;
+	owl:priorVersion "Nombre común por ejemplo Melón, algarroba, Pino Carrasco, Cerdo Ibérico."@es .
 # 
 # http://www.w3.org/ns/dcat#distribution
 
@@ -1062,7 +1065,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 
 <http://data.inia.es/def/core#elementsNumber> a owl:DatatypeProperty ;
 	rdfs:domain <http://data.inia.es/def/core#Dataset> ;
-	rdfs:comment "Número de instancias de la colección."@es ;
+	rdfs:comment "Number of instances of the collection"@en , "Número de instancias de la colección."@es ;
 	rdfs:label "elements number"@en , "número de elementos"@es .
 # 
 # http://data.inia.es/def/core#embargoDate
@@ -1070,7 +1073,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 <http://data.inia.es/def/core#embargoDate> a owl:DatatypeProperty ;
 	rdfs:domain <http://data.inia.es/def/core#Dataset> ;
 	rdfs:range xsd:date ;
-	rdfs:comment "Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre."@es ;
+	rdfs:comment "Date in which the embargo is fulfilled and the resource becomes free for use."@en , "Fecha en la cual se cumple el embargo y pasa a ser un recurso de uso libre."@es ;
 	rdfs:label "embargo date"@en , "fecha de embargo"@es .
 # 
 # http://data.inia.es/def/core#equipment
@@ -1078,7 +1081,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 <http://data.inia.es/def/core#equipment> a owl:DatatypeProperty ;
 	rdfs:domain <http://data.inia.es/def/core#Dataset> ;
 	rdfs:range xsd:string ;
-	rdfs:comment "En caso de ser relevante el instrumento de medida utilizado, marca modelo precisión etc."@es , "Instrumentación de medida"@es ;
+	rdfs:comment "En caso de ser relevante el instrumento de medida utilizado, marca, modelo, precisión etc."@es , "In case the measuring instrument used is relevant, brand, model, precision etc."@en , "Instrumentación de medida"@es ;
 	rdfs:label "equipment"@en .
 # 
 # http://data.inia.es/def/core#finalDate
@@ -1086,6 +1089,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 <http://data.inia.es/def/core#finalDate> a owl:DatatypeProperty ;
 	rdfs:subPropertyOf owl:topDataProperty ;
 	rdfs:range xsd:date ;
+	rdfs:comment "Final date, related to the scope of the Dataset. This attribute is often used in combination with inia:startingDate as an alternative to dcterms:temporal."@en ;
 	rdfs:label "Fecha final, relacionada con el ámbito del Dataset. Este atributo suele utilizarse en combinación con inia:startingDate como alternativa a dcterms:temporal."@es , "fecha final"@es , "final date"@en .
 # 
 # http://data.inia.es/def/core#projectCode
@@ -1093,7 +1097,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 <http://data.inia.es/def/core#projectCode> a owl:DatatypeProperty ;
 	rdfs:domain foaf:Project ;
 	rdfs:range xsd:string ;
-	rdfs:comment "código del proyecto en el que se ha desarrollado un dataset"@es ;
+	rdfs:comment "Code of the project in which context a dataset has been developed"@en , "Código del proyecto en el que se ha desarrollado un dataset"@es ;
 	rdfs:label "código de proyecto"@es , "project code"@en .
 # 
 # http://data.inia.es/def/core#software
@@ -1102,28 +1106,28 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 	rdfs:subPropertyOf owl:topDataProperty ;
 	rdfs:domain <http://data.inia.es/def/core#Dataset> ;
 	rdfs:range xsd:string ;
-	rdfs:comment "Hace referencia al software utilizado para la eleboración del dataset o para su visualización o explotación, nombre, versión, marca."@es ;
+	rdfs:comment "Hace referencia al software utilizado para la eleboración del dataset o para su visualización o explotación, nombre, versión, marca."@es , "It refers to the software used to prepare the dataset or to visualize or exploit it, name, version, brand."@en ;
 	rdfs:label "software"@en , "software"@es .
 # 
 # http://data.inia.es/def/core#spatialScope
 
 <http://data.inia.es/def/core#spatialScope> a owl:DatatypeProperty ;
 	rdfs:range xsd:string ;
-	rdfs:comment "Descripción textual del ámbito geográfico relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar determinadas zonas de manera textual, península ibérica, cuenca alta del Júcar, sierra de Cazorla, Madrid."@es ;
+	rdfs:comment "Descripción textual del ámbito geográfico relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar determinadas zonas de manera textual, península ibérica, cuenca alta del Júcar, sierra de Cazorla, Madrid."@es , "Textual description of the geographical area related to the content or sampling of the Dataset, this metadata is especially indicated in the research areas where it is usual to express certain areas in a textual manner, the Iberian Peninsula, the upper Júcar basin, the Cazorla mountain range, Madrid."@en ;
 	rdfs:label "ambito geográfico"@es , "spatial scope"@en .
 # 
 # http://data.inia.es/def/core#startingDate
 
 <http://data.inia.es/def/core#startingDate> a owl:DatatypeProperty ;
 	rdfs:range xsd:date ;
-	rdfs:comment "Fecha inicial, relacionada con el ámbito del Dataset ejemplo: fecha inicial de las toma de muestras del material incluido en el Dataset 25/06/1938. Este atributo suele utilizarse en combinación con inia:finalDate como alternativa a dcterms:temporal."@es , "fecha inicial"@es ;
+	rdfs:comment "Fecha inicial, relacionada con el ámbito del Dataset ejemplo: fecha inicial de las toma de muestras del material incluido en el Dataset 25/06/1938. Este atributo suele utilizarse en combinación con inia:finalDate como alternativa a dcterms:temporal."@es , "Initial date, related to the scope of the Dataset example: initial date of the sampling of the material included in the Dataset 06/25/1938. This attribute is usually used in combination with inia:finalDate as an alternative to dcterms:temporal."@en , "fecha inicial"@es ;
 	rdfs:label "starting date"@en .
 # 
 # http://data.inia.es/def/core#temporalScope
 
 <http://data.inia.es/def/core#temporalScope> a owl:DatatypeProperty ;
 	rdfs:range xsd:string ;
-	rdfs:comment "Descripción textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cretácico, Edad media."@es ;
+	rdfs:comment "Descripción textual periodo de tiempo relacionado con el contenido o la toma de muestras del Dataset, este metadato está especialmente indicado en los ámbitos de investigación donde es habitual  expresar los periodos se de manera textual por ejemplos: siglo XVI, Cretácico, Edad media."@es , "Textual description time period related to the content or sampling of the Dataset, this metadata is especially indicated in research fields where it is usual to express the periods in textual form by examples: XVI century, Cretaceous, Middle Ages."@en ;
 	rdfs:label "temporal scope"@en , "ámbito temporal"@es .
 # 
 # http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude
@@ -1132,7 +1136,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 	rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
 	rdfs:range xsd:decimal ;
 	rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
-	rdfs:label "east bound longitude"^^xsd:string .
+	rdfs:label "east bound longitude"^^xsd:string , "límite longitud este"@es .
 # 
 # http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude
 
@@ -1140,7 +1144,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 	rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
 	rdfs:range xsd:decimal ;
 	rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
-	rdfs:label "north bound latitude"^^xsd:string .
+	rdfs:label "límite latitud norte"@es , "north bound latitude"^^xsd:string .
 # 
 # http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude
 
@@ -1148,7 +1152,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 	rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
 	rdfs:range xsd:decimal ;
 	rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
-	rdfs:label "south bound latitude"^^xsd:string .
+	rdfs:label "límite latitud sur"@es , "south bound latitude"^^xsd:string .
 # 
 # http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude
 
@@ -1156,7 +1160,7 @@ foaf:isPrimaryTopicOf a owl:ObjectProperty .
 	rdfs:domain <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox> ;
 	rdfs:range xsd:decimal ;
 	rdfs:isDefinedBy <http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent> ;
-	rdfs:label "west bound longitude"^^xsd:string .
+	rdfs:label "límite longitud oeste"@es , "west bound longitude"^^xsd:string .
 # 
 # http://purl.org/dc/terms/abstract
 
@@ -1293,13 +1297,14 @@ _:genid6 a owl:Restriction ;
 	owl:onProperty dcterms:title ;
 	owl:minCardinality "1"^^xsd:nonNegativeInteger .
 
-<http://data.inia.es/def/core#Dataset> rdfs:comment "Dataset definido en la ontología INIA. Este dataset tendrá propiedades particulares de los metadatos manejados en los conjuntos de datos INIA."@es ;
+<http://data.inia.es/def/core#Dataset> rdfs:comment "Dataset defined in the INIA ontology. These datasets might have particular properties related to the INIA datasets metadata."@en , "Dataset definido en la ontología INIA. Este dataset tendrá propiedades particulares de los metadatos manejados en los conjuntos de datos INIA."@es ;
 	rdfs:label "Conjunto de datos"@es , "Dataset"@en .
 # 
 # http://data.inia.es/def/core#Resource
 
 <http://data.inia.es/def/core#Resource> a owl:Class ;
-	rdfs:label "Resource"@en .
+	rdfs:comment "Clase general para representar datasets, documentos, ficheros, etc. u otros recursos asociados a una investigación."@es , "The class of documents, datasets, files, etc. or other type of resources related to research results."@en ;
+	rdfs:label "Recurso"@es , "Resource"@en .
 # 
 # http://dataid.dbpedia.org/ns/core#DataId
 
@@ -1447,8 +1452,8 @@ _:genid23 a owl:Restriction ;
 # http://lexvo.org/ontology#Language
 
 <http://lexvo.org/ontology#Language> a owl:Class ;
-	rdfs:comment "Idioma en el que se expresa el contenido de un recurso."@es ;
-	rdfs:label "Idioma"@es .
+	rdfs:comment "Idioma en el que se expresa el contenido de un recurso."@es , "Language in which the dataset is expressed."@en ;
+	rdfs:label "Idioma"@es , "Language"@en .
 # 
 # http://purl.org/dc/dcam/VocabularyEncodingScheme
 
@@ -1515,8 +1520,8 @@ dcterms:AgentClass a owl:Class ;
 # http://www.w3.org/ns/odrl/2/Policy
 
 <http://www.w3.org/ns/odrl/2/Policy> a owl:Class ;
-	rdfs:comment "Un grupo no vacio de permisos y/o prohibiciones."@es ;
-	rdfs:label "Política de uso"@es .
+	rdfs:comment "A non-empty group of Permissions and/or Prohibitions."@en , "Un grupo no vacio de permisos y/o prohibiciones."@es ;
+	rdfs:label "Policy"@en , "Política de uso"@es .
 # 
 # http://www.w3.org/ns/prov#Entity
 
@@ -2408,8 +2413,8 @@ dcterms:valid a owl:NamedIndividual .
 # 
 
 dcterms:Agent rdfs:label "Agent"@en ;
-	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:comment "A resource that acts or has the power to act."@en ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:issued "2008-01-14"^^xsd:date ;
 	dcterms:description "Examples of Agent include person, organization, and software agent."@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Agent-001> .
@@ -2428,8 +2433,8 @@ dcterms:Box dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:comment "The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:seeAlso <http://dublincore.org/documents/dcmi-box/> ;
-	rdfs:label "DCMI Box"@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
+	rdfs:label "DCMI Box"@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Box-003> .
 # 
 
@@ -2459,8 +2464,8 @@ dcterms:ISO639-3 rdfs:label "ISO 639-3"@en ;
 	rdfs:seeAlso <http://www.sil.org/iso639-3/> .
 # 
 
-dcterms:Period rdfs:comment "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme."@en ;
-	rdfs:seeAlso <http://dublincore.org/documents/dcmi-period/> ;
+dcterms:Period rdfs:seeAlso <http://dublincore.org/documents/dcmi-period/> ;
+	rdfs:comment "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme."@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:label "DCMI Period"@en ;
@@ -2663,9 +2668,9 @@ dcterms:description dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:comment "Resumen, descripción, información de interés sobre el dataset."@es ;
 	rdfs:label "descripción"@es ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	rdfs:comment "An account of the resource."@en ;
-	dcterms:issued "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#descriptionT-001> ;
+	dcterms:issued "2008-01-14"^^xsd:date ;
+	rdfs:comment "An account of the resource."@en ;
 	dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en .
 # 
 
@@ -2726,8 +2731,8 @@ dcterms:isFormatOf dcterms:hasVersion <http://dublincore.org/usage/terms/history
 dcterms:isPartOf dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:label "Is Part Of"@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#isPartOf-003> ;
-	dcterms:issued "2000-07-11"^^xsd:date ;
 	<http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
+	dcterms:issued "2000-07-11"^^xsd:date ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:comment "A related resource in which the described resource is physically or logically included."@en .
 # 
@@ -2802,8 +2807,9 @@ dcterms:license rdfs:comment "licencia"@es ;
 dcterms:modified rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:label "Date Modified"@en ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#modified-003> ;
+	rdfs:label "Fecha modificación"@es ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
-	rdfs:comment "Date on which the resource was changed."@en ;
+	rdfs:comment "Date on which the resource was changed."@en , "Fecha en la que el recurso ha sido modificado."@es ;
 	dcterms:issued "2000-07-11"^^xsd:date .
 # 
 
@@ -2858,8 +2864,8 @@ dcterms:requires dcterms:hasVersion <http://dublincore.org/usage/terms/history/#
 	rdfs:label "Requires"@en ;
 	rdfs:comment "A related resource that is required by the described resource to support its function, delivery, or coherence."@en ;
 	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:issued "2000-07-11"^^xsd:date ;
-	<http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en .
+	<http://www.w3.org/2004/02/skos/core#note> "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
+	dcterms:issued "2000-07-11"^^xsd:date .
 # 
 
 dcterms:rights rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
@@ -2867,14 +2873,14 @@ dcterms:rights rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	rdfs:label "Rights"@en ;
 	rdfs:comment "Information about rights held in and over the resource."@en ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
-	rdfs:comment "Derechos de utilización del recurso."@es ;
 	rdfs:label "derechos de utilización"@es ;
+	rdfs:comment "Derechos de utilización del recurso."@es ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#rightsT-001> ;
 	dcterms:description "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en .
 # 
 
-dcterms:rightsHolder rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#rightsHolder-002> ;
+dcterms:rightsHolder dcterms:hasVersion <http://dublincore.org/usage/terms/history/#rightsHolder-002> ;
+	rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:comment "A person or organization owning or managing rights over the resource."@en ;
 	dcterms:issued "2004-06-14"^^xsd:date ;
@@ -2941,8 +2947,8 @@ dcterms:title rdfs:label "Title"@en ;
 dcterms:type rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	dcterms:description "Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."@en ;
 	rdfs:comment "The nature or genre of the resource."@en ;
-	dcterms:modified "2008-01-14"^^xsd:date ;
 	rdfs:label "Type"@en ;
+	dcterms:modified "2008-01-14"^^xsd:date ;
 	dcterms:hasVersion <http://dublincore.org/usage/terms/history/#typeT-001> ;
 	dcterms:issued "2008-01-14"^^xsd:date .
 # 
