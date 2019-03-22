@@ -1,0 +1,3771 @@
+<h2  id="crossreference" class="list">Cross reference for Ontología datasets INIA classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontología datasets INIA.
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/AgentClass" title="http://purl.org/dc/terms/AgentClass">
+            <span>Agent Class</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Dataset</a>
+      </li>
+      <li>
+         <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/dcat#Dataset" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
+      </li>
+      <li>
+         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
+            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/spar/datacite/Identifier" title="http://purl.org/spar/datacite/Identifier">identificador</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2006/time#Interval" title="http://www.w3.org/2006/time#Interval">Intervalo de tiempo</a>
+      </li>
+      <li>
+         <a href="#http://lexvo.org/ontology#Language" title="http://lexvo.org/ontology#Language">Language</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/odrl/2/Policy" title="http://www.w3.org/ns/odrl/2/Policy">Policy</a>
+      </li>
+      <li>
+         <a href="#Resource" title="http://data.inia.es/def/core#Resource">Resource</a>
+      </li>
+      <li>
+         <a href="#http://dataid.dbpedia.org/ns/core#Superset" title="http://dataid.dbpedia.org/ns/core#Superset">Superset</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/AgentClass">
+      <h3>Agent Class<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/AgentClass</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Class">class</span>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="Dataset">
+      <h3>Dataset<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#Dataset</p>
+      <div class="comment">
+         <span class="markdown">Dataset defined in the INIA ontology. These datasets might have particular properties related to the INIA datasets metadata.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Resource" title="http://data.inia.es/def/core#Resource">Resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">Creator</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/terms/publisher">Publisher</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">min</span> 1 <span class="dotted" title="http://www.w3.org/ns/org#Organization">organization</span>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">theme</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">min</span> 1 <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">Concepto</span>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/terms/description">Description</span>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/terms/title">Title</span>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">min</span> 1</dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#developedWithinProject"
+               title="http://data.inia.es/def/core#developedWithinProject">developed within project</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#elementsNumber" title="http://data.inia.es/def/core#elementsNumber">elements number</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#embargoDate" title="http://data.inia.es/def/core#embargoDate">embargo date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#equipment" title="http://data.inia.es/def/core#equipment">equipment</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#software" title="http://data.inia.es/def/core#software">software</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dataid.dbpedia.org/ns/core#Dataset">
+      <h3>Dataset<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dataid.dbpedia.org/ns/core#Dataset</p>
+      <div class="comment">
+         <span class="markdown">A collection of data, available for access in one or more formats. 
+    Dataset resources describe the concept of the dataset, not its manifestation (the data itself), which can be acquired 
+    as a Distribution. Datasets are prov:Entities and can be generated by prov:Activities.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://dataid.dbpedia.org/ns/core#">http://dataid.dbpedia.org/ns/core#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://rdfs.org/ns/void#Dataset">dataset</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/dcat#Dataset" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://dataid.dbpedia.org/ns/core#latestVersion" title="http://dataid.dbpedia.org/ns/core#latestVersion">latest version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://dataid.dbpedia.org/ns/core#nextVersion" title="http://dataid.dbpedia.org/ns/core#nextVersion">next version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted"
+                  title="http://dataid.dbpedia.org/ns/core#previousVersion">previous version</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/isPartOf" title="http://purl.org/dc/terms/isPartOf">Is Part Of</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/terms/language">Language</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#http://lexvo.org/ontology#Language" title="http://lexvo.org/ontology#Language">Language</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">License</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#http://www.w3.org/ns/odrl/2/Policy" title="http://www.w3.org/ns/odrl/2/Policy">Policy</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/terms/rights">Rights</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted"
+                  title="http://dataid.dbpedia.org/ns/core#SimpleStatement">simple statement</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/spatial" title="http://purl.org/dc/terms/spatial">Spatial Coverage</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.geonames.org/ontology#Feature">feature</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/temporal" title="http://purl.org/dc/terms/temporal">Temporal Coverage</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#http://www.w3.org/2006/time#Interval" title="http://www.w3.org/2006/time#Interval">Intervalo de tiempo</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://rdfs.org/ns/void#subset">subset</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/dcat#distribution">distribution</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://dataid.dbpedia.org/ns/core#Distribution">distribution</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://dataid.dbpedia.org/ns/core#DataId">data id</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://dataid.dbpedia.org/ns/core#Superset" title="http://dataid.dbpedia.org/ns/core#Superset">Superset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://dataid.dbpedia.org/ns/core#openness" title="http://dataid.dbpedia.org/ns/core#openness">openness</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/dcat#Dataset">
+      <h3>Dataset<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/dcat#Dataset</p>
+      <div class="comment">
+         <span class="markdown">A collection of data, published or curated by a single source, and available for access or download in one or more formats</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/TR/vocab-dcat/">http://www.w3.org/TR/vocab-dcat/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/dcmitype/Dataset">dataset</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/dcat#keyword" title="http://www.w3.org/ns/dcat#keyword">keyword</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">theme</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">
+      <h3>Geographic bounding box<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicExtent">geographic extent</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude"
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">límite longitud este</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude"
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">límite latitud norte</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude"
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">límite latitud sur</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dd>
+            <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude"
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">límite longitud oeste</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude"
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">límite latitud norte</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude"
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">límite latitud sur</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude"
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">límite longitud este</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude"
+               title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">límite longitud oeste</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/spar/datacite/Identifier">
+      <h3>identificador<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/spar/datacite/Identifier</p>
+      <div class="comment">
+         <span class="markdown">Un identificador que identifica de forma única a una entidad - tal como una agencia de financiación, una persona y un recurso - que pertenece a un esquema particular, como los especificados por individuos de la clase datacite:IdentifierScheme.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://dataid.dbpedia.org/ns/core#identifier" title="http://dataid.dbpedia.org/ns/core#identifier">identifier</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/2006/time#Interval">
+      <h3>Intervalo de tiempo<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#Interval</p>
+      <div class="comment">
+         <span class="markdown">Entidad temporal con extensión o duración.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://lexvo.org/ontology#Language">
+      <h3>Language<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://lexvo.org/ontology#Language</p>
+      <div class="comment">
+         <span class="markdown">Language in which the dataset is expressed.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/odrl/2/Policy">
+      <h3>Policy<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/odrl/2/Policy</p>
+      <div class="comment">
+         <span class="markdown">A non-empty group of Permissions and/or Prohibitions.</span>
+      </div>
+   </div>
+   <div class="entity" id="Resource">
+      <h3>Resource<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#Resource</p>
+      <div class="comment">
+         <span class="markdown">The class of documents, datasets, files, etc. or other type of resources related to research results.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dataid.dbpedia.org/ns/core#Superset">
+      <h3>Superset<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dataid.dbpedia.org/ns/core#Superset</p>
+      <div class="comment">
+         <span class="markdown">This dedicated version of a dataid:Dataset has exacly one purpose: to point out all its Sub-Datsets with void:subset. 
+    A dataid:Superset has no data itself and is therefore prohibited to point out Distributions with dcat:distribution. 
+    It can be used in a dataset hierarchy (e.g. as a root dataset), or as a container for other datasets.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://dataid.dbpedia.org/ns/core#">http://dataid.dbpedia.org/ns/core#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/dcat#distribution">distribution</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">max</span> 0</dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/accessRights" title="http://purl.org/dc/terms/accessRights">
+            <span>Access Rights</span>
+         </a>
+      </li>
+      <li>
+         <a href="#cites" title="http://data.inia.es/def/core#cites">cites</a>
+      </li>
+      <li>
+         <a href="#http://rs.tdwg.org/dwc/terms/class" title="http://rs.tdwg.org/dwc/terms/class">class</a>
+      </li>
+      <li>
+         <a href="#compiles" title="http://data.inia.es/def/core#compiles">compiles</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/conformsTo" title="http://purl.org/dc/terms/conformsTo">
+            <span>Conforms To</span>
+         </a>
+      </li>
+      <li>
+         <a href="#contactPerson" title="http://data.inia.es/def/core#contactPerson">contact person</a>
+      </li>
+      <li>
+         <a href="#continues" title="http://data.inia.es/def/core#continues">continues</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
+            <span>Creator</span>
+         </a>
+      </li>
+      <li>
+         <a href="#dataCollector" title="http://data.inia.es/def/core#dataCollector">data collector</a>
+      </li>
+      <li>
+         <a href="#dataCurator" title="http://data.inia.es/def/core#dataCurator">data curator</a>
+      </li>
+      <li>
+         <a href="#dataManager" title="http://data.inia.es/def/core#dataManager">data manager</a>
+      </li>
+      <li>
+         <a href="#developedWithinProject"
+            title="http://data.inia.es/def/core#developedWithinProject">developed within project</a>
+      </li>
+      <li>
+         <a href="#distributor" title="http://data.inia.es/def/core#distributor">distributor</a>
+      </li>
+      <li>
+         <a href="#documents" title="http://data.inia.es/def/core#documents">documents</a>
+      </li>
+      <li>
+         <a href="#editor" title="http://data.inia.es/def/core#editor">editor</a>
+      </li>
+      <li>
+         <a href="#http://rs.tdwg.org/dwc/terms/family" title="http://rs.tdwg.org/dwc/terms/family">family</a>
+      </li>
+      <li>
+         <a href="#fundedBy" title="http://data.inia.es/def/core#fundedBy">funded by</a>
+      </li>
+      <li>
+         <a href="#http://rs.tdwg.org/dwc/terms/genus" title="http://rs.tdwg.org/dwc/terms/genus">genus</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/hasFormat" title="http://purl.org/dc/terms/hasFormat">
+            <span>Has Format</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasMetadata" title="http://data.inia.es/def/core#hasMetadata">has metadata</a>
+      </li>
+      <li>
+         <a href="#hasPart" title="http://data.inia.es/def/core#hasPart">has part</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/hasPart" title="http://purl.org/dc/terms/hasPart">
+            <span>Has Part</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">
+            <span>Has Version</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hostingInstitution" title="http://data.inia.es/def/core#hostingInstitution">hosting institution</a>
+      </li>
+      <li>
+         <a href="#http://dataid.dbpedia.org/ns/core#identifier" title="http://dataid.dbpedia.org/ns/core#identifier">identifier</a>
+      </li>
+      <li>
+         <a href="#isCitedBy" title="http://data.inia.es/def/core#isCitedBy">is cited by</a>
+      </li>
+      <li>
+         <a href="#isCompiledBy" title="http://data.inia.es/def/core#isCompiledBy">is compiled by</a>
+      </li>
+      <li>
+         <a href="#isContinuedBy" title="http://data.inia.es/def/core#isContinuedBy">is continued by</a>
+      </li>
+      <li>
+         <a href="#isDerivedFrom" title="http://data.inia.es/def/core#isDerivedFrom">is derived from</a>
+      </li>
+      <li>
+         <a href="#isDocumentedBy" title="http://data.inia.es/def/core#isDocumentedBy">is documented by</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/isFormatOf" title="http://purl.org/dc/terms/isFormatOf">
+            <span>Is Format Of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isMetadataFor" title="http://data.inia.es/def/core#isMetadataFor">is metadata for</a>
+      </li>
+      <li>
+         <a href="#isNewVersionOf" title="http://data.inia.es/def/core#isNewVersionOf">is new version of</a>
+      </li>
+      <li>
+         <a href="#isOriginalFormOf" title="http://data.inia.es/def/core#isOriginalFormOf">is original form of</a>
+      </li>
+      <li>
+         <a href="#isPartOf" title="http://data.inia.es/def/core#isPartOf">is part of</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/isPartOf" title="http://purl.org/dc/terms/isPartOf">
+            <span>Is Part Of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isPreviousVersionOf"
+            title="http://data.inia.es/def/core#isPreviousVersionOf">is previous version of</a>
+      </li>
+      <li>
+         <a href="#isReferencedBy" title="http://data.inia.es/def/core#isReferencedBy">is referenced by</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/isReferencedBy" title="http://purl.org/dc/terms/isReferencedBy">
+            <span>Is Referenced By</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/isReplacedBy" title="http://purl.org/dc/terms/isReplacedBy">
+            <span>Is Replaced By</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/isRequiredBy" title="http://purl.org/dc/terms/isRequiredBy">
+            <span>Is Required By</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isReviewedBy" title="http://data.inia.es/def/core#isReviewedBy">is reviewed by</a>
+      </li>
+      <li>
+         <a href="#isSourceOf" title="http://data.inia.es/def/core#isSourceOf">is source of</a>
+      </li>
+      <li>
+         <a href="#isSupplementTo" title="http://data.inia.es/def/core#isSupplementTo">is supplement to</a>
+      </li>
+      <li>
+         <a href="#isSupplementedBy" title="http://data.inia.es/def/core#isSupplementedBy">is supplemented by</a>
+      </li>
+      <li>
+         <a href="#isVariantFormOf" title="http://data.inia.es/def/core#isVariantFormOf">is variant form of</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/isVersionOf" title="http://purl.org/dc/terms/isVersionOf">
+            <span>Is Version Of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isIdenticalTo" title="http://data.inia.es/def/core#isIdenticalTo">isIdenticalTo</a>
+      </li>
+      <li>
+         <a href="#http://rs.tdwg.org/dwc/terms/kingdom" title="http://rs.tdwg.org/dwc/terms/kingdom">kingdom</a>
+      </li>
+      <li>
+         <a href="#http://dataid.dbpedia.org/ns/core#latestVersion" title="http://dataid.dbpedia.org/ns/core#latestVersion">latest version</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+            <span>License</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://dataid.dbpedia.org/ns/core#nextVersion" title="http://dataid.dbpedia.org/ns/core#nextVersion">next version</a>
+      </li>
+      <li>
+         <a href="#http://dataid.dbpedia.org/ns/core#openness" title="http://dataid.dbpedia.org/ns/core#openness">openness</a>
+      </li>
+      <li>
+         <a href="#http://rs.tdwg.org/dwc/terms/order" title="http://rs.tdwg.org/dwc/terms/order">order</a>
+      </li>
+      <li>
+         <a href="#http://rs.tdwg.org/dwc/terms/phylum" title="http://rs.tdwg.org/dwc/terms/phylum">phylum</a>
+      </li>
+      <li>
+         <a href="#producer" title="http://data.inia.es/def/core#producer">producer</a>
+      </li>
+      <li>
+         <a href="#projectLeader" title="http://data.inia.es/def/core#projectLeader">project leader</a>
+      </li>
+      <li>
+         <a href="#projectManager" title="http://data.inia.es/def/core#projectManager">project manager</a>
+      </li>
+      <li>
+         <a href="#references" title="http://data.inia.es/def/core#references">references</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/references" title="http://purl.org/dc/terms/references">
+            <span>References</span>
+         </a>
+      </li>
+      <li>
+         <a href="#registrationAgency" title="http://data.inia.es/def/core#registrationAgency">registration agency</a>
+      </li>
+      <li>
+         <a href="#registrationAuthority"
+            title="http://data.inia.es/def/core#registrationAuthority">registration authority</a>
+      </li>
+      <li>
+         <a href="#relatedPerson" title="http://data.inia.es/def/core#relatedPerson">related person</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/replaces" title="http://purl.org/dc/terms/replaces">
+            <span>Replaces</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/requires" title="http://purl.org/dc/terms/requires">
+            <span>Requires</span>
+         </a>
+      </li>
+      <li>
+         <a href="#researchGroup" title="http://data.inia.es/def/core#researchGroup">research group</a>
+      </li>
+      <li>
+         <a href="#researcher" title="http://data.inia.es/def/core#researcher">researcher</a>
+      </li>
+      <li>
+         <a href="#reviews" title="http://data.inia.es/def/core#reviews">reviews</a>
+      </li>
+      <li>
+         <a href="#rightsHolder" title="http://data.inia.es/def/core#rightsHolder">rights holder</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/rightsHolder" title="http://purl.org/dc/terms/rightsHolder">
+            <span>Rights Holder</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source">
+            <span>Source</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/spatial" title="http://purl.org/dc/terms/spatial">
+            <span>Spatial Coverage</span>
+         </a>
+      </li>
+      <li>
+         <a href="#specie" title="http://data.inia.es/def/core#specie">specie</a>
+      </li>
+      <li>
+         <a href="#sponsor" title="http://data.inia.es/def/core#sponsor">sponsor</a>
+      </li>
+      <li>
+         <a href="#supervisor" title="http://data.inia.es/def/core#supervisor">supervisor</a>
+      </li>
+      <li>
+         <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">taxonomical scope</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/temporal" title="http://purl.org/dc/terms/temporal">
+            <span>Temporal Coverage</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">theme</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/spar/datacite/hasIdentifier" title="http://purl.org/spar/datacite/hasIdentifier">tiene identificador</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/type" title="http://purl.org/dc/terms/type">
+            <span>Type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://rs.tdwg.org/dwc/terms/vernacularName" title="http://rs.tdwg.org/dwc/terms/vernacularName">vernacular name</a>
+      </li>
+      <li>
+         <a href="#workPackageLeader" title="http://data.inia.es/def/core#workPackageLeader">work package leader</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/accessRights">
+      <h3>Access Rights<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/accessRights</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/rights">Rights</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/accessRights">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="cites">
+      <h3>cites<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#cites</p>
+      <div class="comment">
+         <span class="markdown">indicates that A includes B in a citation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCitedBy" title="http://data.inia.es/def/core#isCitedBy">is cited by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://rs.tdwg.org/dwc/terms/class">
+      <h3>class<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/class</p>
+      <div class="comment">
+         <span class="markdown">Indicates the taxonomical class</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">taxonomical scope</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="compiles">
+      <h3>compiles<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#compiles</p>
+      <div class="comment">
+         <span class="markdown">indicates B is the result of a compile or creation event using A</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCompiledBy" title="http://data.inia.es/def/core#isCompiledBy">is compiled by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/conformsTo">
+      <h3>Conforms To<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/conformsTo</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/conformsTo">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contactPerson">
+      <h3>contact person<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#contactPerson</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="continues">
+      <h3>continues<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#continues</p>
+      <div class="comment">
+         <span class="markdown">indicates A is a continuation of the work B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isContinuedBy" title="http://data.inia.es/def/core#isContinuedBy">is continued by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/creator">
+      <h3>Creator<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/creator">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dataCollector">
+      <h3>data collector<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#dataCollector</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dataCurator">
+      <h3>data curator<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#dataCurator</p>
+      <div class="comment">
+         <span class="markdown">asegurador de calidad de los datos</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dataManager">
+      <h3>data manager<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#dataManager</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="developedWithinProject">
+      <h3>developed within project<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#developedWithinProject</p>
+      <div class="comment">
+         <span class="markdown">proyecto en el cual se ha creado el dataset</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Dataset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://xmlns.com/foaf/0.1/Project">Proyecto</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="distributor">
+      <h3>distributor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#distributor</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="documents">
+      <h3>documents<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#documents</p>
+      <div class="comment">
+         <span class="markdown">indicates A is documentation about B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isDocumentedBy" title="http://data.inia.es/def/core#isDocumentedBy">is documented by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="editor">
+      <h3>editor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#editor</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://rs.tdwg.org/dwc/terms/family">
+      <h3>family<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/family</p>
+      <div class="comment">
+         <span class="markdown">Indicates the taxonomical family</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">taxonomical scope</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="fundedBy">
+      <h3>funded by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#fundedBy</p>
+      <div class="comment">
+         <span class="markdown">relación entre un proyecto y la organización que lo financia</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://xmlns.com/foaf/0.1/Project">Proyecto</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/org#Organization">organization</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://rs.tdwg.org/dwc/terms/genus">
+      <h3>genus<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/genus</p>
+      <div class="comment">
+         <span class="markdown">Indicates the taxonomical genus</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">taxonomical scope</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/hasFormat">
+      <h3>Has Format<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/hasFormat</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/hasFormat">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMetadata">
+      <h3>has metadata<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#hasMetadata</p>
+      <div class="comment">
+         <span class="markdown">indicates resource A has additional metadata B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isMetadataFor" title="http://data.inia.es/def/core#isMetadataFor">is metadata for</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPart">
+      <h3>has part<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#hasPart</p>
+      <div class="comment">
+         <span class="markdown">indicates A includes the part B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPartOf" title="http://data.inia.es/def/core#isPartOf">is part of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/hasPart">
+      <h3>Has Part<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/hasPart</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/hasPart">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRelatedResource">
+      <h3>has related resource<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#hasRelatedResource</p>
+      <div class="comment">
+         <span class="markdown">Relación entre dos recursos relacionados entre sí. Esta relación tiene una serie de sub relaciones específicas alineadas con el esquema de data cite.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#cites" title="http://data.inia.es/def/core#cites">cites</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#compiles" title="http://data.inia.es/def/core#compiles">compiles</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#continues" title="http://data.inia.es/def/core#continues">continues</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#documents" title="http://data.inia.es/def/core#documents">documents</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasMetadata" title="http://data.inia.es/def/core#hasMetadata">has metadata</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasPart" title="http://data.inia.es/def/core#hasPart">has part</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isCitedBy" title="http://data.inia.es/def/core#isCitedBy">is cited by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isCompiledBy" title="http://data.inia.es/def/core#isCompiledBy">is compiled by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isContinuedBy" title="http://data.inia.es/def/core#isContinuedBy">is continued by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isDerivedFrom" title="http://data.inia.es/def/core#isDerivedFrom">is derived from</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isDocumentedBy" title="http://data.inia.es/def/core#isDocumentedBy">is documented by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isMetadataFor" title="http://data.inia.es/def/core#isMetadataFor">is metadata for</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isNewVersionOf" title="http://data.inia.es/def/core#isNewVersionOf">is new version of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isOriginalFormOf" title="http://data.inia.es/def/core#isOriginalFormOf">is original form of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isPartOf" title="http://data.inia.es/def/core#isPartOf">is part of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isPreviousVersionOf"
+                  title="http://data.inia.es/def/core#isPreviousVersionOf">is previous version of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isReferencedBy" title="http://data.inia.es/def/core#isReferencedBy">is referenced by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isReviewedBy" title="http://data.inia.es/def/core#isReviewedBy">is reviewed by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isSourceOf" title="http://data.inia.es/def/core#isSourceOf">is source of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isSupplementTo" title="http://data.inia.es/def/core#isSupplementTo">is supplement to</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isSupplementedBy" title="http://data.inia.es/def/core#isSupplementedBy">is supplemented by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isVariantFormOf" title="http://data.inia.es/def/core#isVariantFormOf">is variant form of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isIdenticalTo" title="http://data.inia.es/def/core#isIdenticalTo">isIdenticalTo</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#references" title="http://data.inia.es/def/core#references">references</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#reviews" title="http://data.inia.es/def/core#reviews">reviews</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Resource" title="http://data.inia.es/def/core#Resource">Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Resource" title="http://data.inia.es/def/core#Resource">Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/hasVersion">
+      <h3>Has Version<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/hasVersion</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/hasVersion">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hostingInstitution">
+      <h3>hosting institution<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#hostingInstitution</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://dataid.dbpedia.org/ns/core#identifier">
+      <h3>identifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dataid.dbpedia.org/ns/core#identifier</p>
+      <div class="comment">
+         <span class="markdown">A unique identifier for an Agent or Entity (for other, non DataID related identifiers).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://dataid.dbpedia.org/ns/core#">http://dataid.dbpedia.org/ns/core#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> inverse functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://purl.org/spar/datacite/hasIdentifier" title="http://purl.org/spar/datacite/hasIdentifier">tiene identificador</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://purl.org/spar/datacite/Identifier" title="http://purl.org/spar/datacite/Identifier">identificador</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCitedBy">
+      <h3>is cited by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isCitedBy</p>
+      <div class="comment">
+         <span class="markdown">indicates that B includes A in a citation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#cites" title="http://data.inia.es/def/core#cites">cites</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCompiledBy">
+      <h3>is compiled by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isCompiledBy</p>
+      <div class="comment">
+         <span class="markdown">indicates B is used to compile or create A</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#compiles" title="http://data.inia.es/def/core#compiles">compiles</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isContinuedBy">
+      <h3>is continued by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isContinuedBy</p>
+      <div class="comment">
+         <span class="markdown">indicates A is continued by the work B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#continues" title="http://data.inia.es/def/core#continues">continues</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isDerivedFrom">
+      <h3>is derived from<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isDerivedFrom</p>
+      <div class="comment">
+         <span class="markdown">indicates B is a source upon which A is based</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isSourceOf" title="http://data.inia.es/def/core#isSourceOf">is source of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isDocumentedBy">
+      <h3>is documented by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isDocumentedBy</p>
+      <div class="comment">
+         <span class="markdown">indicates B is documentation about explaining A</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#documents" title="http://data.inia.es/def/core#documents">documents</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/isFormatOf">
+      <h3>Is Format Of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/isFormatOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/isFormatOf">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isMetadataFor">
+      <h3>is metadata for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isMetadataFor</p>
+      <div class="comment">
+         <span class="markdown">indicates additional metadata A for a resource B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasMetadata" title="http://data.inia.es/def/core#hasMetadata">has metadata</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isNewVersionOf">
+      <h3>is new version of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isNewVersionOf</p>
+      <div class="comment">
+         <span class="markdown">indicates A is a new edition of B, where the new edition has been modified or updated</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dd>
+               <span class="dotted"
+                     title="http://dataid.dbpedia.org/ns/core#previousVersion">previous version</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPreviousVersionOf"
+                  title="http://data.inia.es/def/core#isPreviousVersionOf">is previous version of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isOriginalFormOf">
+      <h3>is original form of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isOriginalFormOf</p>
+      <div class="comment">
+         <span class="markdown">indicates A is the original form of B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isVariantFormOf" title="http://data.inia.es/def/core#isVariantFormOf">is variant form of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPartOf">
+      <h3>is part of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isPartOf</p>
+      <div class="comment">
+         <span class="markdown">indicates A is a portion of B; may be used for elements of a series</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dd>
+               <a href="#http://purl.org/dc/terms/isPartOf" title="http://purl.org/dc/terms/isPartOf">Is Part Of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasPart" title="http://data.inia.es/def/core#hasPart">has part</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/isPartOf">
+      <h3>Is Part Of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/isPartOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#isPartOf" title="http://data.inia.es/def/core#isPartOf">is part of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/isPartOf">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPreviousVersionOf">
+      <h3>is previous version of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isPreviousVersionOf</p>
+      <div class="comment">
+         <span class="markdown">indicates A is a previous edition of B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dd>
+               <a href="#http://dataid.dbpedia.org/ns/core#nextVersion" title="http://dataid.dbpedia.org/ns/core#nextVersion">next version</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isNewVersionOf" title="http://data.inia.es/def/core#isNewVersionOf">is new version of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isReferencedBy">
+      <h3>is referenced by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isReferencedBy</p>
+      <div class="comment">
+         <span class="markdown">indicates A is used as a source of information by B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#references" title="http://data.inia.es/def/core#references">references</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/isReferencedBy">
+      <h3>Is Referenced By<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/isReferencedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/isReferencedBy">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/isReplacedBy">
+      <h3>Is Replaced By<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/isReplacedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/isReplacedBy">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/isRequiredBy">
+      <h3>Is Required By<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/isRequiredBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/isRequiredBy">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isReviewedBy">
+      <h3>is reviewed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isReviewedBy</p>
+      <div class="comment">
+         <span class="markdown">indicates that A is reviewed by B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#reviews" title="http://data.inia.es/def/core#reviews">reviews</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isSourceOf">
+      <h3>is source of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isSourceOf</p>
+      <div class="comment">
+         <span class="markdown">indicates A is a source upon which B is based</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isDerivedFrom" title="http://data.inia.es/def/core#isDerivedFrom">is derived from</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isSupplementTo">
+      <h3>is supplement to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isSupplementTo</p>
+      <div class="comment">
+         <span class="markdown">indicates that A is a supplement to B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isSupplementedBy" title="http://data.inia.es/def/core#isSupplementedBy">is supplemented by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isSupplementedBy">
+      <h3>is supplemented by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isSupplementedBy</p>
+      <div class="comment">
+         <span class="markdown">indicates that B is a supplement to A</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isSupplementTo" title="http://data.inia.es/def/core#isSupplementTo">is supplement to</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isVariantFormOf">
+      <h3>is variant form of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isVariantFormOf</p>
+      <div class="comment">
+         <span class="markdown">indicates A is a variant or different form of B, e.g. calculated or calibrated form or different packaging</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isOriginalFormOf" title="http://data.inia.es/def/core#isOriginalFormOf">is original form of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/isVersionOf">
+      <h3>Is Version Of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/isVersionOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/isVersionOf">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isIdenticalTo">
+      <h3>isIdenticalTo<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#isIdenticalTo</p>
+      <div class="comment">
+         <span class="markdown">This relation is not to be used, owl:sameAs should be used instead. It is created just to keep record of its existance in datacite schema.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unestable</dd>
+      </dl>
+      <dl>
+         <dt>Is deprecated</dt>
+         <dd>true</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://rs.tdwg.org/dwc/terms/kingdom">
+      <h3>kingdom<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/kingdom</p>
+      <div class="comment">
+         <span class="markdown">Indicates the taxonomical kingdom</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">taxonomical scope</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://dataid.dbpedia.org/ns/core#latestVersion">
+      <h3>latest version<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dataid.dbpedia.org/ns/core#latestVersion</p>
+      <div class="comment">
+         <span class="markdown">Latest version of a DataId/Dataset/Distribution.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://dataid.dbpedia.org/ns/core#">http://dataid.dbpedia.org/ns/core#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/license">
+      <h3>License<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/rights">Rights</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/license">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://dataid.dbpedia.org/ns/core#nextVersion">
+      <h3>next version<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dataid.dbpedia.org/ns/core#nextVersion</p>
+      <div class="comment">
+         <span class="markdown">Next version of a DataId/Dataset/Distribution.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://dataid.dbpedia.org/ns/core#">http://dataid.dbpedia.org/ns/core#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#isPreviousVersionOf"
+                  title="http://data.inia.es/def/core#isPreviousVersionOf">is previous version of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://dataid.dbpedia.org/ns/core#previousVersion">previous version</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://dataid.dbpedia.org/ns/core#openness">
+      <h3>openness<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dataid.dbpedia.org/ns/core#openness</p>
+      <div class="comment">
+         <span class="markdown">General description of how data will be shared. For example embargo periods (if any), outlines of technical mechanisms for dissemination or a definition of whether access will be widely open or restricted to specific groups. In case the Dataset cannot be shared, the reasons for this should be mentioned (e.g. ethical, rules of personal data, intellectual property, commercial, privacy-related, security-related).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://dataid.dbpedia.org/ns/dmp#">http://dataid.dbpedia.org/ns/dmp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://dataid.dbpedia.org/ns/core#Dataset" title="http://dataid.dbpedia.org/ns/core#Dataset">Dataset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://dataid.dbpedia.org/ns/core#SimpleStatement">simple statement</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://rs.tdwg.org/dwc/terms/order">
+      <h3>order<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/order</p>
+      <div class="comment">
+         <span class="markdown">Indicates the taxonomical order</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">taxonomical scope</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://rs.tdwg.org/dwc/terms/phylum">
+      <h3>phylum<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/phylum</p>
+      <div class="comment">
+         <span class="markdown">Indicates the taxonomical phylum</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">taxonomical scope</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="producer">
+      <h3>producer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#producer</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="projectLeader">
+      <h3>project leader<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#projectLeader</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="projectManager">
+      <h3>project manager<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#projectManager</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="references">
+      <h3>references<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#references</p>
+      <div class="comment">
+         <span class="markdown">indicates B is used as a source of information for A</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isReferencedBy" title="http://data.inia.es/def/core#isReferencedBy">is referenced by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/references">
+      <h3>References<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/references</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/references">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="registrationAgency">
+      <h3>registration agency<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#registrationAgency</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="registrationAuthority">
+      <h3>registration authority<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#registrationAuthority</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedPerson">
+      <h3>related person<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#relatedPerson</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/replaces">
+      <h3>Replaces<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/replaces</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/replaces">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/requires">
+      <h3>Requires<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/requires</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/requires">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="researchGroup">
+      <h3>research group<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#researchGroup</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="researcher">
+      <h3>researcher<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#researcher</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="reviews">
+      <h3>reviews<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#reviews</p>
+      <div class="comment">
+         <span class="markdown">indicates that A is a review of B</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRelatedResource" title="http://data.inia.es/def/core#hasRelatedResource">has related resource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isReviewedBy" title="http://data.inia.es/def/core#isReviewedBy">is reviewed by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="rightsHolder">
+      <h3>rights holder<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#rightsHolder</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dd>
+               <a href="#http://purl.org/dc/terms/rightsHolder" title="http://purl.org/dc/terms/rightsHolder">Rights Holder</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/rightsHolder">
+      <h3>Rights Holder<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/rightsHolder</p>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#rightsHolder" title="http://data.inia.es/def/core#rightsHolder">rights holder</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/Agent">Agent</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/source">
+      <h3>Source<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/source</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/relation">Relation</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/source">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/spatial">
+      <h3>Spatial Coverage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/spatial</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/coverage">Coverage</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/spatial">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="specie">
+      <h3>specie<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#specie</p>
+      <div class="comment">
+         <span class="markdown">Indicates the taxonomical specie</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#taxonomicalScope" title="http://data.inia.es/def/core#taxonomicalScope">taxonomical scope</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sponsor">
+      <h3>sponsor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#sponsor</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="supervisor">
+      <h3>supervisor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#supervisor</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="taxonomicalScope">
+      <h3>taxonomical scope<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#taxonomicalScope</p>
+      <div class="comment">
+         <span class="markdown">Relación genera para indicar el ámbito taxonómico que puede ser especializada por una o mas de sus subpropiedades.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://rs.tdwg.org/dwc/terms/class" title="http://rs.tdwg.org/dwc/terms/class">class</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://rs.tdwg.org/dwc/terms/family" title="http://rs.tdwg.org/dwc/terms/family">family</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://rs.tdwg.org/dwc/terms/genus" title="http://rs.tdwg.org/dwc/terms/genus">genus</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://rs.tdwg.org/dwc/terms/kingdom" title="http://rs.tdwg.org/dwc/terms/kingdom">kingdom</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://rs.tdwg.org/dwc/terms/order" title="http://rs.tdwg.org/dwc/terms/order">order</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://rs.tdwg.org/dwc/terms/phylum" title="http://rs.tdwg.org/dwc/terms/phylum">phylum</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#specie" title="http://data.inia.es/def/core#specie">specie</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/temporal">
+      <h3>Temporal Coverage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/temporal</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/coverage">Coverage</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/temporal">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/dcat#theme">
+      <h3>theme<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/dcat#theme</p>
+      <div class="comment">
+         <span class="markdown">The main category of the dataset. A dataset can have multiple themes.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/dcat#Dataset" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">Concepto</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/spar/datacite/hasIdentifier">
+      <h3>tiene identificador<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/spar/datacite/hasIdentifier</p>
+      <div class="comment">
+         <span class="markdown">Relación utilizada entre los recursos o las personas y sus identificadores. Los identificadores se representan mediante instancias de la clase datacite:Identifier pudiendo especializarse en alguna de sus subclases.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://dataid.dbpedia.org/ns/core#identifier" title="http://dataid.dbpedia.org/ns/core#identifier">identifier</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/type">
+      <h3>Type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/type</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/type">type</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/type">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://rs.tdwg.org/dwc/terms/vernacularName">
+      <h3>vernacular name<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://rs.tdwg.org/dwc/terms/vernacularName</p>
+      <div class="comment">
+         <span class="markdown">Verancular name for example melon, carob, pine, Iberian pig.</span>
+      </div>
+      <dl>
+         <dt>Previous version:</dt>
+         <dd>Nombre común por ejemplo Melón, algarroba, Pino Carrasco, Cerdo Ibérico.</dd>
+      </dl>
+   </div>
+   <div class="entity" id="workPackageLeader">
+      <h3>work package leader<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#workPackageLeader</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/contributor">Contributor</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
+            <span>Abstract</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/alternative" title="http://purl.org/dc/terms/alternative">
+            <span>Alternative Title</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation">
+            <span>Bibliographic Citation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/dateAccepted" title="http://purl.org/dc/terms/dateAccepted">
+            <span>Date Accepted</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/available" title="http://purl.org/dc/terms/available">
+            <span>Date Available</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/dateCopyrighted" title="http://purl.org/dc/terms/dateCopyrighted">
+            <span>Date Copyrighted</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
+            <span>Date Created</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">
+            <span>Date Issued</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">
+            <span>Date Modified</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/dateSubmitted" title="http://purl.org/dc/terms/dateSubmitted">
+            <span>Date Submitted</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/valid" title="http://purl.org/dc/terms/valid">
+            <span>Date Valid</span>
+         </a>
+      </li>
+      <li>
+         <a href="#elementsNumber" title="http://data.inia.es/def/core#elementsNumber">elements number</a>
+      </li>
+      <li>
+         <a href="#embargoDate" title="http://data.inia.es/def/core#embargoDate">embargo date</a>
+      </li>
+      <li>
+         <a href="#equipment" title="http://data.inia.es/def/core#equipment">equipment</a>
+      </li>
+      <li>
+         <a href="#finalDate" title="http://data.inia.es/def/core#finalDate">final date</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/dcat#keyword" title="http://www.w3.org/ns/dcat#keyword">keyword</a>
+      </li>
+      <li>
+         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude"
+            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">límite latitud norte</a>
+      </li>
+      <li>
+         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude"
+            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">límite latitud sur</a>
+      </li>
+      <li>
+         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude"
+            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">límite longitud este</a>
+      </li>
+      <li>
+         <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude"
+            title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">límite longitud oeste</a>
+      </li>
+      <li>
+         <a href="#projectCode" title="http://data.inia.es/def/core#projectCode">project code</a>
+      </li>
+      <li>
+         <a href="#software" title="http://data.inia.es/def/core#software">software</a>
+      </li>
+      <li>
+         <a href="#spatialScope" title="http://data.inia.es/def/core#spatialScope">spatial scope</a>
+      </li>
+      <li>
+         <a href="#startingDate" title="http://data.inia.es/def/core#startingDate">starting date</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/tableOfContents" title="http://purl.org/dc/terms/tableOfContents">
+            <span>Table Of Contents</span>
+         </a>
+      </li>
+      <li>
+         <a href="#temporalScope" title="http://data.inia.es/def/core#temporalScope">temporal scope</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/abstract">
+      <h3>Abstract<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/description">Description</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/abstract">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/alternative">
+      <h3>Alternative Title<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/alternative</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/title">Title</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/alternative">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/bibliographicCitation">
+      <h3>Bibliographic Citation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/bibliographicCitation</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/identifier">Identifier</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/bibliographicCitation">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/dateAccepted">
+      <h3>Date Accepted<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/dateAccepted</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/date">Date</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/dateAccepted">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/available">
+      <h3>Date Available<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/available</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/date">Date</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/available">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/dateCopyrighted">
+      <h3>Date Copyrighted<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/dateCopyrighted</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/date">Date</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/dateCopyrighted">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/created">
+      <h3>Date Created<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/date">Date</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/created">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/issued">
+      <h3>Date Issued<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/issued</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/date">Date</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/issued">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/modified">
+      <h3>Date Modified<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/date">Date</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/modified">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/dateSubmitted">
+      <h3>Date Submitted<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/dateSubmitted</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/date">Date</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/dateSubmitted">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/valid">
+      <h3>Date Valid<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/valid</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/date">Date</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/valid">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="elementsNumber">
+      <h3>elements number<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#elementsNumber</p>
+      <div class="comment">
+         <span class="markdown">Number of instances of the collection</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Dataset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="embargoDate">
+      <h3>embargo date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#embargoDate</p>
+      <div class="comment">
+         <span class="markdown">Date in which the embargo is fulfilled and the resource becomes free for use.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Dataset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="equipment">
+      <h3>equipment<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#equipment</p>
+      <div class="comment">
+         <span class="markdown">In case the measuring instrument used is relevant, brand, model, precision etc.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Dataset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="finalDate">
+      <h3>final date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#finalDate</p>
+      <div class="comment">
+         <span class="markdown">Final date, related to the scope of the Dataset. This attribute is often used in combination with inia:startingDate as an alternative to dcterms:temporal.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/dcat#keyword">
+      <h3>keyword<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/dcat#keyword</p>
+      <div class="comment">
+         <span class="markdown">A keyword or tag describing the dataset.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/dcat#Dataset" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude">
+      <h3>límite latitud norte<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#northBoundLatitude</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
+                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude">
+      <h3>límite latitud sur<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#southBoundLatitude</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
+                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude">
+      <h3>límite longitud este<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#eastBoundLongitude</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
+                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude">
+      <h3>límite longitud oeste<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#westBoundLongitude</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent">http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox"
+                  title="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#GeographicBoundingBox">Geographic bounding box</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="projectCode">
+      <h3>project code<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#projectCode</p>
+      <div class="comment">
+         <span class="markdown">Code of the project in which context a dataset has been developed</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://xmlns.com/foaf/0.1/Project">Proyecto</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="software">
+      <h3>software<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#software</p>
+      <div class="comment">
+         <span class="markdown">It refers to the software used to prepare the dataset or to visualize or exploit it, name, version, brand.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Dataset" title="http://data.inia.es/def/core#Dataset">Dataset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="spatialScope">
+      <h3>spatial scope<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#spatialScope</p>
+      <div class="comment">
+         <span class="markdown">Textual description of the geographical area related to the content or sampling of the Dataset, this metadata is especially indicated in the research areas where it is usual to express certain areas in a textual manner, the Iberian Peninsula, the upper Júcar basin, the Cazorla mountain range, Madrid.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="startingDate">
+      <h3>starting date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#startingDate</p>
+      <div class="comment">
+         <span class="markdown">Initial date, related to the scope of the Dataset example: initial date of the sampling of the material included in the Dataset 06/25/1938. This attribute is usually used in combination with inia:finalDate as an alternative to dcterms:temporal.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/tableOfContents">
+      <h3>Table Of Contents<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/tableOfContents</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/description">Description</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/tableOfContents">annotation property</a>, named individual</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="temporalScope">
+      <h3>temporal scope<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.inia.es/def/core#temporalScope</p>
+      <div class="comment">
+         <span class="markdown">Textual description time period related to the content or sampling of the Dataset, this metadata is especially indicated in research fields where it is usual to express the periods in textual form by examples: XVI century, Cretaceous, Middle Ages.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">
+            <span>Agent</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/DCMIType" title="http://purl.org/dc/terms/DCMIType">DCMI Type Vocabulary</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/DDC" title="http://purl.org/dc/terms/DDC">DDC</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/IMT" title="http://purl.org/dc/terms/IMT">IMT</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/LCC" title="http://purl.org/dc/terms/LCC">LCC</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/LCSH" title="http://purl.org/dc/terms/LCSH">LCSH</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/MESH" title="http://purl.org/dc/terms/MESH">MeSH</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/NLM" title="http://purl.org/dc/terms/NLM">NLM</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/" title="http://purl.org/dc/terms/">
+            <span>terms:</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/TGN" title="http://purl.org/dc/terms/TGN">TGN</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/UDC" title="http://purl.org/dc/terms/UDC">UDC</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/Agent">
+      <h3>Agent<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/Agent</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/AgentClass" title="http://purl.org/dc/terms/AgentClass">Agent Class</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>class</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/DCMIType">
+      <h3>DCMI Type Vocabulary<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/DCMIType</p>
+      <div class="comment">
+         <span class="markdown">The set of classes specified by the DCMI Type Vocabulary, used to categorize the nature or genre of the resource.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/dcam/VocabularyEncodingScheme">vocabulary encoding scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">Has Version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="dotted"
+                  title="http://dublincore.org/usage/terms/history/#DCMIType-005">d c m i type 005</span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2000-07-11"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2012-06-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/DDC">
+      <h3>DDC<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/DDC</p>
+      <div class="comment">
+         <span class="markdown">The set of conceptual resources specified by the Dewey Decimal Classification.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/dcam/VocabularyEncodingScheme">vocabulary encoding scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">Has Version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="dotted"
+                  title="http://dublincore.org/usage/terms/history/#DDC-003">d d c 003</span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2000-07-11"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/IMT">
+      <h3>IMT<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/IMT</p>
+      <div class="comment">
+         <span class="markdown">The set of media types specified by the Internet Assigned Numbers Authority.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/dcam/VocabularyEncodingScheme">vocabulary encoding scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">Has Version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="dotted"
+                  title="http://dublincore.org/usage/terms/history/#IMT-004">i m t 004</span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2000-07-11"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/LCC">
+      <h3>LCC<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/LCC</p>
+      <div class="comment">
+         <span class="markdown">The set of conceptual resources specified by the Library of Congress Classification.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/dcam/VocabularyEncodingScheme">vocabulary encoding scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">Has Version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="dotted"
+                  title="http://dublincore.org/usage/terms/history/#LCC-003">l c c 003</span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2000-07-11"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/LCSH">
+      <h3>LCSH<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/LCSH</p>
+      <div class="comment">
+         <span class="markdown">The set of labeled concepts specified by the Library of Congress Subject Headings.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/dcam/VocabularyEncodingScheme">vocabulary encoding scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">Has Version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="dotted"
+                  title="http://dublincore.org/usage/terms/history/#LCSH-003">l c s h 003</span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2000-07-11"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/MESH">
+      <h3>MeSH<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/MESH</p>
+      <div class="comment">
+         <span class="markdown">The set of labeled concepts specified by the Medical Subject Headings.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/dcam/VocabularyEncodingScheme">vocabulary encoding scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">Has Version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="dotted"
+                  title="http://dublincore.org/usage/terms/history/#MESH-003">m e s h 003</span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2000-07-11"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/NLM">
+      <h3>NLM<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/NLM</p>
+      <div class="comment">
+         <span class="markdown">The set of conceptual resources specified by the National Library of Medicine Classification.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/dcam/VocabularyEncodingScheme">vocabulary encoding scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">Has Version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="dotted"
+                  title="http://dublincore.org/usage/terms/history/#NLM-002">n l m 002</span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2005-06-13"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/">
+      <h3>terms:<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2012-06-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/terms/publisher">Publisher</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="dotted" title="http://purl.org/dc/aboutdcmi#DCMI">d c m i</span>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/terms/title">Title</span>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"DCMI Metadata Terms - other"@en</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/TGN">
+      <h3>TGN<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/TGN</p>
+      <div class="comment">
+         <span class="markdown">The set of places specified by the Getty Thesaurus of Geographic Names.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/dcam/VocabularyEncodingScheme">vocabulary encoding scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">Has Version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="dotted"
+                  title="http://dublincore.org/usage/terms/history/#TGN-003">t g n 003</span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2000-07-11"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/UDC">
+      <h3>UDC<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/UDC</p>
+      <div class="comment">
+         <span class="markdown">The set of conceptual resources specified by the Universal Decimal Classification.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/dc/dcam/VocabularyEncodingScheme">vocabulary encoding scheme</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">Has Version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="dotted"
+                  title="http://dublincore.org/usage/terms/history/#UDC-003">u d c 003</span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2000-07-11"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+         <dd>
+            <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">Date Modified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2008-01-14"^^<span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

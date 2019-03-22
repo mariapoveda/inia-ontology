@@ -1,0 +1,278 @@
+@prefix : <http://datos.inia.es/datasets/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix inia: <https://w3id.org/def/inia#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://datos.inia.es/datasets/resource/> a owl:Ontology ;
+	owl:imports <http://inia.linkeddata.es/def/datasets#> ;
+	rdfs:comment "ejemplo 1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+
+<http://purl.org/dc/terms/contributor> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/creator
+
+<http://purl.org/dc/terms/creator> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/description
+
+<http://purl.org/dc/terms/description> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/issued
+
+<http://purl.org/dc/terms/issued> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/language
+
+<http://purl.org/dc/terms/language> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/publisher
+
+<http://purl.org/dc/terms/publisher> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/title
+
+<http://purl.org/dc/terms/title> a owl:AnnotationProperty .
+# 
+# http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue
+
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+
+<http://www.w3.org/2004/02/skos/core#prefLabel> a owl:AnnotationProperty .
+# 
+# https://w3id.org/def/inia#contactPerson
+
+inia:contactPerson a owl:AnnotationProperty .
+# 
+# https://w3id.org/def/inia#developedWithinProject
+
+inia:developedWithinProject a owl:AnnotationProperty .
+# 
+# https://w3id.org/def/inia#elementsNumber
+
+inia:elementsNumber a owl:AnnotationProperty .
+# 
+# https://w3id.org/def/inia#finalDate
+
+inia:finalDate a owl:AnnotationProperty .
+# 
+# https://w3id.org/def/inia#fundedBy
+
+inia:fundedBy a owl:AnnotationProperty .
+# 
+# https://w3id.org/def/inia#startingDate
+
+inia:startingDate a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+
+xsd:date a rdfs:Datatype .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/spar/datacite/hasIdentifier
+
+<http://purl.org/spar/datacite/hasIdentifier> a owl:ObjectProperty .
+# 
+# http://purl.org/spar/datacite/usesIdentifierScheme
+
+<http://purl.org/spar/datacite/usesIdentifierScheme> a owl:ObjectProperty .
+# 
+# http://www.w3.org/ns/dcat#theme
+
+<http://www.w3.org/ns/dcat#theme> a owl:ObjectProperty .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+
+<http://xmlns.com/foaf/0.1/homepage> a owl:ObjectProperty .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+
+<http://xmlns.com/foaf/0.1/mbox> a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/name
+
+<http://xmlns.com/foaf/0.1/name> a owl:DatatypeProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://lexvo.org/ontology#Language
+
+<http://lexvo.org/ontology#Language> a owl:Class .
+# 
+# http://purl.org/spar/datacite/PersonalIdentifier
+
+<http://purl.org/spar/datacite/PersonalIdentifier> a owl:Class .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+
+<http://www.w3.org/2004/02/skos/core#Concept> a owl:Class .
+# 
+# http://www.w3.org/ns/org#Organization
+
+<http://www.w3.org/ns/org#Organization> a owl:Class .
+# 
+# http://xmlns.com/foaf/0.1/Document
+
+<http://xmlns.com/foaf/0.1/Document> a owl:Class .
+# 
+# http://xmlns.com/foaf/0.1/Person
+
+<http://xmlns.com/foaf/0.1/Person> a owl:Class .
+# 
+# http://xmlns.com/foaf/0.1/Project
+
+<http://xmlns.com/foaf/0.1/Project> a owl:Class .
+# 
+# https://w3id.org/def/inia#Dataset
+
+inia:Dataset a owl:Class .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.inia.es
+
+<http://www.inia.es> a owl:NamedIndividual , <http://xmlns.com/foaf/0.1/Document> .
+# 
+# http://aims.fao.org/aos/agrovoc/c_3250
+
+<http://aims.fao.org/aos/agrovoc/c_3250> a owl:NamedIndividual , <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Conservación del germoplasma"@es .
+# 
+# http://datos.inia.es/datasets/resource/lens-colecciones-crf
+
+:lens-colecciones-crf a owl:NamedIndividual , inia:Dataset ;
+	<http://www.w3.org/ns/dcat#theme> <http://aims.fao.org/aos/agrovoc/c_3250> ;
+	<http://purl.org/dc/terms/contributor> :person3 ;
+	<http://purl.org/dc/terms/creator> :person1 , :person2 ;
+	<http://purl.org/dc/terms/description> "Datos de pasaporte de las colecciones de lens del CRF (Centro de Recursos Fitogenéticos), dentro de esta colección se COMPLETAR"@es ;
+	<http://purl.org/dc/terms/issued> "2017-07-26"^^xsd:date ;
+	<http://purl.org/dc/terms/language> <http://lexvo.org/id/iso639-3/spa> ;
+	<http://purl.org/dc/terms/publisher> :organizationINIA ;
+	<http://purl.org/dc/terms/title> "Lens Colecciones CRF"@es , "Lens Collections CRF"@en ;
+	inia:contactPerson :person1 ;
+	inia:developedWithinProject :project15 ;
+	inia:elementsNumber "602"^^xsd:integer ;
+	inia:finalDate "2016-01-01"^^xsd:date ;
+	inia:startingDate "1942-01-01"^^xsd:date .
+# 
+# http://datos.inia.es/datasets/resource/organizationINIA
+
+:organizationINIA a owl:NamedIndividual , <http://www.w3.org/ns/org#Organization> ;
+	<http://xmlns.com/foaf/0.1/homepage> <http://www.inia.es> .
+# 
+# http://datos.inia.es/datasets/resource/person1
+
+:person1 a owl:NamedIndividual , <http://xmlns.com/foaf/0.1/Person> ;
+	<http://purl.org/spar/datacite/hasIdentifier> :person1Identifier1 ;
+	<http://xmlns.com/foaf/0.1/mbox> <mailto:lucia.rosa@inia.es> ;
+	<http://xmlns.com/foaf/0.1/name> "Lucía de la Rosa"^^rdfs:Literal .
+# 
+# http://datos.inia.es/datasets/resource/person1Identifier1
+
+:person1Identifier1 a owl:NamedIndividual , <http://purl.org/spar/datacite/PersonalIdentifier> ;
+	<http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/spar/datacite/orcid> .
+
+<http://purl.org/spar/datacite/orcid> a owl:NamedIndividual .
+
+:person1Identifier1 <http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> "http://orcid.org/0000-0002-6787-0866"^^rdfs:Literal .
+# 
+# http://datos.inia.es/datasets/resource/person2
+
+:person2 a owl:NamedIndividual , <http://xmlns.com/foaf/0.1/Person> ;
+	<http://xmlns.com/foaf/0.1/mbox> <mailto:rosamaria.garcia@inia.es> ;
+	<http://xmlns.com/foaf/0.1/name> "Rosa María García Sánchez"^^rdfs:Literal .
+# 
+# http://datos.inia.es/datasets/resource/person3
+
+:person3 a owl:NamedIndividual , <http://xmlns.com/foaf/0.1/Person> ;
+	<http://purl.org/spar/datacite/hasIdentifier> :person3Identifier1 ;
+	<http://xmlns.com/foaf/0.1/mbox> <mailto:jorge.garcia@inia.es> ;
+	<http://xmlns.com/foaf/0.1/name> "Jorge García Pérez"^^rdfs:Literal .
+# 
+# http://datos.inia.es/datasets/resource/person3Identifier1
+
+:person3Identifier1 a owl:NamedIndividual , <http://purl.org/spar/datacite/PersonalIdentifier> ;
+	<http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/spar/datacite/orcid> ;
+	<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> "http://orcid.org/0000-0002-6787-0867"^^rdfs:Literal .
+# 
+# http://datos.inia.es/datasets/resource/project15
+
+:project15 a owl:NamedIndividual , <http://xmlns.com/foaf/0.1/Project> ;
+	<http://xmlns.com/foaf/0.1/name> "Programa de Conservación y Utilización de los Recursos Fitogenético"^^rdfs:Literal ;
+	inia:fundedBy :organizationINIA .
+# 
+# http://lexvo.org/id/iso639-3/spa
+
+<http://lexvo.org/id/iso639-3/spa> a owl:NamedIndividual , <http://lexvo.org/ontology#Language> .
+# 
+# http://purl.org/spar/datacite/orcid
+# 
+# mailto:jorge.garcia@inia.es
+
+<mailto:jorge.garcia@inia.es> a owl:NamedIndividual ;
+	rdfs:label "jorge.garcia@inia.es"@en .
+# 
+# mailto:lucia.rosa@inia.es
+
+<mailto:lucia.rosa@inia.es> a owl:NamedIndividual .
+# 
+# mailto:rosamaria.garcia@inia.es
+
+<mailto:rosamaria.garcia@inia.es> a owl:NamedIndividual ;
+	rdfs:label "mailto:rosamaria.garcia@inia.es"@en .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
