@@ -1,0 +1,235 @@
+<http://www.semanticweb.org/mpoveda/ontologies/2017/6/untitled-ontology-410> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/usageNote
+<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://dataid.dbpedia.org/ns/core#identifier
+<http://dataid.dbpedia.org/ns/core#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dataid.dbpedia.org/ns/core#identifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/datacite/hasIdentifier> .
+<http://dataid.dbpedia.org/ns/core#identifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> .
+<http://dataid.dbpedia.org/ns/core#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://dataid.dbpedia.org/ns/core#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/datacite/Identifier> .
+<http://dataid.dbpedia.org/ns/core#identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for an Agent or Entity (for other, non DataID related identifiers)."@en .
+<http://dataid.dbpedia.org/ns/core#identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dataid.dbpedia.org/ns/core#> .
+<http://dataid.dbpedia.org/ns/core#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+# 
+# http://dataid.dbpedia.org/ns/core#latestVersion
+<http://dataid.dbpedia.org/ns/core#latestVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dataid.dbpedia.org/ns/core#latestVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
+<http://dataid.dbpedia.org/ns/core#latestVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
+<http://dataid.dbpedia.org/ns/core#latestVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Latest version of a DataId/Dataset/Distribution."@en .
+<http://dataid.dbpedia.org/ns/core#latestVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dataid.dbpedia.org/ns/core#> .
+<http://dataid.dbpedia.org/ns/core#latestVersion> <http://www.w3.org/2000/01/rdf-schema#label> "latest version"@en .
+# 
+# http://dataid.dbpedia.org/ns/core#nextVersion
+<http://dataid.dbpedia.org/ns/core#nextVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dataid.dbpedia.org/ns/core#nextVersion> <http://www.w3.org/2002/07/owl#inverseOf> <http://dataid.dbpedia.org/ns/core#previousVersion> .
+<http://dataid.dbpedia.org/ns/core#nextVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Next version of a DataId/Dataset/Distribution."@en .
+<http://dataid.dbpedia.org/ns/core#nextVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dataid.dbpedia.org/ns/core#> .
+<http://dataid.dbpedia.org/ns/core#nextVersion> <http://www.w3.org/2000/01/rdf-schema#label> "next version"@en .
+# 
+# http://dataid.dbpedia.org/ns/core#openness
+<http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dataid.dbpedia.org/ns/core#Dataset> .
+<http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#range> <http://dataid.dbpedia.org/ns/core#SimpleStatement> .
+<http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#comment> "General description of how data will be shared. For example embargo periods (if any), outlines of technical mechanisms for dissemination or a definition of whether access will be widely open or restricted to specific groups. In case the Dataset cannot be shared, the reasons for this should be mentioned (e.g. ethical, rules of personal data, intellectual property, commercial, privacy-related, security-related)."@en .
+<http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dataid.dbpedia.org/ns/dmp#> .
+<http://dataid.dbpedia.org/ns/core#openness> <http://www.w3.org/2000/01/rdf-schema#label> "openness"@en .
+# 
+# http://dataid.dbpedia.org/ns/core#previousVersion
+<http://dataid.dbpedia.org/ns/core#previousVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/dc/terms/spatial
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/dc/terms/temporal
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/spar/datacite/hasIdentifier
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://rdfs.org/ns/void#subset
+<http://rdfs.org/ns/void#subset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://xmlns.com/foaf/0.1/isPrimaryTopicOf
+<http://xmlns.com/foaf/0.1/isPrimaryTopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dataid.dbpedia.org/ns/core#DataId
+<http://dataid.dbpedia.org/ns/core#DataId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://dataid.dbpedia.org/ns/core#Dataset
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/ns/void#Dataset> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://dataid.dbpedia.org/ns/core#latestVersion> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://dataid.dbpedia.org/ns/core#nextVersion> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://dataid.dbpedia.org/ns/core#previousVersion> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/language> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lexvo.org/ontology#Language> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/license> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/odrl/2/Policy> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/rights> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#SimpleStatement> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/spatial> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.geonames.org/ontology#Feature> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/temporal> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2006/time#Interval> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://rdfs.org/ns/void#subset> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Dataset> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#distribution> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#Distribution> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dataid.dbpedia.org/ns/core#DataId> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data, available for access in one or more formats. \r\n    Dataset resources describe the concept of the dataset, not its manifestation (the data itself), which can be acquired \r\n    as a Distribution. Datasets are prov:Entities and can be generated by prov:Activities."@en .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dataid.dbpedia.org/ns/core#> .
+<http://dataid.dbpedia.org/ns/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
+# 
+# http://dataid.dbpedia.org/ns/core#Distribution
+<http://dataid.dbpedia.org/ns/core#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://dataid.dbpedia.org/ns/core#SimpleStatement
+<http://dataid.dbpedia.org/ns/core#SimpleStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://dataid.dbpedia.org/ns/core#Superset
+<http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dataid.dbpedia.org/ns/core#Dataset> .
+<http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#distribution> .
+_:genid13 <http://www.w3.org/2002/07/owl#maxCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#comment> "This dedicated version of a dataid:Dataset has exacly one purpose: to point out all its Sub-Datsets with void:subset. \r\n    A dataid:Superset has no data itself and is therefore prohibited to point out Distributions with dcat:distribution. \r\n    It can be used in a dataset hierarchy (e.g. as a root dataset), or as a container for other datasets."@en .
+<http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dataid.dbpedia.org/ns/core#> .
+<http://dataid.dbpedia.org/ns/core#Superset> <http://www.w3.org/2000/01/rdf-schema#label> "Superset"@en .
+# 
+# http://lexvo.org/ontology#Language
+<http://lexvo.org/ontology#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/dc/dcmitype/Dataset
+<http://purl.org/dc/dcmitype/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spar/datacite/Identifier
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://rdfs.org/ns/void#Dataset
+<http://rdfs.org/ns/void#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.geonames.org/ontology#Feature
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/dcmitype/Dataset> .
+<http://www.w3.org/ns/dcat#Dataset> <http://purl.org/vocab/vann/usageNote> "Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son \n\t\t\t\t\t  entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier. "@fr .
+<http://www.w3.org/ns/dcat#Dataset> <http://purl.org/vocab/vann/usageNote> "Esta clase representa el conjunto de datos publicado por el editor del conjunto de datos. En los casos donde es necesaria una distinción entre el\n\t\t\t\t\tconjunto de datos y su entrada en el catálogo de datos"@es .
+<http://www.w3.org/ns/dcat#Dataset> <http://purl.org/vocab/vann/usageNote> "This class represents the actual dataset as published by the dataset publisher. In \n          cases where a distinction between the actual dataset and its entry in the catalog is \n          necessary (because metadata such as modification date and maintainer might differ), the \n          catalog record class can be used for the latter."@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://purl.org/vocab/vann/usageNote> "Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ'εαυτό, όπως έχει δημοσιευθεί από τον εκδότη.\n          Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) \n          η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο."@el .
+<http://www.w3.org/ns/dcat#Dataset> <http://purl.org/vocab/vann/usageNote> "このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。"@ja .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data, published or curated by a single source, and available for access or download in one or more formats"@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Una colección de datos, publicados o conservados por una única fuente, y disponibles para acceder o descagar en uno o más formatos"@es .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats"@fr .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές"@el .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/TR/vocab-dcat/> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Conjunto de datos"@es .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Jeu de données"@fr .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Σύνολο Δεδομένων"@el .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "قائمة بيانات"@ar .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "データセット"@ja .
+# 
+# http://www.w3.org/ns/odrl/2/Policy
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
