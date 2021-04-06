@@ -1,0 +1,258 @@
+[ {
+  "@id" : "http://aims.fao.org/aos/agrovoc/c_3250",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Conservación del germoplasma"
+  } ]
+}, {
+  "@id" : "http://datos.inia.es/datasets/resource/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ejemplo 1"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://inia.linkeddata.es/def/datasets#"
+  } ]
+}, {
+  "@id" : "http://datos.inia.es/datasets/resource/lens-colecciones-crf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/inia#Dataset" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "http://datos.inia.es/datasets/resource/person3"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://datos.inia.es/datasets/resource/person1"
+  }, {
+    "@id" : "http://datos.inia.es/datasets/resource/person2"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "es",
+    "@value" : "Datos de pasaporte de las colecciones de lens del CRF (Centro de Recursos Fitogenéticos), dentro de esta colección se COMPLETAR"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2017-07-26"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://lexvo.org/id/iso639-3/spa"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://datos.inia.es/datasets/resource/organizationINIA"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "es",
+    "@value" : "Lens Colecciones CRF"
+  }, {
+    "@language" : "en",
+    "@value" : "Lens Collections CRF"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://aims.fao.org/aos/agrovoc/c_3250"
+  } ],
+  "https://w3id.org/def/inia#contactPerson" : [ {
+    "@id" : "http://datos.inia.es/datasets/resource/person1"
+  } ],
+  "https://w3id.org/def/inia#developedWithinProject" : [ {
+    "@id" : "http://datos.inia.es/datasets/resource/project15"
+  } ],
+  "https://w3id.org/def/inia#elementsNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "602"
+  } ],
+  "https://w3id.org/def/inia#finalDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2016-01-01"
+  } ],
+  "https://w3id.org/def/inia#startingDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "1942-01-01"
+  } ]
+}, {
+  "@id" : "http://datos.inia.es/datasets/resource/organizationINIA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/org#Organization" ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "http://www.inia.es"
+  } ]
+}, {
+  "@id" : "http://datos.inia.es/datasets/resource/person1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://purl.org/spar/datacite/hasIdentifier" : [ {
+    "@id" : "http://datos.inia.es/datasets/resource/person1Identifier1"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@id" : "mailto:lucia.rosa@inia.es"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Lucía de la Rosa"
+  } ]
+}, {
+  "@id" : "http://datos.inia.es/datasets/resource/person1Identifier1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/spar/datacite/PersonalIdentifier" ],
+  "http://purl.org/spar/datacite/usesIdentifierScheme" : [ {
+    "@id" : "http://purl.org/spar/datacite/orcid"
+  } ],
+  "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "http://orcid.org/0000-0002-6787-0866"
+  } ]
+}, {
+  "@id" : "http://datos.inia.es/datasets/resource/person2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@id" : "mailto:rosamaria.garcia@inia.es"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Rosa María García Sánchez"
+  } ]
+}, {
+  "@id" : "http://datos.inia.es/datasets/resource/person3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://purl.org/spar/datacite/hasIdentifier" : [ {
+    "@id" : "http://datos.inia.es/datasets/resource/person3Identifier1"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@id" : "mailto:jorge.garcia@inia.es"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Jorge García Pérez"
+  } ]
+}, {
+  "@id" : "http://datos.inia.es/datasets/resource/person3Identifier1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/spar/datacite/PersonalIdentifier" ],
+  "http://purl.org/spar/datacite/usesIdentifierScheme" : [ {
+    "@id" : "http://purl.org/spar/datacite/orcid"
+  } ],
+  "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "http://orcid.org/0000-0002-6787-0867"
+  } ]
+}, {
+  "@id" : "http://datos.inia.es/datasets/resource/project15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Project" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Programa de Conservación y Utilización de los Recursos Fitogenético"
+  } ],
+  "https://w3id.org/def/inia#fundedBy" : [ {
+    "@id" : "http://datos.inia.es/datasets/resource/organizationINIA"
+  } ]
+}, {
+  "@id" : "http://lexvo.org/id/iso639-3/spa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://lexvo.org/ontology#Language" ]
+}, {
+  "@id" : "http://lexvo.org/ontology#Language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/spar/datacite/PersonalIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/spar/datacite/hasIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/spar/datacite/orcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://purl.org/spar/datacite/usesIdentifierScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.inia.es",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Document" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#theme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/org#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/inia#Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/inia#contactPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/inia#developedWithinProject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/inia#elementsNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/inia#finalDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/inia#fundedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/inia#startingDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "mailto:jorge.garcia@inia.es",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "jorge.garcia@inia.es"
+  } ]
+}, {
+  "@id" : "mailto:lucia.rosa@inia.es",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "mailto:rosamaria.garcia@inia.es",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mailto:rosamaria.garcia@inia.es"
+  } ]
+} ]

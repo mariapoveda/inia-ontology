@@ -1,0 +1,237 @@
+<http://datos.inia.es/datasets/resource/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://datos.inia.es/datasets/resource/> <http://www.w3.org/2002/07/owl#imports> <http://inia.linkeddata.es/def/datasets#> .
+<http://datos.inia.es/datasets/resource/> <http://www.w3.org/2000/01/rdf-schema#comment> "ejemplo 1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/inia#contactPerson
+<https://w3id.org/def/inia#contactPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/inia#developedWithinProject
+<https://w3id.org/def/inia#developedWithinProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/inia#elementsNumber
+<https://w3id.org/def/inia#elementsNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/inia#finalDate
+<https://w3id.org/def/inia#finalDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/inia#fundedBy
+<https://w3id.org/def/inia#fundedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/inia#startingDate
+<https://w3id.org/def/inia#startingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/spar/datacite/hasIdentifier
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/spar/datacite/usesIdentifierScheme
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://lexvo.org/ontology#Language
+<http://lexvo.org/ontology#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/spar/datacite/PersonalIdentifier
+<http://purl.org/spar/datacite/PersonalIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Project
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/inia#Dataset
+<https://w3id.org/def/inia#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.inia.es
+<http://www.inia.es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.inia.es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+# 
+# http://aims.fao.org/aos/agrovoc/c_3250
+<http://aims.fao.org/aos/agrovoc/c_3250> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://aims.fao.org/aos/agrovoc/c_3250> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://aims.fao.org/aos/agrovoc/c_3250> <http://www.w3.org/2004/02/skos/core#prefLabel> "Conservación del germoplasma"@es .
+# 
+# http://datos.inia.es/datasets/resource/lens-colecciones-crf
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/inia#Dataset> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://www.w3.org/ns/dcat#theme> <http://aims.fao.org/aos/agrovoc/c_3250> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://purl.org/dc/terms/contributor> <http://datos.inia.es/datasets/resource/person3> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://purl.org/dc/terms/creator> <http://datos.inia.es/datasets/resource/person1> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://purl.org/dc/terms/creator> <http://datos.inia.es/datasets/resource/person2> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://purl.org/dc/terms/description> "Datos de pasaporte de las colecciones de lens del CRF (Centro de Recursos Fitogenéticos), dentro de esta colección se COMPLETAR"@es .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://purl.org/dc/terms/issued> "2017-07-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://purl.org/dc/terms/language> <http://lexvo.org/id/iso639-3/spa> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://purl.org/dc/terms/publisher> <http://datos.inia.es/datasets/resource/organizationINIA> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://purl.org/dc/terms/title> "Lens Colecciones CRF"@es .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <http://purl.org/dc/terms/title> "Lens Collections CRF"@en .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <https://w3id.org/def/inia#contactPerson> <http://datos.inia.es/datasets/resource/person1> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <https://w3id.org/def/inia#developedWithinProject> <http://datos.inia.es/datasets/resource/project15> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <https://w3id.org/def/inia#elementsNumber> "602"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <https://w3id.org/def/inia#finalDate> "2016-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://datos.inia.es/datasets/resource/lens-colecciones-crf> <https://w3id.org/def/inia#startingDate> "1942-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://datos.inia.es/datasets/resource/organizationINIA
+<http://datos.inia.es/datasets/resource/organizationINIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://datos.inia.es/datasets/resource/organizationINIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization> .
+<http://datos.inia.es/datasets/resource/organizationINIA> <http://xmlns.com/foaf/0.1/homepage> <http://www.inia.es> .
+# 
+# http://datos.inia.es/datasets/resource/person1
+<http://datos.inia.es/datasets/resource/person1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://datos.inia.es/datasets/resource/person1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://datos.inia.es/datasets/resource/person1> <http://purl.org/spar/datacite/hasIdentifier> <http://datos.inia.es/datasets/resource/person1Identifier1> .
+<http://datos.inia.es/datasets/resource/person1> <http://xmlns.com/foaf/0.1/mbox> <mailto:lucia.rosa@inia.es> .
+<http://datos.inia.es/datasets/resource/person1> <http://xmlns.com/foaf/0.1/name> "Lucía de la Rosa"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://datos.inia.es/datasets/resource/person1Identifier1
+<http://datos.inia.es/datasets/resource/person1Identifier1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://datos.inia.es/datasets/resource/person1Identifier1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/datacite/PersonalIdentifier> .
+<http://datos.inia.es/datasets/resource/person1Identifier1> <http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/spar/datacite/orcid> .
+<http://datos.inia.es/datasets/resource/person1Identifier1> <http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> "http://orcid.org/0000-0002-6787-0866"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://datos.inia.es/datasets/resource/person2
+<http://datos.inia.es/datasets/resource/person2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://datos.inia.es/datasets/resource/person2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://datos.inia.es/datasets/resource/person2> <http://xmlns.com/foaf/0.1/mbox> <mailto:rosamaria.garcia@inia.es> .
+<http://datos.inia.es/datasets/resource/person2> <http://xmlns.com/foaf/0.1/name> "Rosa María García Sánchez"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://datos.inia.es/datasets/resource/person3
+<http://datos.inia.es/datasets/resource/person3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://datos.inia.es/datasets/resource/person3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://datos.inia.es/datasets/resource/person3> <http://purl.org/spar/datacite/hasIdentifier> <http://datos.inia.es/datasets/resource/person3Identifier1> .
+<http://datos.inia.es/datasets/resource/person3> <http://xmlns.com/foaf/0.1/mbox> <mailto:jorge.garcia@inia.es> .
+<http://datos.inia.es/datasets/resource/person3> <http://xmlns.com/foaf/0.1/name> "Jorge García Pérez"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://datos.inia.es/datasets/resource/person3Identifier1
+<http://datos.inia.es/datasets/resource/person3Identifier1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://datos.inia.es/datasets/resource/person3Identifier1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/datacite/PersonalIdentifier> .
+<http://datos.inia.es/datasets/resource/person3Identifier1> <http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/spar/datacite/orcid> .
+<http://datos.inia.es/datasets/resource/person3Identifier1> <http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> "http://orcid.org/0000-0002-6787-0867"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://datos.inia.es/datasets/resource/project15
+<http://datos.inia.es/datasets/resource/project15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://datos.inia.es/datasets/resource/project15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Project> .
+<http://datos.inia.es/datasets/resource/project15> <http://xmlns.com/foaf/0.1/name> "Programa de Conservación y Utilización de los Recursos Fitogenético"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://datos.inia.es/datasets/resource/project15> <https://w3id.org/def/inia#fundedBy> <http://datos.inia.es/datasets/resource/organizationINIA> .
+# 
+# http://lexvo.org/id/iso639-3/spa
+<http://lexvo.org/id/iso639-3/spa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lexvo.org/id/iso639-3/spa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lexvo.org/ontology#Language> .
+# 
+# http://purl.org/spar/datacite/orcid
+<http://purl.org/spar/datacite/orcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# mailto:jorge.garcia@inia.es
+<mailto:jorge.garcia@inia.es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<mailto:jorge.garcia@inia.es> <http://www.w3.org/2000/01/rdf-schema#label> "jorge.garcia@inia.es"@en .
+# 
+# mailto:lucia.rosa@inia.es
+<mailto:lucia.rosa@inia.es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# mailto:rosamaria.garcia@inia.es
+<mailto:rosamaria.garcia@inia.es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<mailto:rosamaria.garcia@inia.es> <http://www.w3.org/2000/01/rdf-schema#label> "mailto:rosamaria.garcia@inia.es"@en .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

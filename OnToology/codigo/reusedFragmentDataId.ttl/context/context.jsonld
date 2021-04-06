@@ -1,0 +1,115 @@
+{
+  "@context" : {
+    "spatial" : {
+      "@id" : "http://purl.org/dc/terms/spatial",
+      "@type" : "@id"
+    },
+    "subset" : {
+      "@id" : "http://rdfs.org/ns/void#subset",
+      "@type" : "@id"
+    },
+    "Dataset" : {
+      "@id" : "http://purl.org/dc/dcmitype/Dataset"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "Distribution" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#Distribution"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "usageNote" : {
+      "@id" : "http://purl.org/vocab/vann/usageNote"
+    },
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution",
+      "@type" : "@id"
+    },
+    "latestVersion" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#latestVersion",
+      "@type" : "@id"
+    },
+    "isPrimaryTopicOf" : {
+      "@id" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.geonames.org/ontology#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasIdentifier" : {
+      "@id" : "http://purl.org/spar/datacite/hasIdentifier",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "previousVersion" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#previousVersion",
+      "@type" : "@id"
+    },
+    "Superset" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#Superset"
+    },
+    "nextVersion" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#nextVersion",
+      "@type" : "@id"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights",
+      "@type" : "@id"
+    },
+    "identifier" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#identifier",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "DataId" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#DataId"
+    },
+    "Entity" : {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    },
+    "Policy" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Policy"
+    },
+    "Language" : {
+      "@id" : "http://lexvo.org/ontology#Language"
+    },
+    "openness" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#openness",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/terms/language",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "Identifier" : {
+      "@id" : "http://purl.org/spar/datacite/Identifier"
+    },
+    "SimpleStatement" : {
+      "@id" : "http://dataid.dbpedia.org/ns/core#SimpleStatement"
+    },
+    "temporal" : {
+      "@id" : "http://purl.org/dc/terms/temporal",
+      "@type" : "@id"
+    }
+  }
+}
